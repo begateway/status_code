@@ -1,0 +1,568 @@
+---
+ru:
+  merchant:
+    '0': &0 Одобрено # Approved
+    '00': *0
+    '000': *0
+# Russian Standard Bank, БПЦ, fdl_answer_codes
+    '1': &A1 Одобрено, сверить паспорт # Approved, honour with identification
+    '2': &Decline2 Отказ # Нет разрешения(БПЦ) # Decline # Approved for partial amount
+    '3': &A3 Одобрено # Approved for VIP
+    '4': &A4 Одобрено # Approved, update track 3
+    '5': &A5 Одобрено # Approved, account type specified by card issuer
+    '6': &Decline6 Отказ # Нет разрешения(БПЦ) # Decline # Approved for partial amount, account type specified by card issuer
+    '7': &A7 Одобрено # Approved, update ICC
+    '01': *A1
+    '02': *Decline2
+    '03': *A3
+    '04': *A4
+    '05': *A5
+    '06': *Decline6
+    '07': *A7
+    '001': *A1
+    '002': *Decline2
+    '003': *A3
+    '004': *A4
+    '005': *A5
+    '006': *Decline6
+    '007': *A7
+# Metavante (MTBank)
+    # '2': &2 Approved for a partial amount
+    # '02': *2
+    # '002': *2
+    '80': &80 Одобрено # Approved. ICC offline approved
+    '81': &81 Одобрено # Approved. ICC unable to go online, approved
+    '82': &82 Одобрено # Approved. ICC approved after card-initiated referral (AAR)
+    '080': *80
+    '081': *81
+    '082': *82
+# Metavante (MTBank)
+    # '100': Decline, do not honour
+    # '107': Decline, acceptor contact issuer
+# Russian Standard Bank, БПЦ, fdl_answer_codes, Metavante (MTBank)
+    '100': &100 Отказ # Нет разрешения(БПЦ) # '100': Decline, do not honour
+    '101': Отказ, карта просрочена # Decline, expired card
+    '102': Отказ # Decline, suspected fraud
+    '103': Отказ, свяжитесь с обслуживающим банком # Decline, card acceptor contact acquirer
+    '104': Отказ, карта имеет ограничения # Decline, restricted card
+    '105': Отказ, вызовите службу безопасности банка # Decline, card acceptor call acquirer's security department
+    '106': Отказ, превышено число попыток ввода PIN - кода # Decline, allowable PIN tries exceeded
+    '107': Отказ, свяжитесь с эмитентом # Decline, refer to card issuer # '107': Decline, acceptor contact issuer
+    '108': Отказ, свяжитесь с эмитентом # Decline, refer to card issuer's special conditions
+    '109': Отказ, неверный код терминала # Decline, invalid merchant
+    '110': Отказ, неверная сумма # Decline, invalid amount
+    '111': Отказ, неверный номер карты # Decline, invalid card number
+    '112': Отказ, нужен ввод PIN-код # Decline, PIN data required
+    '113': Отказ, недопустимая комиссия # Decline, unacceptable fee
+    '114': Отказ, неверный номер счета # Decline, no account of type requested
+    '115': Отказ, запрошенная операция недопустима для Карты # Decline, requested function not supported
+    '116': Отказ, недостаточно средств # Decline, not sufficient funds
+    '117': Отказ, неверный PIN-код # Decline, incorrect PIN
+    '118': Отказ, карта не найдена # Decline, no card record
+    '119': Отказ, операция не разрешена клиенту # Decline, transaction not permitted to cardholder
+    '120': Отказ, операция, не разрешена по данному терминалу # Decline, transaction not permitted to terminal
+    '121': Отказ, превышен лимит суммы # Decline, exceeds withdrawal amount limit
+    '122': Отказ по соображениям безопасности # Decline, security violation
+    '123': Отказ, превышен лимит запросов # Превышено число операций (Russian Standard Bank)# Decline, exceeds withdrawal frequency limit
+    '124': Отказ, запрещено законодательством # Decline, violation of law
+    '125': Отказ, карта неактивна # Карта просрочена (БПЦ)# Decline, card not effective
+    '126': Отказ, неверный PIN-блок # Decline, invalid PIN block
+    '127': Отказ, неверная длина PIN-код # Decline, PIN length error
+    '128': Отказ, ошибка обработки PIN-код # Decline, PIN key synch error
+    '129': Отказ, возможно, поддельная карта # Decline, suspected counterfeit card
+# Payvision
+    # 130: Decline, invalid Track2
+    # 131: Decline, invalid Expiration Date
+    # 161: Decline, DCC transaction not allowed to cardholder
+    # 162: Decline, DCC cardholder currency not supported
+    # 163: Decline, DCC exceeds time limit for withdrawal
+    # 164: Decline, DCC transaction not allowed to terminal
+    # 165: Decline, DCC not allowed to merchant
+    # 166: Decline, DCC unknown error
+# fdl_answer_codes
+    '164': *100 # Decline, no acquires service
+    '165': *100 # Decline, not fulfill AML requirements
+    '166': *100 # Decline, incorrect Recipient PAN
+    # '170': Decline, PIN Change/Unblock. Decline, Cardholder contact issuer
+# Metavante (MTBank)
+    '170': Отказ, свяжитесь с эмитентом # Decline, Cardholder contact issuer
+# fdl_answer_codes, Metavante (MTBank)
+    '171': *100 # Decline, PIN not changed
+# fdl_answer_codes
+    '172': *100 # Decline, 1st generate AC failed/not performed on ICC
+    '173': *100 # Decline, invalid track data
+# fdl_answer_codes, Metavante (MTBank)
+    '177': Отказ, неверный код валюты # Decline, invalid currency code
+    '178': *100 # Decline, ICC decline, after card-initiated referral (AAR)
+    '179': *100 # Decline, PIN Change declined (New PIN unsafe)
+# Metavante (MTBank)
+    # 180: Decline, amount not divisible
+# Russian Standard Bank, fdl_answer_codes, Medoro
+    '180': Отказ, по желанию держателя карты # Decline, by cardholders wish
+# Russian Standard Bank
+  # 181 - 199: Decline, Card is not active
+# Medoro
+    # 181: 3d secure authentication is currently unavailable >
+    #          (Enrollment status = E)
+    # 182: 3d secure authentication failed (Authentication status = N)
+# Russian Standard Bank, Metavante (MTBank)
+    '181': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, amount too big for ATM
+    '182': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, ATM out of cash
+    '183': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, no chequing account
+    '184': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, new PINs entered differ
+    '185': Отказ, ошибка CVV валидации # Отказ: Карта не активна(Russian Standard Bank) # Decline, CVV validation error
+    '186': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, pre-auth time limit exceeded
+    '187': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, card has been destroyed
+    '188': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, restricted card. No funds.
+    '189': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, foreign exchange not available
+    '190': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, transaction count limit exceeded
+    '191': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, system overload – retry later
+    '192': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, statement data not available
+    '193': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, PIN tries exceeded
+    '194': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, no balance data available
+    '195': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, ICC offline declined
+    '196': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, ICC unable to go online, declined
+    '197': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, ICC card authentication failed
+    '198': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, no receipt available on ATM
+    '199': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, no TUC(TOP-UP CODE) number available
+# Russian Standard Bank, fdl_answer_codes, Metavante (MTBank)
+    '200': Отказ, изъять карту # Decline, pick-up card (general, no comments)
+    '201': Отказ, изъять карту, карта просрочена # Decline, pick-up card, expired card
+    '202': Отказ, изъять карту, возможна мошенническая операция # Decline, pick-up card, suspected fraud
+    '203': Отказ, изъять карту, свяжитесь с обслуживающим банком # Decline, pick-up card, card acceptor contact card acquirer
+    '204': Отказ, изъять карту, карта имеет ограничения # Decline, pick-up card, restricted card
+    '205': Отказ, изъять карту, вызовите службу безопасности обслуживающего банка # Decline, pick-up card, card acceptor call acquirer's security department
+    '206': Отказ, изъять карту, превышено число попыток ввода PIN-код # Decline, pick-up card, allowable PIN tries exceeded
+    '207': Отказ, изъять карту, специальные условия # Decline, pick-up card, special conditions
+    '208': Отказ, изъять карту, карта утеряна # Decline, pick-up card, lost card
+    '209': Отказ, изъять карту, карта украдена # Decline, pick-up card, stolen card
+    '210': Отказ, изъять карту # Decline, pick-up card, suspected counterfeit card
+# Metavante (MTBank)
+    '285': Отказ, изъять карту, ошибка CVV валидации # Decline, pick-up card, CVV validation error
+    # '300': Accepted (File Action Response Code)
+# fdl_answer_codes, 300-306 ПЕРЕВОДИЛ САМ
+    '300': Системнoe сообщение, успешная файловая операция # Status message. File action successful
+    '301': Системная ошибка, файловая операция не поддерживается получателем # Status message. File action not supported by receiver
+    '302': Системная ошибка, не удалось найти запись о файле # Status message. Unable to locate record on file
+    '303': Системнoe сообщение, запись с таким именем уже существует. Старая запись перезаписана # Status message. Duplicate record, old record replaced
+    '304': Системная ошибка, ошибка записи файла, # Status message. File record field edit error
+    '305': Системная ошибка, файл заблокирован # Status message. File locked out
+    '306': Системная ошибка, файловая операция не удалась # Status message. File action not successful
+# fdl_answer_codes, Metavante (MTBank), 307-309 ПЕРЕВОДИЛ САМ
+    '307': Системная ошибка, неизвестный формат данных файла # Status message. File data format error
+    '308': Системная ошибка, запись с таким именем уже существует. Перезапись запрещена # Status message. Duplicate record, new record rejected
+# fdl_answer_codes
+    '309': Системная ошибка, неизвестный формат файла # Status message. Unknown file
+# Metavante (MTBank), 382-383 ПЕРЕВОДИЛ САМ
+    '382': Системная ошибка # Status message. System malfunction
+    '383': Системнoe сообщение, файл # Status message. File
+# Russian Standard Bank, fdl_answer_codes, Metavante (MTBank)
+    '400': Одобрено (для отмены Авторизации) # Accepted (for reversal)
+# Russian Standard Bank, fdl_answer_codes
+    '499': Одобрено, оригинальная операция не найдена # Approved, no original message data
+# Russian Standard Bank, БПЦ, fdl_answer_codes, Metavante (MTBank)
+    '500': Одобрено, итоги совпали # Одобрено # Status message. Reconciled, in balance
+    '501': Одобрено, сверить итоги # Status message. Reconciled, out of balance
+    '502': Системная ошибка # Status message. Amount not reconciled, totals provided
+# fdl_answer_codes, БПЦ
+    '503': Системная ошибка # Status message. Totals for reconciliation not available
+    '504': Системная ошибка # Status message. Not reconciled, totals providedа
+# Metavante (MTBank)
+    '599': Системная ошибка # Status message. Reconciliation error
+# fdl_answer_codes, Metavante (MTBank)
+    '600': Системнoe сообщение. Одобрено # Accepted (for administrative info)
+    '601': Системная ошибка, оригинальная операция не найдена  # Status message. Impossible to trace back original transaction
+    '602': Системная ошибка # Status message. Invalid transaction reference number
+    '603': Системная ошибка # Status message. Reference number/PAN incompatible
+    '604': Системная ошибка # Status message. POS photograph is not available # No photo available
+    '605': Системная ошибка # Status message. Requested item supplied
+    '606': Системная ошибка # Status message. Request cannot be fulfilled - required documentation is not available # Item not available
+# БПЦ
+    '620': Системная ошибка, ошибка системы # Status message. System error
+    '621': Системная ошибка, неизвестный IP или ID # Status message. Unknown IP or ID
+    '622': Системная ошибка, ошибка отправления на хост # Status message. Sending to the host error
+    '623': Системная ошибка, день уже закрыт # Status message. The day is closed
+    '624': Системная ошибка, реверсал уже был проведен # Status message. Reversal has been already conducted
+    '625': Системная ошибка, несовпадение суммы с предыдущей транзакцией # Status message. The discrepancy between the amount of the previous transaction
+    '626': Системная ошибка, не найдена оригинальная транзакция # Status message. The original transaction could not be found
+    '627': Системная ошибка, операция уже была проведена # Status message. Transaction has been already conducted
+    '628': Системная ошибка, ошибочная сумма операции # Status message. Transaction amount error # Ошибочная сумма операции
+    '629': Системная ошибка, не найден авторизационный запрос # Status message. Unable to find the authorization request
+    '630': Системная ошибка, превышен лимит времени на подтверждение # Status message. Exceeded confirmation time limit
+# fdl_answer_codes
+    '680': Системнoe сообщение # Status message. List ready
+    '681': Системнoe сообщение # Status message. List not ready
+# БПЦ
+    '698': Системная ошибка, терминал заблокирован # Status message. The terminal is blocked # Терминал заблокирован
+# БПЦ, fdl_answer_codes
+    '700': &Ac Одобрено # Accepted (for fee collection)
+# БПЦ, fdl_answer_codes, Metavante (MTBank)
+    '800': *Ac # Одобрено # Accepted (for network management)
+# Metavante (MTBank)
+    '880': *Ac # Одобрено # Accepted (Network Management & Key Change response codes)
+# Payvision
+    # 902: False transaction
+    # 904: Form error
+    # 907: Issuer not responding
+    # 908: Message can not be routed
+    # 909: System error
+    # 910: Issuer did not respond
+    # 911: Issuer timed out
+    # 912: Issuer not reachable
+    # 913: Double transaction transmission
+    # 914: Original transaction can not be traced
+    # 916: Merchant not found
+    # 950: No financial record found for detail data
+    # 951: Batch already closed
+    # 952: Invalid batch number
+    # 953: Host timeout
+    # 954: Batch not closed
+    # 955: Merchant not active
+    # 956: Transaction number not unique
+# Russian Standard Bank, БПЦ , fdl_answer_codes
+    '900': Запрос авторизован, никаких финансовых обязательств не одобрено # Одобрено # Advice acknowledged, no financial liability accepted
+    '901': Запрос авторизован, финансовые обязательства одобрены  # Одобрено # Advice acknowledged, finansial liability accepted
+# Russian Standard Bank, БПЦ, fdl_answer_codes, Metavante (MTBank)
+    '902': Обратитесь к дежурной службе, неверная операция # Нет разрешения # Decline reason message. Invalid transaction
+    '903': Обратитесь к дежурной службе, повторите операцию # Повторить операцию # Status message. Re-enter transaction
+    '904': Обратитесь к дежурной службе, ошибка формата данных # Системная ошибка # Decline reason message. Format error
+    '905': Обратитесь к дежурной службе, ошибка связи с платежной системой # Нет разрешения # Decline reason message. Acqiurer not supported by switch
+    '906': Обратитесь к дежурной службе, ошибка связи с платежной системой # Системная ошибка # Decline reason message. Cutover in process # Системная ошибка
+    '907': Обратитесь к дежурной службе, ошибка связи с платежной системой # Нет разрешения # Decline reason message. Card issuer or switch inoperative
+    '908': Обратитесь к дежурной службе, ошибка связи с платежной системой # Нет разрешения # Decline reason message. Transaction destination cannot be found for routing
+    '909': Обратитесь к дежурной службе, системная ошибка # Системная ошибка # Decline reason message. System malfunction
+    '910': Обратитесь к дежурной службе, ошибка связи с платежной системой # Нет разрешения # Decline reason message. Card issuer signed off
+    '911': Обратитесь к дежурной службе, эмитент карты недоступен # Нет разрешения # Decline reason message. Card issuer timed out
+    '912': Обратитесь к дежурной службе, эмитент карты недоступен # Нет разрешения # Decline reason message. Card issuer unavailable
+    '913': Обратитесь к дежурной службе, дублированная операция # Нет разрешения # Decline reason message. Duplicate transmission
+    '914': Обратитесь к дежурной службе, оригинальная операция не найдена # Оригинал не найден # Decline reason message. Not able to trace back to original transaction
+    '915': Обратитесь к дежурной службе, ошибка связи с платежной системой # Передача пакета # Decline reason message. Reconciliation cutover or checkpoint error # Передача пакета
+    '916': Обратитесь к дежурной службе, ошибка MAC # Системная ошибка # Decline reason message. MAC incorrect
+    '917': Обратитесь к дежурной службе, ошибка MAC # Системная ошибка # Decline reason message. MAC key sync error
+    '918': Обратитесь к дежурной службе, ошибка PIN-PAD # Системная ошибка # Decline reason message. No communication keys available for use
+    '919': Обратитесь к дежурной службе, ошибка шифрования # Системная ошибка # Decline reason message. Encryption key sync error
+    '920': Обратитесь к дежурной службе, ошибка шифрования # Повторить операцию # Decline reason message. Security software/hardware error - try again
+    '921': Обратитесь к дежурной службе, ошибка шифрования # Системная ошибка # Decline reason message. Security software/hardware error - no action
+    '922': Обратитесь к дежурной службе, неверный номер сообщения # Нет разрешения # Decline reason message. Message number out of sequence
+    '923': Обратитесь к дежурной службе, запрос обрабатывается # Системная ошибка # Status message. Request in progress
+# Metavante (MTBank)
+    '940': Обратитесь к дежурной службе, ошибка даты/времени транзакции # Decline reason message. Invalid transaction date/time.(Correct date and re-send transaction.)
+# Medoro
+    # 940: could not obtain agreement for this payment
+    # 941: agreement suspended or closed
+    # 942: original credit transaction is illegible for this PAN (at least one deposited payment required)
+    # 945: card enrollment verification in 3d secure failed (Incorrect VeRes; DS not available; merchant is not participating in 3d)
+    # 946: 3d secure field extraction from PaRes failed (Incorrect PaRes; Incorrect certificate)
+    # 948: suspected fraud
+    # 949: abandoned (Timed out)
+# Russian Standard Bank, БПЦ, fdl_answer_codes, Medoro
+    '950': Отказ, недопустимая операция # Системная ошибка # Decline reason message. Violation of business arrangement
+# Metavante (MTBank)
+    # '950': Disagreement
+    '951': Отказ, cрок действия карты истек # Decline reason message. Card expired
+    '952': Отказ, возможна мошенническая операция # Decline reason message. Suspected fraud
+    '953': Отказ, карта имеет ограничения # Decline reason message. Restricted card
+    '954': Отказ, неверный код терминала # Decline reason message. Invalid merchant
+    '955': Отказ, неверная сумма # Decline reason message. Invalid amont
+    '956': Отказ, неверный номер карты # Decline reason message. Invalid card number
+    '957': Отказ, недопустимая комиссия # Decline reason message. Unacceptable fee
+    '958': Отказ, недостаточно средств # Decline reason message. Insufficient funds
+    '959': Отказ, неверный PIN-код # Decline reason message. Bad PIN
+    '960': Отказ, операция не разрешена клиенту # Decline reason message. Trans not allowed to cardholder
+    '961': Отказ операция, не разрешена по данному терминалу # Decline reason message. Trans not allowed to terminal
+    '962': Отказ, превышена сумма лимита # Decline reason message. Exceeds amount limit
+    '963': Отказ по соображениям безопасности  # Decline reason message. Security violation
+    '964': Отказ, превышен лимит запросов # Decline reason message. Exceeds frequency limit
+    '965': Отказ, запрещено законодательством # Decline reason message. Violation of law
+    '966': Отказ, ошибка связи с платежной системой # Decline reason message. Reconciliation/checkpoint error
+    '967': Отказ, ошибка MAC # Decline reason message. MAC incorrect
+    '968': Отказ, ошибка MAC # Decline reason message. MAC key sync error
+    '969': Отказ, ошибка PIN-PAD # Decline reason message. No comms key available
+    '970': Отказ, ошибка шифрования # Decline reason message. Encryption key sync error
+    '971': Отказ, ошибка шифрования # Decline reason message. Security error, try again
+    '972': Отказ, ошибка шифрования # Decline reason message. Security error, no action
+    '973': Отказ, неверный номер сообщения # Decline reason message. Message out of sequence
+  customer:
+    '0': &Approved Одобрено # Approved
+    '00': *Approved
+    '000': *Approved
+# БПЦ, fdl_answer_codes
+    '1': *Approved # Approved, honour with identification
+    '2': &D Отказ # Decline # Approved for partial amount
+    '3': *Approved # Approved # Approved for VIP
+    '4': *Approved # Approved # Approved, update track 3
+    '5': *Approved # Approved # Approved, account type specified by card issuer
+    '6': *D # Decline # Approved for partial amount, account type specified by card issuer
+    '7': *Approved # Approved # Approved, update ICC
+    '01': *Approved
+    '02': *D
+    '03': *Approved
+    '04': *Approved
+    '05': *Approved
+    '06': *D
+    '07': *Approved
+    '001': *Approved
+    '002': *D
+    '003': *Approved
+    '004': *Approved
+    '005': *Approved
+    '006': *D
+    '007': *Approved
+# Metavante (MTBank)
+    # '2': &2 Approved for a partial amount
+    # '02': *2
+    # '002': *2
+    '80': *Approved # Approved. ICC offline approved
+    '81': *Approved # Approved. ICC unable to go online, approved
+    '82': *Approved # Approved. ICC approved after card-initiated referral (AAR)
+    '080': *Approved
+    '081': *Approved
+    '082': *Approved
+# Metavante (MTBank)
+    # '100': Decline, do not honour
+    # '107': Decline, acceptor contact issuer
+# fdl_answer_codes, Metavante (MTBank)
+# fdl_answer_codes, Metavante (MTBank)
+    '100': &Call-Bank Платеж отклонен банком, выпустившим вашу карту. Обратитесь в банк за разъяснением. Контактный телефон на обратной стороне карты.  # The payment has been declined by your card bank. Call the bank support line to find out a reason. Your bank phone number is on the card back side. # Decline (general, no comments) # '100': Decline, do not honour
+    '101': *Call-Bank # Decline, expired card
+    '102': &Contact-Technical-Support Платеж отклонен. Свяжитесь со службой технической поддержки # Decline, suspected fraud
+    '103': *Contact-Technical-Support # The payment has been declined. Please contact Technical Support # Decline, card acceptor contact acquirer
+    '104': *Call-Bank # Decline, restricted card
+    '105': *Contact-Technical-Support # Decline, card acceptor call acquirer's security department
+    '106': *Call-Bank # Decline, allowable PIN tries exceeded
+    '107': *Call-Bank # Decline, refer to card issuer # '107': Decline, acceptor contact issuer
+    '108': *Call-Bank # Decline, refer to card issuer's special conditions
+    '109': *Contact-Technical-Support # Decline, invalid merchant
+    '110': *Contact-Technical-Support # Decline, invalid amount
+    '111': Неверный номер карты # Decline, invalid card number
+    '112': *Call-Bank # Decline, PIN data required
+    '113': *Call-Bank # Decline, unacceptable fee
+    '114': *Call-Bank # Decline, no account of type requested
+    '115': *Call-Bank # Decline, requested function not supported
+    '116': Недостаточно средств # Decline, not sufficient funds
+    '117': *Call-Bank # Decline, incorrect PIN
+    '118': *Call-Bank # Decline, no card record
+    '119': *Call-Bank # Decline, transaction not permitted to cardholder
+    '120': *Call-Bank # Decline, transaction not permitted to terminal
+    '121': *Contact-Technical-Support # Decline, exceeds withdrawal amount limit
+    '122': *Contact-Technical-Support # Decline, security violation
+    '123': *Call-Bank # Decline, exceeds withdrawal frequency limit
+    '124': *Contact-Technical-Support # Decline, violation of law
+    '125': *Call-Bank # Decline, card not effective
+    '126': *Call-Bank # Decline, invalid PIN block
+    '127': *Call-Bank # Decline, PIN length error
+    '128': *Call-Bank # Decline, PIN key synch error
+    '129': *Contact-Technical-Support # Decline, suspected counterfeit card
+# Payvision
+    # 130: Decline, invalid Track2
+    # 131: Decline, invalid Expiration Date
+    # 161: Decline, DCC transaction not allowed to cardholder
+    # 162: Decline, DCC cardholder currency not supported
+    # 163: Decline, DCC exceeds time limit for withdrawal
+    # 164: Decline, DCC transaction not allowed to terminal
+    # 165: Decline, DCC not allowed to merchant
+    # 166: Decline, DCC unknown error
+# fdl_answer_codes
+    '164': *Contact-Technical-Support # Decline, no acquires service
+    '165': *Contact-Technical-Support # Decline, not fulfill AML requirements
+    '166': *Contact-Technical-Support # Decline, incorrect Recipient PAN
+    # '170': Decline, PIN Change/Unblock. Decline, Cardholder contact issuer
+# Metavante (MTBank)
+    '170': *Call-Bank # Decline, Cardholder contact issuer
+# fdl_answer_codes, Metavante (MTBank)
+    '171': *Call-Bank # Decline, PIN not changed
+# fdl_answer_codes
+    '172': *Call-Bank # Decline, 1st generate AC failed/not performed on ICC
+    '173': *Contact-Technical-Support # Decline, invalid track data
+# fdl_answer_codes, Metavante (MTBank)
+    '177': *Contact-Technical-Support # Decline, invalid currency code
+    '178': *Call-Bank # Decline, ICC decline, after card-initiated referral (AAR)
+    '179': *Call-Bank # Decline, PIN Change declined (New PIN unsafe)
+# Metavante (MTBank)
+    # 180: Decline, amount not divisible
+# fdl_answer_codes, Russian Standard Bank, Medoro
+    '180': *Call-Bank # Decline, by cardholders wish
+# Russian Standard Bank
+  # 181 - 199: Decline, Card is not active
+# Medoro
+    # 181: 3d secure authentication is currently unavailable >
+    #          (Enrollment status = E)
+    # 182: 3d secure authentication failed (Authentication status = N)
+# Metavante (MTBank)
+    '181': *Call-Bank # Decline, amount too big for ATM
+    '182': *Call-Bank # Decline, ATM out of cash
+    '183': *Call-Bank # Decline, no chequing account
+    '184': *Call-Bank # Decline, new PINs entered differ
+    '185': Неверный CVV # Decline, CVV validation error
+    '186': *Contact-Technical-Support # Decline, pre-auth time limit exceeded
+    '187': *Call-Bank # Decline, card has been destroyed
+    '188': *Call-Bank # Decline, restricted card. No funds.
+    '189': *Call-Bank # Decline, foreign exchange not available
+    '190': *Call-Bank # Decline, transaction count limit exceeded
+    '191': *Contact-Technical-Support # Decline, system overload – retry later
+    '192': *Call-Bank # Decline, statement data not available
+    '193': *Call-Bank # Decline, PIN tries exceeded
+    '194': *Call-Bank # Decline, no balance data available
+    '195': *Call-Bank # Decline, ICC offline declined
+    '196': *Call-Bank # Decline, ICC unable to go online, declined
+    '197': *Call-Bank # Decline, ICC card authentication failed
+    '198': *Call-Bank # Decline, no receipt available on ATM
+    '199': *Call-Bank # Decline, no TUC(TOP-UP CODE) number available
+# fdl_answer_codes, Metavante (MTBank)
+    '200': *Contact-Technical-Support # Decline, pick-up card (general, no comments)
+    '201': *Contact-Technical-Support # Decline, pick-up card, expired card
+    '202': *Contact-Technical-Support # Decline, pick-up card, suspected fraud
+    '203': *Contact-Technical-Support # Decline, pick-up card, card acceptor contact card acquirer
+    '204': *Contact-Technical-Support # Decline, pick-up card, restricted card
+    '205': *Contact-Technical-Support # Decline, pick-up card, card acceptor call acquirer's security department
+    '206': *Contact-Technical-Support # Decline, pick-up card, allowable PIN tries exceeded
+    '207': *Contact-Technical-Support # Decline, pick-up card, special conditions
+    '208': *Contact-Technical-Support # Decline, pick-up card, lost card
+    '209': *Contact-Technical-Support # Decline, pick-up card, stolen card
+    '210': *Contact-Technical-Support # Decline, pick-up card, suspected counterfeit card
+# Metavante (MTBank)
+    '285': *Contact-Technical-Support # Decline, pick-up card, CVV validation error
+    # '300': Accepted (File Action Response Code)
+# fdl_answer_codes
+    '300': *Contact-Technical-Support # Status message. File action successful
+    '301': *Contact-Technical-Support # Status message. File action not supported by receiver
+    '302': *Contact-Technical-Support # Status message. Unable to locate record on file
+    '303': *Contact-Technical-Support # Status message. Duplicate record, old record replaced
+    '304': *Contact-Technical-Support # Status message. File record field edit error
+    '305': *Contact-Technical-Support # Status message. File locked out
+    '306': *Contact-Technical-Support # Status message. File action not successful
+# fdl_answer_codes, Metavante (MTBank)
+    '307': *Contact-Technical-Support # Status message. File data format error
+    '308': *Contact-Technical-Support # Status message. Duplicate record, new record rejected
+# fdl_answer_codes
+    '309': *Contact-Technical-Support # Status message. Unknown file
+# Metavante (MTBank)
+    '382': *Contact-Technical-Support # Status message. System malfunction
+    '383': *Contact-Technical-Support # Status message. File
+# fdl_answer_codes, Metavante (MTBank)
+    '400': *Contact-Technical-Support # Accepted (for reversal)
+# fdl_answer_codes
+    '499': *Contact-Technical-Support # Approved, no original message data
+# fdl_answer_codes, Metavante (MTBank), БПЦ
+    '500': *Contact-Technical-Support # Status message. Reconciled, in balance # Одобрено
+    '501': *Contact-Technical-Support # Status message. Reconciled, out of balance # Одобрено, сверить итоги
+    '502': *Contact-Technical-Support # Status message. Amount not reconciled, totals provided # Системная ошибка
+# fdl_answer_codes, БПЦ
+    '503': *Contact-Technical-Support # Status message. Totals for reconciliation not available # Системная ошибка
+    '504': *Contact-Technical-Support # Status message. Not reconciled, totals provided # Системная ошибка
+# Metavante (MTBank)
+    '599': *Contact-Technical-Support # Status message. Reconciliation error
+# fdl_answer_codes, Metavante (MTBank)
+    '600': *Contact-Technical-Support # Accepted (for administrative info)
+    '601': *Contact-Technical-Support # Status message. Impossible to trace back original transaction
+    '602': *Contact-Technical-Support # Status message. Invalid transaction reference number
+    '603': *Contact-Technical-Support # Status message. Reference number/PAN incompatible
+    '604': *Contact-Technical-Support # Status message. POS photograph is not available # No photo available
+    '605': *Contact-Technical-Support # Status message. Requested item supplied
+    '606': *Contact-Technical-Support # Status message. Request cannot be fulfilled - required documentation is not available # Item not available
+# БПЦ
+    '620': *Contact-Technical-Support # Status message. System error # Ошибка системы
+    '621': *Contact-Technical-Support # Status message. Unknown IP or ID # Неизвестный IP или ID
+    '622': *Contact-Technical-Support # Status message. Sending to the host error # Ошибка отправления на хост
+    '623': *Contact-Technical-Support # Status message. The day is closed # День уже закрыт
+    '624': *Contact-Technical-Support # Status message. Reversal has been already conducted # Реверсал уже был проведен
+    '625': *Contact-Technical-Support # Status message. The discrepancy between the amount of the previous transaction # Несовпадение суммы с предыдущей транзакцией
+    '626': *Contact-Technical-Support # Status message. The original transaction could not be found # Не найдена оригинальная транзакция
+    '627': *Contact-Technical-Support # Status message. Transaction has been already conducted # Операция уже была проведена
+    '628': *Contact-Technical-Support # Status message. Transaction amount error # Ошибочная сумма операции
+    '629': *Contact-Technical-Support # Status message. Unable to find the authorization request # Не найден авторизационный запрос
+    '630': *Contact-Technical-Support # Status message. Exceeded confirmation time limit # Превышен лимит времени на подтверждение
+# fdl_answer_codes
+    '680': *Contact-Technical-Support # Status message. List ready
+    '681': *Contact-Technical-Support # Status message. List not ready
+# БПЦ
+    '698': *Contact-Technical-Support # Status message. The terminal is blocked # Терминал заблокирован
+# fdl_answer_codes, БПЦ
+    '700': *Contact-Technical-Support # Accepted # Accepted (for fee collection) # Одобрено
+# fdl_answer_codes, Metavante (MTBank), БПЦ
+    '800': *Contact-Technical-Support # Accepted (for network management) # Одобрено
+# Metavante (MTBank)
+    '880': *Contact-Technical-Support # Accepted (Network Management & Key Change response codes)
+# Payvision
+    # 902: False transaction
+    # 904: Form error
+    # 907: Issuer not responding
+    # 908: Message can not be routed
+    # 909: System error
+    # 910: Issuer did not respond
+    # 911: Issuer timed out
+    # 912: Issuer not reachable
+    # 913: Double transaction transmission
+    # 914: Original transaction can not be traced
+    # 916: Merchant not found
+    # 950: No financial record found for detail data
+    # 951: Batch already closed
+    # 952: Invalid batch number
+    # 953: Host timeout
+    # 954: Batch not closed
+    # 955: Merchant not active
+    # 956: Transaction number not unique
+# fdl_answer_codes, БПЦ
+    '900': *Contact-Technical-Support # Advice acknowledged, no financial liability accepted # Одобрено
+    '901': *Contact-Technical-Support # Advice acknowledged, finansial liability accepted # Одобрено
+# fdl_answer_codes, Metavante (MTBank), БПЦ
+    '902': *Contact-Technical-Support # Decline reason message. Invalid transaction
+    '903': *Contact-Technical-Support # Status message. Re-enter transaction
+    '904': *Contact-Technical-Support # Decline reason message. Format error
+    '905': *Contact-Technical-Support # Decline reason message. Acqiurer not supported by switch
+    '906': *Contact-Technical-Support # Decline reason message. Cutover in process # Системная ошибка
+    '907': *Contact-Technical-Support # Decline reason message. Card issuer or switch inoperative
+    '908': *Contact-Technical-Support # Decline reason message. Transaction destination cannot be found for routing
+    '909': *Contact-Technical-Support # Decline reason message. System malfunction
+    '910': *Contact-Technical-Support # Decline reason message. Card issuer signed off
+    '911': *Contact-Technical-Support # Decline reason message. Card issuer timed out
+    '912': *Contact-Technical-Support # Decline reason message. Card issuer unavailable
+    '913': *Contact-Technical-Support # Decline reason message. Duplicate transmission
+    '914': *Contact-Technical-Support # Decline reason message. Not able to trace back to original transaction
+    '915': *Contact-Technical-Support # Decline reason message. Reconciliation cutover or checkpoint error # Передача пакета
+    '916': *Contact-Technical-Support # Decline reason message. MAC incorrect
+    '917': *Contact-Technical-Support # Decline reason message. MAC key sync error
+    '918': *Contact-Technical-Support # Decline reason message. No communication keys available for use
+    '919': *Contact-Technical-Support # Decline reason message. Encryption key sync error
+    '920': *Contact-Technical-Support # Decline reason message. Security software/hardware error - try again
+    '921': *Contact-Technical-Support # Decline reason message. Security software/hardware error - no action
+    '922': *Contact-Technical-Support # Decline reason message. Message number out of sequence
+    '923': *Contact-Technical-Support # Status message. Request in progress
+# Metavante (MTBank)
+    '940': *Contact-Technical-Support # Decline reason message. Invalid transaction date/time.(Correct date and re-send transaction.)
+# Medoro
+    # 940: could not obtain agreement for this payment
+    # 941: agreement suspended or closed
+    # 942: original credit transaction is illegible for this PAN (at least one deposited payment required)
+    # 945: card enrollment verification in 3d secure failed (Incorrect VeRes; DS not available; merchant is not participating in 3d)
+    # 946: 3d secure field extraction from PaRes failed (Incorrect PaRes; Incorrect certificate)
+    # 948: suspected fraud
+    # 949: abandoned (Timed out)
+# fdl_answer_codes, Medoro, БПЦ
+    '950': *Contact-Technical-Support # Decline reason message. Violation of business arrangement # Системная ошибка
+# Metavante (MTBank)
+    # '950': Disagreement
+    '951': *Contact-Technical-Support # Decline reason message. Card expired
+    '952': *Contact-Technical-Support # Decline reason message. Suspected fraud
+    '953': *Contact-Technical-Support # Decline reason message. Restricted card
+    '954': *Contact-Technical-Support # Decline reason message. Invalid merchant
+    '955': *Contact-Technical-Support # Decline reason message. Invalid amont
+    '956': *Contact-Technical-Support # Decline reason message. Invalid card number
+    '957': *Contact-Technical-Support # Decline reason message. Unacceptable fee
+    '958': *Contact-Technical-Support # Decline reason message. Insufficient funds
+    '959': *Contact-Technical-Support # Decline reason message. Bad PIN
+    '960': *Contact-Technical-Support # Decline reason message. Trans not allowed to cardholder
+    '961': *Contact-Technical-Support # Decline reason message. Trans not allowed to terminal
+    '962': *Contact-Technical-Support # Decline reason message. Exceeds amount limit
+    '963': *Contact-Technical-Support # Decline reason message. Security violation
+    '964': *Contact-Technical-Support # Decline reason message. Exceeds frequency limit
+    '965': *Contact-Technical-Support # Decline reason message. Violation of law
+    '966': *Contact-Technical-Support # Decline reason message. Reconciliation/checkpoint error
+    '967': *Contact-Technical-Support # Decline reason message. MAC incorrect
+    '968': *Contact-Technical-Support # Decline reason message. MAC key sync error
+    '969': *Contact-Technical-Support # Decline reason message. No comms key available
+    '970': *Contact-Technical-Support # Decline reason message. Encryption key sync error
+    '971': *Contact-Technical-Support # Decline reason message. Security error, try again
+    '972': *Contact-Technical-Support # Decline reason message. Security error, no action
+    '973': *Contact-Technical-Support # Decline reason message. Message out of sequence
+...
