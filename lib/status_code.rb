@@ -29,7 +29,7 @@ class StatusCode
 
   def set_locale
     if LOCALES.include?(locale)
-      I18n.locale = locale if LOCALES.include?(locale)
+      I18n.locale = locale
     else
       I18n.locale = DEFAULT_LOCALE
     end
