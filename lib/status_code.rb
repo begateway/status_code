@@ -5,9 +5,10 @@ require 'pry'
 class StatusCode
   attr_reader :code, :locale
 
+  DEFAULT_LOCALE = :en
   LOCALES = [:en, :ru].freeze
 
-  def initialize(code, locale = :en)
+  def initialize(code, locale = DEFAULT_LOCALE)
     @code = code.to_s
     @locale = locale.to_sym if locale
     set_locales_settings
@@ -27,6 +28,10 @@ class StatusCode
   end
 
   def set_locale
-    I18n.locale = locale if LOCALES.include?(locale)
+    if LOCALES.include?(locale)
+      I18n.locale = locale if LOCALES.include?(locale)
+    else
+      I18n.locale = DEFAULT_LOCALE
+    end
   end
 end
