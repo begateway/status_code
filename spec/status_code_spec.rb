@@ -3,7 +3,11 @@ require 'status_code'
 
 describe StatusCode do
   describe '#decode' do
-    context 'with default locale' do
+    subject { StatusCode.new(code, locale).decode(receiver) }
+
+    context 'with english language' do
+      let(:locale) { :en }
+
       context 'with merchant receiver' do
         let(:receiver) { :merchant }
 
@@ -12,7 +16,7 @@ describe StatusCode do
           let(:message) { 'Approved' }
 
           it 'returns approve message' do
-            expect(StatusCode.new(code).decode(receiver)).to eql(message)
+            expect(subject).to eql(message)
           end
         end
 
@@ -21,14 +25,14 @@ describe StatusCode do
           let(:message) { 'Decline (general, no comments)' }
 
           it 'returns decline message' do
-            expect(StatusCode.new(code).decode(receiver)).to eql(message)
+            expect(subject).to eql(message)
           end
         end
 
         context 'with unknown code' do
           let(:code) { '99999' }
           it 'returns nil' do
-            expect(StatusCode.new(code).decode(receiver)).to be_nil
+            expect(subject).to be_nil
           end
         end
       end
@@ -41,7 +45,7 @@ describe StatusCode do
           let(:message) { 'Approved' }
 
           it 'returns approve message' do
-            expect(StatusCode.new(code).decode(receiver)).to eql(message)
+            expect(subject).to eql(message)
           end
         end
 
@@ -54,7 +58,7 @@ describe StatusCode do
           end
 
           it 'returns decline message' do
-            expect(StatusCode.new(code).decode(receiver)).to eql(message)
+            expect(subject).to eql(message)
           end
         end
 
@@ -62,14 +66,15 @@ describe StatusCode do
           let(:code) { '99999' }
 
           it 'returns nil' do
-            expect(StatusCode.new(code).decode(receiver)).to be_nil
+            expect(subject).to be_nil
           end
         end
       end
     end
 
-    context 'with :ru locale' do
+    context 'with russian language' do
       let(:locale) { :ru }
+
       context 'with merchant receiver' do
         let(:receiver) { :merchant }
 
@@ -78,8 +83,7 @@ describe StatusCode do
           let(:message) { 'Одобрено' }
 
           it 'returns approve message' do
-            expect(StatusCode.new(code, locale)
-                              .decode(receiver)).to eql(message)
+            expect(subject).to eql(message)
           end
         end
 
@@ -88,15 +92,14 @@ describe StatusCode do
           let(:message) { 'Отказ' }
 
           it 'returns decline message' do
-            expect(StatusCode.new(code, locale)
-                              .decode(receiver)).to eql(message)
+            expect(subject).to eql(message)
           end
         end
 
         context 'with unknown code' do
           let(:code) { '99999' }
           it 'returns nil' do
-            expect(StatusCode.new(code, locale).decode(receiver)).to be_nil
+            expect(subject).to be_nil
           end
         end
       end
@@ -109,8 +112,7 @@ describe StatusCode do
           let(:message) { 'Одобрено' }
 
           it 'returns approve message' do
-            expect(StatusCode.new(code, locale)
-                              .decode(receiver)).to eql(message)
+            expect(subject).to eql(message)
           end
         end
 
@@ -123,8 +125,7 @@ describe StatusCode do
           end
 
           it 'returns decline message' do
-            expect(StatusCode.new(code, locale)
-                              .decode(receiver)).to eql(message)
+            expect(subject).to eql(message)
           end
         end
 
@@ -132,9 +133,30 @@ describe StatusCode do
           let(:code) { '99999' }
 
           it 'returns nil' do
-            expect(StatusCode.new(code, locale).decode(receiver)).to be_nil
+            expect(subject).to be_nil
           end
         end
+      end
+    end
+
+    context 'when locale is unknown' do
+      let(:locale) { :zz }
+      let(:code) { '000' }
+
+      it 'returns approve message' do
+        StatusCode.new(code, locale)
+
+        expect(I18n.locale).to eql(:en)
+      end
+    end
+
+    context "when locale isn's set" do
+      let(:code) { '000' }
+
+      it 'returns approve message' do
+        StatusCode.new(code)
+
+        expect(I18n.locale).to eql(:en)
       end
     end
   end
