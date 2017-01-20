@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'status_code'
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
   s.date        = '2017-01-20'
   s.summary     = 'Decodes credit card transaction status code'
   s.description = 'Returns decoding credit card transaction status code' \
