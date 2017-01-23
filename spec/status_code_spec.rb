@@ -3,7 +3,7 @@ require 'status_code'
 
 describe StatusCode do
   describe '#decode' do
-    subject { StatusCode.new(code, locale).decode(receiver) }
+    subject { StatusCode.new(code, locale: locale).decode(receiver) }
 
     context 'with english language' do
       let(:locale) { :en }
@@ -144,7 +144,7 @@ describe StatusCode do
       let(:code) { '000' }
 
       it 'returns approve message' do
-        StatusCode.new(code, locale)
+        StatusCode.new(code, locale: locale)
 
         expect(I18n.locale).to eql(:en)
       end
@@ -157,6 +157,41 @@ describe StatusCode do
         StatusCode.new(code)
 
         expect(I18n.locale).to eql(:en)
+      end
+    end
+
+    context 'with gateway' do
+      let(:receiver) { :merchant }
+      subject { StatusCode.new(code, gateway: gateway).decode(receiver) }
+
+      context 'with special gateway code' do
+        let(:gateway) { 'payvision' }
+        let(:code) { '130' }
+        let(:message) { 'Decline, invalid Track2' }
+
+        it 'returns approve message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with general code' do
+        let(:gateway) { 'payvision' }
+        let(:code) { '000' }
+        let(:message) { 'Approved' }
+
+        it 'returns approve message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with unknown gateway' do
+        let(:gateway) { 'ZZZZZ' }
+        let(:code) { '000' }
+        let(:message) { 'Approved' }
+
+        it 'returns approve message' do
+          expect(subject).to eql(message)
+        end
       end
     end
   end

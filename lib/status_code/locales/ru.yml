@@ -70,15 +70,6 @@ ru:
     '127': Отказ, неверная длина PIN-код # Decline, PIN length error
     '128': Отказ, ошибка обработки PIN-код # Decline, PIN key synch error
     '129': Отказ, возможно, поддельная карта # Decline, suspected counterfeit card
-# Payvision
-    # 130: Decline, invalid Track2
-    # 131: Decline, invalid Expiration Date
-    # 161: Decline, DCC transaction not allowed to cardholder
-    # 162: Decline, DCC cardholder currency not supported
-    # 163: Decline, DCC exceeds time limit for withdrawal
-    # 164: Decline, DCC transaction not allowed to terminal
-    # 165: Decline, DCC not allowed to merchant
-    # 166: Decline, DCC unknown error
 # fdl_answer_codes
     '164': *100 # Decline, no acquires service
     '165': *100 # Decline, not fulfill AML requirements
@@ -101,10 +92,6 @@ ru:
     '180': Отказ, по желанию держателя карты # Decline, by cardholders wish
 # Russian Standard Bank
   # 181 - 199: Decline, Card is not active
-# Medoro
-    # 181: 3d secure authentication is currently unavailable >
-    #          (Enrollment status = E)
-    # 182: 3d secure authentication failed (Authentication status = N)
 # Russian Standard Bank, Metavante (MTBank)
     '181': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, amount too big for ATM
     '182': *100 # Отказ: Карта не активна(Russian Standard Bank) # Decline, ATM out of cash
@@ -200,25 +187,6 @@ ru:
     '800': *Ac # Одобрено # Accepted (for network management)
 # Metavante (MTBank)
     '880': *Ac # Одобрено # Accepted (Network Management & Key Change response codes)
-# Payvision
-    # 902: False transaction
-    # 904: Form error
-    # 907: Issuer not responding
-    # 908: Message can not be routed
-    # 909: System error
-    # 910: Issuer did not respond
-    # 911: Issuer timed out
-    # 912: Issuer not reachable
-    # 913: Double transaction transmission
-    # 914: Original transaction can not be traced
-    # 916: Merchant not found
-    # 950: No financial record found for detail data
-    # 951: Batch already closed
-    # 952: Invalid batch number
-    # 953: Host timeout
-    # 954: Batch not closed
-    # 955: Merchant not active
-    # 956: Transaction number not unique
 # Russian Standard Bank, БПЦ , fdl_answer_codes
     '900': Запрос авторизован, никаких финансовых обязательств не одобрено # Одобрено # Advice acknowledged, no financial liability accepted
     '901': Запрос авторизован, финансовые обязательства одобрены  # Одобрено # Advice acknowledged, finansial liability accepted
@@ -247,14 +215,6 @@ ru:
     '923': Обратитесь к дежурной службе, запрос обрабатывается # Системная ошибка # Status message. Request in progress
 # Metavante (MTBank)
     '940': Обратитесь к дежурной службе, ошибка даты/времени транзакции # Decline reason message. Invalid transaction date/time.(Correct date and re-send transaction.)
-# Medoro
-    # 940: could not obtain agreement for this payment
-    # 941: agreement suspended or closed
-    # 942: original credit transaction is illegible for this PAN (at least one deposited payment required)
-    # 945: card enrollment verification in 3d secure failed (Incorrect VeRes; DS not available; merchant is not participating in 3d)
-    # 946: 3d secure field extraction from PaRes failed (Incorrect PaRes; Incorrect certificate)
-    # 948: suspected fraud
-    # 949: abandoned (Timed out)
 # Russian Standard Bank, БПЦ, fdl_answer_codes, Medoro
     '950': Отказ, недопустимая операция # Системная ошибка # Decline reason message. Violation of business arrangement
 # Metavante (MTBank)
@@ -282,6 +242,48 @@ ru:
     '971': Отказ, ошибка шифрования # Decline reason message. Security error, try again
     '972': Отказ, ошибка шифрования # Decline reason message. Security error, no action
     '973': Отказ, неверный номер сообщения # Decline reason message. Message out of sequence
+    payvision:
+      '130': Decline, invalid Track2
+      '131': Decline, invalid Expiration Date
+      '161': Decline, DCC transaction not allowed to cardholder
+      '162': Decline, DCC cardholder currency not supported
+      '163': Decline, DCC exceeds time limit for withdrawal
+      '164': Decline, DCC transaction not allowed to terminal
+      '165': Decline, DCC not allowed to merchant
+      '166': Decline, DCC unknown error
+      '902': False transaction
+      '904': Form error
+      '907': Issuer not responding
+      '908': Message can not be routed
+      '909': System error
+      '910': Issuer did not respond
+      '911': Issuer timed out
+      '912': Issuer not reachable
+      '913': Double transaction transmission
+      '914': Original transaction can not be traced
+      '916': Merchant not found
+      '950': No financial record found for detail data
+      '951': Batch already closed
+      '952': Invalid batch number
+      '953': Host timeout
+      '954': Batch not closed
+      '955': Merchant not active
+      '956': Transaction number not unique
+    medoro:
+      '181': 3d secure authentication is currently unavailable >
+        (Enrollment status = E)
+      '182': 3d secure authentication failed >
+        (Authentication status = N)
+      '940': could not obtain agreement for this payment
+      '941': agreement suspended or closed
+      '942': original credit transaction is illegible for this PAN >
+        (at least one deposited payment required)
+      '945': card enrollment verification in 3d secure failed >
+        (Incorrect VeRes; DS not available; merchant is not participating in 3d)
+      '946': 3d secure field extraction from PaRes failed >
+        (Incorrect PaRes; Incorrect certificate)
+      '948': suspected fraud
+      '949': abandoned (Timed out)
   customer:
     '0': &Approved Одобрено # Approved
     '00': *Approved
@@ -353,15 +355,6 @@ ru:
     '127': *Call-Bank # Decline, PIN length error
     '128': *Call-Bank # Decline, PIN key synch error
     '129': *Contact-Technical-Support # Decline, suspected counterfeit card
-# Payvision
-    # 130: Decline, invalid Track2
-    # 131: Decline, invalid Expiration Date
-    # 161: Decline, DCC transaction not allowed to cardholder
-    # 162: Decline, DCC cardholder currency not supported
-    # 163: Decline, DCC exceeds time limit for withdrawal
-    # 164: Decline, DCC transaction not allowed to terminal
-    # 165: Decline, DCC not allowed to merchant
-    # 166: Decline, DCC unknown error
 # fdl_answer_codes
     '164': *Contact-Technical-Support # Decline, no acquires service
     '165': *Contact-Technical-Support # Decline, not fulfill AML requirements
@@ -384,10 +377,6 @@ ru:
     '180': *Call-Bank # Decline, by cardholders wish
 # Russian Standard Bank
   # 181 - 199: Decline, Card is not active
-# Medoro
-    # 181: 3d secure authentication is currently unavailable >
-    #          (Enrollment status = E)
-    # 182: 3d secure authentication failed (Authentication status = N)
 # Metavante (MTBank)
     '181': *Call-Bank # Decline, amount too big for ATM
     '182': *Call-Bank # Decline, ATM out of cash
@@ -483,25 +472,6 @@ ru:
     '800': *Contact-Technical-Support # Accepted (for network management) # Одобрено
 # Metavante (MTBank)
     '880': *Contact-Technical-Support # Accepted (Network Management & Key Change response codes)
-# Payvision
-    # 902: False transaction
-    # 904: Form error
-    # 907: Issuer not responding
-    # 908: Message can not be routed
-    # 909: System error
-    # 910: Issuer did not respond
-    # 911: Issuer timed out
-    # 912: Issuer not reachable
-    # 913: Double transaction transmission
-    # 914: Original transaction can not be traced
-    # 916: Merchant not found
-    # 950: No financial record found for detail data
-    # 951: Batch already closed
-    # 952: Invalid batch number
-    # 953: Host timeout
-    # 954: Batch not closed
-    # 955: Merchant not active
-    # 956: Transaction number not unique
 # fdl_answer_codes, БПЦ
     '900': *Contact-Technical-Support # Advice acknowledged, no financial liability accepted # Одобрено
     '901': *Contact-Technical-Support # Advice acknowledged, finansial liability accepted # Одобрено
@@ -530,14 +500,6 @@ ru:
     '923': *Contact-Technical-Support # Status message. Request in progress
 # Metavante (MTBank)
     '940': *Contact-Technical-Support # Decline reason message. Invalid transaction date/time.(Correct date and re-send transaction.)
-# Medoro
-    # 940: could not obtain agreement for this payment
-    # 941: agreement suspended or closed
-    # 942: original credit transaction is illegible for this PAN (at least one deposited payment required)
-    # 945: card enrollment verification in 3d secure failed (Incorrect VeRes; DS not available; merchant is not participating in 3d)
-    # 946: 3d secure field extraction from PaRes failed (Incorrect PaRes; Incorrect certificate)
-    # 948: suspected fraud
-    # 949: abandoned (Timed out)
 # fdl_answer_codes, Medoro, БПЦ
     '950': *Contact-Technical-Support # Decline reason message. Violation of business arrangement # Системная ошибка
 # Metavante (MTBank)
@@ -565,4 +527,41 @@ ru:
     '971': *Contact-Technical-Support # Decline reason message. Security error, try again
     '972': *Contact-Technical-Support # Decline reason message. Security error, no action
     '973': *Contact-Technical-Support # Decline reason message. Message out of sequence
+    payvision:
+      '130': *Contact-Technical-Support # Decline, invalid Track2
+      '131': *Contact-Technical-Support # Decline, invalid Expiration Date
+      '161': *Contact-Technical-Support # Decline, DCC transaction not allowed to cardholder
+      '162': *Contact-Technical-Support # Decline, DCC cardholder currency not supported
+      '163': *Contact-Technical-Support # Decline, DCC exceeds time limit for withdrawal
+      '164': *Contact-Technical-Support # Decline, DCC transaction not allowed to terminal
+      '165': *Contact-Technical-Support # Decline, DCC not allowed to merchant
+      '166': *Contact-Technical-Support # Decline, DCC unknown error
+      '902': *Contact-Technical-Support # False transaction
+      '904': *Contact-Technical-Support # Form error
+      '907': *Contact-Technical-Support # Issuer not responding
+      '908': *Contact-Technical-Support # Message can not be routed
+      '909': *Contact-Technical-Support # System error
+      '910': *Contact-Technical-Support # Issuer did not respond
+      '911': *Contact-Technical-Support # Issuer timed out
+      '912': *Contact-Technical-Support # Issuer not reachable
+      '913': *Contact-Technical-Support # Double transaction transmission
+      '914': *Contact-Technical-Support # Original transaction can not be traced
+      '916': *Contact-Technical-Support # Merchant not found
+      '950': *Contact-Technical-Support # No financial record found for detail data
+      '951': *Contact-Technical-Support # Batch already closed
+      '952': *Contact-Technical-Support # Invalid batch number
+      '953': *Contact-Technical-Support # Host timeout
+      '954': *Contact-Technical-Support # Batch not closed
+      '955': *Contact-Technical-Support # Merchant not active
+      '956': *Contact-Technical-Support # Transaction number not unique
+    medoro:
+      '181': *Contact-Technical-Support # 3d secure authentication is currently unavailable (Enrollment status = E)
+      '182': *Contact-Technical-Support # 3d secure authentication failed (Authentication status = N)
+      '940': *Contact-Technical-Support # could not obtain agreement for this payment
+      '941': *Contact-Technical-Support # agreement suspended or closed
+      '942': *Contact-Technical-Support # original credit transaction is illegible for this PAN (at least one deposited payment required)
+      '945': *Contact-Technical-Support # card enrollment verification in 3d secure failed (Incorrect VeRes; DS not available; merchant is not participating in 3d)
+      '946': *Contact-Technical-Support # 3d secure field extraction from PaRes failed (Incorrect PaRes; Incorrect certificate)
+      '948': *Contact-Technical-Support # suspected fraud
+      '949': *Contact-Technical-Support # abandoned (Timed out)
 ...
