@@ -1,23 +1,21 @@
 # frozen_string_literal: true
 require 'i18n'
-require 'pry'
 
 class StatusCode
-  attr_reader :code, :locale, :gateway
-
-  DEFAULT_LOCALE = :en
-  LOCALES = [:en, :ru].freeze
+  attr_reader :code, :gateway, :locales_path, :locales
 
   def initialize(code, options = {})
     @code = code.to_s
-    @locale = options[:locale].to_sym.downcase if options.key?(:locale)
-    @gateway = options[:gateway].to_s.downcase if options[:gateway]
+    @gateway = options[:gateway].to_s.downcase
+    @locales_path = './lib/status_code/locales/*.yml'
+    @locales = set_locales
     set_locales_settings
-    set_locale
+    set_locale(options[:locale].to_s.downcase.to_sym)
   end
 
-  def decode(receiver)
-    if gateway && I18n.exists?("#{receiver}.#{gateway}.#{code}")
+  def decode(receiver_param)
+    receiver = receiver_param.to_s.downcase
+    if I18n.exists?("#{receiver}.#{gateway}.#{code}")
       I18n.t("#{receiver}.#{gateway}.#{code}")
     elsif I18n.exists?("#{receiver}.#{code}")
       I18n.t("#{receiver}.#{code}")
@@ -26,17 +24,25 @@ class StatusCode
 
   private
 
+  def set_locales
+    locales_array = []
+    Dir.glob(locales_path) do |file|
+      locales_array << File.basename(file, '.yml').to_sym
+    end
+    locales_array
+  end
+
   def set_locales_settings
-    I18n.config.available_locales = LOCALES
-    I18n.load_path = Dir['./lib/status_code/locales/*.yml']
+    I18n.config.available_locales = locales
+    I18n.load_path = Dir[locales_path]
     I18n.backend.load_translations
   end
 
-  def set_locale
-    if locale && LOCALES.include?(locale)
+  def set_locale(locale)
+    if locales.include?(locale)
       I18n.locale = locale
     else
-      I18n.locale = DEFAULT_LOCALE
+      I18n.locale = :en
     end
   end
 end
