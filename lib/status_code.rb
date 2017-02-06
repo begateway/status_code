@@ -7,7 +7,7 @@ class StatusCode
   def initialize(code, options = {})
     @code = code.to_s
     @gateway = options[:gateway].to_s.downcase
-    @locales_path = './lib/status_code/locales/*.yml'
+    @locales_path = "#{__dir__}/status_code/locales/*.yml"
     @locales = set_locales
     set_locales_settings
     set_locale(options[:locale].to_s.downcase.to_sym)
