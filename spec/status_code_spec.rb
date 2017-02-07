@@ -55,7 +55,7 @@ describe StatusCode do
             let(:message) do
               'The payment has been declined by your card bank.' \
                 ' Call the bank support line to find out a reason.' \
-                ' Your bank phone number is on the card back side.'
+                ' Your bank phone number is on the card back side'
             end
 
             it 'returns decline message' do
@@ -122,7 +122,7 @@ describe StatusCode do
             let(:message) do
               'Платеж отклонен банком, выпустившим вашу карту.' \
                 ' Обратитесь в банк за разъяснением.' \
-                ' Контактный телефон на обратной стороне карты.'
+                ' Контактный телефон на обратной стороне карты'
             end
 
             it 'returns decline message' do
@@ -190,6 +190,22 @@ describe StatusCode do
         let(:gateway) { 'ZZZZZ' }
         let(:code) { '000' }
         let(:message) { 'Approved' }
+
+        it 'returns approve message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with locale' do
+        subject do
+          StatusCode.new(code, gateway: gateway, locale: locale)
+                    .decode(receiver)
+        end
+        let(:receiver) { :merchant }
+        let(:gateway) { 'mtb_halva' }
+        let(:locale) { :en }
+        let(:code) { '002' }
+        let(:message) { 'Approved for a partial amount' }
 
         it 'returns approve message' do
           expect(subject).to eql(message)
