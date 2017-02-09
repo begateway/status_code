@@ -227,5 +227,26 @@ describe StatusCode do
         expect(subject).to eql(message)
       end
     end
+
+    context 'without gateway and locale' do
+      context 'when code is nil' do
+        let(:code) { nil }
+
+        it 'raises an error' do
+          expect { StatusCode.new(code) }
+            .to raise_error(ArgumentError,
+                            'The code argument should be String or Symbol')
+        end
+      end
+
+      context 'when code is a whitespace' do
+        let(:receiver) { :merchant }
+        let(:code) { ' ' }
+
+        it 'returns nil' do
+          expect(StatusCode.new(code).decode(receiver)).to be_nil
+        end
+      end
+    end
   end
 end
