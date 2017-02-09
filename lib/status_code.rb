@@ -5,12 +5,16 @@ class StatusCode
   attr_reader :code, :gateway, :locales_path, :locales
 
   def initialize(code, options = {})
-    @code = code.to_s
-    @gateway = options[:gateway].to_s.downcase
-    @locales_path = "#{__dir__}/status_code/locales/*.yml"
-    @locales = set_locales
-    set_locales_settings
-    set_locale(options[:locale].to_s.downcase.to_sym)
+    if code.is_a?(String) || code.is_a?(Symbol)
+      @code = code
+      @gateway = options[:gateway].to_s.downcase
+      @locales_path = "#{__dir__}/status_code/locales/*.yml"
+      @locales = set_locales
+      set_locales_settings
+      set_locale(options[:locale].to_s.downcase.to_sym)
+    else
+      raise ArgumentError, 'The code argument should be String or Symbol'
+    end
   end
 
   def decode(receiver_param)
