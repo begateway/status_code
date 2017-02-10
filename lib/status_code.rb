@@ -2,51 +2,45 @@
 require 'i18n'
 
 class StatusCode
-  attr_reader :code, :gateway, :locales_path, :locales
+  attr_reader :gateway, :locales
+  LOCALES_PATH = "#{__dir__}/status_code/locales/*.yml".freeze
 
-  def initialize(code, options = {})
-    if code.is_a?(String) || code.is_a?(Symbol)
-      @code = code
-      @gateway = options[:gateway].to_s.downcase
-      @locales_path = "#{__dir__}/status_code/locales/*.yml"
-      @locales = set_locales
-      set_locales_settings
-      set_locale(options[:locale].to_s.downcase.to_sym)
-    else
-      raise ArgumentError, 'The code argument should be String or Symbol'
-    end
+  def initialize(options = {})
+    @gateway = options[:gateway].to_s.downcase
+    @locales = set_locales
+    specify_locales_settings(options[:locale].to_s.downcase.to_sym)
   end
 
-  def decode(receiver_param)
-    receiver = receiver_param.to_s.downcase
-    if I18n.exists?("#{receiver}.#{gateway}.#{code}")
-      I18n.t("#{receiver}.#{gateway}.#{code}")
-    elsif I18n.exists?("#{receiver}.#{code}")
-      I18n.t("#{receiver}.#{code}")
-    end
+  def decode(code, receiver)
+    code ? find_message(code.to_s, receiver.to_s.downcase) : nil
   end
 
   private
 
   def set_locales
     locales_array = []
-    Dir.glob(locales_path) do |file|
+    Dir.glob(LOCALES_PATH) do |file|
       locales_array << File.basename(file, '.yml').to_sym
     end
     locales_array
   end
 
-  def set_locales_settings
+  def specify_locales_settings(locale)
     I18n.config.available_locales = locales
-    I18n.load_path = Dir[locales_path]
+    I18n.load_path = Dir[LOCALES_PATH]
     I18n.backend.load_translations
+    define_locale(locale)
   end
 
-  def set_locale(locale)
-    if locales.include?(locale)
-      I18n.locale = locale
-    else
-      I18n.locale = :en
+  def define_locale(locale)
+    I18n.locale = locales.include?(locale) ? locale : :en
+  end
+
+  def find_message(code, receiver)
+    if I18n.exists?("#{receiver}.#{gateway}.#{code}")
+      I18n.t("#{receiver}.#{gateway}.#{code}")
+    elsif I18n.exists?("#{receiver}.#{code}")
+      I18n.t("#{receiver}.#{code}")
     end
   end
 end

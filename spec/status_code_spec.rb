@@ -4,7 +4,7 @@ require 'status_code'
 describe StatusCode do
   describe '#decode' do
     context 'with definite locale' do
-      subject { StatusCode.new(code, locale: locale).decode(receiver) }
+      subject { StatusCode.new(locale: locale).decode(code, receiver) }
 
       context 'with english locale' do
         let(:locale) { :en }
@@ -143,10 +143,9 @@ describe StatusCode do
 
     context 'when locale is unknown' do
       let(:locale) { :zz }
-      let(:code) { '000' }
 
       it 'returns approve message' do
-        StatusCode.new(code, locale: locale)
+        StatusCode.new(locale: locale)
 
         expect(I18n.locale).to eql(:en)
       end
@@ -154,9 +153,10 @@ describe StatusCode do
 
     context "when locale isn's set" do
       let(:code) { '000' }
+      let(:receiver) { :merchant }
 
       it 'returns approve message' do
-        StatusCode.new(code)
+        StatusCode.new.decode(code, receiver)
 
         expect(I18n.locale).to eql(:en)
       end
@@ -164,7 +164,7 @@ describe StatusCode do
 
     context 'with gateway' do
       let(:receiver) { :merchant }
-      subject { StatusCode.new(code, gateway: gateway).decode(receiver) }
+      subject { StatusCode.new(gateway: gateway).decode(code, receiver) }
 
       context 'with special gateway code' do
         let(:gateway) { 'payvision' }
@@ -198,8 +198,8 @@ describe StatusCode do
 
       context 'with locale' do
         subject do
-          StatusCode.new(code, gateway: gateway, locale: locale)
-                    .decode(receiver)
+          StatusCode.new(gateway: gateway, locale: locale)
+                    .decode(code, receiver)
         end
 
         context 'with mtb_halva gateway' do
@@ -230,7 +230,7 @@ describe StatusCode do
 
     context 'when gateway and locale are nil' do
       subject do
-        StatusCode.new(code, gateway: gateway, locale: locale).decode(receiver)
+        StatusCode.new(gateway: gateway, locale: locale).decode(code, receiver)
       end
       let(:receiver) { :merchant }
       let(:gateway) { nil }
@@ -244,22 +244,24 @@ describe StatusCode do
     end
 
     context 'without gateway and locale' do
+      subject do
+        StatusCode.new.decode(code, receiver)
+      end
+      let(:receiver) { :merchant }
+
       context 'when code is nil' do
         let(:code) { nil }
 
-        it 'raises an error' do
-          expect { StatusCode.new(code) }
-            .to raise_error(ArgumentError,
-                            'The code argument should be String or Symbol')
+        it 'returns nil' do
+          expect(subject).to be_nil
         end
       end
 
       context 'when code is a whitespace' do
-        let(:receiver) { :merchant }
         let(:code) { ' ' }
 
         it 'returns nil' do
-          expect(StatusCode.new(code).decode(receiver)).to be_nil
+          expect(subject).to be_nil
         end
       end
     end
