@@ -2,7 +2,7 @@
 ? 'no'
 :   # no:
   merchant:
-    '000': Approved
+    '000': Godkjent # Approved
     '001': Approved, honour with identification
     '002': Approved for partial amount
     '003': Approved for VIP
@@ -128,8 +128,8 @@
       '629': Status message. Unable to find the authorization request # Не найден авторизационный запрос
       '630': Status message. Exceeded confirmation time limit # Превышен лимит времени на подтверждение
       '698': Status message. The terminal is blocked # Терминал заблокирован
-      '900': Approved # Одобрено
-      '901': Approved # Одобрено
+      '900': Godkjent # Approved # Одобрено
+      '901': Godkjent # Approved # Одобрено
       '902': Decline # Нет разрешения
       '903': Re-enter transaction # Повторить операцию
       '904': System error # Системная ошибка
@@ -359,7 +359,7 @@
       '199': Decline, Card is not active
       '1001': System error. Contact with bank acquirer
   customer:
-    '000': &Approved Approved
+    '000': &Approved Godkjent # Approved
     '001': *Approved # Approved, honour with identification
     '002': *Approved # Approved for partial amount
     '003': *Approved # Approved for VIP
