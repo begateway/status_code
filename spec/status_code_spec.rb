@@ -201,14 +201,29 @@ describe StatusCode do
           StatusCode.new(code, gateway: gateway, locale: locale)
                     .decode(receiver)
         end
-        let(:receiver) { :merchant }
-        let(:gateway) { 'mtb_halva' }
-        let(:locale) { :en }
-        let(:code) { '002' }
-        let(:message) { 'Approved for a partial amount' }
 
-        it 'returns approve message' do
-          expect(subject).to eql(message)
+        context 'with mtb_halva gateway' do
+          let(:receiver) { :merchant }
+          let(:gateway) { 'mtb_halva' }
+          let(:locale) { :en }
+          let(:code) { '002' }
+          let(:message) { 'Approved for a partial amount' }
+
+          it 'returns approve message' do
+            expect(subject).to eql(message)
+          end
+        end
+
+        context 'with Norwegian locale' do
+          let(:receiver) { :customer }
+          let(:gateway) { 'mtb_halva' }
+          let(:locale) { :no }
+          let(:code) { '000' }
+          let(:message) { 'Godkjent' }
+
+          it 'returns approve message' do
+            expect(subject).to eql(message)
+          end
         end
       end
     end
