@@ -2,17 +2,17 @@
 require 'i18n'
 
 class StatusCode
-  attr_reader :gateway, :locales
   LOCALES_PATH = "#{__dir__}/status_code/locales/*.yml".freeze
 
-  def initialize(options = {})
-    @gateway = options[:gateway].to_s.downcase
-    @locales = set_locales
-    specify_locales_settings(options[:locale].to_s.downcase.to_sym)
+  def initialize
+    specify_locales_settings
   end
 
-  def decode(code, receiver)
-    code ? find_message(code.to_s, receiver.to_s.downcase) : nil
+  def decode(options)
+    if options[:code] && options[:receiver]
+      message = find_message(options)
+      message == '' ? nil : message
+    end
   end
 
   private
@@ -25,22 +25,21 @@ class StatusCode
     locales_array
   end
 
-  def specify_locales_settings(locale)
-    I18n.config.available_locales = locales
+  def specify_locales_settings
+    I18n.enforce_available_locales = false
     I18n.load_path = Dir[LOCALES_PATH]
     I18n.backend.load_translations
-    define_locale(locale)
   end
 
-  def define_locale(locale)
-    I18n.locale = locales.include?(locale) ? locale : :en
-  end
-
-  def find_message(code, receiver)
+  def find_message(options)
+    receiver = options[:receiver].to_s.downcase
+    code     = options[:code].to_s
+    gateway  = options[:gateway].to_s.downcase
+    locale   = options[:locale].to_s.downcase.to_sym if options[:locale]
     if I18n.exists?("#{receiver}.#{gateway}.#{code}")
-      I18n.t("#{receiver}.#{gateway}.#{code}")
+      I18n.t("#{receiver}.#{gateway}.#{code}", locale: locale, default: '')
     elsif I18n.exists?("#{receiver}.#{code}")
-      I18n.t("#{receiver}.#{code}")
+      I18n.t("#{receiver}.#{code}", locale: locale, default: '')
     end
   end
 end

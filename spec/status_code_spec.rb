@@ -3,203 +3,163 @@ require 'status_code'
 
 describe StatusCode do
   describe '#decode' do
-    context 'with definite locale' do
-      subject { StatusCode.new(locale: locale).decode(code, receiver) }
-
-      context 'with english locale' do
-        let(:locale) { :en }
-
-        context 'with merchant receiver' do
-          let(:receiver) { :merchant }
-
-          context 'with approval code' do
-            let(:code) { '000' }
-            let(:message) { 'Approved' }
-
-            it 'returns approve message' do
-              expect(subject).to eql(message)
-            end
-          end
-
-          context 'with decline code' do
-            let(:code) { '100' }
-            let(:message) { 'Decline (general, no comments)' }
-
-            it 'returns decline message' do
-              expect(subject).to eql(message)
-            end
-          end
-
-          context 'with unknown code' do
-            let(:code) { '99999' }
-            it 'returns nil' do
-              expect(subject).to be_nil
-            end
-          end
-        end
-
-        context 'with customer receiver' do
-          let(:receiver) { :customer }
-
-          context 'with approval code' do
-            let(:code) { '000' }
-            let(:message) { 'Approved' }
-
-            it 'returns approve message' do
-              expect(subject).to eql(message)
-            end
-          end
-
-          context 'with decline code' do
-            let(:code) { '100' }
-            let(:message) do
-              'The payment has been declined by your card bank.' \
-                ' Call the bank support line to find out a reason.' \
-                ' Your bank phone number is on the card back side'
-            end
-
-            it 'returns decline message' do
-              expect(subject).to eql(message)
-            end
-          end
-
-          context 'with unknown code' do
-            let(:code) { '99999' }
-
-            it 'returns nil' do
-              expect(subject).to be_nil
-            end
-          end
-        end
-      end
-
-      context 'with russian locale' do
-        let(:locale) { :ru }
-
-        context 'with merchant receiver' do
-          let(:receiver) { :merchant }
-
-          context 'with approval code' do
-            let(:code) { '000' }
-            let(:message) { 'Одобрено' }
-
-            it 'returns approve message' do
-              expect(subject).to eql(message)
-            end
-          end
-
-          context 'with decline code' do
-            let(:code) { '100' }
-            let(:message) { 'Отказ' }
-
-            it 'returns decline message' do
-              expect(subject).to eql(message)
-            end
-          end
-
-          context 'with unknown code' do
-            let(:code) { '99999' }
-            it 'returns nil' do
-              expect(subject).to be_nil
-            end
-          end
-        end
-
-        context 'with customer receiver' do
-          let(:receiver) { :customer }
-
-          context 'with approval code' do
-            let(:code) { '000' }
-            let(:message) { 'Одобрено' }
-
-            it 'returns approve message' do
-              expect(subject).to eql(message)
-            end
-          end
-
-          context 'with decline code' do
-            let(:code) { '100' }
-            let(:message) do
-              'Платеж отклонен банком, выпустившим вашу карту.' \
-                ' Обратитесь в банк за разъяснением.' \
-                ' Контактный телефон на обратной стороне карты'
-            end
-
-            it 'returns decline message' do
-              expect(subject).to eql(message)
-            end
-          end
-
-          context 'with unknown code' do
-            let(:code) { '99999' }
-
-            it 'returns nil' do
-              expect(subject).to be_nil
-            end
-          end
-        end
-      end
-    end
-
-    context 'when locale is unknown' do
-      let(:locale) { :zz }
-
-      it 'returns approve message' do
-        StatusCode.new(locale: locale)
-
-        expect(I18n.locale).to eql(:en)
-      end
-    end
-
-    context "when locale isn's set" do
-      let(:code) { '000' }
-      let(:receiver) { :merchant }
-
-      it 'returns approve message' do
-        StatusCode.new.decode(code, receiver)
-
-        expect(I18n.locale).to eql(:en)
-      end
-    end
-
-    context 'with gateway' do
-      let(:receiver) { :merchant }
-      subject { StatusCode.new(gateway: gateway).decode(code, receiver) }
-
-      context 'with special gateway code' do
-        let(:gateway) { 'payvision' }
-        let(:code) { '130' }
-        let(:message) { 'Decline, invalid Track2' }
-
-        it 'returns approve message' do
-          expect(subject).to eql(message)
-        end
-      end
-
-      context 'with general code' do
-        let(:gateway) { 'payvision' }
-        let(:code) { '000' }
-        let(:message) { 'Approved' }
-
-        it 'returns approve message' do
-          expect(subject).to eql(message)
-        end
-      end
-
-      context 'with unknown gateway' do
-        let(:gateway) { 'ZZZZZ' }
-        let(:code) { '000' }
-        let(:message) { 'Approved' }
-
-        it 'returns approve message' do
-          expect(subject).to eql(message)
-        end
-      end
-
-      context 'with locale' do
+    context 'with locale' do
+      context 'without getway' do
         subject do
-          StatusCode.new(gateway: gateway, locale: locale)
-                    .decode(code, receiver)
+          StatusCode.new.decode(code: code, receiver: receiver, locale: locale)
+        end
+
+        context 'with English locale' do
+          let(:locale) { :en }
+
+          context 'with merchant receiver' do
+            let(:receiver) { :merchant }
+
+            context 'with approval code' do
+              let(:code) { '000' }
+              let(:message) { 'Approved' }
+
+              it 'returns approve message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with decline code' do
+              let(:code) { '100' }
+              let(:message) { 'Decline (general, no comments)' }
+
+              it 'returns decline message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with unknown code' do
+              let(:code) { '99999' }
+              it 'returns nil' do
+                expect(subject).to be_nil
+              end
+            end
+          end
+
+          context 'with customer receiver' do
+            let(:receiver) { :customer }
+
+            context 'with approval code' do
+              let(:code) { '000' }
+              let(:message) { 'Approved' }
+
+              it 'returns approve message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with decline code' do
+              let(:code) { '100' }
+              let(:message) do
+                'The payment has been declined by your card bank.' \
+                  ' Call the bank support line to find out a reason.' \
+                  ' Your bank phone number is on the card back side'
+              end
+
+              it 'returns decline message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with unknown code' do
+              let(:code) { '99999' }
+
+              it 'returns nil' do
+                expect(subject).to be_nil
+              end
+            end
+          end
+        end
+
+        context 'with Russian locale' do
+          let(:locale) { :ru }
+
+          context 'with merchant receiver' do
+            let(:receiver) { :merchant }
+
+            context 'with approval code' do
+              let(:code) { '000' }
+              let(:message) { 'Одобрено' }
+
+              it 'returns approve message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with decline code' do
+              let(:code) { '100' }
+              let(:message) { 'Отказ' }
+
+              it 'returns decline message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with unknown code' do
+              let(:code) { '99999' }
+              it 'returns nil' do
+                expect(subject).to be_nil
+              end
+            end
+          end
+
+          context 'with customer receiver' do
+            let(:receiver) { :customer }
+
+            context 'with approval code' do
+              let(:code) { '000' }
+              let(:message) { 'Одобрено' }
+
+              it 'returns approve message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with decline code' do
+              let(:code) { '100' }
+              let(:message) do
+                'Платеж отклонен банком, выпустившим вашу карту.' \
+                  ' Обратитесь в банк за разъяснением.' \
+                  ' Контактный телефон на обратной стороне карты'
+              end
+
+              it 'returns decline message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with unknown code' do
+              let(:code) { '99999' }
+
+              it 'returns nil' do
+                expect(subject).to be_nil
+              end
+            end
+          end
+        end
+
+        context 'with unknown locale' do
+          let(:locale) { :zz }
+          let(:receiver) { :customer }
+          let(:code) { '000' }
+          let(:message) { 'Approved' }
+
+          it 'returns approve message' do
+            expect(subject).to be_nil
+          end
+        end
+      end
+      context 'with gateway' do
+        subject do
+          StatusCode.new.decode(code: code,
+                                receiver: receiver,
+                                locale: locale,
+                                gateway: gateway)
         end
 
         context 'with mtb_halva gateway' do
@@ -228,9 +188,67 @@ describe StatusCode do
       end
     end
 
+    context 'without locale' do
+      context 'with gateway' do
+        let(:receiver) { :merchant }
+        subject do
+          StatusCode.new.decode(code: code,
+                                receiver: receiver,
+                                gateway: gateway)
+        end
+
+        context 'with special gateway code' do
+          let(:gateway) { 'payvision' }
+          let(:code) { '130' }
+          let(:message) { 'Decline, invalid Track2' }
+
+          it 'returns approve message' do
+            expect(subject).to eql(message)
+          end
+        end
+
+        context 'with general code' do
+          let(:gateway) { 'payvision' }
+          let(:code) { '000' }
+          let(:message) { 'Approved' }
+
+          it 'returns approve message' do
+            expect(subject).to eql(message)
+          end
+        end
+
+        context 'with unknown gateway' do
+          let(:gateway) { 'ZZZZZ' }
+          let(:code) { '000' }
+          let(:message) { 'Approved' }
+
+          it 'returns approve message' do
+            expect(subject).to eql(message)
+          end
+        end
+      end
+
+      context 'without gateway' do
+        subject { StatusCode.new.decode(code: code, receiver: receiver) }
+
+        context 'without locale' do
+          let(:code) { '000' }
+          let(:receiver) { :customer }
+          let(:message) { 'Approved' }
+
+          it 'returns approve message' do
+            expect(subject).to eql(message)
+          end
+        end
+      end
+    end
+
     context 'when gateway and locale are nil' do
       subject do
-        StatusCode.new(gateway: gateway, locale: locale).decode(code, receiver)
+        StatusCode.new.decode(code: code,
+                              receiver: receiver,
+                              locale: locale,
+                              gateway: gateway)
       end
       let(:receiver) { :merchant }
       let(:gateway) { nil }
@@ -245,7 +263,7 @@ describe StatusCode do
 
     context 'without gateway and locale' do
       subject do
-        StatusCode.new.decode(code, receiver)
+        StatusCode.new.decode(code: code, receiver: receiver)
       end
       let(:receiver) { :merchant }
 
