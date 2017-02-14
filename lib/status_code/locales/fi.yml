@@ -1,7 +1,7 @@
 ---
 fi:
   merchant:
-    '000': Approved
+    '000': Hyväksytty # Approved
     '001': Approved, honour with identification
     '002': Approved for partial amount
     '003': Approved for VIP
@@ -127,8 +127,8 @@ fi:
       '629': Status message. Unable to find the authorization request # Не найден авторизационный запрос
       '630': Status message. Exceeded confirmation time limit # Превышен лимит времени на подтверждение
       '698': Status message. The terminal is blocked # Терминал заблокирован
-      '900': Approved # Одобрено
-      '901': Approved # Одобрено
+      '900': Hyväksytty # Approved # Одобрено
+      '901': Hyväksytty # Approved # Одобрено
       '902': Decline # Нет разрешения
       '903': Re-enter transaction # Повторить операцию
       '904': System error # Системная ошибка
@@ -358,7 +358,7 @@ fi:
       '199': Decline, Card is not active
       '1001': System error. Contact with bank acquirer
   customer:
-    '000': &Approved Approved
+    '000': &Approved Hyväksytty # Approved
     '001': *Approved # Approved, honour with identification
     '002': *Approved # Approved for partial amount
     '003': *Approved # Approved for VIP
@@ -366,9 +366,9 @@ fi:
     '005': *Approved # Approved, account type specified by card issuer
     '006': *Approved # Approved for partial amount, account type specified by card issuer
     '007': *Approved # Approved, update ICC
-    '100': &Call-Bank The payment has been declined by your card bank. Call the bank support line to find out a reason. Your bank phone number is on the card back side # Decline (general, no comments)
+    '100': &Call-Bank Korttisi myöntänyt pankki on estänyt maksun. Soita pankin tukinumeroon ja kysy estämisen syy. Puhelinnumero on kortin kääntöpuolella # The payment has been declined by your card bank. Call the bank support line to find out a reason. Your bank phone number is on the card back side # Decline (general, no comments)
     '101': *Call-Bank # Decline, expired card
-    '102': &Contact-Technical-Support The payment has been declined. Please contact Technical Support # Decline, suspected fraud
+    '102': &Contact-Technical-Support Maksu on estetty. Ota yhteys tekniseen tukeen # The payment has been declined. Please contact Technical Support # Decline, suspected fraud
     '103': *Contact-Technical-Support # Decline, card acceptor contact acquirer
     '104': *Call-Bank # Decline, restricted card
     '105': *Contact-Technical-Support # Decline, card acceptor call acquirer's security department

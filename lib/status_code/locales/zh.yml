@@ -366,9 +366,9 @@ zh:
     '005': *Approved # Approved, account type specified by card issuer
     '006': *Approved # Approved for partial amount, account type specified by card issuer
     '007': *Approved # Approved, update ICC
-    '100': &Call-Bank The payment has been declined by your card bank. Call the bank support line to find out a reason. Your bank phone number is on the card back side # Decline (general, no comments)
+    '100': &Call-Bank 付款已被您的發卡行拒絕。請致電銀行支援熱線以瞭解原因。您的銀行電話號碼位於卡的背面 # The payment has been declined by your card bank. Call the bank support line to find out a reason. Your bank phone number is on the card back side # Decline (general, no comments)
     '101': *Call-Bank # Decline, expired card
-    '102': &Contact-Technical-Support The payment has been declined. Please contact Technical Support # Decline, suspected fraud
+    '102': &Contact-Technical-Support 付款已拒絕。請聯絡技術支援 # The payment has been declined. Please contact Technical Support # Decline, suspected fraud
     '103': *Contact-Technical-Support # Decline, card acceptor contact acquirer
     '104': *Call-Bank # Decline, restricted card
     '105': *Contact-Technical-Support # Decline, card acceptor call acquirer's security department

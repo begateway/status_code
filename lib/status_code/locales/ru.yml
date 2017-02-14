@@ -16,7 +16,7 @@ ru:
     '104': Отказ, карта имеет ограничения # Decline, restricted card
     '105': Отказ, вызовите службу безопасности банка # Decline, card acceptor call acquirer's security department
     '106': Отказ, превышено число попыток ввода PIN - кода # Decline, allowable PIN tries exceeded
-    '107': Отказ, свяжитесь с эмитентом # Decline, refer to card issuer # '107': Decline, acceptor contact issuer
+    '107': Отказ, свяжитесь с эмитентом # Decline, refer to card issuer
     '108': Отказ, свяжитесь с эмитентом # Decline, refer to card issuer's special conditions
     '109': Отказ, неверный код терминала # Decline, invalid merchant
     '110': Отказ, неверная сумма # Decline, invalid amount
@@ -360,9 +360,9 @@ ru:
     '005': *Approved # Approved # Approved, account type specified by card issuer
     '006': *Approved # Decline # Approved for partial amount, account type specified by card issuer
     '007': *Approved # Approved # Approved, update ICC
-    '100': &Call-Bank Платеж отклонен банком, выпустившим вашу карту. Обратитесь в банк за разъяснением. Контактный телефон на обратной стороне карты  # The payment has been declined by your card bank. Call the bank support line to find out a reason. Your bank phone number is on the card back side. # Decline (general, no comments)
+    '100': &Call-Bank Платеж отклонен банком, выпустившим вашу карту. Обратитесь в банк за разъяснением. Контактный телефон на обратной стороне карты # The payment has been declined by your card bank. Call the bank support line to find out a reason. Your bank phone number is on the card back side. # Decline (general, no comments)
     '101': *Call-Bank # Decline, expired card
-    '102': &Contact-Technical-Support Платеж отклонен. Свяжитесь со службой технической поддержки # Decline, suspected fraud
+    '102': &Contact-Technical-Support Платеж отклонен. Свяжитесь со службой технической поддержки # The payment has been declined. Please contact Technical Support # Decline, suspected fraud
     '103': *Contact-Technical-Support # The payment has been declined. Please contact Technical Support
     '104': *Call-Bank # Decline, restricted card
     '105': *Contact-Technical-Support # Decline, card acceptor call acquirer's security department
