@@ -1,37 +1,22 @@
 # frozen_string_literal: true
 require 'i18n'
 
-class StatusCode
+module StatusCode
   LOCALES_PATH = "#{__dir__}/status_code/locales/*.yml".freeze
+  I18n.enforce_available_locales = false
+  I18n.load_path = Dir[LOCALES_PATH]
+  I18n.backend.load_translations
 
-  def initialize
-    specify_locales_settings
-  end
-
-  def decode(options)
+  def self.decode(options)
     if options[:code] && options[:receiver]
       message = find_message(options)
-      message == '' ? nil : message
+      message unless message == ''
     end
   end
 
   private
 
-  def set_locales
-    locales_array = []
-    Dir.glob(LOCALES_PATH) do |file|
-      locales_array << File.basename(file, '.yml').to_sym
-    end
-    locales_array
-  end
-
-  def specify_locales_settings
-    I18n.enforce_available_locales = false
-    I18n.load_path = Dir[LOCALES_PATH]
-    I18n.backend.load_translations
-  end
-
-  def find_message(options)
+  def self.find_message(options)
     receiver = options[:receiver].to_s.downcase
     code     = options[:code].to_s
     gateway  = options[:gateway].to_s.downcase

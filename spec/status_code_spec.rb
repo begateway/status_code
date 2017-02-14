@@ -6,7 +6,7 @@ describe StatusCode do
     context 'with locale' do
       context 'without getway' do
         subject do
-          StatusCode.new.decode(code: code, receiver: receiver, locale: locale)
+          StatusCode.decode(code: code, receiver: receiver, locale: locale)
         end
 
         context 'with English locale' do
@@ -156,10 +156,8 @@ describe StatusCode do
       end
       context 'with gateway' do
         subject do
-          StatusCode.new.decode(code: code,
-                                receiver: receiver,
-                                locale: locale,
-                                gateway: gateway)
+          StatusCode.decode(code: code, receiver: receiver,
+                            locale: locale, gateway: gateway)
         end
 
         context 'with mtb_halva gateway' do
@@ -192,9 +190,7 @@ describe StatusCode do
       context 'with gateway' do
         let(:receiver) { :merchant }
         subject do
-          StatusCode.new.decode(code: code,
-                                receiver: receiver,
-                                gateway: gateway)
+          StatusCode.decode(code: code, receiver: receiver, gateway: gateway)
         end
 
         context 'with special gateway code' do
@@ -229,7 +225,7 @@ describe StatusCode do
       end
 
       context 'without gateway' do
-        subject { StatusCode.new.decode(code: code, receiver: receiver) }
+        subject { StatusCode.decode(code: code, receiver: receiver) }
 
         context 'without locale' do
           let(:code) { '000' }
@@ -245,10 +241,8 @@ describe StatusCode do
 
     context 'when gateway and locale are nil' do
       subject do
-        StatusCode.new.decode(code: code,
-                              receiver: receiver,
-                              locale: locale,
-                              gateway: gateway)
+        StatusCode.decode(code: code, receiver: receiver,
+                          locale: locale, gateway: gateway)
       end
       let(:receiver) { :merchant }
       let(:gateway) { nil }
@@ -263,7 +257,7 @@ describe StatusCode do
 
     context 'without gateway and locale' do
       subject do
-        StatusCode.new.decode(code: code, receiver: receiver)
+        StatusCode.decode(code: code, receiver: receiver)
       end
       let(:receiver) { :merchant }
 
