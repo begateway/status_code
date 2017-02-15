@@ -8,22 +8,20 @@ module StatusCode
   I18n.backend.load_translations
 
   def self.decode(options)
-    handle_decode(options) if options[:code] && options[:receiver]
+    if options[:code] && options[:receiver]
+      receiver = options[:receiver].to_s.downcase
+      code     = options[:code].to_s
+      gw       = options[:gateway].to_s.downcase
+      locale   = options[:locale] ? options[:locale].to_s.downcase.to_sym : :en
+      find_message("#{receiver}.#{gw}.#{code}", "#{receiver}.#{code}", locale)
+    end
   end
 
   private_class_method
 
-  def self.handle_decode(options)
-    receiver = options[:receiver].to_s.downcase
-    code     = options[:code].to_s
-    gateway  = options[:gateway].to_s.downcase
-    locale   = options[:locale] ? options[:locale].to_s.downcase.to_sym : :en
-    find_messag("#{receiver}.#{gateway}.#{code}", "#{receiver}.#{code}", locale)
-  end
-
-  def self.find_messag(specific_code_path, general_code_path, locale)
-    message(specific_code_path, locale) || message(general_code_path, locale) ||
-      message(specific_code_path, :en) || message(general_code_path, :en)
+  def self.find_message(gw_message_path, general_message_path, locale)
+    message(gw_message_path, locale) || message(general_message_path, locale) ||
+      message(gw_message_path, :en) || message(general_message_path, :en)
   end
 
   def self.message(path, locale)
