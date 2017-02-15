@@ -8,21 +8,25 @@ module StatusCode
   I18n.backend.load_translations
 
   def self.decode(options)
-    find_message(options) if options[:code] && options[:receiver]
+    handle_decode(options) if options[:code] && options[:receiver]
   end
 
   private_class_method
 
-  def self.find_message(options)
+  def self.handle_decode(options)
     receiver = options[:receiver].to_s.downcase
     code     = options[:code].to_s
     gateway  = options[:gateway].to_s.downcase
-    locale   = options[:locale].to_s.downcase.to_sym if options[:locale]
-    locale ||= :en
-    if I18n.exists?("#{receiver}.#{gateway}.#{code}", locale)
-      I18n.t("#{receiver}.#{gateway}.#{code}", locale: locale)
-    elsif I18n.exists?("#{receiver}.#{code}", locale)
-      I18n.t("#{receiver}.#{code}", locale: locale)
-    end
+    locale   = options[:locale] ? options[:locale].to_s.downcase.to_sym : :en
+    find_messag("#{receiver}.#{gateway}.#{code}", "#{receiver}.#{code}", locale)
+  end
+
+  def self.find_messag(specific_code_path, general_code_path, locale)
+    message(specific_code_path, locale) || message(general_code_path, locale) ||
+      message(specific_code_path, :en) || message(general_code_path, :en)
+  end
+
+  def self.message(path, locale)
+    I18n.t(path, locale: locale) if I18n.exists?(path, locale)
   end
 end

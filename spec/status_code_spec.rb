@@ -150,7 +150,7 @@ describe StatusCode do
           let(:message) { 'Approved' }
 
           it 'returns approve message' do
-            expect(subject).to be_nil
+            expect(subject).to eql(message)
           end
         end
       end
