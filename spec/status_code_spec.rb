@@ -4,7 +4,7 @@ require 'status_code'
 describe StatusCode do
   describe '#decode' do
     context 'with locale' do
-      context 'without getway' do
+      context 'without gateway' do
         subject do
           StatusCode.decode(code: code, receiver: receiver, locale: locale)
         end
