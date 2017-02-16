@@ -3,25 +3,32 @@ require 'i18n'
 
 module StatusCode
   LOCALES_PATH = "#{__dir__}/status_code/locales/*.yml".freeze
-  I18n.enforce_available_locales = false
-  I18n.load_path = Dir[LOCALES_PATH]
-  I18n.backend.load_translations
 
-  def self.decode(options)
-    if options[:code] && options[:receiver]
-      receiver = options[:receiver].to_s.downcase
-      code     = options[:code].to_s
-      gw       = options[:gateway].to_s.downcase
-      locale   = options[:locale] ? options[:locale].to_s.downcase.to_sym : :en
-      find_message("#{receiver}.#{gw}.#{code}", "#{receiver}.#{code}", locale)
+  def self.decode(code, options = {})
+    if code
+      specify_locales_settings
+      if options
+        receiver = options[:receiver] || :customer
+        gw       = options[:gateway].to_s.downcase
+        locale   = options[:locale] || :en
+        find_message("#{receiver}.#{gw}.#{code}", "#{receiver}.#{code}", locale)
+      else
+        message("customer.#{code}", :en)
+      end
     end
   end
 
   private_class_method
 
-  def self.find_message(gw_message_path, general_message_path, locale)
-    message(gw_message_path, locale) || message(general_message_path, locale) ||
-      message(gw_message_path, :en) || message(general_message_path, :en)
+  def self.specify_locales_settings
+    I18n.enforce_available_locales = false
+    I18n.load_path = Dir[LOCALES_PATH]
+    I18n.backend.load_translations
+  end
+
+  def self.find_message(gw_msg_path, general_msg_path, locale)
+    message(gw_msg_path, locale) || message(general_msg_path, locale) ||
+      message(gw_msg_path, :en) || message(general_msg_path, :en)
   end
 
   def self.message(path, locale)
