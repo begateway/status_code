@@ -6,7 +6,7 @@ describe StatusCode do
     context 'with locale' do
       context 'without gateway' do
         subject do
-          StatusCode.decode(code: code, receiver: receiver, locale: locale)
+          StatusCode.decode(code, receiver: receiver, locale: locale)
         end
 
         context 'with English locale' do
@@ -156,8 +156,9 @@ describe StatusCode do
       end
       context 'with gateway' do
         subject do
-          StatusCode.decode(code: code, receiver: receiver,
-                            locale: locale, gateway: gateway)
+          StatusCode.decode(code, receiver: receiver,
+                                  locale: locale,
+                                  gateway: gateway)
         end
 
         context 'with mtb_halva gateway' do
@@ -190,7 +191,7 @@ describe StatusCode do
       context 'with gateway' do
         let(:receiver) { :merchant }
         subject do
-          StatusCode.decode(code: code, receiver: receiver, gateway: gateway)
+          StatusCode.decode(code, receiver: receiver, gateway: gateway)
         end
 
         context 'with special gateway code' do
@@ -225,7 +226,7 @@ describe StatusCode do
       end
 
       context 'without gateway' do
-        subject { StatusCode.decode(code: code, receiver: receiver) }
+        subject { StatusCode.decode(code, receiver: receiver) }
 
         context 'without locale' do
           let(:code) { '000' }
@@ -241,8 +242,9 @@ describe StatusCode do
 
     context 'when gateway and locale are nil' do
       subject do
-        StatusCode.decode(code: code, receiver: receiver,
-                          locale: locale, gateway: gateway)
+        StatusCode.decode(code, receiver: receiver,
+                                locale: locale,
+                                gateway: gateway)
       end
       let(:receiver) { :merchant }
       let(:gateway) { nil }
@@ -257,7 +259,7 @@ describe StatusCode do
 
     context 'without gateway and locale' do
       subject do
-        StatusCode.decode(code: code, receiver: receiver)
+        StatusCode.decode(code, receiver: receiver)
       end
       let(:receiver) { :merchant }
 
@@ -275,6 +277,19 @@ describe StatusCode do
         it 'returns nil' do
           expect(subject).to be_nil
         end
+      end
+    end
+
+    context 'with code only' do
+      let(:code) { '100' }
+      let(:message) do
+        'The payment has been declined by your card bank.' \
+          ' Call the bank support line to find out a reason.' \
+          ' Your bank phone number is on the card back side'
+      end
+
+      it 'returns message' do
+        expect(StatusCode.decode(code)).to eql(message)
       end
     end
   end
