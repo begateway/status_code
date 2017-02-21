@@ -3,10 +3,12 @@ require 'i18n'
 
 module StatusCode
   LOCALES_PATH = "#{__dir__}/status_code/locales/*.yml".freeze
+  I18n.enforce_available_locales = false
+  I18n.load_path += Dir[LOCALES_PATH]
+  I18n.backend.load_translations
 
   def self.decode(code, options = {})
     if code
-      specify_locales_settings
       if options
         receiver = options[:receiver] || :customer
         gw       = options[:gateway].to_s.downcase
@@ -19,12 +21,6 @@ module StatusCode
   end
 
   private_class_method
-
-  def self.specify_locales_settings
-    I18n.enforce_available_locales = false
-    I18n.load_path = Dir[LOCALES_PATH]
-    I18n.backend.load_translations
-  end
 
   def self.find_message(gw_msg_path, general_msg_path, locale)
     message(gw_msg_path, locale) || message(general_msg_path, locale) ||
