@@ -147,10 +147,9 @@ describe StatusCode do
           let(:locale) { :zz }
           let(:receiver) { :customer }
           let(:code) { '000' }
-          let(:message) { 'Approved' }
 
-          it 'returns approve message' do
-            expect(subject).to eql(message)
+          it 'returns nil' do
+            expect(subject).to be_nil
           end
         end
       end
