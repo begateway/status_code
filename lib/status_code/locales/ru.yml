@@ -1,0 +1,701 @@
+---
+ru:
+  merchant:
+    '000': Одобрено
+    '001': Одобрено, сверить паспорт # Approved, honour with identification
+    '002': Одобрено # Approved for partial amount
+    '003': Одобрено # Approved for VIP
+    '004': Одобрено # Approved, update track 3
+    '005': Одобрено # Approved, account type specified by card issuer
+    '006': Одобрено # Approved for partial amount, account type specified by card issuer
+    '007': Одобрено # Approved, update ICC
+    '100': Отказ # Decline, do not honour
+    '101': Отказ, карта просрочена # Decline, expired card
+    '102': Отказ # Decline, suspected fraud
+    '103': Отказ, свяжитесь с обслуживающим банком # Decline, card acceptor contact acquirer
+    '104': Отказ, карта имеет ограничения # Decline, restricted card
+    '105': Отказ, вызовите службу безопасности банка # Decline, card acceptor call acquirer's security department
+    '106': Отказ, превышено число попыток ввода PIN - кода # Decline, allowable PIN tries exceeded
+    '107': Отказ, свяжитесь с эмитентом # Decline, refer to card issuer
+    '108': Отказ, свяжитесь с эмитентом # Decline, refer to card issuer's special conditions
+    '109': Отказ, неверный код терминала # Decline, invalid merchant
+    '110': Отказ, неверная сумма # Decline, invalid amount
+    '111': Отказ, неверный номер карты # Decline, invalid card number
+    '112': Отказ, нужен ввод PIN-код # Decline, PIN data required
+    '113': Отказ, недопустимая комиссия # Decline, unacceptable fee
+    '114': Отказ, неверный номер счета # Decline, no account of type requested
+    '115': Отказ, запрошенная операция недопустима для Карты # Decline, requested function not supported
+    '116': Отказ, недостаточно средств # Decline, not sufficient funds
+    '117': Отказ, неверный PIN-код # Decline, incorrect PIN
+    '118': Отказ, карта не найдена # Decline, no card record
+    '119': Отказ, операция не разрешена клиенту # Decline, transaction not permitted to cardholder
+    '120': Отказ, операция, не разрешена по данному терминалу # Decline, transaction not permitted to terminal
+    '121': Отказ, превышен лимит суммы # Decline, exceeds withdrawal amount limit
+    '122': Отказ по соображениям безопасности # Decline, security violation
+    '123': Отказ, превышен лимит запросов # Превышено число операций (Russian Standard Bank)# Decline, exceeds withdrawal frequency limit
+    '124': Отказ, запрещено законодательством # Decline, violation of law
+    '125': Отказ, карта неактивна # Decline, card not effective
+    '126': Отказ, неверный PIN-блок # Decline, invalid PIN block
+    '127': Отказ, неверная длина PIN-код # Decline, PIN length error
+    '128': Отказ, ошибка обработки PIN-код # Decline, PIN key synch error
+    '129': Отказ, возможно, поддельная карта # Decline, suspected counterfeit card
+    '180': Отказ, по желанию держателя карты # Decline, by cardholders wish
+    '200': Отказ, изъять карту # Decline, pick-up card (general, no comments)
+    '201': Отказ, изъять карту, карта просрочена # Decline, pick-up card, expired card
+    '202': Отказ, изъять карту, возможна мошенническая операция # Decline, pick-up card, suspected fraud
+    '203': Отказ, изъять карту, свяжитесь с обслуживающим банком # Decline, pick-up card, card acceptor contact card acquirer
+    '204': Отказ, изъять карту, карта имеет ограничения # Decline, pick-up card, restricted card
+    '205': Отказ, изъять карту, вызовите службу безопасности обслуживающего банка # Decline, pick-up card, card acceptor call acquirer's security department
+    '206': Отказ, изъять карту, превышено число попыток ввода PIN-код # Decline, pick-up card, allowable PIN tries exceeded
+    '207': Отказ, изъять карту, специальные условия # Decline, pick-up card, special conditions
+    '208': Отказ, изъять карту, карта утеряна # Decline, pick-up card, lost card
+    '209': Отказ, изъять карту, карта украдена # Decline, pick-up card, stolen card
+    '210': Отказ, изъять карту # Decline, pick-up card, suspected counterfeit card
+    '300': Системнoe сообщение, успешная файловая операция # Status message. File action successful
+    '301': Системная ошибка, файловая операция не поддерживается получателем # Status message. File action not supported by receiver
+    '302': Системная ошибка, не удалось найти запись о файле # Status message. Unable to locate record on file
+    '303': Системнoe сообщение, запись с таким именем уже существует. Старая запись перезаписана # Status message. Duplicate record, old record replaced
+    '304': Системная ошибка, ошибка записи файла, # Status message. File record field edit error
+    '305': Системная ошибка, файл заблокирован # Status message. File locked out
+    '306': Системная ошибка, файловая операция не удалась # Status message. File action not successful
+    '307': Системная ошибка, неизвестный формат данных файла # Status message. File data format error
+    '308': Системная ошибка, запись с таким именем уже существует. Перезапись запрещена # Status message. Duplicate record, new record rejected
+    '309': Системная ошибка, неизвестный файл # Status message. Unknown file
+    '400': Одобрено (для отмены Авторизации) # Accepted (for reversal)
+    '499': Одобрено, оригинальная операция не найдена # Approved, no original message data
+    '500': Одобрено, итоги совпали # Одобрено # Status message. Reconciled, in balance
+    '501': Одобрено, сверить итоги # Status message. Reconciled, out of balance
+    '502': Системная ошибка # Status message. Amount not reconciled, totals provided
+    '503': Системная ошибка # Status message. Totals for reconciliation not available
+    '504': Системная ошибка # Status message. Not reconciled, totals providedа
+    '600': Системнoe сообщение. Одобрено # Accepted (for administrative info)
+    '601': Системная ошибка, оригинальная операция не найдена  # Status message. Impossible to trace back original transaction
+    '602': Системная ошибка # Status message. Invalid transaction reference number
+    '603': Системная ошибка # Status message. Reference number/PAN incompatible
+    '604': Системная ошибка # Status message. POS photograph is not available # No photo available
+    '605': Системная ошибка # Status message. Requested item supplied
+    '606': Системная ошибка # Status message. Request cannot be fulfilled - required documentation is not available # Item not available
+    '680': Системнoe сообщение # Status message. List ready
+    '681': Системнoe сообщение # Status message. List not ready
+    '700': Одобрено # Accepted (for fee collection)
+    '800': Одобрено # Accepted (for network management)
+    '900': Запрос авторизован, никаких финансовых обязательств не одобрено # Advice acknowledged, no financial liability accepted
+    '901': Запрос авторизован, финансовые обязательства одобрены # Advice acknowledged, finansial liability accepted
+    '902': Обратитесь к дежурной службе, неверная операция # Decline reason message. Invalid transaction
+    '903': Обратитесь к дежурной службе, повторите операцию # Status message. Re-enter transaction
+    '904': Обратитесь к дежурной службе, ошибка формата данных # Decline reason message. Format error
+    '905': Обратитесь к дежурной службе, ошибка связи с платежной системой # Decline reason message. Acqiurer not supported by switch
+    '906': Обратитесь к дежурной службе, ошибка связи с платежной системой # Decline reason message. Cutover in process
+    '907': Обратитесь к дежурной службе, ошибка связи с платежной системой # Decline reason message. Card issuer or switch inoperative
+    '908': Обратитесь к дежурной службе, ошибка связи с платежной системой # Decline reason message. Transaction destination cannot be found for routing
+    '909': Обратитесь к дежурной службе, системная ошибка # Decline reason message. System malfunction
+    '910': Обратитесь к дежурной службе, ошибка связи с платежной системой # Decline reason message. Card issuer signed off
+    '911': Обратитесь к дежурной службе, эмитент карты недоступен # Decline reason message. Card issuer timed out
+    '912': Обратитесь к дежурной службе, эмитент карты недоступен # Decline reason message. Card issuer unavailable
+    '913': Обратитесь к дежурной службе, дублированная операция # Decline reason message. Duplicate transmission
+    '914': Обратитесь к дежурной службе, оригинальная операция не найдена # Decline reason message. Not able to trace back to original transaction
+    '915': Обратитесь к дежурной службе, ошибка связи с платежной системой # Decline reason message. Reconciliation cutover or checkpoint error
+    '916': Обратитесь к дежурной службе, ошибка MAC # Decline reason message. MAC incorrect
+    '917': Обратитесь к дежурной службе, ошибка MAC # Decline reason message. MAC key sync error
+    '918': Обратитесь к дежурной службе, ошибка PIN-PAD # Decline reason message. No communication keys available for use
+    '919': Обратитесь к дежурной службе, ошибка шифрования # Decline reason message. Encryption key sync error
+    '920': Обратитесь к дежурной службе, ошибка шифрования # Decline reason message. Security software/hardware error - try again
+    '921': Обратитесь к дежурной службе, ошибка шифрования # Decline reason message. Security software/hardware error - no action
+    '922': Обратитесь к дежурной службе, неверный номер сообщения # Decline reason message. Message number out of sequence
+    '923': Обратитесь к дежурной службе, запрос обрабатывается # Status message. Request in progress
+    '950': Отказ, недопустимая операция # Decline reason message. Violation of business arrangement
+    bpc:
+      '002': Нет разрешения
+      '006': Нет разрешения
+      '109': Операция запрещена
+      '118': Недействительная карта
+      '125': Карта просрочена
+      '620': Системная ошибка, ошибка системы
+      '621': Системная ошибка, неизвестный IP или ID
+      '622': Системная ошибка, ошибка отправления на хост
+      '623': Системная ошибка, день уже закрыт
+      '624': Системная ошибка, реверсал уже был проведен
+      '625': Системная ошибка, несовпадение суммы с предыдущей транзакцией
+      '626': Системная ошибка, не найдена оригинальная транзакция
+      '627': Системная ошибка, операция уже была проведена
+      '628': Системная ошибка, ошибочная сумма операции
+      '629': Системная ошибка, не найден авторизационный запрос
+      '630': Системная ошибка, превышен лимит времени на подтверждение
+      '698': Системная ошибка, терминал заблокирован
+      '900': Одобрено
+      '901': Одобрено
+      '902': Нет разрешения
+      '903': Повторить операцию
+      '904': Системная ошибка
+      '905': Нет разрешения
+      '906': Системная ошибка
+      '907': Нет разрешения
+      '908': Нет разрешения
+      '909': Системная ошибка
+      '910': Нет разрешения
+      '911': Нет разрешения
+      '912': Нет разрешения
+      '913': Нет разрешения
+      '914': Оригинал не найден
+      '915': Передача пакета
+      '916': Системная ошибка
+      '917': Системная ошибка
+      '918': Системная ошибка
+      '919': Системная ошибка
+      '920': Повторить операцию
+      '921': Системная ошибка
+      '922': Нет разрешения
+      '923': Системная ошибка
+      '950': Системная ошибка
+    mtb:
+      '002': &mtb002 Одобрено # Approved for a partial amount
+      '080': &mtb080 Одобрено # Approved. ICC offline approved
+      '081': &mtb081 Одобрено # Approved. ICC unable to go online, approved
+      '082': &mtb082 Одобрено # Approved. ICC approved after card-initiated referral (AAR)
+      '100': &mtb100 Отказ # Decline, do not honour
+      '107': &mtb107 Отказ # Decline, acceptor contact issuer
+      '164': &mtb164 Отказ # Decline, no acquires service
+      '165': &mtb165 Отказ # Decline, not fulfill AML requirements
+      '166': &mtb166 Отказ # Decline, incorrect Recipient PAN
+      '170': &mtb170 Отказ, свяжитесь с эмитентом # Decline, Cardholder contact issuer
+      '171': &mtb171 Отказ # Decline, PIN not changed
+      '172': &mtb172 Отказ # Decline, 1st generate AC failed/not performed on ICC
+      '173': &mtb173 Отказ # Decline, invalid track data
+      '177': &mtb177 Отказ, неверный код валюты # Decline, invalid currency code
+      '178': &mtb178 Отказ # Decline, ICC decline, after card-initiated referral (AAR)
+      '179': &mtb179 Отказ # Decline, PIN Change declined (New PIN unsafe)
+      '180': &mtb180 Отказ # Decline, amount not divisible
+      '181': &mtb181 Отказ # Decline, amount too big for ATM
+      '182': &mtb182 Отказ # Decline, ATM out of cash
+      '183': &mtb183 Отказ # Decline, no chequing account
+      '184': &mtb184 Отказ # Decline, new PINs entered differ
+      '185': &mtb185 Отказ, ошибка CVV валидации # Decline, CVV validation error
+      '186': &mtb186 Отказ # Decline, pre-auth time limit exceeded
+      '187': &mtb187 Отказ # Decline, card has been destroyed
+      '188': &mtb188 Отказ # Decline, restricted card. No funds.
+      '189': &mtb189 Отказ # Decline, foreign exchange not available
+      '190': &mtb190 Отказ # Decline, transaction count limit exceeded
+      '191': &mtb191 Отказ # Decline, system overload – retry later
+      '192': &mtb192 Отказ # Decline, statement data not available
+      '193': &mtb193 Отказ # Decline, PIN tries exceeded
+      '194': &mtb194 Отказ # Decline, no balance data available
+      '195': &mtb195 Отказ # Decline, ICC offline declined
+      '196': &mtb196 Отказ # Decline, ICC unable to go online, declined
+      '197': &mtb197 Отказ # Decline, ICC card authentication failed
+      '198': &mtb198 Отказ # Decline, no receipt available on ATM
+      '199': &mtb199 Отказ # Decline, no TUC(TOP-UP CODE) number available
+      '201': &mtb201 Отказ, изъять карту # Decline, pick-up card, not supported by receiver
+      '285': &mtb285 Отказ, изъять карту, ошибка CVV валидации # Decline, pick-up card, CVV validation error
+      '300': &mtb300 Одобрено # Accepted (File Action Response Code)
+      '382': &mtb382 Системная ошибка # Status message. System malfunction
+      '383': &mtb383 Системнoe сообщение, файл # Status message. File
+      '599': &mtb599 Системная ошибка # Status message. Reconciliation error
+      '880': &mtb880 Одобрено # Accepted (Network Management & Key Change response codes)
+      '940': &mtb940 Обратитесь к дежурной службе, ошибка даты/времени транзакции # Decline reason message. Invalid transaction date/time.(Correct date and re-send transaction.)
+      '950': &mtb950 Отказ # Disagreement
+      '951': &mtb951 Отказ, cрок действия карты истек # Decline reason message. Card expired
+      '952': &mtb952 Отказ, возможна мошенническая операция # Decline reason message. Suspected fraud
+      '953': &mtb953 Отказ, карта имеет ограничения # Decline reason message. Restricted card
+      '954': &mtb954 Отказ, неверный код терминала # Decline reason message. Invalid merchant
+      '955': &mtb955 Отказ, неверная сумма # Decline reason message. Invalid amont
+      '956': &mtb956 Отказ, неверный номер карты # Decline reason message. Invalid card number
+      '957': &mtb957 Отказ, недопустимая комиссия # Decline reason message. Unacceptable fee
+      '958': &mtb958 Отказ, недостаточно средств # Decline reason message. Insufficient funds
+      '959': &mtb959 Отказ, неверный PIN-код # Decline reason message. Bad PIN
+      '960': &mtb960 Отказ, операция не разрешена клиенту # Decline reason message. Trans not allowed to cardholder
+      '961': &mtb961 Отказ операция, не разрешена по данному терминалу # Decline reason message. Trans not allowed to terminal
+      '962': &mtb962 Отказ, превышена сумма лимита # Decline reason message. Exceeds amount limit
+      '963': &mtb963 Отказ по соображениям безопасности  # Decline reason message. Security violation
+      '964': &mtb964 Отказ, превышен лимит запросов # Decline reason message. Exceeds frequency limit
+      '965': &mtb965 Отказ, запрещено законодательством # Decline reason message. Violation of law
+      '966': &mtb966 Отказ, ошибка связи с платежной системой # Decline reason message. Reconciliation/checkpoint error
+      '967': &mtb967 Отказ, ошибка MAC # Decline reason message. MAC incorrect
+      '968': &mtb968 Отказ, ошибка MAC # Decline reason message. MAC key sync error
+      '969': &mtb969 Отказ, ошибка PIN-PAD # Decline reason message. No comms key available
+      '970': &mtb970 Отказ, ошибка шифрования # Decline reason message. Encryption key sync error
+      '971': &mtb971 Отказ, ошибка шифрования # Decline reason message. Security error, try again
+      '972': &mtb972 Отказ, ошибка шифрования # Decline reason message. Security error, no action
+      '973': &mtb973 Отказ, неверный номер сообщения # Decline reason message. Message out of sequence
+    mtb_halva:
+      '002': *mtb002
+      '080': *mtb080
+      '081': *mtb081
+      '082': *mtb082
+      '100': *mtb100
+      '107': *mtb107
+      '164': *mtb164
+      '165': *mtb165
+      '166': *mtb166
+      '170': *mtb170
+      '171': *mtb171
+      '172': *mtb172
+      '173': *mtb173
+      '177': *mtb177
+      '178': *mtb178
+      '179': *mtb179
+      '180': *mtb180
+      '181': *mtb181
+      '182': *mtb182
+      '183': *mtb183
+      '184': *mtb184
+      '185': *mtb185
+      '186': *mtb186
+      '187': *mtb187
+      '188': *mtb188
+      '189': *mtb189
+      '190': *mtb190
+      '191': *mtb191
+      '192': *mtb192
+      '193': *mtb193
+      '194': *mtb194
+      '195': *mtb195
+      '196': *mtb196
+      '197': *mtb197
+      '198': *mtb198
+      '199': *mtb199
+      '201': *mtb201
+      '285': *mtb285
+      '300': *mtb300
+      '382': *mtb382
+      '383': *mtb383
+      '599': *mtb599
+      '880': *mtb880
+      '940': *mtb940
+      '950': *mtb950
+      '951': *mtb951
+      '952': *mtb952
+      '953': *mtb953
+      '954': *mtb954
+      '955': *mtb955
+      '956': *mtb956
+      '957': *mtb957
+      '958': *mtb958
+      '959': *mtb959
+      '960': *mtb960
+      '961': *mtb961
+      '962': *mtb962
+      '963': *mtb963
+      '964': *mtb964
+      '965': *mtb965
+      '966': *mtb966
+      '967': *mtb967
+      '968': *mtb968
+      '969': *mtb969
+      '970': *mtb970
+      '971': *mtb971
+      '972': *mtb972
+      '973': *mtb973
+    pasta:
+      '181': 3d secure authentication is currently unavailable >
+        (Enrollment status = E)
+      '182': 3d secure authentication failed (Authentication status = N)
+      '940': could not obtain agreement for this payment
+      '941': agreement suspended or closed
+      '942': original credit transaction is illegible for this PAN >
+        (at least one deposited payment required)
+      '945': card enrollment verification in 3d secure failed >
+        (Incorrect VeRes; DS not available; merchant is not participating in 3d)
+      '946': 3d secure field extraction from PaRes failed >
+        (Incorrect PaRes; Incorrect certificate)
+      '948': suspected fraud
+      '949': abandoned (Timed out)
+    payvision:
+      '100': Decline, do not honour
+      '125': Decline, card not valid
+      '130': Decline, invalid Track2
+      '131': Decline, invalid Expiration Date
+      '161': Decline, DCC transaction not allowed to cardholder
+      '162': Decline, DCC cardholder currency not supported
+      '163': Decline, DCC exceeds time limit for withdrawal
+      '164': Decline, DCC transaction not allowed to terminal
+      '165': Decline, DCC not allowed to merchant
+      '166': Decline, DCC unknown error
+      '200': Decline, pick-up card, do not honour
+      '201': Decline, pick-up card, card not valid
+      '902': False transaction
+      '904': Form error
+      '907': Issuer not responding
+      '908': Message can not be routed
+      '909': System error
+      '910': Issuer did not respond
+      '911': Issuer timed out
+      '912': Issuer not reachable
+      '913': Double transaction transmission
+      '914': Original transaction can not be traced
+      '916': Merchant not found
+      '950': No financial record found for detail data
+      '951': Batch already closed
+      '952': Invalid batch number
+      '953': Host timeout
+      '954': Batch not closed
+      '955': Merchant not active
+      '956': Transaction number not unique
+    russian_standard:
+      '181': Отказ, карта не активна
+      '182': Отказ, карта не активна
+      '183': Отказ, карта не активна
+      '184': Отказ, карта не активна
+      '185': Отказ, карта не активна
+      '186': Отказ, карта не активна
+      '187': Отказ, карта не активна
+      '188': Отказ, карта не активна
+      '189': Отказ, карта не активна
+      '190': Отказ, карта не активна
+      '191': Отказ, карта не активна
+      '192': Отказ, карта не активна
+      '193': Отказ, карта не активна
+      '194': Отказ, карта не активна
+      '195': Отказ, карта не активна
+      '196': Отказ, карта не активна
+      '197': Отказ, карта не активна
+      '198': Отказ, карта не активна
+      '199': Отказ, карта не активна
+      '1001': Системная ошибка. Свяжитесь с банком-эквайером
+  customer:
+    '000': &Approved Одобрено # Approved
+    '001': *Approved # Approved, honour with identification
+    '002': *Approved # Approved for partial amount
+    '003': *Approved # Approved # Approved for VIP
+    '004': *Approved # Approved # Approved, update track 3
+    '005': *Approved # Approved # Approved, account type specified by card issuer
+    '006': *Approved # Decline # Approved for partial amount, account type specified by card issuer
+    '007': *Approved # Approved # Approved, update ICC
+    '100': &Call-Bank Платеж отклонен банком, выпустившим вашу карту. Обратитесь в банк за разъяснением. Контактный телефон на обратной стороне карты # The payment has been declined by your card bank. Call the bank support line to find out a reason. Your bank phone number is on the card back side. # Decline (general, no comments)
+    '101': *Call-Bank # Decline, expired card
+    '102': &Contact-Technical-Support Платеж отклонен. Свяжитесь со службой технической поддержки # The payment has been declined. Please contact Technical Support # Decline, suspected fraud
+    '103': *Contact-Technical-Support # The payment has been declined. Please contact Technical Support
+    '104': *Call-Bank # Decline, restricted card
+    '105': *Contact-Technical-Support # Decline, card acceptor call acquirer's security department
+    '106': *Call-Bank # Decline, allowable PIN tries exceeded
+    '107': *Call-Bank # Decline, refer to card issuer
+    '108': *Call-Bank # Decline, refer to card issuer's special conditions
+    '109': *Call-Bank # Decline, invalid merchant
+    '110': *Call-Bank # Decline, invalid amount
+    '111': *Contact-Technical-Support # Неверный номер карты # Decline, invalid card number
+    '112': *Call-Bank # Decline, PIN data required
+    '113': *Call-Bank # Decline, unacceptable fee
+    '114': *Call-Bank # Decline, no account of type requested
+    '115': *Call-Bank # Decline, requested function not supported
+    '116': *Contact-Technical-Support # Недостаточно средств # Decline, not sufficient funds
+    '117': *Call-Bank # Decline, incorrect PIN
+    '118': *Call-Bank # Decline, no card record
+    '119': *Call-Bank # Decline, transaction not permitted to cardholder
+    '120': *Call-Bank # Decline, transaction not permitted to terminal
+    '121': *Call-Bank # Decline, exceeds withdrawal amount limit
+    '122': *Call-Bank # Decline, security violation
+    '123': *Call-Bank # Decline, exceeds withdrawal frequency limit
+    '124': *Call-Bank # Decline, violation of law
+    '125': *Call-Bank # Decline, card not effective
+    '126': *Call-Bank # Decline, invalid PIN block
+    '127': *Call-Bank # Decline, PIN length error
+    '128': *Call-Bank # Decline, PIN key synch error
+    '129': *Contact-Technical-Support # Decline, suspected counterfeit card
+    '180': *Call-Bank # Decline, by cardholders wish
+    '200': *Contact-Technical-Support # Decline, pick-up card (general, no comments)
+    '201': *Contact-Technical-Support # Decline, pick-up card, expired card
+    '202': *Contact-Technical-Support # Decline, pick-up card, suspected fraud
+    '203': *Contact-Technical-Support # Decline, pick-up card, card acceptor contact card acquirer
+    '204': *Contact-Technical-Support # Decline, pick-up card, restricted card
+    '205': *Contact-Technical-Support # Decline, pick-up card, card acceptor call acquirer's security department
+    '206': *Contact-Technical-Support # Decline, pick-up card, allowable PIN tries exceeded
+    '207': *Contact-Technical-Support # Decline, pick-up card, special conditions
+    '208': *Contact-Technical-Support # Decline, pick-up card, lost card
+    '209': *Contact-Technical-Support # Decline, pick-up card, stolen card
+    '210': *Contact-Technical-Support # Decline, pick-up card, suspected counterfeit card
+    '300': *Contact-Technical-Support # Status message. File action successful
+    '301': *Contact-Technical-Support # Status message. File action not supported by receiver
+    '302': *Contact-Technical-Support # Status message. Unable to locate record on file
+    '303': *Contact-Technical-Support # Status message. Duplicate record, old record replaced
+    '304': *Contact-Technical-Support # Status message. File record field edit error
+    '305': *Contact-Technical-Support # Status message. File locked out
+    '306': *Contact-Technical-Support # Status message. File action not successful
+    '307': *Contact-Technical-Support # Status message. File data format error
+    '308': *Contact-Technical-Support # Status message. Duplicate record, new record rejected
+    '309': *Contact-Technical-Support # Status message. Unknown file
+    '400': *Contact-Technical-Support # Accepted (for reversal)
+    '499': *Contact-Technical-Support # Approved, no original message data
+    '500': *Contact-Technical-Support # Status message. Reconciled, in balance
+    '501': *Contact-Technical-Support # Status message. Reconciled, out of balance
+    '502': *Contact-Technical-Support # Status message. Amount not reconciled, totals provided
+    '503': *Contact-Technical-Support # Status message. Totals for reconciliation not available
+    '504': *Contact-Technical-Support # Status message. Not reconciled, totals provided
+    '600': *Contact-Technical-Support # Accepted (for administrative info)
+    '601': *Contact-Technical-Support # Status message. Impossible to trace back original transaction
+    '602': *Contact-Technical-Support # Status message. Invalid transaction reference number
+    '603': *Contact-Technical-Support # Status message. Reference number/PAN incompatible
+    '604': *Contact-Technical-Support # Status message. POS photograph is not available # No photo available
+    '605': *Contact-Technical-Support # Status message. Requested item supplied
+    '606': *Contact-Technical-Support # Status message. Request cannot be fulfilled - required documentation is not available # Item not available
+    '680': *Contact-Technical-Support # Status message. List ready
+    '681': *Contact-Technical-Support # Status message. List not ready
+    '700': *Contact-Technical-Support # Accepted # Accepted (for fee collection)
+    '800': *Contact-Technical-Support # Accepted (for network management)
+    '900': *Contact-Technical-Support # Advice acknowledged, no financial liability accepted
+    '901': *Contact-Technical-Support # Advice acknowledged, finansial liability accepted
+    '902': *Contact-Technical-Support # Decline reason message. Invalid transaction
+    '903': *Contact-Technical-Support # Status message. Re-enter transaction
+    '904': *Contact-Technical-Support # Decline reason message. Format error
+    '905': *Contact-Technical-Support # Decline reason message. Acqiurer not supported by switch
+    '906': *Contact-Technical-Support # Decline reason message. Cutover in process
+    '907': *Contact-Technical-Support # Decline reason message. Card issuer or switch inoperative
+    '908': *Contact-Technical-Support # Decline reason message. Transaction destination cannot be found for routing
+    '909': *Contact-Technical-Support # Decline reason message. System malfunction
+    '910': *Contact-Technical-Support # Decline reason message. Card issuer signed off
+    '911': *Contact-Technical-Support # Decline reason message. Card issuer timed out
+    '912': *Contact-Technical-Support # Decline reason message. Card issuer unavailable
+    '913': *Contact-Technical-Support # Decline reason message. Duplicate transmission
+    '914': *Contact-Technical-Support # Decline reason message. Not able to trace back to original transaction
+    '915': *Contact-Technical-Support # Decline reason message. Reconciliation cutover or checkpoint error
+    '916': *Contact-Technical-Support # Decline reason message. MAC incorrect
+    '917': *Contact-Technical-Support # Decline reason message. MAC key sync error
+    '918': *Contact-Technical-Support # Decline reason message. No communication keys available for use
+    '919': *Contact-Technical-Support # Decline reason message. Encryption key sync error
+    '920': *Contact-Technical-Support # Decline reason message. Security software/hardware error - try again
+    '921': *Contact-Technical-Support # Decline reason message. Security software/hardware error - no action
+    '922': *Contact-Technical-Support # Decline reason message. Message number out of sequence
+    '923': *Contact-Technical-Support # Status message. Request in progress
+    '950': *Contact-Technical-Support # Decline reason message. Violation of business arrangement
+    bpc:
+      '002': *Call-Bank # Нет разрешения
+      '006': *Call-Bank # Нет разрешения
+      '109': *Call-Bank # Операция запрещена
+      '118': *Call-Bank # Недействительная карта
+      '125': *Call-Bank # Карта просрочена
+      '620': *Contact-Technical-Support # Ошибка системы
+      '621': *Contact-Technical-Support # Неизвестный IP или ID
+      '622': *Contact-Technical-Support # Ошибка отправления на хост
+      '623': *Contact-Technical-Support # День уже закрыт
+      '624': *Contact-Technical-Support # Реверсал уже был проведен
+      '625': *Contact-Technical-Support # Несовпадение суммы с предыдущей транзакцией
+      '626': *Contact-Technical-Support # Не найдена оригинальная транзакция
+      '627': *Contact-Technical-Support # Операция уже была проведена
+      '628': *Contact-Technical-Support # Ошибочная сумма операции
+      '629': *Contact-Technical-Support # Не найден авторизационный запрос
+      '630': *Contact-Technical-Support # Превышен лимит времени на подтверждение
+      '698': *Contact-Technical-Support # Терминал заблокирован
+      '900': *Contact-Technical-Support # Одобрено
+      '901': *Contact-Technical-Support # Одобрено
+      '902': *Contact-Technical-Support # Нет разрешения
+      '903': *Contact-Technical-Support # Повторить операцию
+      '904': *Contact-Technical-Support # Системная ошибка
+      '905': *Contact-Technical-Support # Нет разрешения
+      '906': *Contact-Technical-Support # Системная ошибка
+      '907': *Contact-Technical-Support # Нет разрешения
+      '908': *Contact-Technical-Support # Нет разрешения
+      '909': *Contact-Technical-Support # Системная ошибка
+      '910': *Contact-Technical-Support # Нет разрешения
+      '911': *Contact-Technical-Support # Нет разрешения
+      '912': *Contact-Technical-Support # Нет разрешения
+      '913': *Contact-Technical-Support # Нет разрешения
+      '914': *Contact-Technical-Support # Оригинал не найден
+      '915': *Contact-Technical-Support # Передача пакета
+      '916': *Contact-Technical-Support # Системная ошибка
+      '917': *Contact-Technical-Support # Системная ошибка
+      '918': *Contact-Technical-Support # Системная ошибка
+      '919': *Contact-Technical-Support # Системная ошибка
+      '920': *Contact-Technical-Support # Повторить операцию
+      '921': *Contact-Technical-Support # Системная ошибка
+      '922': *Contact-Technical-Support # Нет разрешения
+      '923': *Contact-Technical-Support # Системная ошибка
+      '950': *Contact-Technical-Support # Системная ошибка
+    mtb:
+      '002': *Approved # Approved for a partial amount
+      '080': *Approved # Approved. ICC offline approved
+      '081': *Approved # Approved. ICC unable to go online, approved
+      '082': *Approved # Approved. ICC approved after card-initiated referral (AAR)
+      '100': *Call-Bank # Decline, do not honour
+      '107': *Call-Bank # Decline, acceptor contact issuer
+      '164': *Call-Bank # Decline, no acquires service
+      '165': *Call-Bank # Decline, not fulfill AML requirements
+      '166': *Call-Bank # Decline, incorrect Recipient PAN
+      '170': *Call-Bank # Decline, Cardholder contact issuer
+      '171': *Call-Bank # Decline, PIN not changed
+      '172': *Call-Bank # Decline, 1st generate AC failed/not performed on ICC
+      '173': *Call-Bank # Decline, invalid track data
+      '177': *Contact-Technical-Support # Decline, invalid currency code
+      '178': *Call-Bank # Decline, ICC decline, after card-initiated referral (AAR)
+      '179': *Call-Bank # Decline, PIN Change declined (New PIN unsafe)
+      '180': *Call-Bank # Decline, amount not divisible
+      '181': *Call-Bank # Decline, amount too big for ATM
+      '182': *Call-Bank # Decline, ATM out of cash
+      '183': *Call-Bank # Decline, no chequing account
+      '184': *Call-Bank # Decline, new PINs entered differ
+      '185': *Contact-Technical-Support # Неверный CVV # Decline, CVV validation error
+      '186': *Contact-Technical-Support # Decline, pre-auth time limit exceeded
+      '187': *Call-Bank # Decline, card has been destroyed
+      '188': *Call-Bank # Decline, restricted card. No funds.
+      '189': *Call-Bank # Decline, foreign exchange not available
+      '190': *Call-Bank # Decline, transaction count limit exceeded
+      '191': *Call-Bank # Decline, system overload – retry later
+      '192': *Call-Bank # Decline, statement data not available
+      '193': *Call-Bank # Decline, PIN tries exceeded
+      '194': *Call-Bank # Decline, no balance data available
+      '195': *Call-Bank # Decline, ICC offline declined
+      '196': *Call-Bank # Decline, ICC unable to go online, declined
+      '197': *Call-Bank # Decline, ICC card authentication failed
+      '198': *Call-Bank # Decline, no receipt available on ATM
+      '199': *Call-Bank # Decline, no TUC(TOP-UP CODE) number available
+      '201': *Contact-Technical-Support # Decline, pick-up card, not supported by receiver
+      '285': *Contact-Technical-Support # Decline, pick-up card, CVV validation error
+      '300': *Contact-Technical-Support # Accepted (File Action Response Code)
+      '382': *Contact-Technical-Support # Status message. System malfunction
+      '383': *Contact-Technical-Support # Status message. File
+      '599': *Contact-Technical-Support # Status message. Reconciliation error
+      '880': *Contact-Technical-Support # Accepted (Network Management & Key Change response codes)
+      '940': *Contact-Technical-Support # Decline reason message. Invalid transaction date/time.(Correct date and re-send transaction.)
+      '950': *Contact-Technical-Support # Disagreement
+      '951': *Contact-Technical-Support # Decline reason message. Card expired
+      '952': *Contact-Technical-Support # Decline reason message. Suspected fraud
+      '953': *Contact-Technical-Support # Decline reason message. Restricted card
+      '954': *Contact-Technical-Support # Decline reason message. Invalid merchant
+      '955': *Contact-Technical-Support # Decline reason message. Invalid amont
+      '956': *Contact-Technical-Support # Decline reason message. Invalid card number
+      '957': *Contact-Technical-Support # Decline reason message. Unacceptable fee
+      '958': *Contact-Technical-Support # Decline reason message. Insufficient funds
+      '959': *Contact-Technical-Support # Decline reason message. Bad PIN
+      '960': *Contact-Technical-Support # Decline reason message. Trans not allowed to cardholder
+      '961': *Contact-Technical-Support # Decline reason message. Trans not allowed to terminal
+      '962': *Contact-Technical-Support # Decline reason message. Exceeds amount limit
+      '963': *Contact-Technical-Support # Decline reason message. Security violation
+      '964': *Contact-Technical-Support # Decline reason message. Exceeds frequency limit
+      '965': *Contact-Technical-Support # Decline reason message. Violation of law
+      '966': *Contact-Technical-Support # Decline reason message. Reconciliation/checkpoint error
+      '967': *Contact-Technical-Support # Decline reason message. MAC incorrect
+      '968': *Contact-Technical-Support # Decline reason message. MAC key sync error
+      '969': *Contact-Technical-Support # Decline reason message. No comms key available
+      '970': *Contact-Technical-Support # Decline reason message. Encryption key sync error
+      '971': *Contact-Technical-Support # Decline reason message. Security error, try again
+      '972': *Contact-Technical-Support # Decline reason message. Security error, no action
+      '973': *Contact-Technical-Support # Decline reason message. Message out of sequence
+    mtb_halva:
+      '002': *Approved # Approved for a partial amount
+      '080': *Approved # Approved. ICC offline approved
+      '081': *Approved # Approved. ICC unable to go online, approved
+      '082': *Approved # Approved. ICC approved after card-initiated referral (AAR)
+      '100': *Call-Bank # Decline, do not honour
+      '107': *Call-Bank # Decline, acceptor contact issuer
+      '164': *Call-Bank # Decline, no acquires service
+      '165': *Call-Bank # Decline, not fulfill AML requirements
+      '166': *Call-Bank # Decline, incorrect Recipient PAN
+      '170': *Call-Bank # Decline, Cardholder contact issuer
+      '171': *Call-Bank # Decline, PIN not changed
+      '172': *Call-Bank # Decline, 1st generate AC failed/not performed on ICC
+      '173': *Call-Bank # Decline, invalid track data
+      '177': *Contact-Technical-Support # Decline, invalid currency code
+      '178': *Call-Bank # Decline, ICC decline, after card-initiated referral (AAR)
+      '179': *Call-Bank # Decline, PIN Change declined (New PIN unsafe)
+      '180': *Call-Bank # Decline, amount not divisible
+      '181': *Call-Bank # Decline, amount too big for ATM
+      '182': *Call-Bank # Decline, ATM out of cash
+      '183': *Call-Bank # Decline, no chequing account
+      '184': *Call-Bank # Decline, new PINs entered differ
+      '185': *Contact-Technical-Support # Неверный CVV # Decline, CVV validation error
+      '186': *Contact-Technical-Support # Decline, pre-auth time limit exceeded
+      '187': *Call-Bank # Decline, card has been destroyed
+      '188': *Call-Bank # Decline, restricted card. No funds.
+      '189': *Call-Bank # Decline, foreign exchange not available
+      '190': *Call-Bank # Decline, transaction count limit exceeded
+      '191': *Call-Bank # Decline, system overload – retry later
+      '192': *Call-Bank # Decline, statement data not available
+      '193': *Call-Bank # Decline, PIN tries exceeded
+      '194': *Call-Bank # Decline, no balance data available
+      '195': *Call-Bank # Decline, ICC offline declined
+      '196': *Call-Bank # Decline, ICC unable to go online, declined
+      '197': *Call-Bank # Decline, ICC card authentication failed
+      '198': *Call-Bank # Decline, no receipt available on ATM
+      '199': *Call-Bank # Decline, no TUC(TOP-UP CODE) number available
+      '201': *Contact-Technical-Support # Decline, pick-up card, not supported by receiver
+      '285': *Contact-Technical-Support # Decline, pick-up card, CVV validation error
+      '300': *Contact-Technical-Support # Accepted (File Action Response Code)
+      '382': *Contact-Technical-Support # Status message. System malfunction
+      '383': *Contact-Technical-Support # Status message. File
+      '599': *Contact-Technical-Support # Status message. Reconciliation error
+      '880': *Contact-Technical-Support # Accepted (Network Management & Key Change response codes)
+      '940': *Contact-Technical-Support # Decline reason message. Invalid transaction date/time.(Correct date and re-send transaction.)
+      '950': *Contact-Technical-Support # Disagreement
+      '951': *Contact-Technical-Support # Decline reason message. Card expired
+      '952': *Contact-Technical-Support # Decline reason message. Suspected fraud
+      '953': *Contact-Technical-Support # Decline reason message. Restricted card
+      '954': *Contact-Technical-Support # Decline reason message. Invalid merchant
+      '955': *Contact-Technical-Support # Decline reason message. Invalid amont
+      '956': *Contact-Technical-Support # Decline reason message. Invalid card number
+      '957': *Contact-Technical-Support # Decline reason message. Unacceptable fee
+      '958': *Contact-Technical-Support # Decline reason message. Insufficient funds
+      '959': *Contact-Technical-Support # Decline reason message. Bad PIN
+      '960': *Contact-Technical-Support # Decline reason message. Trans not allowed to cardholder
+      '961': *Contact-Technical-Support # Decline reason message. Trans not allowed to terminal
+      '962': *Contact-Technical-Support # Decline reason message. Exceeds amount limit
+      '963': *Contact-Technical-Support # Decline reason message. Security violation
+      '964': *Contact-Technical-Support # Decline reason message. Exceeds frequency limit
+      '965': *Contact-Technical-Support # Decline reason message. Violation of law
+      '966': *Contact-Technical-Support # Decline reason message. Reconciliation/checkpoint error
+      '967': *Contact-Technical-Support # Decline reason message. MAC incorrect
+      '968': *Contact-Technical-Support # Decline reason message. MAC key sync error
+      '969': *Contact-Technical-Support # Decline reason message. No comms key available
+      '970': *Contact-Technical-Support # Decline reason message. Encryption key sync error
+      '971': *Contact-Technical-Support # Decline reason message. Security error, try again
+      '972': *Contact-Technical-Support # Decline reason message. Security error, no action
+      '973': *Contact-Technical-Support # Decline reason message. Message out of sequence
+    pasta:
+      '181': *Contact-Technical-Support # 3d secure authentication is currently unavailable (Enrollment status = E)
+      '182': *Contact-Technical-Support # 3d secure authentication failed (Authentication status = N)
+      '940': *Contact-Technical-Support # could not obtain agreement for this payment
+      '941': *Contact-Technical-Support # agreement suspended or closed
+      '942': *Contact-Technical-Support # original credit transaction is illegible for this PAN (at least one deposited payment required)
+      '945': *Contact-Technical-Support # card enrollment verification in 3d secure failed (Incorrect VeRes; DS not available; merchant is not participating in 3d)
+      '946': *Contact-Technical-Support # 3d secure field extraction from PaRes failed (Incorrect PaRes; Incorrect certificate)
+      '948': *Contact-Technical-Support # suspected fraud
+      '949': *Contact-Technical-Support # abandoned (Timed out)
+    payvision:
+      '100': *Call-Bank # Decline, do not honour
+      '125': *Call-Bank # Decline, card not valid
+      '130': *Call-Bank # Decline, invalid Track2
+      '131': *Call-Bank # Decline, invalid Expiration Date
+      '161': *Call-Bank # Decline, DCC transaction not allowed to cardholder
+      '162': *Call-Bank # Decline, DCC cardholder currency not supported
+      '163': *Call-Bank # Decline, DCC exceeds time limit for withdrawal
+      '164': *Call-Bank # Decline, DCC transaction not allowed to terminal
+      '165': *Call-Bank # Decline, DCC not allowed to merchant
+      '166': *Call-Bank # Decline, DCC unknown error
+      '200': *Contact-Technical-Support # Decline, pick-up card, do not honour
+      '201': *Contact-Technical-Support # Decline, pick-up card, card not valid
+      '902': *Contact-Technical-Support # False transaction
+      '904': *Contact-Technical-Support # Form error
+      '907': *Contact-Technical-Support # Issuer not responding
+      '908': *Contact-Technical-Support # Message can not be routed
+      '909': *Contact-Technical-Support # System error
+      '910': *Contact-Technical-Support # Issuer did not respond
+      '911': *Contact-Technical-Support # Issuer timed out
+      '912': *Contact-Technical-Support # Issuer not reachable
+      '913': *Contact-Technical-Support # Double transaction transmission
+      '914': *Contact-Technical-Support # Original transaction can not be traced
+      '916': *Contact-Technical-Support # Merchant not found
+      '950': *Contact-Technical-Support # No financial record found for detail data
+      '951': *Contact-Technical-Support # Batch already closed
+      '952': *Contact-Technical-Support # Invalid batch number
+      '953': *Contact-Technical-Support # Host timeout
+      '954': *Contact-Technical-Support # Batch not closed
+      '955': *Contact-Technical-Support # Merchant not active
+      '956': *Contact-Technical-Support # Transaction number not unique
+    russian_standard:
+      '181': *Call-Bank # Отказ, карта не активна
+      '182': *Call-Bank # Отказ, карта не активна
+      '183': *Call-Bank # Отказ, карта не активна
+      '184': *Call-Bank # Отказ, карта не активна
+      '185': *Call-Bank # Отказ, карта не активна
+      '186': *Call-Bank # Отказ, карта не активна
+      '187': *Call-Bank # Отказ, карта не активна
+      '188': *Call-Bank # Отказ, карта не активна
+      '189': *Call-Bank # Отказ, карта не активна
+      '190': *Call-Bank # Отказ, карта не активна
+      '191': *Call-Bank # Отказ, карта не активна
+      '192': *Call-Bank # Отказ, карта не активна
+      '193': *Call-Bank # Отказ, карта не активна
+      '194': *Call-Bank # Отказ, карта не активна
+      '195': *Call-Bank # Отказ, карта не активна
+      '196': *Call-Bank # Отказ, карта не активна
+      '197': *Call-Bank # Отказ, карта не активна
+      '198': *Call-Bank # Отказ, карта не активна
+      '199': *Call-Bank # Отказ, карта не активна
+      '1001': *Contact-Technical-Support # Системная ошибка. Свяжитесь с банком-эквайером
+...
