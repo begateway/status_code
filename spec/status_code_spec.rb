@@ -56,9 +56,10 @@ describe StatusCode do
             context 'with decline code' do
               let(:code) { '100' }
               let(:message) do
-                'The payment has been declined by your card bank.' \
-                  ' Call the bank support line to find out a reason.' \
-                  ' Your bank phone number is on the card back side'
+                'The payment has been declined by your bank.' \
+                  ' Call the bank support line to find out the reason.' \
+                  ' Your bank phone number' \
+                  ' can be found on the back side of your card'
               end
 
               it 'returns decline message' do
@@ -282,9 +283,10 @@ describe StatusCode do
     context 'with code only' do
       let(:code) { '100' }
       let(:message) do
-        'The payment has been declined by your card bank.' \
-          ' Call the bank support line to find out a reason.' \
-          ' Your bank phone number is on the card back side'
+        'The payment has been declined by your bank.' \
+          ' Call the bank support line to find out the reason.' \
+          ' Your bank phone number' \
+          ' can be found on the back side of your card'
       end
 
       it 'returns message' do
