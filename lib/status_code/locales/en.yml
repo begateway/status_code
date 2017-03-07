@@ -366,7 +366,7 @@ en:
     '005': *Approved # Approved, account type specified by card issuer
     '006': *Approved # Approved for partial amount, account type specified by card issuer
     '007': *Approved # Approved, update ICC
-    '100': &Call-Bank The payment has been declined by your card bank. Call the bank support line to find out a reason. Your bank phone number is on the card back side # Decline (general, no comments)
+    '100': &Call-Bank The payment has been declined by your bank. Call the bank support line to find out the reason. Your bank phone number can be found on the back side of your card # Decline (general, no comments)
     '101': *Call-Bank # Decline, expired card
     '102': &Contact-Technical-Support The payment has been declined. Please contact Technical Support # Decline, suspected fraud
     '103': *Contact-Technical-Support # Decline, card acceptor contact acquirer
