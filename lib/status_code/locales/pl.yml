@@ -159,6 +159,8 @@ pl:
       '082': &mtb082 Approved. ICC approved after card-initiated referral (AAR)
       '100': &mtb100 Decline, do not honour
       '107': &mtb107 Decline, acceptor contact issuer
+      '119': &Online-disable Decline, online payments are disabled for this card # Decline, transaction not permitted to cardholder
+      '124': *Online-disable # Decline, violation of law
       '164': &mtb164 Decline, no acquires service
       '165': &mtb165 Decline, not fulfill AML requirements
       '166': &mtb166 Decline, incorrect Recipient PAN
@@ -186,7 +188,7 @@ pl:
       '194': &mtb194 Decline, no balance data available
       '195': &mtb195 Decline, ICC offline declined
       '196': &mtb196 Decline, ICC unable to go online, declined
-      '197': &mtb197 Decline, ICC card authentication failed
+      '197': *Online-disable  # Decline, ICC card authentication failed
       '198': &mtb198 Decline, no receipt available on ATM
       '199': &mtb199 Decline, no TUC(TOP-UP CODE) number available
       '201': &mtb201 Decline, pick-up card, not supported by receiver
@@ -229,6 +231,8 @@ pl:
       '082': *mtb082
       '100': *mtb100
       '107': *mtb107
+      '119': *Online-disable # Decline, transaction not permitted to cardholder
+      '124': *Online-disable # Decline, violation of law
       '164': *mtb164
       '165': *mtb165
       '166': *mtb166
@@ -256,7 +260,7 @@ pl:
       '194': *mtb194
       '195': *mtb195
       '196': *mtb196
-      '197': *mtb197
+      '197': *Online-disable # Decline, ICC card authentication failed
       '198': *mtb198
       '199': *mtb199
       '201': *mtb201
@@ -511,6 +515,8 @@ pl:
       '082': *Approved # Approved. ICC approved after card-initiated referral (AAR)
       '100': *Call-Bank # Decline, do not honour
       '107': *Call-Bank # Decline, acceptor contact issuer
+      '119': &Online-Disable-Call-Bank The payment has been declined by your bank. Online payments are disabled for this card. Call the bank support line to enable online payments. Your bank phone number can be found on the back side of your card # Decline, transaction not permitted to cardholder
+      '124': *Online-Disable-Call-Bank # Decline, violation of law
       '164': *Call-Bank # Decline, no acquires service
       '165': *Call-Bank # Decline, not fulfill AML requirements
       '166': *Call-Bank # Decline, incorrect Recipient PAN
@@ -538,7 +544,7 @@ pl:
       '194': *Call-Bank # Decline, no balance data available
       '195': *Call-Bank # Decline, ICC offline declined
       '196': *Call-Bank # Decline, ICC unable to go online, declined
-      '197': *Call-Bank # Decline, ICC card authentication failed
+      '197': *Online-Disable-Call-Bank # Decline, ICC card authentication failed
       '198': *Call-Bank # Decline, no receipt available on ATM
       '199': *Call-Bank # Decline, no TUC(TOP-UP CODE) number available
       '201': *Contact-Technical-Support # Decline, pick-up card, not supported by receiver
@@ -580,6 +586,8 @@ pl:
       '082': *Approved # Approved. ICC approved after card-initiated referral (AAR)
       '100': *Call-Bank # Decline, do not honour
       '107': *Call-Bank # Decline, acceptor contact issuer
+      '119': *Online-Disable-Call-Bank # Decline, transaction not permitted to cardholder
+      '124': *Online-Disable-Call-Bank # Decline, violation of law
       '164': *Call-Bank # Decline, no acquires service
       '165': *Call-Bank # Decline, not fulfill AML requirements
       '166': *Call-Bank # Decline, incorrect Recipient PAN
@@ -607,7 +615,7 @@ pl:
       '194': *Call-Bank # Decline, no balance data available
       '195': *Call-Bank # Decline, ICC offline declined
       '196': *Call-Bank # Decline, ICC unable to go online, declined
-      '197': *Call-Bank # Decline, ICC card authentication failed
+      '197': *Online-Disable-Call-Bank # Decline, ICC card authentication failed
       '198': *Call-Bank # Decline, no receipt available on ATM
       '199': *Call-Bank # Decline, no TUC(TOP-UP CODE) number available
       '201': *Contact-Technical-Support # Decline, pick-up card, not supported by receiver
