@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    status_code (0.0.1)
+    status_code (0.0.2)
       i18n
 
 GEM
@@ -41,4 +41,4 @@ DEPENDENCIES
   status_code!
 
 BUNDLED WITH
-   1.13.7
+   1.14.4
