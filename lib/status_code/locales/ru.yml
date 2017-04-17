@@ -154,6 +154,8 @@ ru:
       '082': &mtb082 Одобрено # Approved. ICC approved after card-initiated referral (AAR)
       '100': &mtb100 Отказ # Decline, do not honour
       '107': &mtb107 Отказ # Decline, acceptor contact issuer
+      '119': &Online-disable Отказ, заблокированы интернет платежи для этой карты # Decline, online payments are disabled for this card # Decline, transaction not permitted to cardholder
+      '124': *Online-disable # Decline, violation of law
       '164': &mtb164 Отказ # Decline, no acquires service
       '165': &mtb165 Отказ # Decline, not fulfill AML requirements
       '166': &mtb166 Отказ # Decline, incorrect Recipient PAN
@@ -181,7 +183,7 @@ ru:
       '194': &mtb194 Отказ # Decline, no balance data available
       '195': &mtb195 Отказ # Decline, ICC offline declined
       '196': &mtb196 Отказ # Decline, ICC unable to go online, declined
-      '197': &mtb197 Отказ # Decline, ICC card authentication failed
+      '197': *Online-disable # Decline, ICC card authentication failed
       '198': &mtb198 Отказ # Decline, no receipt available on ATM
       '199': &mtb199 Отказ # Decline, no TUC(TOP-UP CODE) number available
       '201': &mtb201 Отказ, изъять карту # Decline, pick-up card, not supported by receiver
@@ -223,6 +225,8 @@ ru:
       '082': *mtb082
       '100': *mtb100
       '107': *mtb107
+      '119': *Online-disable # Decline, transaction not permitted to cardholder
+      '124': *Online-disable # Decline, violation of law
       '164': *mtb164
       '165': *mtb165
       '166': *mtb166
@@ -250,7 +254,7 @@ ru:
       '194': *mtb194
       '195': *mtb195
       '196': *mtb196
-      '197': *mtb197
+      '197': *Online-disable # Decline, ICC card authentication failed
       '198': *mtb198
       '199': *mtb199
       '201': *mtb201
@@ -351,6 +355,48 @@ ru:
       '198': Отказ, карта не активна
       '199': Отказ, карта не активна
       '1001': Системная ошибка. Свяжитесь с банком-эквайером
+    vtb:
+      '000': Обработка завершена успешно
+      '001': Неподдерживаемая версия
+      '002': Неподдерживаемый язык
+      '003': Неподдерживаемая команда
+      '004': Ошибка аутентификации (неверный сертификат)
+      '005': Ошибка разбора сообщения
+      '006': Системная ошибка
+      '007': Ошибка криптографии
+      '008': Таймаут
+      '009': Неверное число параметров
+      '010': Нулевая сумма операции
+      '201': Счет не найден
+      '202': Неверная транзакция
+      '203': Неверная сумма
+      '204': Невозможно провести операцию
+      '205': Нет средств на счете
+      '206': Неверная информация о платеже
+      '207': Неверный идентификатор терминала
+      '208': Оригинальная операция не найдена
+      '209': Невозможно провести операцию
+      '301': Карта просрочена
+      '302': Отказ без объяснения причин от эмитента
+      '303': Неподдерживаемая транзакция
+      '304': Транзакция запрещена на уровне финансового института
+      '305': Потерянная или украденная карта
+      '306': Неверный статус карты
+      '307': Ограниченная карта
+      '308': Невозможно авторизовать
+      '309': Превышен лимит активности использования карты
+      '310': Превышен лимит суммы операций по карте
+      '320': Карта не поддерживается
+      '333': Ошибка формата
+      '334': Таймаут при совершении транзакции
+      '396': Системная ошибка
+      '401': Необходима связь с эмитентом (call issuer)
+      '410': Неверное значение данных 3D-Secure (CAVV)
+      '411': Неверное значение CVV2/CVC2
+      '501': Карта просрочена – необходим захват карты
+      '502': Отказ от эмитента – необходим захват карты
+      '809': Системная ошибка
+      '888': Неверный номер сессии
   customer:
     '000': &Approved Одобрено # Approved
     '001': *Approved # Approved, honour with identification
@@ -505,6 +551,8 @@ ru:
       '082': *Approved # Approved. ICC approved after card-initiated referral (AAR)
       '100': *Call-Bank # Decline, do not honour
       '107': *Call-Bank # Decline, acceptor contact issuer
+      '119': &Online-Disable-Call-Bank Платеж отклонен банком, выпустившим Вашу карту. Интернет платежи отключены для этой карты. Обратитесь в банк для активации интернет платежей. Контактный телефон на обратной стороне карты # The payment has been declined by your bank. Online payments are disabled for this card. Call the bank support line to enable online payments. Your bank phone number can be found on the back side of your card # Decline, transaction not permitted to cardholder
+      '124': *Online-Disable-Call-Bank # Decline, violation of law
       '164': *Call-Bank # Decline, no acquires service
       '165': *Call-Bank # Decline, not fulfill AML requirements
       '166': *Call-Bank # Decline, incorrect Recipient PAN
@@ -532,7 +580,7 @@ ru:
       '194': *Call-Bank # Decline, no balance data available
       '195': *Call-Bank # Decline, ICC offline declined
       '196': *Call-Bank # Decline, ICC unable to go online, declined
-      '197': *Call-Bank # Decline, ICC card authentication failed
+      '197': *Online-Disable-Call-Bank # Decline, ICC card authentication failed
       '198': *Call-Bank # Decline, no receipt available on ATM
       '199': *Call-Bank # Decline, no TUC(TOP-UP CODE) number available
       '201': *Contact-Technical-Support # Decline, pick-up card, not supported by receiver
@@ -574,6 +622,8 @@ ru:
       '082': *Approved # Approved. ICC approved after card-initiated referral (AAR)
       '100': *Call-Bank # Decline, do not honour
       '107': *Call-Bank # Decline, acceptor contact issuer
+      '119': *Online-Disable-Call-Bank # Decline, transaction not permitted to cardholder
+      '124': *Online-Disable-Call-Bank # Decline, violation of law
       '164': *Call-Bank # Decline, no acquires service
       '165': *Call-Bank # Decline, not fulfill AML requirements
       '166': *Call-Bank # Decline, incorrect Recipient PAN
@@ -601,7 +651,7 @@ ru:
       '194': *Call-Bank # Decline, no balance data available
       '195': *Call-Bank # Decline, ICC offline declined
       '196': *Call-Bank # Decline, ICC unable to go online, declined
-      '197': *Call-Bank # Decline, ICC card authentication failed
+      '197': *Online-Disable-Call-Bank # Decline, ICC card authentication failed
       '198': *Call-Bank # Decline, no receipt available on ATM
       '199': *Call-Bank # Decline, no TUC(TOP-UP CODE) number available
       '201': *Contact-Technical-Support # Decline, pick-up card, not supported by receiver
@@ -698,4 +748,88 @@ ru:
       '198': *Call-Bank # Отказ, карта не активна
       '199': *Call-Bank # Отказ, карта не активна
       '1001': *Contact-Technical-Support # Системная ошибка. Свяжитесь с банком-эквайером
+    vtb:
+      '000': *Approved # Обработка завершена успешно
+      '001': *Contact-Technical-Support # Неподдерживаемая версия
+      '002': *Contact-Technical-Support # Неподдерживаемый язык
+      '003': *Contact-Technical-Support # Неподдерживаемая команда
+      '004': *Contact-Technical-Support # Ошибка аутентификации (неверный сертификат)
+      '005': *Contact-Technical-Support # Ошибка разбора сообщения
+      '006': *Contact-Technical-Support # Системная ошибка
+      '007': *Contact-Technical-Support # Ошибка криптографии
+      '008': *Contact-Technical-Support # Таймаут
+      '009': *Contact-Technical-Support # Неверное число параметров
+      '010': *Contact-Technical-Support # Нулевая сумма операции
+      '201': *Call-Bank # Счет не найден
+      '202': *Call-Bank # Неверная транзакция
+      '203': *Call-Bank # Неверная сумма
+      '204': *Call-Bank # Невозможно провести операцию
+      '205': *Call-Bank # Нет средств на счете
+      '206': *Call-Bank # Неверная информация о платеже
+      '207': *Call-Bank # Неверный идентификатор терминала
+      '208': *Call-Bank # Оригинальная операция не найдена
+      '209': *Call-Bank # Невозможно провести операцию
+      '301': *Call-Bank # Карта просрочена
+      '302': *Call-Bank # Отказ без объяснения причин от эмитента
+      '303': *Call-Bank # Неподдерживаемая транзакция
+      '304': *Call-Bank # Транзакция запрещена на уровне финансового института
+      '305': *Call-Bank # Потерянная или украденная карта
+      '306': *Call-Bank # Неверный статус карты
+      '307': *Call-Bank # Ограниченная карта
+      '308': *Call-Bank # Невозможно авторизовать
+      '309': *Call-Bank # Превышен лимит активности использования карты
+      '310': *Call-Bank # Превышен лимит суммы операций по карте
+      '320': *Call-Bank # Карта не поддерживается
+      '333': *Call-Bank # Ошибка формата
+      '334': *Call-Bank # Таймаут при совершении транзакции
+      '396': *Call-Bank # Системная ошибка
+      '401': *Call-Bank # Необходима связь с эмитентом (call issuer)
+      '410': *Call-Bank # Неверное значение данных 3D-Secure (CAVV)
+      '411': *Call-Bank # Неверное значение CVV2/CVC2
+      '501': *Contact-Technical-Support # Карта просрочена – необходим захват карты
+      '502': *Contact-Technical-Support # Отказ от эмитента – необходим захват карты
+      '809': *Contact-Technical-Support # Системная ошибка
+      '888': *Contact-Technical-Support # Неверный номер сессии
+    vtb:
+      '000': *Approved # Обработка завершена успешно
+      '001': *Contact-Technical-Support # Неподдерживаемая версия
+      '002': *Contact-Technical-Support # Неподдерживаемый язык
+      '003': *Contact-Technical-Support # Неподдерживаемая команда
+      '004': *Contact-Technical-Support # Ошибка аутентификации (неверный сертификат)
+      '005': *Contact-Technical-Support # Ошибка разбора сообщения
+      '006': *Contact-Technical-Support # Системная ошибка
+      '007': *Contact-Technical-Support # Ошибка криптографии
+      '008': *Contact-Technical-Support # Таймаут
+      '009': *Contact-Technical-Support # Неверное число параметров
+      '010': *Contact-Technical-Support # Нулевая сумма операции
+      '201': *Call-Bank # Счет не найден
+      '202': *Call-Bank # Неверная транзакция
+      '203': *Call-Bank # Неверная сумма
+      '204': *Call-Bank # Невозможно провести операцию
+      '205': *Call-Bank # Нет средств на счете
+      '206': *Call-Bank # Неверная информация о платеже
+      '207': *Call-Bank # Неверный идентификатор терминала
+      '208': *Call-Bank # Оригинальная операция не найдена
+      '209': *Call-Bank # Невозможно провести операцию
+      '301': *Call-Bank # Карта просрочена
+      '302': *Call-Bank # Отказ без объяснения причин от эмитента
+      '303': *Call-Bank # Неподдерживаемая транзакция
+      '304': *Call-Bank # Транзакция запрещена на уровне финансового института
+      '305': *Call-Bank # Потерянная или украденная карта
+      '306': *Call-Bank # Неверный статус карты
+      '307': *Call-Bank # Ограниченная карта
+      '308': *Call-Bank # Невозможно авторизовать
+      '309': *Call-Bank # Превышен лимит активности использования карты
+      '310': *Call-Bank # Превышен лимит суммы операций по карте
+      '320': *Call-Bank # Карта не поддерживается
+      '333': *Call-Bank # Ошибка формата
+      '334': *Call-Bank # Таймаут при совершении транзакции
+      '396': *Call-Bank # Системная ошибка
+      '401': *Call-Bank # Необходима связь с эмитентом (call issuer)
+      '410': *Call-Bank # Неверное значение данных 3D-Secure (CAVV)
+      '411': *Call-Bank # Неверное значение CVV2/CVC2
+      '501': *Contact-Technical-Support # Карта просрочена – необходим захват карты
+      '502': *Contact-Technical-Support # Отказ от эмитента – необходим захват карты
+      '809': *Contact-Technical-Support # Системная ошибка
+      '888': *Contact-Technical-Support # Неверный номер сессии
 ...
