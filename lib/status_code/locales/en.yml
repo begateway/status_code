@@ -432,7 +432,7 @@ en:
     '117': *Call-Bank # Decline, incorrect PIN
     '118': *Call-Bank # Decline, no card record
     '119': *Call-Bank # Decline, transaction not permitted to cardholder
-    '120': *Call-Bank # Decline, transaction not permitted to terminal
+    '120': *Contact-Technical-Support # Decline, transaction not permitted to terminal
     '121': *Call-Bank # Decline, exceeds withdrawal amount limit
     '122': *Call-Bank # Decline, security violation
     '123': *Call-Bank # Decline, exceeds withdrawal frequency limit
