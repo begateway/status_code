@@ -10,7 +10,7 @@ module StatusCode
   def self.decode(code, options = {})
     if code
       receiver = options[:receiver] || :customer
-      gw       = options[:gateway].to_s.downcase
+      gw       = options[:gateway]
       locale   = options[:locale] || :en
 
       message("#{receiver}.#{gw}.#{code}", locale) ||
