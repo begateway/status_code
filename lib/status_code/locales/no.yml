@@ -813,7 +813,7 @@
     '113': *Call-Bank # Decline, unacceptable fee
     '114': *Call-Bank # Decline, no account of type requested
     '115': *Call-Bank # Decline, requested function not supported
-    '116': &Not-sufficient-funds The payment has been declined by your bank. There is not sufficient funds remaining to pay # Decline, not sufficient funds
+    '116': &Not-sufficient-funds The payment has been declined by your bank. Insufficient funds to pay # Decline, not sufficient funds
     '117': *Call-Bank # Decline, incorrect PIN
     '118': *Call-Bank # Decline, no card record
     '119': *Call-Bank # Decline, transaction not permitted to cardholder
