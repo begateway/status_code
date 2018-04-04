@@ -981,7 +981,7 @@ it:
       '056': *Contact-Technical-Support # Transaction not supported by institution
       '057': *Call-Bank # Lost or stolen card
       '058': *Call-Bank # Invalid status card
-      '059': *Online-Disable-Call-Bank # Resricted status
+      '059': &Online-Disable-Call-Bank The payment has been declined by your bank. Online payments are disabled for this card. Call the bank support line to enable online payments. Your bank phone number can be found on the back side of your card # Resricted status
       '060': *Call-Bank # Account not found
       '061': *Contact-Technical-Support # Wrong customer information for payment
       '062': *Contact-Technical-Support # Customer information format error
@@ -1013,7 +1013,7 @@ it:
       '082': *Approved # Approved. ICC approved after card-initiated referral (AAR)
       '100': *Call-Bank # Decline, do not honour
       '107': *Call-Bank # Decline, acceptor contact issuer
-      '119': &Online-Disable-Call-Bank The payment has been declined by your bank. Online payments are disabled for this card. Call the bank support line to enable online payments. Your bank phone number can be found on the back side of your card # Decline, transaction not permitted to cardholder
+      '119': *Online-Disable-Call-Bank # Decline, transaction not permitted to cardholder
       '124': *Online-Disable-Call-Bank # Decline, violation of law
       '164': *Call-Bank # Decline, no acquires service
       '165': *Call-Bank # Decline, not fulfill AML requirements
