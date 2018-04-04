@@ -975,7 +975,7 @@ ru:
       '056': *Contact-Technical-Support # Запрашиваемая операция не поддерживается хостом
       '057': *Call-Bank # Карта клиента имеет статус «потеряна» или «украдена»
       '058': *Call-Bank # Карта клиента имеет неправильный статус
-      '059': *Online-Disable-Call-Bank # Карта клиента имеет ограниченные возможности
+      '059': &Online-Disable-Call-Bank Платеж отклонен банком, выпустившим Вашу карту. Интернет платежи отключены для этой карты. Обратитесь в банк для активации интернет платежей. Контактный телефон на обратной стороне карты # Карта клиента имеет ограниченные возможности
       '060': *Call-Bank # Не найден вендер с указанным номером счета
       '061': *Contact-Technical-Support # Неправильное количество информационных полей для заданного вендора
       '062': *Contact-Technical-Support # Не верный формат информационного поля платежа
@@ -1007,7 +1007,7 @@ ru:
       '082': *Approved # Approved. ICC approved after card-initiated referral (AAR)
       '100': *Call-Bank # Decline, do not honour
       '107': *Call-Bank # Decline, acceptor contact issuer
-      '119': &Online-Disable-Call-Bank Платеж отклонен банком, выпустившим Вашу карту. Интернет платежи отключены для этой карты. Обратитесь в банк для активации интернет платежей. Контактный телефон на обратной стороне карты # The payment has been declined by your bank. Online payments are disabled for this card. Call the bank support line to enable online payments. Your bank phone number can be found on the back side of your card # Decline, transaction not permitted to cardholder
+      '119': *Online-Disable-Call-Bank # The payment has been declined by your bank. Online payments are disabled for this card. Call the bank support line to enable online payments. Your bank phone number can be found on the back side of your card # Decline, transaction not permitted to cardholder
       '124': *Online-Disable-Call-Bank # Decline, violation of law
       '164': *Call-Bank # Decline, no acquires service
       '165': *Call-Bank # Decline, not fulfill AML requirements
