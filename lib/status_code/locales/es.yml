@@ -152,6 +152,42 @@ es:
       '922': Decline # Нет разрешения
       '923': System error # Системная ошибка
       '950': System error # Системная ошибка
+    minbank:
+      '000': Approved, balances available
+      '001': Approved, no balances available
+      '007': Approved administrative transaction
+      '050': General
+      '051': Expired card
+      '053': No sharing allowed
+      '055': Invalid transaction
+      '056': Transaction not supported by institution
+      '057': Lost or stolen card
+      '058': Invalid status card
+      '059': Resricted status
+      '060': Account not found
+      '061': Wrong customer information for payment
+      '062': Customer information format error
+      '074': Unable to authorize
+      '076': Insufficient funds
+      '078': Duplicate transaction received
+      '082': Maximum number of times used
+      '095': Amount over maximum
+      '101': Unable to authorize – call issuer
+      '105': Card not supported
+      '200': Invalid account
+      '205': Invalid advance amount
+      '209': Invalid transaction code
+      '210': Bad CAVV
+      '211': Bad CVV2
+      '800': Format error
+      '801': Original transaction not found
+      '809': Invalid close transaction
+      '810': Transaction timeout
+      '811': System error
+      '820': Invalid terminal identifier
+      '901': Expired Card
+      '909': External Decline Special Condition
+      '959': Administrative transactions not supported
     mtb:
       '002': &mtb002 Approved for a partial amount
       '080': &mtb080 Approved. ICC offline approved
@@ -934,6 +970,42 @@ es:
       '922': *Contact-Technical-Support # Нет разрешения
       '923': *Contact-Technical-Support # Системная ошибка
       '950': *Contact-Technical-Support # Системная ошибка
+    minbank:
+      '000': *Approved # Approved, balances available
+      '001': *Approved # Approved, no balances available
+      '007': *Approved # Approved administrative transaction
+      '050': *Call-Bank # General
+      '051': *Call-Bank # Expired card
+      '053': *Contact-Technical-Support # No sharing allowed
+      '055': *Contact-Technical-Support # Invalid transaction
+      '056': *Contact-Technical-Support # Transaction not supported by institution
+      '057': *Call-Bank # Lost or stolen card
+      '058': *Call-Bank # Invalid status card
+      '059': *Online-Disable-Call-Bank # Resricted status
+      '060': *Call-Bank # Account not found
+      '061': *Contact-Technical-Support # Wrong customer information for payment
+      '062': *Contact-Technical-Support # Customer information format error
+      '074': *Call-Bank # Unable to authorize
+      '076': Insufficient funds
+      '078': *Contact-Technical-Support # Duplicate transaction received
+      '082': *Contact-Technical-Support # Maximum number of times used
+      '095': *Contact-Technical-Support # Amount over maximum
+      '101': *Call-Bank # Unable to authorize – call issuer
+      '105': *Contact-Technical-Support # Card not supported
+      '200': *Contact-Technical-Support # Invalid account
+      '205': *Contact-Technical-Support # Invalid advance amount
+      '209': *Contact-Technical-Support # Invalid transaction code
+      '210': *Contact-Technical-Support # Bad CAVV
+      '211': *Contact-Technical-Support # Bad CVV2
+      '800': *Contact-Technical-Support # Format error
+      '801': *Contact-Technical-Support # Original transaction not found
+      '809': *Contact-Technical-Support # Invalid close transaction
+      '810': *Contact-Technical-Support # Transaction timeout
+      '811': *Contact-Technical-Support # System error
+      '820': *Contact-Technical-Support # Invalid terminal identifier
+      '901': *Call-Bank # Expired Card
+      '909': *Call-Bank # External Decline Special Condition
+      '959': *Contact-Technical-Support # Administrative transactions not supported
     mtb:
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved
