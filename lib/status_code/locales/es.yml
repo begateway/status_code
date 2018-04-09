@@ -109,6 +109,7 @@ es:
     '922': Decline reason message. Message number out of sequence
     '923': Status message. Request in progress
     '950': Decline reason message. Violation of business arrangement
+    '999': System error
     bpc:
       '002': Decline # Нет разрешения
       '006': Decline # Нет разрешения
@@ -927,6 +928,7 @@ es:
     '922': *Contact-Technical-Support # Decline reason message. Message number out of sequence
     '923': *Contact-Technical-Support # Status message. Request in progress
     '950': *Contact-Technical-Support # Decline reason message. Violation of business arrangement # Системная ошибка
+    '999': *Contact-Technical-Support # System error
     bpc:
       '002': *Call-Bank # Нет разрешения
       '006': *Call-Bank # Нет разрешения
