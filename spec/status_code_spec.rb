@@ -265,9 +265,10 @@ describe StatusCode do
 
       context 'when code is nil' do
         let(:code) { nil }
+        let(:message) { 'System error' }
 
         it 'returns nil' do
-          expect(subject).to be_nil
+          expect(subject).to eql(message)
         end
       end
 
