@@ -13,9 +13,7 @@ module StatusCode
     opts[:receiver] ||= :customer
     opts[:locale] ||= :en
 
-    return if code_blank(code, opts, :merchant)
-    default_code = opts[:status] ? APPROVE_CODE : DECLINE_CODE
-    find_message(code, opts) || find_message(default_code, opts)
+    return_message(code, opts)
   end
 
   def self.message(path, locale)
@@ -31,5 +29,15 @@ module StatusCode
     opts[:receiver] == role and (code.to_s.empty? || find_message(code, opts).nil?)
   end
 
-  private_class_method :message, :find_message, :code_blank
+  def self.return_message(code, opts)
+    return if code_blank(code, opts, :merchant)
+    default_code = opts[:status] ? APPROVE_CODE : DECLINE_CODE
+    if code_blank(code, opts, :customer)
+      find_message(default_code, opts)
+    else
+      find_message(code, opts)
+    end
+  end
+
+  private_class_method :message, :find_message, :code_blank, :return_message
 end
