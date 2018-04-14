@@ -2,25 +2,34 @@
 require 'i18n'
 
 module StatusCode
-  DEFAULT_ERROR_CODE = '999'
+  APPROVE_CODE = '000'
+  DECLINE_CODE = '999'
   LOCALES_PATH = "#{__dir__}/status_code/locales/*.yml".freeze
   I18n.enforce_available_locales = false
   I18n.load_path += Dir[LOCALES_PATH]
   I18n.backend.load_translations
 
-  def self.decode(code, options = {})
-    code     = DEFAULT_ERROR_CODE if code.to_s.empty?
-    receiver = options[:receiver] || :customer
-    gw       = options[:gateway]
-    locale   = options[:locale] || :en
+  def self.decode(bank_code, options = {})
+    options[:receiver] ||= :customer
+    options[:locale] ||= :en
 
-    message("#{receiver}.#{gw}.#{code}", locale) ||
-      message("#{receiver}.#{code}", locale)
+    return if code_blank(code, opts, :merchant)
+    default_code = opts[:status] ? APPROVE_CODE : DECLINE_CODE
+    find_message(code, opts) || find_message(default_code, opts)
   end
 
   def self.message(path, locale)
     I18n.t(path, locale: locale) if I18n.exists?(path, locale)
   end
 
-  private_class_method :message
+  def self.find_message(code, opts)
+    message("#{opts[:receiver]}.#{opts[:gw]}.#{code}", opts[:locale]) ||
+      message("#{opts[:receiver]}.#{code}", opts[:locale])
+  end
+
+  def self.code_blank(code, opts, role)
+    opts[:receiver] == role and (code.to_s.empty? || find_message(code, opts).nil?)
+  end
+
+  private_class_method :message, :find_message, :code_blank
 end
