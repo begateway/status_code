@@ -9,9 +9,9 @@ module StatusCode
   I18n.load_path += Dir[LOCALES_PATH]
   I18n.backend.load_translations
 
-  def self.decode(bank_code, options = {})
-    options[:receiver] ||= :customer
-    options[:locale] ||= :en
+  def self.decode(code, opts = {})
+    opts[:receiver] ||= :customer
+    opts[:locale] ||= :en
 
     return if code_blank(code, opts, :merchant)
     default_code = opts[:status] ? APPROVE_CODE : DECLINE_CODE
@@ -23,7 +23,7 @@ module StatusCode
   end
 
   def self.find_message(code, opts)
-    message("#{opts[:receiver]}.#{opts[:gw]}.#{code}", opts[:locale]) ||
+    message("#{opts[:receiver]}.#{opts[:gateway]}.#{code}", opts[:locale]) ||
       message("#{opts[:receiver]}.#{code}", opts[:locale])
   end
 
