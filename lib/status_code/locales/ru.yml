@@ -104,7 +104,6 @@ ru:
     '922': Обратитесь к дежурной службе, неверный номер сообщения # Decline reason message. Message number out of sequence
     '923': Обратитесь к дежурной службе, запрос обрабатывается # Status message. Request in progress
     '950': Отказ, недопустимая операция # Decline reason message. Violation of business arrangement
-    '999': Системная ошибка
     bpc:
       '002': Нет разрешения
       '006': Нет разрешения
@@ -922,7 +921,7 @@ ru:
     '922': *Contact-Technical-Support # Decline reason message. Message number out of sequence
     '923': *Contact-Technical-Support # Status message. Request in progress
     '950': *Contact-Technical-Support # Decline reason message. Violation of business arrangement
-    '999': *Contact-Technical-Support # System error
+    '999': 'Отказ'
     bpc:
       '002': *Call-Bank # Нет разрешения
       '006': *Call-Bank # Нет разрешения

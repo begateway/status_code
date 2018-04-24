@@ -69,12 +69,10 @@ describe StatusCode do
 
             context 'with unknown code' do
               let(:code) { '99999' }
-              let(:message) do
-                "The payment has been declined. Please contact Technical Support"
-              end
+              let(:message) { "Decline" }
 
               it 'returns nil' do
-                expect(subject).to eql(message)
+                expect(subject).to eql("Decline")
               end
             end
           end
@@ -139,9 +137,7 @@ describe StatusCode do
 
             context 'with unknown code' do
               let(:code) { '99999' }
-              let(:message) do
-                "Платеж отклонен. Свяжитесь со службой технической поддержки"
-              end
+              let(:message) { 'Отказ' }
 
               it 'returns nil' do
                 expect(subject).to eql(message)
