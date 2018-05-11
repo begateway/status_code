@@ -295,5 +295,74 @@ describe StatusCode do
         expect(StatusCode.decode(code)).to eql(message)
       end
     end
+
+    context 'with Belarus locale' do
+      let(:receiver) { :customer }
+      let(:gateway) { 'mtb' }
+      let(:locale) { :by }
+
+      subject do
+        StatusCode.decode(code, receiver: receiver,
+                                locale: locale,
+                                gateway: gateway)
+      end
+
+      context 'with Approved code' do
+        let(:code) { '000' }
+        let(:message) { 'Ухвалена' }
+
+        it 'returns approve message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with Call-Bank code' do
+        let(:code) { '100' }
+        let(:message) { 'Аплата адхіленая банкам, які выдаў Вашу картку. ' \
+          'Звярніцеся ў банк за тлумачэннем. Кантактны тэлефон на зваротным баку карткі' }
+
+        it 'returns Call-Bank message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with Contact-Technical-Support code' do
+        let(:code) { '102' }
+        let(:message) { 'Аплата адхіленая. Звярніцеся ў службу тэхнічнай падтрымкі' }
+
+        it 'returns Contact-Technical-Support message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with Not-sufficient-funds code' do
+        let(:code) { '116' }
+        let(:message) { 'Аплата адхіленая банкам, які выдаў Вашу картку. Недастаткова сродкаў для аплаты' }
+
+        it 'returns Not-sufficient-funds message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with Online-Disable-Call-Bank code' do
+        let(:code) { '119' }
+        let(:message) { 'Аплата адхіленая банкам, які выдаў Вашу картку. ' \
+          'Інтэрнэт-плацяжы для гэтай карткі адключаныя. Звярніцеся ў банк, ' \
+          'каб актываваць інтэрнэт-плацяжы. Кантактны тэлефон на зваротным баку карткі' }
+
+        it 'returns Online-Disable-Call-Bank message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'without code' do
+        let(:code) { nil }
+        let(:message) { 'Адмова' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+    end
   end
 end
