@@ -299,7 +299,7 @@ describe StatusCode do
     context 'with Belarus locale' do
       let(:receiver) { :customer }
       let(:gateway) { 'mtb' }
-      let(:locale) { :by }
+      let(:locale) { :be }
 
       subject do
         StatusCode.decode(code, receiver: receiver,
