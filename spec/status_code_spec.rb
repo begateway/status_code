@@ -146,6 +146,74 @@ describe StatusCode do
           end
         end
 
+        context 'with Russian locale' do
+          let(:locale) { :az }
+
+          context 'with merchant receiver' do
+            let(:receiver) { :merchant }
+
+            context 'with approval code' do
+              let(:code) { '000' }
+              let(:message) { 'Təsdiqləndi' }
+
+              it 'returns approve message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with decline code' do
+              let(:code) { '100' }
+              let(:message) { 'İmtina' }
+
+              it 'returns decline message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with unknown code' do
+              let(:code) { '99999' }
+              it 'returns nil' do
+                expect(subject).to be_nil
+              end
+            end
+          end
+
+          context 'with customer receiver' do
+            let(:receiver) { :customer }
+
+            context 'with approval code' do
+              let(:code) { '000' }
+              let(:message) { 'Təsdiqləndi' }
+
+              it 'returns approve message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with decline code' do
+              let(:code) { '100' }
+              let(:message) do
+                'Kartı verən bank tərəfindən ödəniş imtina olundu. '\
+                'Dəqiqləşdirmək üçün bankla əlaqə saxlayın. '\
+                'Əlaqə nömrələri kartın arxasında qeyd olunub'
+              end
+
+              it 'returns decline message' do
+                expect(subject).to eql(message)
+              end
+            end
+
+            context 'with unknown code' do
+              let(:code) { '99999' }
+              let(:message) { 'İmtina' }
+
+              it 'returns nil' do
+                expect(subject).to eql(message)
+              end
+            end
+          end
+        end
+
         context 'with unknown locale' do
           let(:locale) { :zz }
           let(:receiver) { :customer }
