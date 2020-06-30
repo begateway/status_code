@@ -387,7 +387,7 @@ describe StatusCode do
         let(:code) { 'wrong_code' }
         let(:status) { false }
 
-        it 'returns Approved message' do
+        it 'returns Decline message' do
           expect(subject).to eql 'Decline'
         end
       end
@@ -396,7 +396,7 @@ describe StatusCode do
         let(:code) { nil }
         let(:status) { false }
 
-        it 'returns Approved message' do
+        it 'returns Decline message' do
           expect(subject).to eql 'Decline'
         end
       end
