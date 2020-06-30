@@ -14,6 +14,8 @@ class StatusCode
   def self.decode(code, opts = {})
     opts[:receiver] ||= :customer
     opts[:locale]   ||= :en
+
+    return if code.nil? && opts[:status].nil?
     new(code, opts).send("return_message_#{opts[:receiver]}".to_sym)
   end
 
@@ -27,7 +29,7 @@ class StatusCode
   end
 
   def return_message_customer
-    if code_blank(:customer)
+    if code_blank(:customer) && !opts[:status].nil?
       find_message(opts[:status] ? APPROVE_CODE : DECLINE_CODE)
     else
       find_message(code)
