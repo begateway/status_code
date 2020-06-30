@@ -206,7 +206,7 @@ describe StatusCode do
               let(:message) { 'İmtina' }
 
               it 'returns nil' do
-                expect(subject).to eql(message)
+                expect(subject).to eql nil
               end
             end
           end
