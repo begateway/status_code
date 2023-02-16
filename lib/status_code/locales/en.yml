@@ -822,6 +822,45 @@ en:
       '699': Transaction timed out from bank
       '700': Delayed transaction awaiting response from bank
       '799': TM Timeout
+    bgpb:
+      '000': Approved
+      '424': 'Do not honor: Failed to complete the transaction. Contact the merchant for details.'
+      '902': 'Rejected, the operation could not be performed'
+      '420': 'Provider system error: Failed to complete the transaction. Use another payment method or contact the merchant for details.'
+      '812': &Call-Bank-Equirer 'Отклонена, обратитесь в банк-эквайер'
+      '827': *Call-Bank-Equirer
+      '913': *Call-Bank-Equirer
+      '959': *Call-Bank-Equirer
+      '991': *Call-Bank-Equirer
+      '801': &Call-Bank-Emitent "Provider system error: Failed to complete the transaction. Use another payment method or contact your card issuing bank for details. The bank's phone number is indicated on the back of your card."
+      '802': *Call-Bank-Emitent
+      '804': *Call-Bank-Emitent
+      '820': *Call-Bank-Emitent
+      '821': *Call-Bank-Emitent
+      '831': *Call-Bank-Emitent
+      '872': Decline, CVV2/CVC2 validation error
+      '915': *Call-Bank-Emitent
+      '917': *Call-Bank-Emitent
+      '957': *Call-Bank-Emitent
+      '425': &Decline-Bgpb 'Not allowed: Failed to complete the transaction. Contact the merchant for details or use another payment method.'
+      '806': *Decline-Bgpb
+      '819': *Decline-Bgpb
+      '847': *Decline-Bgpb
+      '916': *Decline-Bgpb
+      '940': *Decline-Bgpb
+      '953': *Decline-Bgpb
+      '903': 'Currency not supported: Failed to complete the transaction. Choose another currency or contact the merchant for details.'
+      '422': &Wrong-Amount-Bgpb 'Wrong transaction amount: Failed to complete the transaction. Limits exceeded. Contact the merchant or your card issuing bank for details.'
+      '423': *Wrong-Amount-Bgpb
+      '421': '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.'
+      '828': &Wrong-Date-Bgpb 'Invalid card data. Failed to complete the transaction. Check your card details or use another card.'
+      '871': *Wrong-Date-Bgpb
+      '005': *Wrong-Date-Bgpb
+      '861': *Wrong-Date-Bgpb
+      '905': *Wrong-Date-Bgpb
+      '906': *Wrong-Date-Bgpb
+      '908': *Wrong-Date-Bgpb
+      '914': *Wrong-Date-Bgpb
 
   customer:
     '000': &Approved Approved
@@ -1636,4 +1675,43 @@ en:
       '699': *Contact-Technical-Support # Transaction timed out from bank
       '700': *Contact-Technical-Support # Delayed transaction awaiting response from bank
       '799': *Contact-Technical-Support # TM Timeout
+    bgpb:
+      '000': Approved
+      '424': 'Do not honor: Failed to complete the transaction. Contact the merchant for details.'
+      '902': 'Rejected, the operation could not be performed'
+      '420': 'Provider system error: Failed to complete the transaction. Use another payment method or contact the merchant for details.'
+      '812': &Call-Bank-Equirer 'Отклонена, обратитесь в банк-эквайер'
+      '827': *Call-Bank-Equirer
+      '913': *Call-Bank-Equirer
+      '959': *Call-Bank-Equirer
+      '991': *Call-Bank-Equirer
+      '801': &Call-Bank-Emitent "Provider system error: Failed to complete the transaction. Use another payment method or contact your card issuing bank for details. The bank's phone number is indicated on the back of your card."
+      '802': *Call-Bank-Emitent
+      '804': *Call-Bank-Emitent
+      '820': *Call-Bank-Emitent
+      '821': *Call-Bank-Emitent
+      '831': *Call-Bank-Emitent
+      '872': Decline, CVV2/CVC2 validation error
+      '915': *Call-Bank-Emitent
+      '917': *Call-Bank-Emitent
+      '957': *Call-Bank-Emitent
+      '425': &Decline-Bgpb 'Not allowed: Failed to complete the transaction. Contact the merchant for details or use another payment method.'
+      '806': *Decline-Bgpb
+      '819': *Decline-Bgpb
+      '847': *Decline-Bgpb
+      '916': *Decline-Bgpb
+      '940': *Decline-Bgpb
+      '953': *Decline-Bgpb
+      '903': 'Currency not supported: Failed to complete the transaction. Choose another currency or contact the merchant for details.'
+      '422': &Wrong-Amount-Bgpb 'Wrong transaction amount: Failed to complete the transaction. Limits exceeded. Contact the merchant or your card issuing bank for details.'
+      '423': *Wrong-Amount-Bgpb
+      '421': '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.'
+      '828': &Wrong-Date-Bgpb 'Invalid card data. Failed to complete the transaction. Check your card details or use another card.'
+      '871': *Wrong-Date-Bgpb
+      '005': *Wrong-Date-Bgpb
+      '861': *Wrong-Date-Bgpb
+      '905': *Wrong-Date-Bgpb
+      '906': *Wrong-Date-Bgpb
+      '908': *Wrong-Date-Bgpb
+      '914': *Wrong-Date-Bgpb
 ...

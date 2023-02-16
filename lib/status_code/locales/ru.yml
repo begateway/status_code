@@ -816,6 +816,45 @@ ru:
       '699': Transaction timed out from bank
       '700': Delayed transaction awaiting response from bank
       '799': TM Timeout
+    bgpb:
+      '000': &Approved Одобрено # Approved
+      '424': 'Нет разрешения: Не удалось обработать транзакцию. Обратитесь к продавцу.'
+      '902': 'Отклонена, операция не может быть выполнена'
+      '420': 'Ошибка системы провайдера: Не удалось совершить транзакцию. Выберите другой способ оплаты или обратитесь к продавцу для разъяснения причин.'
+      '812': &Call-Bank-Equirer Отклонена, обратитесь в банк-эквайер
+      '827': *Call-Bank-Equirer
+      '913': *Call-Bank-Equirer
+      '959': *Call-Bank-Equirer
+      '991': *Call-Bank-Equirer
+      '801': &Call-Bank-Emitent 'Ошибка системы провайдера: Не удалось совершить транзакцию. Выберите другой способ оплаты или обратитесь в банк-эмитент карты для разъяснения причин. Телефон банка указан на обратной стороне карты.'
+      '802': *Call-Bank-Emitent
+      '804': *Call-Bank-Emitent
+      '820': *Call-Bank-Emitent
+      '821': *Call-Bank-Emitent
+      '831': *Call-Bank-Emitent
+      '872': Неверное значение CVV2/CVC2
+      '915': *Call-Bank-Emitent
+      '917': *Call-Bank-Emitent
+      '957': *Call-Bank-Emitent
+      '425': &Decline-Bgpb 'Нет разрешения: Не удалось завершить транзакцию. Обратитесь к продавцу для уточнения причин или используйте другой способ оплаты.'
+      '806': *Decline-Bgpb
+      '819': *Decline-Bgpb
+      '847': *Decline-Bgpb
+      '916': *Decline-Bgpb
+      '940': *Decline-Bgpb
+      '953': *Decline-Bgpb
+      '903': 'Валюта не поддерживается: Не удалось завершить транзакцию. Выберите другую валюту или обратитесь к продавцу для уточнения причины.'
+      '422': &Wrong-Amount-Bgpb 'Неверная сумма транзакции: Не удалось завершить транзакцию. Превышены лимиты. Обратитесь к продавцу или в банк-эмитент карты для уточнения причины.'
+      '423': *Wrong-Amount-Bgpb
+      '421': 'Ошибка проверки 3-D Secure: Проверьте код 3-D Secure или обратитесь к провайдеру платежных услуг для уточнения причины.'
+      '828': &Wrong-Date-Bgpb 'Неверные данные карты. Не удалось завершить транзакцию. Проверьте данные своей карты или используйте другую карту.'
+      '871': *Wrong-Date-Bgpb
+      '005': *Wrong-Date-Bgpb
+      '861': *Wrong-Date-Bgpb
+      '905': *Wrong-Date-Bgpb
+      '906': *Wrong-Date-Bgpb
+      '908': *Wrong-Date-Bgpb
+      '914': *Wrong-Date-Bgpb
 
   customer:
     '000': &Approved Одобрено # Approved
@@ -1247,48 +1286,6 @@ ru:
       '502': *Contact-Technical-Support # Отказ от эмитента – необходим захват карты
       '809': *Contact-Technical-Support # Системная ошибка
       '888': *Contact-Technical-Support # Неверный номер сессии
-    vtb:
-      '000': *Approved # Обработка завершена успешно
-      '001': *Contact-Technical-Support # Неподдерживаемая версия
-      '002': *Contact-Technical-Support # Неподдерживаемый язык
-      '003': *Contact-Technical-Support # Неподдерживаемая команда
-      '004': *Contact-Technical-Support # Ошибка аутентификации (неверный сертификат)
-      '005': *Contact-Technical-Support # Ошибка разбора сообщения
-      '006': *Contact-Technical-Support # Системная ошибка
-      '007': *Contact-Technical-Support # Ошибка криптографии
-      '008': *Contact-Technical-Support # Таймаут
-      '009': *Contact-Technical-Support # Неверное число параметров
-      '010': *Contact-Technical-Support # Нулевая сумма операции
-      '201': *Call-Bank # Счет не найден
-      '202': *Call-Bank # Неверная транзакция
-      '203': *Call-Bank # Неверная сумма
-      '204': *Call-Bank # Невозможно провести операцию
-      '205': *Call-Bank # Нет средств на счете
-      '206': *Call-Bank # Неверная информация о платеже
-      '207': *Call-Bank # Неверный идентификатор терминала
-      '208': *Call-Bank # Оригинальная операция не найдена
-      '209': *Call-Bank # Невозможно провести операцию
-      '301': *Call-Bank # Карта просрочена
-      '302': *Call-Bank # Отказ без объяснения причин от эмитента
-      '303': *Call-Bank # Неподдерживаемая транзакция
-      '304': *Call-Bank # Транзакция запрещена на уровне финансового института
-      '305': *Call-Bank # Потерянная или украденная карта
-      '306': *Call-Bank # Неверный статус карты
-      '307': *Call-Bank # Ограниченная карта
-      '308': *Call-Bank # Невозможно авторизовать
-      '309': *Call-Bank # Превышен лимит активности использования карты
-      '310': *Call-Bank # Превышен лимит суммы операций по карте
-      '320': *Call-Bank # Карта не поддерживается
-      '333': *Call-Bank # Ошибка формата
-      '334': *Call-Bank # Таймаут при совершении транзакции
-      '396': *Call-Bank # Системная ошибка
-      '401': *Call-Bank # Необходима связь с эмитентом (call issuer)
-      '410': *Call-Bank # Неверное значение данных 3D-Secure (CAVV)
-      '411': *Call-Bank # Неверное значение CVV2/CVC2
-      '501': *Contact-Technical-Support # Карта просрочена – необходим захват карты
-      '502': *Contact-Technical-Support # Отказ от эмитента – необходим захват карты
-      '809': *Contact-Technical-Support # Системная ошибка
-      '888': *Contact-Technical-Support # Неверный номер сессии
     bank_one:
       '000': *Approved # Transaction Successful
       '001': *Call-Bank # Pending for Authorisation
@@ -1672,4 +1669,43 @@ ru:
       '699': *Contact-Technical-Support # Transaction timed out from bank
       '700': *Contact-Technical-Support # Delayed transaction awaiting response from bank
       '799': *Contact-Technical-Support # TM Timeout
+    bgpb:
+      '000': *Approved # Transaction Successful
+      '424': 'Нет разрешения: Не удалось обработать транзакцию. Обратитесь к продавцу.'
+      '902': 'Отклонена, операция не может быть выполнена'
+      '420': 'Ошибка системы провайдера: Не удалось совершить транзакцию. Выберите другой способ оплаты или обратитесь к продавцу для разъяснения причин.'
+      '812': &Call-Bank-Equirer Отклонена, обратитесь в банк-эквайер
+      '827': *Call-Bank-Equirer
+      '913': *Call-Bank-Equirer
+      '959': *Call-Bank-Equirer
+      '991': *Call-Bank-Equirer
+      '801': &Call-Bank-Emitent 'Ошибка системы провайдера: Не удалось совершить транзакцию. Выберите другой способ оплаты или обратитесь в банк-эмитент карты для разъяснения причин. Телефон банка указан на обратной стороне карты.'
+      '802': *Call-Bank-Emitent
+      '804': *Call-Bank-Emitent
+      '820': *Call-Bank-Emitent
+      '821': *Call-Bank-Emitent
+      '831': *Call-Bank-Emitent
+      '872': Неверное значение CVV2/CVC2
+      '915': *Call-Bank-Emitent
+      '917': *Call-Bank-Emitent
+      '957': *Call-Bank-Emitent
+      '425': &Decline-Bgpb 'Нет разрешения: Не удалось завершить транзакцию. Обратитесь к продавцу для уточнения причин или используйте другой способ оплаты.'
+      '806': *Decline-Bgpb
+      '819': *Decline-Bgpb
+      '847': *Decline-Bgpb
+      '916': *Decline-Bgpb
+      '940': *Decline-Bgpb
+      '953': *Decline-Bgpb
+      '903': 'Валюта не поддерживается: Не удалось завершить транзакцию. Выберите другую валюту или обратитесь к продавцу для уточнения причины.'
+      '422': &Wrong-Amount-Bgpb 'Неверная сумма транзакции: Не удалось завершить транзакцию. Превышены лимиты. Обратитесь к продавцу или в банк-эмитент карты для уточнения причины.'
+      '423': *Wrong-Amount-Bgpb
+      '421': 'Ошибка проверки 3-D Secure: Проверьте код 3-D Secure или обратитесь к провайдеру платежных услуг для уточнения причины.'
+      '828': &Wrong-Date-Bgpb 'Неверные данные карты. Не удалось завершить транзакцию. Проверьте данные своей карты или используйте другую карту.'
+      '871': *Wrong-Date-Bgpb
+      '005': *Wrong-Date-Bgpb
+      '861': *Wrong-Date-Bgpb
+      '905': *Wrong-Date-Bgpb
+      '906': *Wrong-Date-Bgpb
+      '908': *Wrong-Date-Bgpb
+      '914': *Wrong-Date-Bgpb
 ...

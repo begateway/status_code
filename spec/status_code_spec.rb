@@ -432,5 +432,54 @@ describe StatusCode do
         end
       end
     end
+
+    context 'with Bgpg locale' do
+      let(:receiver) { :customer }
+      let(:gateway) { 'bgpb' }
+      let(:locale) { :en }
+
+      subject do
+        StatusCode.decode(code, receiver: receiver,
+                                locale: locale,
+                                gateway: gateway)
+      end
+
+      context 'with Approved code' do
+        let(:code) { '000' }
+        let(:message) { 'Approved' }
+
+        it 'returns approve message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with 421 code' do
+        let(:code) { '421' }
+        let(:message) { '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.' }
+
+        it 'returns approve message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 005 code' do
+        let(:code) { '005' }
+        let(:message) { 'Invalid card data. Failed to complete the transaction. Check your card details or use another card.' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 005 code' do
+        let(:code) { '005' }
+        let(:locale) { :ru }
+        let(:message) { 'Неверные данные карты. Не удалось завершить транзакцию. Проверьте данные своей карты или используйте другую карту.' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+    end
   end
 end
