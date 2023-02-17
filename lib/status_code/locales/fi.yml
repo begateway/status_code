@@ -109,7 +109,7 @@ fi:
     '922': Decline reason message. Message number out of sequence
     '923': Status message. Request in progress
     '950': Decline reason message. Violation of business arrangement
-    bpc:
+    bpc: &bpc
       '002': Decline # Нет разрешения
       '006': Decline # Нет разрешения
       '109': The operation is prohibited # Операция запрещена
@@ -152,6 +152,18 @@ fi:
       '922': Decline # Нет разрешения
       '923': System error # Системная ошибка
       '950': System error # Системная ошибка
+    bsb:
+     <<: *bpc
+    paritetbank:
+      <<: *bpc
+    bapb:
+      <<: *bpc
+    bpcmir:
+      <<: *bpc
+    bsbmir:
+      <<: *bpc
+    paritetbankmir:
+      <<: *bpc
     minbank:
       '000': Approved, balances available
       '001': Approved, no balances available
@@ -928,7 +940,7 @@ fi:
     '923': *Contact-Technical-Support # Status message. Request in progress
     '950': *Contact-Technical-Support # Decline reason message. Violation of business arrangement # Системная ошибка
     '999': 'Decline'
-    bpc:
+    bpc: &bpc
       '002': *Call-Bank # Нет разрешения
       '006': *Call-Bank # Нет разрешения
       '109': *Call-Bank # Операция запрещена
@@ -971,6 +983,18 @@ fi:
       '922': *Contact-Technical-Support # Нет разрешения
       '923': *Contact-Technical-Support # Системная ошибка
       '950': *Contact-Technical-Support # Системная ошибка
+    bsb:
+     <<: *bpc
+    paritetbank:
+      <<: *bpc
+    bapb:
+      <<: *bpc
+    bpcmir:
+      <<: *bpc
+    bsbmir:
+      <<: *bpc
+    paritetbankmir:
+      <<: *bpc
     minbank:
       '000': *Approved # Approved, balances available
       '001': *Approved # Approved, no balances available

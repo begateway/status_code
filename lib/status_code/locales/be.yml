@@ -104,7 +104,7 @@ be:
     '922': Обратитесь к дежурной службе, неверный номер сообщения # Decline reason message. Message number out of sequence
     '923': Обратитесь к дежурной службе, запрос обрабатывается # Status message. Request in progress
     '950': Отказ, недопустимая операция # Decline reason message. Violation of business arrangement
-    bpc:
+    bpc: &bpc
       '002': Нет разрешения
       '006': Нет разрешения
       '109': Операция запрещена
@@ -147,6 +147,18 @@ be:
       '922': Нет разрешения
       '923': Системная ошибка
       '950': Системная ошибка
+    bsb:
+     <<: *bpc
+    paritetbank:
+      <<: *bpc
+    bapb:
+      <<: *bpc
+    bpcmir:
+      <<: *bpc
+    bsbmir:
+      <<: *bpc
+    paritetbankmir:
+      <<: *bpc
     minbank:
       '000': Операция запрос баланса выполнена
       '001': Операция одобрена
@@ -922,7 +934,7 @@ be:
     '923': *Contact-Technical-Support # Status message. Request in progress
     '950': *Contact-Technical-Support # Decline reason message. Violation of business arrangement
     '999': 'Адмова'
-    bpc:
+    bpc: &bpc
       '002': *Call-Bank # Нет разрешения
       '006': *Call-Bank # Нет разрешения
       '109': *Call-Bank # Операция запрещена
@@ -965,6 +977,18 @@ be:
       '922': *Contact-Technical-Support # Нет разрешения
       '923': *Contact-Technical-Support # Системная ошибка
       '950': *Contact-Technical-Support # Системная ошибка
+    bsb:
+     <<: *bpc
+    paritetbank:
+      <<: *bpc
+    bapb:
+      <<: *bpc
+    bpcmir:
+      <<: *bpc
+    bsbmir:
+      <<: *bpc
+    paritetbankmir:
+      <<: *bpc
     minbank:
       '000': *Approved # Операция запрос баланса выполнена
       '001': *Approved # Операция одобрена
