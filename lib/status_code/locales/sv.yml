@@ -200,7 +200,7 @@ sv:
       '901': Expired Card
       '909': External Decline Special Condition
       '959': Administrative transactions not supported
-    mtb:
+    mtb: &mtb
       '002': &mtb002 Approved for a partial amount
       '080': &mtb080 Approved. ICC offline approved
       '081': &mtb081 Approved. ICC unable to go online, approved
@@ -272,6 +272,12 @@ sv:
       '971': &mtb971 Decline reason message. Security error, try again
       '972': &mtb972 Decline reason message. Security error, no action
       '973': &mtb973 Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *mtb002
       '080': *mtb080
@@ -1031,7 +1037,7 @@ sv:
       '901': *Call-Bank # Expired Card
       '909': *Call-Bank # External Decline Special Condition
       '959': *Contact-Technical-Support # Administrative transactions not supported
-    mtb:
+    mtb: &mtb
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved
       '081': *Approved # Approved. ICC unable to go online, approved
@@ -1102,6 +1108,12 @@ sv:
       '971': *Contact-Technical-Support # Decline reason message. Security error, try again
       '972': *Contact-Technical-Support # Decline reason message. Security error, no action
       '973': *Contact-Technical-Support # Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved

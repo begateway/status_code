@@ -195,7 +195,7 @@ az:
       '901': Kartın vaxtı bitib. Kartı çıxarın.
       '909': Əməliyyatdan imtina.
       '959': Administrativ əməliyyat tərəfindən dəstəklənmir
-    mtb:
+    mtb: &mtb
       '002': &mtb002 Təsdiqləndi # Approved for a partial amount
       '080': &mtb080 Təsdiqləndi # Approved. ICC offline approved
       '081': &mtb081 Təsdiqləndi # Approved. ICC unable to go online, approved
@@ -266,6 +266,12 @@ az:
       '971': &mtb971 İmtina, şifrələmə xətası # Decline reason message. Security error, try again
       '972': &mtb972 İmtina, şifrələmə xətası # Decline reason message. Security error, no action
       '973': &mtb973 İmtina, mesajın nömrəsi düzgün deyil # Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *mtb002
       '080': *mtb080
@@ -1025,7 +1031,7 @@ az:
       '901': *Call-Bank # Kartın vaxtı bitib. Kartı çıxarın.
       '909': *Call-Bank # Əməliyyatdan imtina.
       '959': *Contact-Technical-Support # Administrativ əməliyyat dəstəklənmir
-    mtb:
+    mtb: &mtb
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved
       '081': *Approved # Approved. ICC unable to go online, approved
@@ -1096,6 +1102,12 @@ az:
       '971': *Contact-Technical-Support # Decline reason message. Security error, try again
       '972': *Contact-Technical-Support # Decline reason message. Security error, no action
       '973': *Contact-Technical-Support # Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved

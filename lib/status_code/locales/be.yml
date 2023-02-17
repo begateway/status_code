@@ -195,7 +195,7 @@ be:
       '901': Карта просрочена. Изъять карту.
       '909': Отказ в проведении операции.
       '959': Административная операция не поддерживается
-    mtb:
+    mtb: &mtb
       '002': &mtb002 Одобрено # Approved for a partial amount
       '080': &mtb080 Одобрено # Approved. ICC offline approved
       '081': &mtb081 Одобрено # Approved. ICC unable to go online, approved
@@ -266,6 +266,12 @@ be:
       '971': &mtb971 Отказ, ошибка шифрования # Decline reason message. Security error, try again
       '972': &mtb972 Отказ, ошибка шифрования # Decline reason message. Security error, no action
       '973': &mtb973 Отказ, неверный номер сообщения # Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *mtb002
       '080': *mtb080
@@ -1025,7 +1031,7 @@ be:
       '901': *Call-Bank # Карта просрочена. Изъять карту.
       '909': *Call-Bank # Отказ в проведении операции.
       '959': *Contact-Technical-Support # Административная операция не поддерживается
-    mtb:
+    mtb: &mtb
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved
       '081': *Approved # Approved. ICC unable to go online, approved
@@ -1096,6 +1102,12 @@ be:
       '971': *Contact-Technical-Support # Decline reason message. Security error, try again
       '972': *Contact-Technical-Support # Decline reason message. Security error, no action
       '973': *Contact-Technical-Support # Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved
