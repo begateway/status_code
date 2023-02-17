@@ -158,11 +158,11 @@ es:
       <<: *bpc
     bapb:
       <<: *bpc
-    bpcmir:
+    bpc_mir:
       <<: *bpc
-    bsbmir:
+    bsb_mir:
       <<: *bpc
-    paritetbankmir:
+    paritetbank_mir:
       <<: *bpc
     minbank:
       '000': Approved, balances available
@@ -995,11 +995,11 @@ es:
       <<: *bpc
     bapb:
       <<: *bpc
-    bpcmir:
+    bpc_mir:
       <<: *bpc
-    bsbmir:
+    bsb_mir:
       <<: *bpc
-    paritetbankmir:
+    paritetbank_mir:
       <<: *bpc
     minbank:
       '000': *Approved # Approved, balances available

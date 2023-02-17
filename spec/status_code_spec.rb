@@ -435,7 +435,7 @@ describe StatusCode do
 
     context 'with Paritetbankmir locale' do 
       let(:receiver) { :customer }
-      let(:gateway) { 'paritetbankmir' }
+      let(:gateway) { 'paritetbank_mir' }
       let(:locale) { :ru }
 
       subject do

@@ -153,11 +153,11 @@ ru:
       <<: *bpc
     bapb:
       <<: *bpc
-    bpcmir:
+    bpc_mir:
       <<: *bpc
-    bsbmir:
+    bsb_mir:
       <<: *bpc
-    paritetbankmir:
+    paritetbank_mir:
       <<: *bpc
     minbank:
       '000': Операция запрос баланса выполнена
@@ -1028,11 +1028,11 @@ ru:
       <<: *bpc
     bapb:
       <<: *bpc
-    bpcmir:
+    bpc_mir:
       <<: *bpc
-    bsbmir:
+    bsb_mir:
       <<: *bpc
-    paritetbankmir:
+    paritetbank_mir:
       <<: *bpc
     minbank:
       '000': *Approved # Операция запрос баланса выполнена
