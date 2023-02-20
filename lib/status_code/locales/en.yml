@@ -164,6 +164,8 @@ en:
       <<: *bpc
     paritetbank_mir:
       <<: *bpc
+    npc:
+      <<: *bpc
     minbank:
       '000': Approved, balances available
       '001': Approved, no balances available
@@ -1039,6 +1041,8 @@ en:
     bsb_mir:
       <<: *bpc
     paritetbank_mir:
+      <<: *bpc
+    npc:
       <<: *bpc
     minbank:
       '000': *Approved # Approved, balances available

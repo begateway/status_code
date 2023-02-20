@@ -159,6 +159,8 @@ az:
       <<: *bpc
     paritetbank_mir:
       <<: *bpc
+    npc:
+      <<: *bpc
     minbank:
       '000': Balans tələb əməliyyatı başa çatdı
       '001': Əməliyyat təsdiqləndi
@@ -994,6 +996,8 @@ az:
     bsb_mir:
       <<: *bpc
     paritetbank_mir:
+      <<: *bpc
+    npc:
       <<: *bpc
     minbank:
       '000': *Approved # Balans tələb əməliyyatı başa çatdı

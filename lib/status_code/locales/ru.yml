@@ -159,6 +159,8 @@ ru:
       <<: *bpc
     paritetbank_mir:
       <<: *bpc
+    npc:
+      <<: *bpc
     minbank:
       '000': Операция запрос баланса выполнена
       '001': Операция одобрена
@@ -1033,6 +1035,8 @@ ru:
     bsb_mir:
       <<: *bpc
     paritetbank_mir:
+      <<: *bpc
+    npc:
       <<: *bpc
     minbank:
       '000': *Approved # Операция запрос баланса выполнена
