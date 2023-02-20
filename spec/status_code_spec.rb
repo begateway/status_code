@@ -33,7 +33,7 @@ describe StatusCode do
               end
             end
 
-            context 'with unknown code' do
+            context 'with unknown code and without status option' do
               let(:code) { '99999' }
               it 'returns nil' do
                 expect(subject).to be_nil
@@ -67,12 +67,11 @@ describe StatusCode do
               end
             end
 
-            context 'with unknown code' do
+            context 'with unknown code and without status option' do
               let(:code) { '99999' }
-              let(:message) { "Decline" }
 
               it 'returns nil' do
-                expect(subject).to eql("Decline")
+                expect(subject).to eql nil
               end
             end
           end
@@ -135,12 +134,11 @@ describe StatusCode do
               end
             end
 
-            context 'with unknown code' do
+            context 'with unknown code and without status option' do
               let(:code) { '99999' }
-              let(:message) { 'Отказ' }
 
               it 'returns nil' do
-                expect(subject).to eql(message)
+                expect(subject).to eq nil
               end
             end
           end
@@ -208,7 +206,7 @@ describe StatusCode do
               let(:message) { 'İmtina' }
 
               it 'returns nil' do
-                expect(subject).to eql(message)
+                expect(subject).to eql nil
               end
             end
           end
@@ -423,12 +421,51 @@ describe StatusCode do
         end
       end
 
-      context 'without code' do
+      context 'without code and status option' do
         let(:code) { nil }
-        let(:message) { 'Адмова' }
 
         it 'returns decline message' do
-          expect(subject).to eql(message)
+          expect(subject).to eql nil
+        end
+      end
+    end
+
+    context 'with invalid code and valid status option for customer receiver' do
+      subject { StatusCode.decode(code, receiver: :customer, gateway: 'mtb', status: status, locale: :en) }
+
+      context "with true status (successful) and wrong code " do
+        let(:code) { 'wrong_code' }
+        let(:status) { true }
+
+        it 'returns Approved message' do
+          expect(subject).to eql 'Approved'
+        end
+      end
+
+      context "without code and with true status (successful)" do
+        let(:code) { nil }
+        let(:status) { true }
+
+        it 'returns Approved message' do
+          expect(subject).to eql 'Approved'
+        end
+      end
+
+      context "with false status (failed) and wrong code" do
+        let(:code) { 'wrong_code' }
+        let(:status) { false }
+
+        it 'returns Decline message' do
+          expect(subject).to eql 'Decline'
+        end
+      end
+
+      context "without code and with false status (failed)" do
+        let(:code) { nil }
+        let(:status) { false }
+
+        it 'returns Decline message' do
+          expect(subject).to eql 'Decline'
         end
       end
     end
