@@ -104,7 +104,7 @@ be:
     '922': Обратитесь к дежурной службе, неверный номер сообщения # Decline reason message. Message number out of sequence
     '923': Обратитесь к дежурной службе, запрос обрабатывается # Status message. Request in progress
     '950': Отказ, недопустимая операция # Decline reason message. Violation of business arrangement
-    bpc:
+    bpc: &bpc
       '002': Нет разрешения
       '006': Нет разрешения
       '109': Операция запрещена
@@ -147,6 +147,20 @@ be:
       '922': Нет разрешения
       '923': Системная ошибка
       '950': Системная ошибка
+    bsb:
+     <<: *bpc
+    paritetbank:
+      <<: *bpc
+    bapb:
+      <<: *bpc
+    bpc_mir:
+      <<: *bpc
+    bsb_mir:
+      <<: *bpc
+    paritetbank_mir:
+      <<: *bpc
+    npc:
+      <<: *bpc
     minbank:
       '000': Операция запрос баланса выполнена
       '001': Операция одобрена
@@ -183,7 +197,7 @@ be:
       '901': Карта просрочена. Изъять карту.
       '909': Отказ в проведении операции.
       '959': Административная операция не поддерживается
-    mtb:
+    mtb: &mtb
       '002': &mtb002 Одобрено # Approved for a partial amount
       '080': &mtb080 Одобрено # Approved. ICC offline approved
       '081': &mtb081 Одобрено # Approved. ICC unable to go online, approved
@@ -254,6 +268,12 @@ be:
       '971': &mtb971 Отказ, ошибка шифрования # Decline reason message. Security error, try again
       '972': &mtb972 Отказ, ошибка шифрования # Decline reason message. Security error, no action
       '973': &mtb973 Отказ, неверный номер сообщения # Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *mtb002
       '080': *mtb080
@@ -922,7 +942,7 @@ be:
     '923': *Contact-Technical-Support # Status message. Request in progress
     '950': *Contact-Technical-Support # Decline reason message. Violation of business arrangement
     '999': 'Адмова'
-    bpc:
+    bpc: &bpc
       '002': *Call-Bank # Нет разрешения
       '006': *Call-Bank # Нет разрешения
       '109': *Call-Bank # Операция запрещена
@@ -965,6 +985,20 @@ be:
       '922': *Contact-Technical-Support # Нет разрешения
       '923': *Contact-Technical-Support # Системная ошибка
       '950': *Contact-Technical-Support # Системная ошибка
+    bsb:
+     <<: *bpc
+    paritetbank:
+      <<: *bpc
+    bapb:
+      <<: *bpc
+    bpc_mir:
+      <<: *bpc
+    bsb_mir:
+      <<: *bpc
+    paritetbank_mir:
+      <<: *bpc
+    npc:
+      <<: *bpc
     minbank:
       '000': *Approved # Операция запрос баланса выполнена
       '001': *Approved # Операция одобрена
@@ -1001,7 +1035,7 @@ be:
       '901': *Call-Bank # Карта просрочена. Изъять карту.
       '909': *Call-Bank # Отказ в проведении операции.
       '959': *Contact-Technical-Support # Административная операция не поддерживается
-    mtb:
+    mtb: &mtb
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved
       '081': *Approved # Approved. ICC unable to go online, approved
@@ -1072,6 +1106,12 @@ be:
       '971': *Contact-Technical-Support # Decline reason message. Security error, try again
       '972': *Contact-Technical-Support # Decline reason message. Security error, no action
       '973': *Contact-Technical-Support # Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved

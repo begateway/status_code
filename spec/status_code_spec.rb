@@ -469,5 +469,447 @@ describe StatusCode do
         end
       end
     end
+
+    context 'with Paritetbankmir locale' do 
+      let(:receiver) { :customer }
+      let(:gateway) { 'paritetbank_mir' }
+      let(:locale) { :ru }
+
+      subject do
+        StatusCode.decode(code, receiver: receiver,
+                                locale: locale,
+                                gateway: gateway)
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:message) { 'Платеж отклонен. Свяжитесь со службой технической поддержки' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :en }
+        let(:message) { 'The payment has been declined. Please contact Technical Support' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :en }
+        let(:receiver) { :merchant }
+        let(:message) { 'System error' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :az }
+        let(:message) { 'Ödəniş imtina edildi. Texniki Dəstəklə əlaqə saxlayın' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :be }
+        let(:message) { 'Аплата адхіленая. Звярніцеся ў службу тэхнічнай падтрымкі' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :da }
+        let(:message) { 'Betalingen er blevet afvist. Kontakt teknisk support' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :de }
+        let(:message) { 'Die Zahlung wurde abgelehnt. Bitte wenden Sie sich an den technischen Support' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :es }
+        let(:message) { 'El pago ha sido rechazado. Póngase en contacto con el soporte técnico' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :fi }
+        let(:message) { 'Maksu on estetty. Ota yhteys tekniseen tukeen' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :fr }
+        let(:message) { 'Le paiement a été décliné par votre banque. Veuillez contacter le Support Technique' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :it }
+        let(:message) { 'Il pagamento è stato rifiutato. Contatta l\'assistenza tecnica' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :ja }
+        let(:message) { 'お支払いが拒否されました。テクニカルサポートまでご連絡ください。' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :no }
+        let(:message) { 'Betalingen ble avslått. Vennligst ta kontakt med teknisk kundeservice' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :pl }
+        let(:message) { 'Płatność została odrzucona. Prosimy o kontakt z pomocą techniczną' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :sv }
+        let(:message) { 'Betalningen avvisades. Kontakta teknisk support' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :tr }
+        let(:message) { 'Ödeme reddedildi. Lütfen Teknik Destek ile iletişime geçin' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 950 code' do
+        let(:code) { '950' }
+        let(:locale) { :zh }
+        let(:message) { '付款已拒絕。請聯絡技術支援' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+    end
+
+    context 'with Mtb_direct_mir locale' do 
+      let(:receiver) { :customer }
+      let(:gateway) { 'mtb_direct_mir' }
+      let(:locale) { :ru }
+
+      subject do
+        StatusCode.decode(code, receiver: receiver,
+                                locale: locale,
+                                gateway: gateway)
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:message) { 'Платеж отклонен. Свяжитесь со службой технической поддержки' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :en }
+        let(:message) { 'The payment has been declined. Please contact Technical Support' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :en }
+        let(:receiver) { :merchant }
+        let(:message) { 'Decline reason message. Message out of sequence' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :az }
+        let(:message) { 'Ödəniş imtina edildi. Texniki Dəstəklə əlaqə saxlayın' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :be }
+        let(:message) { 'Аплата адхіленая. Звярніцеся ў службу тэхнічнай падтрымкі' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :da }
+        let(:message) { 'Betalingen er blevet afvist. Kontakt teknisk support' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :de }
+        let(:message) { 'Die Zahlung wurde abgelehnt. Bitte wenden Sie sich an den technischen Support' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :es }
+        let(:message) { 'El pago ha sido rechazado. Póngase en contacto con el soporte técnico' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :fi }
+        let(:message) { 'Maksu on estetty. Ota yhteys tekniseen tukeen' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :fr }
+        let(:message) { 'Le paiement a été décliné par votre banque. Veuillez contacter le Support Technique' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :it }
+        let(:message) { 'Il pagamento è stato rifiutato. Contatta l\'assistenza tecnica' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :ja }
+        let(:message) { 'お支払いが拒否されました。テクニカルサポートまでご連絡ください。' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :no }
+        let(:message) { 'Betalingen ble avslått. Vennligst ta kontakt med teknisk kundeservice' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :pl }
+        let(:message) { 'Płatność została odrzucona. Prosimy o kontakt z pomocą techniczną' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :sv }
+        let(:message) { 'Betalningen avvisades. Kontakta teknisk support' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :tr }
+        let(:message) { 'Ödeme reddedildi. Lütfen Teknik Destek ile iletişime geçin' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 973 code' do
+        let(:code) { '973' }
+        let(:locale) { :zh }
+        let(:message) { '付款已拒絕。請聯絡技術支援' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+    end
+
+    context 'with Bgpg locale' do
+      let(:receiver) { :customer }
+      let(:gateway) { 'bgpb' }
+      let(:locale) { :en }
+
+      subject do
+        StatusCode.decode(code, receiver: receiver,
+                                locale: locale,
+                                gateway: gateway)
+      end
+
+      context 'with Approved code' do
+        let(:code) { '000' }
+        let(:message) { 'Approved' }
+
+        it 'returns approve message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with 421 code' do
+        let(:code) { '421' }
+        let(:message) { '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.' }
+
+        it 'returns approve message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with 420 code' do
+        let(:code) { '420' }
+        let(:message) { '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.' }
+
+        it 'returns approve message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with 420 code' do
+        let(:code) { '420' }
+        let(:locale) { :ru }
+        let(:message) { 'Ошибка проверки 3-D Secure: Проверьте код 3-D Secure или обратитесь к провайдеру платежных услуг для уточнения причины.' }
+
+        it 'returns approve message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 005 code' do
+        let(:code) { '005' }
+        let(:message) { 'Invalid card data. Failed to complete the transaction. Check your card details or use another card.' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 005 code' do
+        let(:code) { '005' }
+        let(:locale) { :ru }
+        let(:message) { 'Неверные данные карты. Не удалось завершить транзакцию. Проверьте данные своей карты или используйте другую карту.' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+      
+      context 'with 915 code' do
+        let(:code) { '915' }
+        let(:locale) { :ru }
+        let(:message) { 'Недостаточно средств' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+    end
   end
 end

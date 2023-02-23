@@ -104,7 +104,7 @@ az:
     '922': Nöbvətçi xidmətə müraciət edin, yanlış mesaj nömrəsi # Decline reason message. Message number out of sequence
     '923': Nöbvətçi xidmətə müraciət edin, müraciət emal olunur# Status message. Request in progress
     '950': İmtina, etibarsız əməliyyat # Decline reason message. Violation of business arrangement
-    bpc:
+    bpc: &bpc
       '002': İzacə yoxdur
       '006': İzacə yoxdur
       '109': Əməliyyat qadağandır
@@ -147,6 +147,20 @@ az:
       '922': İcazə yoxdur
       '923': Sistem xətası
       '950': Sistem xətası
+    bsb:
+     <<: *bpc
+    paritetbank:
+      <<: *bpc
+    bapb:
+      <<: *bpc
+    bpc_mir:
+      <<: *bpc
+    bsb_mir:
+      <<: *bpc
+    paritetbank_mir:
+      <<: *bpc
+    npc:
+      <<: *bpc
     minbank:
       '000': Balans tələb əməliyyatı başa çatdı
       '001': Əməliyyat təsdiqləndi
@@ -183,7 +197,7 @@ az:
       '901': Kartın vaxtı bitib. Kartı çıxarın.
       '909': Əməliyyatdan imtina.
       '959': Administrativ əməliyyat tərəfindən dəstəklənmir
-    mtb:
+    mtb: &mtb
       '002': &mtb002 Təsdiqləndi # Approved for a partial amount
       '080': &mtb080 Təsdiqləndi # Approved. ICC offline approved
       '081': &mtb081 Təsdiqləndi # Approved. ICC unable to go online, approved
@@ -254,6 +268,12 @@ az:
       '971': &mtb971 İmtina, şifrələmə xətası # Decline reason message. Security error, try again
       '972': &mtb972 İmtina, şifrələmə xətası # Decline reason message. Security error, no action
       '973': &mtb973 İmtina, mesajın nömrəsi düzgün deyil # Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *mtb002
       '080': *mtb080
@@ -922,7 +942,7 @@ az:
     '923': *Contact-Technical-Support # Status message. Request in progress
     '950': *Contact-Technical-Support # Decline reason message. Violation of business arrangement
     '999': 'İmtina'
-    bpc:
+    bpc: &bpc
       '002': *Call-Bank # İcazə yoxdur
       '006': *Call-Bank # İcazə yoxdur
       '109': *Call-Bank # Əməliyyat qadağandır
@@ -965,6 +985,20 @@ az:
       '922': *Contact-Technical-Support # İcazə yoxdur
       '923': *Contact-Technical-Support # Sistem xətası
       '950': *Contact-Technical-Support # Sistem xətası
+    bsb:
+     <<: *bpc
+    paritetbank:
+      <<: *bpc
+    bapb:
+      <<: *bpc
+    bpc_mir:
+      <<: *bpc
+    bsb_mir:
+      <<: *bpc
+    paritetbank_mir:
+      <<: *bpc
+    npc:
+      <<: *bpc
     minbank:
       '000': *Approved # Balans tələb əməliyyatı başa çatdı
       '001': *Approved # Əməliyyat təsdiqləndi
@@ -1001,7 +1035,7 @@ az:
       '901': *Call-Bank # Kartın vaxtı bitib. Kartı çıxarın.
       '909': *Call-Bank # Əməliyyatdan imtina.
       '959': *Contact-Technical-Support # Administrativ əməliyyat dəstəklənmir
-    mtb:
+    mtb: &mtb
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved
       '081': *Approved # Approved. ICC unable to go online, approved
@@ -1072,6 +1106,12 @@ az:
       '971': *Contact-Technical-Support # Decline reason message. Security error, try again
       '972': *Contact-Technical-Support # Decline reason message. Security error, no action
       '973': *Contact-Technical-Support # Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved

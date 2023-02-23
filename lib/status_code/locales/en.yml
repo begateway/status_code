@@ -109,7 +109,7 @@ en:
     '922': Decline reason message. Message number out of sequence
     '923': Status message. Request in progress
     '950': Decline reason message. Violation of business arrangement
-    bpc:
+    bpc: &bpc
       '002': Decline # Нет разрешения
       '006': Decline # Нет разрешения
       '109': The operation is prohibited # Операция запрещена
@@ -152,6 +152,20 @@ en:
       '922': Decline # Нет разрешения
       '923': System error # Системная ошибка
       '950': System error # Системная ошибка
+    bsb:
+     <<: *bpc
+    paritetbank:
+      <<: *bpc
+    bapb:
+      <<: *bpc
+    bpc_mir:
+      <<: *bpc
+    bsb_mir:
+      <<: *bpc
+    paritetbank_mir:
+      <<: *bpc
+    npc:
+      <<: *bpc
     minbank:
       '000': Approved, balances available
       '001': Approved, no balances available
@@ -188,7 +202,7 @@ en:
       '901': Expired Card
       '909': External Decline Special Condition
       '959': Administrative transactions not supported
-    mtb:
+    mtb: &mtb
       '002': &mtb002 Approved for a partial amount
       '080': &mtb080 Approved. ICC offline approved
       '081': &mtb081 Approved. ICC unable to go online, approved
@@ -260,6 +274,12 @@ en:
       '971': &mtb971 Decline reason message. Security error, try again
       '972': &mtb972 Decline reason message. Security error, no action
       '973': &mtb973 Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *mtb002
       '080': *mtb080
@@ -822,6 +842,45 @@ en:
       '699': Transaction timed out from bank
       '700': Delayed transaction awaiting response from bank
       '799': TM Timeout
+    bgpb:
+      '000': Approved
+      '424': 'Do not honor: Failed to complete the transaction. Contact the merchant for details.'
+      '902': 'Rejected, the operation could not be performed'
+      '812': &Call-Bank-Equirer 'Rejected, contact acquiring bank'
+      '827': *Call-Bank-Equirer
+      '913': *Call-Bank-Equirer
+      '959': *Call-Bank-Equirer
+      '991': *Call-Bank-Equirer
+      '801': &Call-Bank-Emitent "Provider system error: Failed to complete the transaction. Use another payment method or contact your card issuing bank for details. The bank's phone number is indicated on the back of your card."
+      '802': *Call-Bank-Emitent
+      '804': *Call-Bank-Emitent
+      '820': *Call-Bank-Emitent
+      '821': *Call-Bank-Emitent
+      '831': *Call-Bank-Emitent
+      '872': Decline, CVV2/CVC2 validation error
+      '915': Insufficient funds
+      '917': *Call-Bank-Emitent
+      '957': *Call-Bank-Emitent
+      '425': &Decline-Bgpb 'Not allowed: Failed to complete the transaction. Contact the merchant for details or use another payment method.'
+      '806': *Decline-Bgpb
+      '819': *Decline-Bgpb
+      '847': *Decline-Bgpb
+      '916': *Decline-Bgpb
+      '940': *Decline-Bgpb
+      '953': *Decline-Bgpb
+      '903': 'Currency not supported: Failed to complete the transaction. Choose another currency or contact the merchant for details.'
+      '422': &Wrong-Amount-Bgpb 'Wrong transaction amount: Failed to complete the transaction. Limits exceeded. Contact the merchant or your card issuing bank for details.'
+      '423': *Wrong-Amount-Bgpb
+      '421': &Threeds-verify-error '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.'
+      '420': *Threeds-verify-error
+      '828': &Wrong-Date-Bgpb 'Invalid card data. Failed to complete the transaction. Check your card details or use another card.'
+      '871': *Wrong-Date-Bgpb
+      '005': *Wrong-Date-Bgpb
+      '861': *Wrong-Date-Bgpb
+      '905': *Wrong-Date-Bgpb
+      '906': *Wrong-Date-Bgpb
+      '908': *Wrong-Date-Bgpb
+      '914': *Wrong-Date-Bgpb
 
   customer:
     '000': &Approved Approved
@@ -928,7 +987,7 @@ en:
     '923': *Contact-Technical-Support # Status message. Request in progress
     '950': *Contact-Technical-Support # Decline reason message. Violation of business arrangement # Системная ошибка
     '999': 'Decline'
-    bpc:
+    bpc: &bpc
       '002': *Call-Bank # Нет разрешения
       '006': *Call-Bank # Нет разрешения
       '109': *Call-Bank # Операция запрещена
@@ -971,6 +1030,20 @@ en:
       '922': *Contact-Technical-Support # Нет разрешения
       '923': *Contact-Technical-Support # Системная ошибка
       '950': *Contact-Technical-Support # Системная ошибка
+    bsb:
+     <<: *bpc
+    paritetbank:
+      <<: *bpc
+    bapb:
+      <<: *bpc
+    bpc_mir:
+      <<: *bpc
+    bsb_mir:
+      <<: *bpc
+    paritetbank_mir:
+      <<: *bpc
+    npc:
+      <<: *bpc
     minbank:
       '000': *Approved # Approved, balances available
       '001': *Approved # Approved, no balances available
@@ -1007,7 +1080,7 @@ en:
       '901': *Call-Bank # Expired Card
       '909': *Call-Bank # External Decline Special Condition
       '959': *Contact-Technical-Support # Administrative transactions not supported
-    mtb:
+    mtb: &mtb
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved
       '081': *Approved # Approved. ICC unable to go online, approved
@@ -1078,6 +1151,12 @@ en:
       '971': *Contact-Technical-Support # Decline reason message. Security error, try again
       '972': *Contact-Technical-Support # Decline reason message. Security error, no action
       '973': *Contact-Technical-Support # Decline reason message. Message out of sequence
+    mtb_direct: 
+      <<: *mtb
+    mtb_mir:
+      <<: *mtb
+    mtb_direct_mir:
+      <<: *mtb
     mtb_halva:
       '002': *Approved # Approved for a partial amount
       '080': *Approved # Approved. ICC offline approved
@@ -1636,4 +1715,43 @@ en:
       '699': *Contact-Technical-Support # Transaction timed out from bank
       '700': *Contact-Technical-Support # Delayed transaction awaiting response from bank
       '799': *Contact-Technical-Support # TM Timeout
+    bgpb:
+      '000': Approved
+      '424': 'Do not honor: Failed to complete the transaction. Contact the merchant for details.'
+      '902': 'Rejected, the operation could not be performed'
+      '812': &Call-Bank-Equirer 'Rejected, contact acquiring bank'
+      '827': *Call-Bank-Equirer
+      '913': *Call-Bank-Equirer
+      '959': *Call-Bank-Equirer
+      '991': *Call-Bank-Equirer
+      '801': &Call-Bank-Emitent "Provider system error: Failed to complete the transaction. Use another payment method or contact your card issuing bank for details. The bank's phone number is indicated on the back of your card."
+      '802': *Call-Bank-Emitent
+      '804': *Call-Bank-Emitent
+      '820': *Call-Bank-Emitent
+      '821': *Call-Bank-Emitent
+      '831': *Call-Bank-Emitent
+      '872': Decline, CVV2/CVC2 validation error
+      '915': Insufficient funds
+      '917': *Call-Bank-Emitent
+      '957': *Call-Bank-Emitent
+      '425': &Decline-Bgpb 'Not allowed: Failed to complete the transaction. Contact the merchant for details or use another payment method.'
+      '806': *Decline-Bgpb
+      '819': *Decline-Bgpb
+      '847': *Decline-Bgpb
+      '916': *Decline-Bgpb
+      '940': *Decline-Bgpb
+      '953': *Decline-Bgpb
+      '903': 'Currency not supported: Failed to complete the transaction. Choose another currency or contact the merchant for details.'
+      '422': &Wrong-Amount-Bgpb 'Wrong transaction amount: Failed to complete the transaction. Limits exceeded. Contact the merchant or your card issuing bank for details.'
+      '423': *Wrong-Amount-Bgpb
+      '421': &Threeds-verify-error '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.'
+      '420': *Threeds-verify-error
+      '828': &Wrong-Date-Bgpb 'Invalid card data. Failed to complete the transaction. Check your card details or use another card.'
+      '871': *Wrong-Date-Bgpb
+      '005': *Wrong-Date-Bgpb
+      '861': *Wrong-Date-Bgpb
+      '905': *Wrong-Date-Bgpb
+      '906': *Wrong-Date-Bgpb
+      '908': *Wrong-Date-Bgpb
+      '914': *Wrong-Date-Bgpb
 ...
