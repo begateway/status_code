@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    status_code (0.0.16)
+    status_code (0.0.17)
       i18n
 
 GEM
