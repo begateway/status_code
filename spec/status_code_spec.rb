@@ -470,7 +470,7 @@ describe StatusCode do
       end
     end
 
-    context 'with Paritetbankmir locale' do 
+    context 'with Paritetbankmir locale' do
       let(:receiver) { :customer }
       let(:gateway) { 'paritetbank_mir' }
       let(:locale) { :ru }
@@ -480,7 +480,7 @@ describe StatusCode do
                                 locale: locale,
                                 gateway: gateway)
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:message) { 'Платеж отклонен. Свяжитесь со службой технической поддержки' }
@@ -489,7 +489,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :en }
@@ -520,7 +520,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :be }
@@ -530,7 +530,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :da }
@@ -540,7 +540,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :de }
@@ -550,7 +550,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :es }
@@ -560,7 +560,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :fi }
@@ -570,7 +570,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :fr }
@@ -580,7 +580,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :it }
@@ -590,7 +590,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :ja }
@@ -600,7 +600,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :no }
@@ -610,7 +610,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :pl }
@@ -620,7 +620,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :sv }
@@ -630,7 +630,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :tr }
@@ -640,7 +640,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 950 code' do
         let(:code) { '950' }
         let(:locale) { :zh }
@@ -652,7 +652,7 @@ describe StatusCode do
       end
     end
 
-    context 'with Mtb_direct_mir locale' do 
+    context 'with Mtb_direct_mir locale' do
       let(:receiver) { :customer }
       let(:gateway) { 'mtb_direct_mir' }
       let(:locale) { :ru }
@@ -662,7 +662,7 @@ describe StatusCode do
                                 locale: locale,
                                 gateway: gateway)
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:message) { 'Платеж отклонен. Свяжитесь со службой технической поддержки' }
@@ -671,7 +671,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :en }
@@ -702,7 +702,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :be }
@@ -712,7 +712,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :da }
@@ -722,7 +722,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :de }
@@ -732,7 +732,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :es }
@@ -742,7 +742,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :fi }
@@ -752,7 +752,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :fr }
@@ -762,7 +762,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :it }
@@ -772,7 +772,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :ja }
@@ -782,7 +782,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :no }
@@ -792,7 +792,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :pl }
@@ -802,7 +802,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :sv }
@@ -812,7 +812,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :tr }
@@ -822,7 +822,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 973 code' do
         let(:code) { '973' }
         let(:locale) { :zh }
@@ -881,7 +881,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 005 code' do
         let(:code) { '005' }
         let(:message) { 'Invalid card data. Failed to complete the transaction. Check your card details or use another card.' }
@@ -890,7 +890,7 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 005 code' do
         let(:code) { '005' }
         let(:locale) { :ru }
@@ -900,11 +900,31 @@ describe StatusCode do
           expect(subject).to eql(message)
         end
       end
-      
+
       context 'with 915 code' do
         let(:code) { '915' }
         let(:locale) { :ru }
         let(:message) { 'Недостаточно средств' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with 903 code' do
+        let(:code) { '903' }
+        let(:locale) { :ru }
+        let(:message) { 'Неверная сумма транзакции: Не удалось завершить транзакцию. Превышены лимиты. Обратитесь к продавцу или в банк-эмитент карты для уточнения причины.' }
+
+        it 'returns decline message' do
+          expect(subject).to eql(message)
+        end
+      end
+
+      context 'with 903 code' do
+        let(:code) { '903' }
+        let(:locale) { :en }
+        let(:message) { 'Wrong transaction amount: Failed to complete the transaction. Limits exceeded. Contact the merchant or your card issuing bank for details.' }
 
         it 'returns decline message' do
           expect(subject).to eql(message)
