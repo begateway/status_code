@@ -868,9 +868,9 @@ en:
       '916': *Decline-Bgpb
       '940': *Decline-Bgpb
       '953': *Decline-Bgpb
-      '903': 'Currency not supported: Failed to complete the transaction. Choose another currency or contact the merchant for details.'
       '422': &Wrong-Amount-Bgpb 'Wrong transaction amount: Failed to complete the transaction. Limits exceeded. Contact the merchant or your card issuing bank for details.'
       '423': *Wrong-Amount-Bgpb
+      '903': *Wrong-Amount-Bgpb
       '421': &Threeds-verify-error '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.'
       '420': 'Provider system error: Failed to complete the transaction. Use another payment method or contact the merchant for details.'
       '828': &Wrong-Date-Bgpb 'Invalid card data. Failed to complete the transaction. Check your card details or use another card.'
@@ -1741,9 +1741,9 @@ en:
       '916': *Decline-Bgpb
       '940': *Decline-Bgpb
       '953': *Decline-Bgpb
-      '903': 'Currency not supported: Failed to complete the transaction. Choose another currency or contact the merchant for details.'
       '422': &Wrong-Amount-Bgpb 'Wrong transaction amount: Failed to complete the transaction. Limits exceeded. Contact the merchant or your card issuing bank for details.'
       '423': *Wrong-Amount-Bgpb
+      '903': *Wrong-Amount-Bgpb
       '421': &Threeds-verify-error '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.'
       '420': 'Provider system error: Failed to complete the transaction. Use another payment method or contact the merchant for details.'
       '828': &Wrong-Date-Bgpb 'Invalid card data. Failed to complete the transaction. Check your card details or use another card.'
