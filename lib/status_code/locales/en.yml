@@ -872,7 +872,7 @@ en:
       '423': *Wrong-Amount-Bgpb
       '903': *Wrong-Amount-Bgpb
       '421': &Threeds-verify-error '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.'
-      '420': *Threeds-verify-error
+      '420': 'Provider system error: Failed to complete the transaction. Use another payment method or contact the merchant for details.'
       '828': &Wrong-Date-Bgpb 'Invalid card data. Failed to complete the transaction. Check your card details or use another card.'
       '871': *Wrong-Date-Bgpb
       '005': *Wrong-Date-Bgpb
@@ -1745,7 +1745,7 @@ en:
       '423': *Wrong-Amount-Bgpb
       '903': *Wrong-Amount-Bgpb
       '421': &Threeds-verify-error '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.'
-      '420': *Threeds-verify-error
+      '420': 'Provider system error: Failed to complete the transaction. Use another payment method or contact the merchant for details.'
       '828': &Wrong-Date-Bgpb 'Invalid card data. Failed to complete the transaction. Check your card details or use another card.'
       '871': *Wrong-Date-Bgpb
       '005': *Wrong-Date-Bgpb

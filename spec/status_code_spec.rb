@@ -865,7 +865,7 @@ describe StatusCode do
 
       context 'with 420 code' do
         let(:code) { '420' }
-        let(:message) { '3-D Secure verification error: Check your 3-D Secure code or contact the payment service provider for details.' }
+        let(:message) { 'Provider system error: Failed to complete the transaction. Use another payment method or contact the merchant for details.' }
 
         it 'returns approve message' do
           expect(subject).to eql(message)
@@ -875,7 +875,7 @@ describe StatusCode do
       context 'with 420 code' do
         let(:code) { '420' }
         let(:locale) { :ru }
-        let(:message) { 'Ошибка проверки 3-D Secure: Проверьте код 3-D Secure или обратитесь к провайдеру платежных услуг для уточнения причины.' }
+        let(:message) { 'Ошибка системы провайдера: Не удалось совершить транзакцию. Выберите другой способ оплаты или обратитесь к продавцу для разъяснения причин.' }
 
         it 'returns approve message' do
           expect(subject).to eql(message)
