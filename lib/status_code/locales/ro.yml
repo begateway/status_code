@@ -1,0 +1,122 @@
+ro:
+  bank_codes:
+    "F.0100":
+      message: "ID-ul contului este blocat. Nu s-a putut finaliza tranzacția. Verificați parametrii cererii sau contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "ID-ul contului dvs. este blocat. Nu s-a putut finaliza tranzacția. Contactați furnizorul dvs. de servicii de plată pentru detalii."
+    "F.0101":
+      message: "ID-ul contului nu a fost găsit. Nu s-a putut finaliza tranzacția. Verificați parametrii cererii."
+      friendly_message: "ID-ul contului nu a fost găsit. Nu s-a putut finaliza tranzacția. Contactați furnizorul dvs. de servicii de plată pentru detalii."
+    "F.0102":
+      message: "Eroare de autorizare. Nu s-a putut finaliza tranzacția. Verificați parametrii cererii de autorizare."
+      friendly_message: "Eroare de autorizare. Nu s-a putut finaliza tranzacția. Contactați comerciantul pentru detalii."
+    "F.0103":
+      message: "Semnătură cerere invalidă. Nu s-a putut finaliza tranzacția. Verificați semnătura cererii sau certificatul."
+      friendly_message: "Semnătură cerere invalidă. Contactați comerciantul pentru detalii."
+    "F.0104":
+      message: "Nepermis. Utilizați un alt tip de tranzacție sau contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Nepermis. Nu s-a putut finaliza tranzacția. Contactați comerciantul pentru detalii sau utilizați un alt mod de plată."
+    "F.0105":
+      message: "Nu onorați. Contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Nu onorați. Nu s-a putut finaliza tranzacția. Contactați comerciantul pentru detalii."
+    "F.0106":
+      message: "Eroare terminal. Contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Eroare terminal. Nu s-a putut finaliza tranzacția. Contactați comerciantul pentru detalii sau utilizați un alt mod de plată."
+    "F.0107":
+      message: "Cont comerciant invalid. Contactați furnizorul de servicii de plată sau achizitorul pentru detalii."
+      friendly_message: "Cont comerciant invalid. Nu s-a putut finaliza tranzacția. Contactați comerciantul pentru detalii."
+    "F.0108":
+      message: "Tranzacție sau comandă duplicată. Verificați starea tranzacției sau a comenzii originale. Contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Comandă duplicată. Nu s-a putut finaliza tranzacția. Contactați comerciantul pentru starea comenzii originale."
+    "F.0109":
+      message: "Comanda a expirat. Nu s-a putut finaliza tranzacția."
+      friendly_message: "Comanda a expirat. Nu s-a putut finaliza tranzacția. Contactați comerciantul pentru detalii."
+    "F.0110":
+      message: "ID-ul comenzii nu a fost găsit. Nu s-a putut finaliza tranzacția. Verificați parametrii cererii."
+      friendly_message: "ID-ul comenzii nu a fost găsit. Nu s-a putut finaliza tranzacția. Verificați parametrii tranzacției sau contactați comerciantul pentru detalii."
+    "F.0111":
+      message: "Card expirat. Rugați clientul să folosească un card valid."
+      friendly_message: "Card expirat. Nu s-a putut finaliza tranzacția. Folosiți un card valid."
+    "F.0112":
+      message: "Verificarea CVV a eșuat. Rugați clientul să introducă CVV-ul valid al cardului."
+      friendly_message: "Verificarea CVV a eșuat. Nu s-a putut finaliza tranzacția. Introduceți CVV-ul valid indicat pe cardul dvs."
+    "F.0113":
+      message: "Moneda nu este suportată. Verificați moneda din cerere sau contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Moneda nu este suportată. Nu s-a putut finaliza tranzacția. Alegeți o altă monedă sau contactați comerciantul pentru detalii."
+    "F.0114":
+      message: "Fonduri insuficiente. Verificați soldul contului sau contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Fonduri insuficiente. Nu s-a putut finaliza tranzacția. Verificați soldul contului."
+    "F.0115":
+      message: "Eroare achizitor. Potențială fraudă. Metoda de plată poate fi furată sau pierdută. Verificați detaliile clientului."
+      friendly_message: "Eroare detalii plată. Nu s-a putut finaliza tranzacția. Contactați comerciantul pentru detalii."
+    "F.0116":
+      message: "Eroare emitent. Potențială fraudă. Metoda de plată poate fi furată sau pierdută. Verificați detaliile clientului."
+      friendly_message: "Eroare detalii plată. Nu s-a putut finaliza tranzacția. Contactați comerciantul sau banca emitentă a cardului pentru detalii. Numărul de telefon al băncii este indicat pe spatele cardului."
+    "F.0117":
+      message: "Eroare temporară a sistemului furnizorului. Contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Eroare sistem furnizor. Nu s-a putut finaliza tranzacția. Încercați din nou mai târziu sau contactați comerciantul pentru detalii."
+    "F.0118":
+      message: "Eroare sistem furnizor. Contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Eroare sistem furnizor. Nu s-a putut finaliza tranzacția. Utilizați un alt mod de plată sau contactați comerciantul pentru detalii."
+    "F.0119":
+      message: "Eroare temporară a sistemului furnizorului. Contactați banca emitentă a cardului pentru detalii."
+      friendly_message: "Eroare sistem furnizor. Nu s-a putut finaliza tranzacția. Încercați din nou mai târziu sau contactați banca care a emis cardul dvs. pentru detalii. Numărul de telefon al băncii este indicat pe spatele cardului."
+    "F.0120":
+      message: "Eroare sistem furnizor. Contactați banca emitentă a cardului pentru detalii."
+      friendly_message: "Eroare sistem furnizor. Nu s-a putut finaliza tranzacția. Utilizați un alt mod de plată sau contactați banca care a emis cardul dvs. pentru detalii. Numărul de telefon al băncii este indicat pe spatele cardului."
+    "F.0121":
+      message: "Eroare temporară a sistemului furnizorului. Contactați furnizorul de servicii de plată al clientului pentru detalii."
+      friendly_message: "Eroare sistem furnizor. Nu s-a putut finaliza tranzacția. Încercați din nou mai târziu sau contactați furnizorul dvs. de servicii de plată pentru detalii."
+    "F.0122":
+      message: "Eroare sistem furnizor. Contactați furnizorul de servicii de plată al clientului pentru detalii."
+      friendly_message: "Eroare sistem furnizor. Nu s-a putut finaliza tranzacția. Utilizați un alt mod de plată sau contactați furnizorul dvs. de servicii de plată pentru detalii."
+    "F.0123":
+      message: "Suma tranzacției sau numărul de tranzacții depășește limitele furnizorului de servicii de plată. Verificați suma tranzacției și numărul de tranzacții sau contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Suma tranzacției sau numărul de tranzacții depășește limitele. Nu s-a putut finaliza tranzacția. Verificați suma tranzacției sau contactați comerciantul pentru detalii."
+    "F.0124":
+      message: "Plata nu a fost aprobată. Contactați banca emitentă a cardului pentru detalii."
+      friendly_message: "Plata nu a fost aprobată. Nu s-a putut finaliza tranzacția. Contactați banca care a emis cardul dvs. pentru detalii. Numărul de telefon al băncii este indicat pe spatele cardului."
+    "F.0125":
+      message: "Tranzacția este suspectată de fraudă. Contactați banca emitentă a cardului pentru detalii."
+      friendly_message: "Tranzacția este suspectată de fraudă. Nu s-a putut finaliza tranzacția. Contactați banca care a emis cardul dvs. pentru detalii. Numărul de telefon al băncii este indicat pe spatele cardului."
+    "F.0126":
+      message: "Eroare date portofel. Rugați clientul să verifice datele portofelului. Contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Eroare date portofel. Verificați datele portofelului sau utilizați un alt card."
+    "F.0127":
+      message: "Date card invalid. Rugați clientul să verifice datele cardului. Contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Date card invalid. Nu s-a putut finaliza tranzacția. Verificați detaliile cardului dvs. sau utilizați un alt card."
+    "F.0128":
+      message: "Parametrii cererii invalizi. Nu s-a putut finaliza tranzacția. Verificați parametrii cererii necesare."
+      friendly_message: "Parametrii cererii invalizi. Verificați datele tranzacției sau contactați comerciantul pentru detalii."
+    "F.0129":
+      message: "Eroare verificare 3-D Secure. Contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Eroare verificare 3-D Secure. Verificați codul 3-D Secure sau contactați furnizorul de servicii de plată pentru detalii."
+    "F.0130":
+      message: "Eroare verificare 3-D Secure. Contactați banca emitentă pentru detalii."
+      friendly_message: "Eroare verificare 3-D Secure. Verificați codul 3-D Secure sau contactați banca emitentă a cardului pentru detalii. Numărul de telefon al băncii este indicat pe spatele cardului."
+    "F.0131":
+      message: "Eroare confirmare tranzacție. Nu s-a putut finaliza tranzacția. Rugați clientul să confirme plata."
+      friendly_message: "Eroare confirmare tranzacție. Nu s-a putut finaliza tranzacția. Verificați confirmarea plății."
+    "F.0132":
+      message: "Tranzacția a fost respinsă de client. Tranzacția nu a putut fi finalizată. Cereți clientului să repete plata."
+      friendly_message: "Tranzacția a fost respinsă. Tranzacția nu a putut fi finalizată. Vă rugăm să alegeți o altă metodă de plată sau să încercați din nou."
+    "F.0133":
+      message: "Număr de telefon greșit. Nu s-a putut finaliza tranzacția. Cereți clientului să introducă numărul de telefon asociat cu cardul său."
+      friendly_message: "Numărul de telefon trimis nu se potrivește cu cel asociat cardului dumneavoastră. Nu s-a putut finaliza tranzacția. Vă rugăm să introduceți numărul de telefon corect."
+    "F.0134":
+      message: "Eroare de confirmare a tranzacției. Cheie SMS greșită. Cereți clientului să trimită valoarea corectă."
+      friendly_message: "Tranzacția nu a fost confirmată de bancă. Cheie SMS greșită. Vă rugăm să verificați datele trimise."
+    "F.0999":
+      message: "Nu s-a putut finaliza tranzacția. Contactați furnizorul de servicii de plată."
+      friendly_message: "Nu s-a putut finaliza tranzacția. Contactați comerciantul pentru detalii."
+    "S.0000":
+      message: "Tranzacția a fost finalizată cu succes."
+      friendly_message: "Tranzacția a fost procesată cu succes."
+    "P.0001":
+      message: "Tranzacție în curs de desfășurare."
+      friendly_message: "Tranzacția este în curs de procesare. Vă rugăm să așteptați."
+    "P.0002":
+      message: "Bine ați venit!"
+      friendly_message: "Bine ați venit!"
+    "P.9999":
+      message: "Stare tranzacție necunoscută. Contactați furnizorul de servicii de plată pentru detalii."
+      friendly_message: "Stare tranzacție necunoscută. Contactați comerciantul pentru detalii."

@@ -2,8 +2,8 @@
 require 'i18n'
 
 class StatusCode
-  APPROVE_CODE = '000'
-  DECLINE_CODE = '999'
+  APPROVE_CODE = 'S.0000'
+  DECLINE_CODE = 'F.0999'
   LOCALES_PATH = "#{__dir__}/status_code/locales/*.yml".freeze
   I18n.enforce_available_locales = false
   I18n.load_path += Dir[LOCALES_PATH]
@@ -30,21 +30,24 @@ class StatusCode
 
   def return_message_customer
     if code_blank(:customer) && !opts[:status].nil?
-      find_message(opts[:status] ? APPROVE_CODE : DECLINE_CODE)
+      find_friendly_message(opts[:status] ? APPROVE_CODE : DECLINE_CODE)
     else
-      find_message(code)
+      find_friendly_message(code)
     end
   end
 
   private
 
-  def message(path)
-    I18n.t(path, locale: opts[:locale]) if I18n.exists?(path, opts[:locale])
+  def message(code, type)
+    I18n.t('bank_codes', locale: opts[:locale], default: {}).dig(:"#{code}", type)
   end
 
   def find_message(code)
-    message("#{opts[:receiver]}.#{opts[:gateway]}.#{code}") ||
-      message("#{opts[:receiver]}.#{code}")
+    message(code, :message)
+  end
+
+  def find_friendly_message(code)
+    message(code, :friendly_message)
   end
 
   def code_blank(role)
