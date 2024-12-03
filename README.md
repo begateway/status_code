@@ -1,1 +1,1 @@
-Returns decoding credit card transaction status code for different receivers
+Returns localized message by external credit card transaction status code for different receivers

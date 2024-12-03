@@ -1,0 +1,122 @@
+et:
+  bank_codes:
+    "F.0100":
+      message: "Kliendi konto on blokeeritud. Tehingut ei õnnestunud lõpetada. Kontrollige päringu parameetreid või võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Teie konto on blokeeritud. Tehingut ei õnnestunud lõpetada. Võtke ühendust oma makseteenuse pakkujaga, et saada rohkem teavet."
+    "F.0101":
+      message: "Kliendi kontot ei leitud. Tehingut ei õnnestunud lõpetada. Kontrollige päringu parameetreid."
+      friendly_message: "Kontot ei leitud. Tehingut ei õnnestunud lõpetada. Võtke ühendust oma makseteenuse pakkujaga, et saada rohkem teavet."
+    "F.0102":
+      message: "Autoriseerimisviga. Tehingut ei õnnestunud lõpetada. Kontrollige päringu autoriseerimise parameetreid."
+      friendly_message: "Autoriseerimisviga. Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0103":
+      message: "Päringu allkiri on kehtetu. Tehingut ei õnnestunud lõpetada. Kontrollige päringu allkirja või sertifikaati."
+      friendly_message: "Päringu allkiri on kehtetu. Võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0104":
+      message: "Luba keelatud. Kasutage teist tehingutüüpi või võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Luba keelatud. Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehega, et saada rohkem teavet või kasutage teist makseviisi."
+    "F.0105":
+      message: "Pettus. Võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Pettus. Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0106":
+      message: "Terminali viga. Võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Terminali viga. Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehega, et saada rohkem teavet või kasutage teist makseviisi."
+    "F.0107":
+      message: "Kaupmehe konto on kehtetu. Võtke ühendust makseteenuse pakkuja või väljaandjaga, et saada rohkem teavet."
+      friendly_message: "Kaupmehe konto on kehtetu. Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0108":
+      message: "Duplikaattehing või -tellimus. Kontrollige esialgse tehingu või tellimuse staatust. Võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Duplikaattellimus. Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehega, et saada esialgse tellimuse staatust."
+    "F.0109":
+      message: "Tellimus on aegunud. Tehingut ei õnnestunud lõpetada."
+      friendly_message: "Tellimus on aegunud. Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0110":
+      message: "Tellimuse ID-d ei leitud. Tehingut ei õnnestunud lõpetada. Kontrollige päringu parameetreid."
+      friendly_message: "Tellimuse ID-d ei leitud. Tehingut ei õnnestunud lõpetada. Kontrollige tehingu parameetreid või võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0111":
+      message: "Kaart on aegunud. Paluge kliendil kasutada kehtivat kaarti."
+      friendly_message: "Kaart on aegunud. Tehingut ei õnnestunud lõpetada. Kasutage kehtivat kaarti."
+    "F.0112":
+      message: "CVV kontrollimine ebaõnnestus. Paluge kliendil sisestada kehtiv kaardi CVV."
+      friendly_message: "CVV kontrollimine ebaõnnestus. Tehingut ei õnnestunud lõpetada. Sisestage kehtiv CVV, mis on teie kaardil."
+    "F.0113":
+      message: "Valuutat ei toetata. Kontrollige päringu valuutat või võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Valuutat ei toetata. Tehingut ei õnnestunud lõpetada. Valige teine valuuta või võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0114":
+      message: "Ebapiisavad vahendid. Kontrollige konto saldot või võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Ebapiisavad vahendid. Tehingut ei õnnestunud lõpetada. Kontrollige konto saldot."
+    "F.0115":
+      message: "Kaardi väljaandja viga. Võimalik pettus. Maksevahendid võivad olla varastatud või kadunud. Kontrollige kliendi teavet."
+      friendly_message: "Makseandmete viga. Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0116":
+      message: "Väljaandja viga. Võimalik pettus. Maksevahendid võivad olla varastatud või kadunud. Kontrollige kliendi teavet."
+      friendly_message: "Makseandmete viga. Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehe või kaardi väljaandjaga, et saada rohkem teavet. Panga telefoninumber on teie kaardi tagaküljel."
+    "F.0117":
+      message: "Ajutine teenusepakkuja süsteemi viga. Võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Teenusepakkuja süsteemi viga. Tehingut ei õnnestunud lõpetada. Proovige hiljem uuesti või võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0118":
+      message: "Teenusepakkuja süsteemi viga. Võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Teenusepakkuja süsteemi viga. Tehingut ei õnnestunud lõpetada. Kasutage teist makseviisi või võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0119":
+      message: "Ajutine teenusepakkuja süsteemi viga. Võtke ühendust kaardi väljaandjaga, et saada rohkem teavet."
+      friendly_message: "Teenusepakkuja süsteemi viga. Tehingut ei õnnestunud lõpetada. Proovige hiljem uuesti või võtke ühendust kaardi väljaandjaga, et saada rohkem teavet. Panga telefoninumber on teie kaardi tagaküljel."
+    "F.0120":
+      message: "Teenusepakkuja süsteemi viga. Võtke ühendust kaardi väljaandjaga, et saada rohkem teavet."
+      friendly_message: "Teenusepakkuja süsteemi viga. Tehingut ei õnnestunud lõpetada. Kasutage teist makseviisi või võtke ühendust kaardi väljaandjaga, et saada rohkem teavet. Panga telefoninumber on teie kaardi tagaküljel."
+    "F.0121":
+      message: "Teenusepakkuja süsteemi viga. Võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Teenusepakkuja süsteemi viga. Tehingut ei õnnestunud lõpetada. Proovige hiljem uuesti või võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+    "F.0122":
+      message: "Teenusepakkuja süsteemi viga. Võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Teenusepakkuja süsteemi viga. Tehingut ei õnnestunud lõpetada. Kasutage teist makseviisi või võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+    "F.0123":
+      message: "Tehingusumma või tehingute arv ületab makseteenuse pakkuja limiite. Kontrollige tehingusummat ja tehingute arvu või võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Tehingusumma või tehingute arv ületab limiite. Tehingut ei õnnestunud lõpetada. Kontrollige tehingusummat või võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0124":
+      message: "Tehingusumma või tehingute arv ületab väljaandja limiite. Kontrollige tehingusummat ja tehingute arvu. Paluge kliendil võtta ühendust kaardi väljaandjaga."
+      friendly_message: "Tehingusumma või tehingute arv ületab limiite. Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehe või kaardi väljaandjaga, et saada rohkem teavet. Panga telefoninumber on teie kaardi tagaküljel."
+    "F.0125":
+      message: "Tehingusumma või tehingute arv ületab makseteenuse pakkuja limiite. Kontrollige tehingusummat ja tehingute arvu. Võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Tehingusumma või tehingute arv ületab limiite. Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehe või makseteenuse pakkujaga, et saada rohkem teavet."
+    "F.0126":
+      message: "Rahakoti teabe viga. Paluge kliendil kontrollida rahakoti teavet. Võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Rahakoti teabe viga. Kontrollige rahakoti teavet või kasutage teist kaarti."
+    "F.0127":
+      message: "Kaardi teave ei ole kehtiv. Paluge kliendil kontrollida kaardi teavet. Võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "Kaardi teave ei ole kehtiv. Tehingut ei õnnestunud lõpetada. Kontrollige kaardi teavet või kasutage teist kaarti."
+    "F.0128":
+      message: "Päringu parameetrid ei ole kehtivad. Tehingut ei õnnestunud lõpetada. Kontrollige päringu parameetreid."
+      friendly_message: "Päringu parameetrid ei ole kehtivad. Kontrollige tehingu teavet või võtke ühendust kaupmehega, et saada rohkem teavet."
+    "F.0129":
+      message: "3-D Secure kinnitamise viga. Võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+      friendly_message: "3-D Secure kinnitamise viga. Kontrollige 3-D Secure koodi või võtke ühendust makseteenuse pakkujaga, et saada rohkem teavet."
+    "F.0130":
+      message: "3-D Secure kinnitamise viga. Võtke ühendust väljaandva pangaga, et saada rohkem teavet."
+      friendly_message: "3-D Secure kinnitamise viga. Kontrollige 3-D Secure koodi või võtke ühendust kaardi väljaandjaga, et saada rohkem teavet. Panga telefoninumber on teie kaardi tagaküljel."
+    "F.0131":
+      message: "Tehingu kinnitamise viga. Tehingut ei õnnestunud lõpetada. Paluge kliendil kinnitada makse."
+      friendly_message: "Tehingu kinnitamise viga. Tehingut ei õnnestunud lõpetada. Kontrollige makse kinnitust."
+    "F.0132":
+      message: "Tehingu lükkas klient tagasi. Tehingut ei saanud lõpule viia. Paluge kliendil makset korrata."
+      friendly_message: "Tehing lükati tagasi. Tehingut ei saanud lõpule viia. Palun valige teine makseviis või proovige uuesti."
+    "F.0133":
+      message: "Vale telefoninumber. Tehingut ei saanud lõpule viia. Paluge kliendil sisestada oma kaardiga seotud telefoninumber."
+      friendly_message: "Esitatud telefoninumber ei vasta teie kaardiga seotud numbrile. Tehingut ei saanud lõpule viia. Palun sisestage õige telefoninumber."
+    "F.0134":
+      message: "Tehingu kinnitamise viga. Vale SMS-võti. Paluge kliendil esitada õige väärtus."
+      friendly_message: "Pank ei ole tehingut kinnitanud. Vale SMS-võti. Palun kontrollige esitatud andmeid."
+    "F.0999":
+      message: "Tehingut ei õnnestunud lõpetada. Võtke ühendust makseteenuse pakkujaga."
+      friendly_message: "Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehega, et saada rohkem teavet."
+    "S.0000":
+      message: "Tehing edukalt lõpetatud."
+      friendly_message: "Tehing edukalt sooritatud."
+    "P.0001":
+      message: "Tehing käib."
+      friendly_message: "Tehingut töödeldakse. Palun oodake."
+    "P.0002":
+      message: "Tere tulemast!"
+      friendly_message: "Tere tulemast!"
+    "P.9999":
+      message: "Tehingu olek teadmata. Üksikasjade saamiseks võtke ühendust makseteenuse pakkujaga."
+      friendly_message: "Tehingu olek teadmata. Üksikasjade saamiseks võtke ühendust kaupmehega."
