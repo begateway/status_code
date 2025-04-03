@@ -105,6 +105,9 @@ en:
     "F.0134":
       message: "Transaction confirmation error. Wrong SMS key. Ask the customer to submit the correct value."
       friendly_message: "Transaction not confirmed by the bank. Wrong SMS key. Please check the submitted data."
+    "F.0998":
+      message: "Transaction failed. The transaction was automatically completed by the provider's system. No further action is required."
+      friendly_message: "Transaction failed. The transaction was automatically completed by the provider's system. No further action is required."
     "F.0999":
       message: "Failed to complete the transaction. Contact the payment service provider."
       friendly_message: "Failed to complete the transaction. Contact the merchant for details."
