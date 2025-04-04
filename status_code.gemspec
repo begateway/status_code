@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'status_code'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
 
   s.date        = '2020-03-03'
   s.summary     = 'Decoding transactions bank codes'
