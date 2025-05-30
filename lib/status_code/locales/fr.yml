@@ -105,9 +105,18 @@ fr:
     "F.0134":
       message: "Erreur de confirmation de transaction. Mauvaise clé SMS. Demandez au client de soumettre la valeur correcte."
       friendly_message: "Transaction non confirmée par la banque. Mauvaise clé SMS. Veuillez vérifier les données soumises."
+    "F.0135":
+      message: "Impossible d'initialiser une nouvelle transaction tant que la précédente n'est pas traitée. Veuillez demander au client de terminer la transaction précédente ou d'attendre qu'elle soit terminée."
+      friendly_message: "Échec de la transaction. Terminez la transaction précédente ou attendez qu'elle soit finalisée, puis réessayez."
+    "F.0997":
+      message: ""
+      friendly_message: "La transaction n'a pas pu être complétée pour une raison inconnue. Veuillez vérifier les détails avec le commerçant."
+    "F.0998":
+      message: "Transaction échouée. Le client n'a pas complété le paiement - le système a automatiquement marqué la transaction comme échouée."
+      friendly_message: "Transaction échouée. Le client n'a pas complété le paiement - le système a automatiquement marqué la transaction comme échouée."
     "F.0999":
-      message: "Échec de la transaction. Contactez le fournisseur de services de paiement."
-      friendly_message: "Échec de la transaction. Contactez le commerçant pour plus de détails."
+      message: ""
+      friendly_message: "La transaction n'a pas pu être complétée pour une raison inconnue. Veuillez vérifier les détails avec le commerçant."
     "S.0000":
       message: "La transaction est réussie."
       friendly_message: "La transaction a été traitée avec succès."

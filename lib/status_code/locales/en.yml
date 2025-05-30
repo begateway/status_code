@@ -105,12 +105,18 @@ en:
     "F.0134":
       message: "Transaction confirmation error. Wrong SMS key. Ask the customer to submit the correct value."
       friendly_message: "Transaction not confirmed by the bank. Wrong SMS key. Please check the submitted data."
+    "F.0135":
+      message: "Cannot initialize a new transaction until the previous one is processed. Please ask the customer to complete the previous transaction or wait until it is completed."
+      friendly_message: "Transaction failed. Complete the previous transaction or wait until the previous transaction is finalized and try again."
+    "F.0997":
+      message: ""
+      friendly_message: "The transaction could not be completed due to an unknown reason. Please check the details with the merchant."
     "F.0998":
-      message: "Transaction failed. The transaction was automatically completed by the provider's system. No further action is required."
-      friendly_message: "Transaction failed. The transaction was automatically completed by the provider's system. No further action is required."
+      message: "Transaction failed. The customer did not complete the payment - the system automatically marked the transaction as failed."
+      friendly_message: "Transaction failed. The customer did not complete the payment - the system automatically marked the transaction as failed."
     "F.0999":
-      message: "Failed to complete the transaction. Contact the payment service provider."
-      friendly_message: "Failed to complete the transaction. Contact the merchant for details."
+      message: ""
+      friendly_message: "The transaction could not be completed due to an unknown reason. Please check the details with the merchant."
     "S.0000":
       message: "Transaction is successful."
       friendly_message: "The transaction is successfully processed."

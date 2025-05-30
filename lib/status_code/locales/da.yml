@@ -105,9 +105,18 @@ da:
     "F.0134":
       message: "Fejl i transaktionsbekræftelse. Forkert SMS-nøgle. Bed kunden om at indsende den korrekte værdi."
       friendly_message: "Transaktionen blev ikke bekræftet af banken. Forkert SMS-nøgle. Tjek venligst de indsendte data."
+    "F.0135":
+      message: "Det er ikke muligt at starte en ny transaktion, før den tidligere er behandlet. Bed venligst kunden om at afslutte den tidligere transaktion eller vente, indtil den er fuldført."
+      friendly_message: "Transaktionen mislykkedes. Afslut den tidligere transaktion, eller vent, indtil den tidligere transaktion er afsluttet, og prøv igen."
+    "F.0997":
+      message: ""
+      friendly_message: "Transaktionen kunne ikke gennemføres af en ukendt årsag. Tjek venligst detaljerne med forhandleren."
+    "F.0998":
+      message: "Transaktionen mislykkedes. Kunden gennemførte ikke betalingen - systemet markerede automatisk transaktionen som mislykket."
+      friendly_message: "Transaktionen mislykkedes. Kunden gennemførte ikke betalingen - systemet markerede automatisk transaktionen som mislykket."
     "F.0999":
-      message: "Kunne ikke gennemføre transaktionen. Kontakt betalingstjenesteudbyderen."
-      friendly_message: "Kunne ikke gennemføre transaktionen. Kontakt forhandleren for detaljer."
+      message: ""
+      friendly_message: "Transaktionen kunne ikke gennemføres af en ukendt årsag. Tjek venligst detaljerne med forhandleren."
     "S.0000":
       message: "Transaktionen er gennemført."
       friendly_message: "Transaktionen er gennemført med succes."

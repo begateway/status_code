@@ -105,9 +105,18 @@ pl:
     "F.0134":
       message: "Błąd potwierdzenia transakcji. Błędny klucz SMS. Poproś klienta o przesłanie poprawnej wartości."
       friendly_message: "Transakcja nie została potwierdzona przez bank. Błędny klucz SMS. Proszę sprawdzić przesłane dane."
+    "F.0135":
+      message: "Nie można rozpocząć nowej transakcji, dopóki poprzednia nie zostanie przetworzona. Proszę poprosić klienta o dokończenie poprzedniej transakcji lub poczekać na jej zakończenie."
+      friendly_message: "Transakcja nie powiodła się. Dokończ poprzednią transakcję lub poczekaj, aż zostanie zakończona, i spróbuj ponownie."
+    "F.0997":
+      message: ""
+      friendly_message: "Transakcja nie mogła zostać zrealizowana z nieznanego powodu. Sprawdź szczegóły u sprzedawcy."
+    "F.0998":
+      message: "Transakcja nie powiodła się. Klient nie dokończył płatności - system automatycznie oznaczył transakcję jako nieudaną."
+      friendly_message: "Transakcja nie powiodła się. Klient nie dokończył płatności - system automatycznie oznaczył transakcję jako nieudaną."
     "F.0999":
-      message: "Nie udało się zakończyć transakcji. Skontaktuj się z dostawcą usług płatniczych."
-      friendly_message: "Nie udało się zakończyć transakcji. Skontaktuj się ze sprzedawcą, aby uzyskać szczegóły."
+      message: ""
+      friendly_message: "Transakcja nie mogła zostać zrealizowana z nieznanego powodu. Sprawdź szczegóły u sprzedawcy."
     "S.0000":
       message: "Transakcja zakończona sukcesem."
       friendly_message: "Transakcja zakończona pomyślnie."

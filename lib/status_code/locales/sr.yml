@@ -105,9 +105,18 @@ sr:
     "F.0134":
       message: "Greška u potvrdi transakcije. Pogrešan SMS ključ. Zamolite kupca da pošalje ispravnu vrednost."
       friendly_message: "Transakcija nije potvrđena od strane banke. Pogrešan SMS ključ. Molimo vas da proverite unete podatke."
+    "F.0135":
+      message: "Није могуће започети нову трансакцију док се претходна не обради. Молимо замолите клијента да заврши претходну трансакцију или да сачека док се не заврши."
+      friendly_message: "Трансакција није успела. Завршите претходну трансакцију или сачекајте да се претходна трансакција заврши и покушајте поново."
+    "F.0997":
+      message: ""
+      friendly_message: "Transakcija nije mogla biti završena iz nepoznatog razloga. Proverite detalje kod trgovca."
+    "F.0998":
+      message: "Transakcija nije uspela. Klijent nije završio plaćanje - sistem je automatski označio transakciju kao neuspešnu."
+      friendly_message: "Transakcija nije uspela. Klijent nije završio plaćanje - sistem je automatski označio transakciju kao neuspešnu."
     "F.0999":
-      message: "Nije moguće izvršiti transakciju. Kontaktirajte provajdera platnih usluga."
-      friendly_message: "Nije moguće izvršiti transakciju. Kontaktirajte trgovca za više informacija."
+      message: ""
+      friendly_message: "Transakcija nije mogla biti završena iz nepoznatog razloga. Proverite detalje kod trgovca."
     "S.0000":
       message: "Transakcija je uspešno završena."
       friendly_message: "Transakcija je uspešno obrađena."
