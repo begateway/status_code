@@ -105,9 +105,18 @@ sv:
     "F.0134":
       message: "Fel vid transaktionsbekräftelse. Fel SMS-nyckel. Be kunden att skicka in rätt värde."
       friendly_message: "Transaktionen bekräftades inte av banken. Fel SMS-nyckel. Kontrollera de inskickade uppgifterna."
+    "F.0135":
+      message: "Kan inte initiera en ny transaktion förrän den föregående har bearbetats. Be kunden att slutföra den föregående transaktionen eller vänta tills den är klar."
+      friendly_message: "Transaktionen misslyckades. Slutför den föregående transaktionen eller vänta tills den föregående är klar och försök igen."
+    "F.0997":
+      message: ""
+      friendly_message: "Transaktionen kunde inte slutföras på grund av ett okänt fel. Kontrollera detaljerna med handlaren."
+    "F.0998":
+      message: "Transaktionen misslyckades. Kunden slutförde inte betalningen - systemet markerade automatiskt transaktionen som misslyckad."
+      friendly_message: "Transaktionen misslyckades. Kunden slutförde inte betalningen - systemet markerade automatiskt transaktionen som misslyckad."
     "F.0999":
-      message: "Misslyckades med att slutföra transaktionen. Kontakta betaltjänstleverantören."
-      friendly_message: "Misslyckades med att slutföra transaktionen. Kontakta handlaren för detaljer."
+      message: ""
+      friendly_message: "Transaktionen kunde inte slutföras på grund av ett okänt fel. Kontrollera detaljerna med handlaren."
     "S.0000":
       message: "Transaktionen är framgångsrik."
       friendly_message: "Transaktionen har bearbetats framgångsrikt."

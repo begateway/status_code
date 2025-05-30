@@ -1,6 +1,6 @@
 az:
   bank_codes:
-    "F.0100": 
+    "F.0100":
       message: "Hesab ID-si bloklanıb. Əməliyyatı tamamlamaq mümkün olmadı. Sorğu parametrlərini yoxlayın və ya ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
       friendly_message: "Hesab ID-si bloklanıb. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün ödəniş xidməti təchizatçınızla əlaqə saxlayın."
     "F.0101":
@@ -105,9 +105,18 @@ az:
     "F.0134":
       message: "Tranzaksiya təsdiqi xətası. Yanlış SMS açarı. Müştəridən düzgün dəyəri təqdim etməsini xahiş edin."
       friendly_message: "Bank tərəfindən tranzaksiya təsdiqlənmədi. Yanlış SMS açarı. Zəhmət olmasa, təqdim olunan məlumatları yoxlayın."
+    "F.0135":
+      message: "Əvvəlki əməliyyat işlənməyincə yeni əməliyyat başladmaq mümkün deyil. Zəhmət olmasa, müştəridən əvvəlki əməliyyatı tamamlamasını və ya onun tamamlanmasını gözləməsini xahiş edin."
+      friendly_message: "Əməliyyat uğursuz oldu. Əvvəlki əməliyyatı tamamlayın və ya əvvəlki əməliyyatın tamamlanmasını gözləyin və yenidən cəhd edin."
+    "F.0997":
+      message: ""
+      friendly_message: "Naməlum səbəbə görə əməliyyatı başa çatdırmaq mümkün olmadı. Satıcı ilə əlaqə saxlayın."
+    "F.0998":
+      message: "Əməliyyat baş tutmadı. Müştəri ödənişi tamamlamadı - sistem əməliyyatı avtomatik olaraq uğursuz kimi işarələdi."
+      friendly_message: "Əməliyyat baş tutmadı. Müştəri ödənişi tamamlamadı - sistem əməliyyatı avtomatik olaraq uğursuz kimi işarələdi."
     "F.0999":
-      message: "Əməliyyatı tamamlamaq mümkün olmadı. Ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: ""
+      friendly_message: "Naməlum səbəbə görə əməliyyatı başa çatdırmaq mümkün olmadı. Satıcı ilə əlaqə saxlayın."
     "S.0000":
       message: "Əməliyyat uğurla tamamlandı."
       friendly_message: "Əməliyyat uğurla yerinə yetirildi."

@@ -105,9 +105,18 @@ fi:
     "F.0134":
       message: "Siirron vahvistusvirhe. Väärä SMS-avain. Pyydä asiakasta antamaan oikea arvo."
       friendly_message: "Pankki ei vahvistanut siirtoa. Väärä SMS-avain. Tarkista lähettämäsi tiedot."
+    "F.0135":
+      message: "Uutta tapahtumaa ei voida aloittaa ennen kuin edellinen on käsitelty. Pyydä asiakasta suorittamaan edellinen tapahtuma tai odottamaan sen valmistumista."
+      friendly_message: "Tapahtuma epäonnistui. Suorita edellinen tapahtuma loppuun tai odota sen valmistumista ja yritä uudelleen."
+    "F.0997":
+      message: ""
+      friendly_message: "Tapahtumaa ei voitu suorittaa tuntemattomasta syystä. Tarkista tiedot kauppiaalta."
+    "F.0998":
+      message: "Tapahtuma epäonnistui. Asiakas ei suorittanut maksua loppuun - järjestelmä merkitsi tapahtuman automaattisesti epäonnistuneeksi."
+      friendly_message: "Tapahtuma epäonnistui. Asiakas ei suorittanut maksua loppuun - järjestelmä merkitsi tapahtuman automaattisesti epäonnistuneeksi."
     "F.0999":
-      message: "Tapahtumaa ei voitu suorittaa. Ota yhteyttä maksupalveluntarjoajaan."
-      friendly_message: "Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: ""
+      friendly_message: "Tapahtumaa ei voitu suorittaa tuntemattomasta syystä. Tarkista tiedot kauppiaalta."
     "S.0000":
       message: "Tapahtuma on onnistunut."
       friendly_message: "Tapahtuma käsiteltiin onnistuneesti."
