@@ -108,6 +108,9 @@ en:
     "F.0135":
       message: "Cannot initialize a new transaction until the previous one is processed. Please ask the customer to complete the previous transaction or wait until it is completed."
       friendly_message: "Transaction failed. Complete the previous transaction or wait until the previous transaction is finalized and try again."
+    "F.0996":
+      message: "The transaction was not verified."
+      friendly_message: "The transaction was not verified by the verification service VPD."
     "F.0997":
       message: ""
       friendly_message: "The transaction could not be completed due to an unknown reason. Please check the details with the merchant."
