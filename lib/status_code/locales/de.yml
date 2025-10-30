@@ -105,18 +105,9 @@ de:
     "F.0134":
       message: "Transaktionsbestätigungsfehler. Falscher SMS-Schlüssel. Bitten Sie den Kunden, den korrekten Wert einzureichen."
       friendly_message: "Die Transaktion wurde von der Bank nicht bestätigt. Falscher SMS-Schlüssel. Bitte überprüfen Sie die eingegebenen Daten."
-    "F.0135":
-      message: "Eine neue Transaktion kann erst gestartet werden, wenn die vorherige verarbeitet wurde. Bitte bitten Sie den Kunden, die vorherige Transaktion abzuschließen oder zu warten, bis sie abgeschlossen ist."
-      friendly_message: "Transaktion fehlgeschlagen. Schließen Sie die vorherige Transaktion ab oder warten Sie, bis die vorherige Transaktion abgeschlossen ist, und versuchen Sie es erneut."
-    "F.0997":
-      message: ""
-      friendly_message: "Die Transaktion konnte aus unbekannten Gründen nicht abgeschlossen werden. Bitte prüfen Sie die Details beim Händler."
-    "F.0998":
-      message: "Transaktion fehlgeschlagen. Der Kunde hat die Zahlung nicht abgeschlossen – das System hat die Transaktion automatisch als fehlgeschlagen markiert."
-      friendly_message: "Transaktion fehlgeschlagen. Der Kunde hat die Zahlung nicht abgeschlossen – das System hat die Transaktion automatisch als fehlgeschlagen markiert."
     "F.0999":
-      message: ""
-      friendly_message: "Die Transaktion konnte aus unbekannten Gründen nicht abgeschlossen werden. Bitte prüfen Sie die Details beim Händler."
+      message: "Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich an den Zahlungsdienstleister."
+      friendly_message: "Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an den Händler."
     "S.0000":
       message: "Transaktion erfolgreich."
       friendly_message: "Die Transaktion wurde erfolgreich verarbeitet."

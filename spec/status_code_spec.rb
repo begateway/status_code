@@ -352,7 +352,7 @@ describe StatusCode do
         let(:status) { false }
 
         it 'returns Decline message' do
-          expect(subject).to eql 'The transaction could not be completed due to an unknown reason. Please check the details with the merchant.'
+          expect(subject).to eql 'Failed to complete the transaction. Contact the merchant for details.'
         end
       end
 
@@ -361,7 +361,7 @@ describe StatusCode do
         let(:status) { false }
 
         it 'returns Decline message' do
-          expect(subject).to eql 'The transaction could not be completed due to an unknown reason. Please check the details with the merchant.'
+          expect(subject).to eql 'Failed to complete the transaction. Contact the merchant for details.'
         end
       end
     end

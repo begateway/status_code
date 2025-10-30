@@ -105,18 +105,9 @@
     "F.0134":
       message: "Feil ved transaksjonsbekreftelse. Feil SMS-nøkkel. Be kunden om å sende inn riktig verdi."
       friendly_message: "Transaksjonen ble ikke bekreftet av banken. Feil SMS-nøkkel. Vennligst sjekk de innsendte dataene."
-    "F.0135":
-      message: "Kan ikke starte en ny transaksjon før den forrige er behandlet. Vennligst be kunden fullføre den forrige transaksjonen eller vente til den er fullført."
-      friendly_message: "Transaksjonen mislyktes. Fullfør den forrige transaksjonen eller vent til den forrige er fullført, og prøv igjen."
-    "F.0997":
-      message: ""
-      friendly_message: "Transaksjonen kunne ikke fullføres på grunn av en ukjent årsak. Sjekk detaljene med forhandleren."
-    "F.0998":
-      message: "Transaksjonen mislyktes. Kunden fullførte ikke betalingen - systemet markerte automatisk transaksjonen som mislykket."
-      friendly_message: "Transaksjonen mislyktes. Kunden fullførte ikke betalingen - systemet markerte automatisk transaksjonen som mislykket."
     "F.0999":
-      message: ""
-      friendly_message: "Transaksjonen kunne ikke fullføres på grunn av en ukjent årsak. Sjekk detaljene med forhandleren."
+      message: "Kunne ikke fullføre transaksjonen. Kontakt betalingstjenesteleverandøren."
+      friendly_message: "Kunne ikke fullføre transaksjonen. Kontakt selgeren for detaljer."
     "S.0000":
       message: "Transaksjonen var vellykket."
       friendly_message: "Transaksjonen ble behandlet vellykket."

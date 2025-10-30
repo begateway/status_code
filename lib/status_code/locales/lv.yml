@@ -105,18 +105,9 @@ lv:
     "F.0134":
       message: "Darījuma apstiprināšanas kļūda. Nepareiza SMS atslēga. Lūdziet klientam iesniegt pareizu vērtību."
       friendly_message: "Darījums nav apstiprināts no bankas. Nepareiza SMS atslēga. Lūdzu, pārbaudiet iesniegtos datus."
-    "F.0135":
-      message: "Nav iespējams sākt jaunu darījumu, kamēr iepriekšējais nav apstrādāts. Lūdziet klientam pabeigt iepriekšējo darījumu vai gaidīt, līdz tas tiks pabeigts."
-      friendly_message: "Darījums neizdevās. Pabeidziet iepriekšējo darījumu vai gaidiet, līdz iepriekšējais tiks pabeigts, un mēģiniet vēlreiz."
-    "F.0997":
-      message: ""
-      friendly_message: "Darījumu neizdevās pabeigt nezināma iemesla dēļ. Lūdzu, pārbaudiet informāciju pie tirgotāja."
-    "F.0998":
-      message: "Transakcija neizdevās. Klients nepabeidza maksājumu - sistēma automātiski atzīmēja transakciju kā neveiksmīgu."
-      friendly_message: "Transakcija neizdevās. Klients nepabeidza maksājumu - sistēma automātiski atzīmēja transakciju kā neveiksmīgu."
     "F.0999":
-      message: ""
-      friendly_message: "Darījumu neizdevās pabeigt nezināma iemesla dēļ. Lūdzu, pārbaudiet informāciju pie tirgotāja."
+      message: "Transakciju nevarēja pabeigt. Sazinieties ar maksājumu pakalpojumu sniedzēju."
+      friendly_message: "Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
     "S.0000":
       message: "Transakcija veiksmīgi pabeigta."
       friendly_message: "Transakcija veiksmīgi izpildīta."
