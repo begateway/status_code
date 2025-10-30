@@ -105,18 +105,9 @@ it:
     "F.0134":
       message: "Errore di conferma della transazione. Chiave SMS errata. Chiedere al cliente di inviare il valore corretto."
       friendly_message: "Transazione non confermata dalla banca. Chiave SMS errata. Controlla i dati inviati."
-    "F.0135":
-      message: "Non è possibile iniziare una nuova transazione finché la precedente non è stata elaborata. Chiedere al cliente di completare la transazione precedente o attendere che sia completata."
-      friendly_message: "Transazione fallita. Completa la transazione precedente o attendi che sia finalizzata e riprova."
-    "F.0997":
-      message: ""
-      friendly_message: "La transazione non può essere completata a causa di un errore sconosciuto. Verifica i dettagli con il commerciante."
-    "F.0998":
-      message: "Transazione non riuscita. Il cliente non ha completato il pagamento - il sistema ha automaticamente contrassegnato la transazione come non riuscita."
-      friendly_message: "Transazione non riuscita. Il cliente non ha completato il pagamento - il sistema ha automaticamente contrassegnato la transazione come non riuscita."
     "F.0999":
-      message: ""
-      friendly_message: "La transazione non può essere completata a causa di un errore sconosciuto. Verifica i dettagli con il commerciante."
+      message: "Transazione non completata. Contattare il fornitore di servizi di pagamento."
+      friendly_message: "Transazione non completata. Contattare il commerciante per ulteriori dettagli."
     "S.0000":
       message: "Transazione completata con successo."
       friendly_message: "La transazione è stata elaborata con successo."

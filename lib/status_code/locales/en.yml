@@ -115,11 +115,11 @@ en:
       message: ""
       friendly_message: "The transaction could not be completed due to an unknown reason. Please check the details with the merchant."
     "F.0998":
-      message: "Transaction failed. The customer did not complete the payment - the system automatically marked the transaction as failed."
-      friendly_message: "Transaction failed. The customer did not complete the payment - the system automatically marked the transaction as failed."
+      message: "Transaction failed. The transaction was automatically completed by the provider's system. No further action is required."
+      friendly_message: "Transaction failed. The transaction was automatically completed by the provider's system. No further action is required."
     "F.0999":
-      message: ""
-      friendly_message: "The transaction could not be completed due to an unknown reason. Please check the details with the merchant."
+      message: "Failed to complete the transaction. Contact the payment service provider."
+      friendly_message: "Failed to complete the transaction. Contact the merchant for details."
     "S.0000":
       message: "Transaction is successful."
       friendly_message: "The transaction is successfully processed."
