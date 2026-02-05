@@ -105,9 +105,18 @@ et:
     "F.0134":
       message: "Tehingu kinnitamise viga. Vale SMS-võti. Paluge kliendil esitada õige väärtus."
       friendly_message: "Pank ei ole tehingut kinnitanud. Vale SMS-võti. Palun kontrollige esitatud andmeid."
+    "F.0135":
+      message: "Uut tehingut ei saa alustada enne, kui eelmine on töödeldud. Palun paluge kliendil eelmine tehing lõpule viia või oodata, kuni see on lõpetatud."
+      friendly_message: "Tehing ebaõnnestus. Lõpetage eelmine tehing või oodake, kuni eelmine tehing on lõpetatud, ja proovige uuesti."
+    "F.0997":
+      message: ""
+      friendly_message: "Tehingut ei saanud teadmata põhjusel lõpule viia. Palun kontrollige üksikasju kaupmehega."
+    "F.0998":
+      message: "Tehing ebaõnnestus. Klient ei lõpetanud makset - süsteem märkis tehingu automaatselt ebaõnnestunuks."
+      friendly_message: "Tehing ebaõnnestus. Klient ei lõpetanud makset - süsteem märkis tehingu automaatselt ebaõnnestunuks."
     "F.0999":
-      message: "Tehingut ei õnnestunud lõpetada. Võtke ühendust makseteenuse pakkujaga."
-      friendly_message: "Tehingut ei õnnestunud lõpetada. Võtke ühendust kaupmehega, et saada rohkem teavet."
+      message: ""
+      friendly_message: "Tehingut ei saanud teadmata põhjusel lõpule viia. Palun kontrollige üksikasju kaupmehega."
     "S.0000":
       message: "Tehing edukalt lõpetatud."
       friendly_message: "Tehing edukalt sooritatud."

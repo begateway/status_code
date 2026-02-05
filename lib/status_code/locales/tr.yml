@@ -105,9 +105,18 @@ tr:
     "F.0134":
       message: "İşlem onayı hatası. Yanlış SMS anahtarı. Müşteriden doğru değeri göndermesini isteyin."
       friendly_message: "Bankası tarafından işlem onaylanmadı. Yanlış SMS anahtarı. Lütfen gönderilen verileri kontrol edin."
+    "F.0135":
+      message: "Önceki işlem işlenene kadar yeni bir işlem başlatılamaz. Lütfen müşteriden önceki işlemi tamamlamasını isteyin veya tamamlanmasını bekleyin."
+      friendly_message: "İşlem başarısız. Önceki işlemi tamamlayın veya önceki işlemin tamamlanmasını bekleyip tekrar deneyin."
+    "F.0997":
+      message: ""
+      friendly_message: "İşlem bilinmeyen bir nedenle tamamlanamadı. Lütfen ayrıntılar için satıcıyla iletişime geçin."
+    "F.0998":
+      message: "İşlem başarısız oldu. Müşteri ödemeyi tamamlamadı - sistem işlemi otomatik olarak başarısız olarak işaretledi."
+      friendly_message: "İşlem başarısız oldu. Müşteri ödemeyi tamamlamadı - sistem işlemi otomatik olarak başarısız olarak işaretledi."
     "F.0999":
-      message: "İşlem tamamlanamadı. Ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "İşlem tamamlanamadı. Detaylar için satıcıyla iletişime geçin."
+      message: ""
+      friendly_message: "İşlem bilinmeyen bir nedenle tamamlanamadı. Lütfen ayrıntılar için satıcıyla iletişime geçin."
     "S.0000":
       message: "İşlem başarılı."
       friendly_message: "İşlem başarıyla gerçekleştirildi."
