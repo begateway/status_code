@@ -250,14 +250,14 @@ describe StatusCode do
       end
 
       context 'with unknown locale' do
-          let(:locale) { :zz }
-          let(:receiver) { :customer }
-          let(:code) { 'S.0000' }
+        let(:locale) { :zz }
+        let(:receiver) { :customer }
+        let(:code) { 'S.0000' }
 
-          it 'returns nil' do
-            expect(subject).to be_nil
-          end
+        it 'returns nil' do
+          expect(subject).to be_nil
         end
+      end
     end
 
     context 'without locale' do
@@ -352,7 +352,7 @@ describe StatusCode do
         let(:status) { false }
 
         it 'returns Decline message' do
-          expect(subject).to eql 'Failed to complete the transaction. Contact the merchant for details.'
+          expect(subject).to eql 'The transaction could not be completed due to an unknown reason. Please check the details with the merchant.'
         end
       end
 
@@ -361,7 +361,7 @@ describe StatusCode do
         let(:status) { false }
 
         it 'returns Decline message' do
-          expect(subject).to eql 'Failed to complete the transaction. Contact the merchant for details.'
+          expect(subject).to eql 'The transaction could not be completed due to an unknown reason. Please check the details with the merchant.'
         end
       end
     end

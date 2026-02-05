@@ -105,9 +105,18 @@ ro:
     "F.0134":
       message: "Eroare de confirmare a tranzacției. Cheie SMS greșită. Cereți clientului să trimită valoarea corectă."
       friendly_message: "Tranzacția nu a fost confirmată de bancă. Cheie SMS greșită. Vă rugăm să verificați datele trimise."
+    "F.0135":
+      message: "Nu se poate iniția o nouă tranzacție până când cea anterioară nu este procesată. Vă rugăm să cereți clientului să finalizeze tranzacția anterioară sau să aștepte până când aceasta este completată."
+      friendly_message: "Tranzacția a eșuat. Finalizați tranzacția anterioară sau așteptați până când tranzacția anterioară este finalizată și încercați din nou."
+    "F.0997":
+      message: ""
+      friendly_message: "Tranzacția nu a putut fi finalizată dintr-un motiv necunoscut. Verificați detaliile cu comerciantul."
+    "F.0998":
+      message: "Tranzacție eșuată. Clientul nu a finalizat plata - sistemul a marcat automat tranzacția ca eșuată."
+      friendly_message: "Tranzacție eșuată. Clientul nu a finalizat plata - sistemul a marcat automat tranzacția ca eșuat."
     "F.0999":
-      message: "Nu s-a putut finaliza tranzacția. Contactați furnizorul de servicii de plată."
-      friendly_message: "Nu s-a putut finaliza tranzacția. Contactați comerciantul pentru detalii."
+      message: ""
+      friendly_message: "Tranzacția nu a putut fi finalizată dintr-un motiv necunoscut. Verificați detaliile cu comerciantul."
     "S.0000":
       message: "Tranzacția a fost finalizată cu succes."
       friendly_message: "Tranzacția a fost procesată cu succes."
