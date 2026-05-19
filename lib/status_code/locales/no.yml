@@ -1,131 +1,143 @@
 "no":
   bank_codes:
     "F.0100":
-      message: "Konto-ID blokkert. Kunne ikke fullføre transaksjonen. Sjekk forespørselsparametrene eller kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Konto-ID blokkert. Kunne ikke fullføre transaksjonen. Kontakt betalingstjenesteleverandøren din for detaljer."
+      message: "Betalingskonto blokkert. Be betaleren om å kontrollere kontoopplysningene sine."
+      friendly_message: "Kontoen din er blokkert. Kontroller kontoopplysningene dine."
     "F.0101":
-      message: "Konto-ID ikke funnet. Kunne ikke fullføre transaksjonen. Sjekk forespørselsparametrene."
-      friendly_message: "Konto-ID ikke funnet. Kunne ikke fullføre transaksjonen. Kontakt betalingstjenesteleverandøren din for detaljer."
+      message: "Betalingskonto ikke funnet. Be betaleren om å kontrollere kontoopplysningene sine."
+      friendly_message: "Kontoen din ble ikke funnet. Kontroller kontoopplysningene dine."
     "F.0102":
-      message: "Autoriseringsfeil. Kunne ikke fullføre transaksjonen. Sjekk autoriseringsforespørselsparametrene."
-      friendly_message: "Autoriseringsfeil. Kunne ikke fullføre transaksjonen. Kontakt selgeren for detaljer."
+      message: "Autorisasjonsfeil. Kontroller parameterne i autorisasjonsforespørselen."
+      friendly_message: "Transaksjonen kunne ikke behandles. Prøv igjen senere."
     "F.0103":
-      message: "Ugyldig forespørselssignatur. Kunne ikke fullføre transaksjonen. Sjekk forespørselssignaturen eller sertifikatet."
-      friendly_message: "Ugyldig forespørselssignatur. Kontakt selgeren for detaljer."
+      message: "Ugyldig forespørselssignatur. Kontroller forespørselssignaturen eller sertifikatet."
+      friendly_message: "Transaksjonen kunne ikke behandles. Prøv igjen senere."
     "F.0104":
-      message: "Ikke tillatt. Bruk en annen transaksjonstype eller kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Ikke tillatt. Kunne ikke fullføre transaksjonen. Kontakt selgeren for detaljer eller bruk en annen betalingsmetode."
+      message: "Transaksjonstype eller betalingsmetode ikke tillatt. Bruk en annen transaksjonstype eller betalingsmetode."
+      friendly_message: "Transaksjonstype eller betalingsmetode ikke tillatt."
     "F.0105":
-      message: "Ikke godkjent. Kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Ikke godkjent. Kunne ikke fullføre transaksjonen. Kontakt selgeren for detaljer."
+      message: "Transaksjon avvist."
+      friendly_message: "Transaksjon avvist. Bruk en annen betalingsmetode."
     "F.0106":
-      message: "Terminalfeil. Kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Terminalfeil. Kunne ikke fullføre transaksjonen. Kontakt selgeren for detaljer eller bruk en annen betalingsmetode."
+      message: "Terminalfeil. Kontakt teknisk støtte."
+      friendly_message: "Transaksjon avvist. Bruk en annen betalingsmetode."
     "F.0107":
-      message: "Ugyldig selgerkonto. Kontakt betalingstjenesteleverandøren eller innløseren for detaljer."
-      friendly_message: "Ugyldig selgerkonto. Kunne ikke fullføre transaksjonen. Kontakt selgeren for detaljer."
+      message: "Ugyldig handelskonto. Kontakt teknisk støtte."
+      friendly_message: "Transaksjon avvist. Bruk en annen betalingsmetode."
     "F.0108":
-      message: "Duplisert transaksjon eller bestilling. Sjekk statusen til den opprinnelige transaksjonen eller bestillingen. Kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Duplisert bestilling. Kunne ikke fullføre transaksjonen. Kontakt selgeren for statusen til den opprinnelige bestillingen."
+      message: "Duplisert transaksjon. Kontroller statusen til den opprinnelige transaksjonen."
+      friendly_message: "Duplisert transaksjon. Kontakt den handlende for detaljer."
     "F.0109":
-      message: "Bestilling utløpt. Kunne ikke fullføre transaksjonen."
-      friendly_message: "Bestilling utløpt. Kunne ikke fullføre transaksjonen. Kontakt selgeren for detaljer."
+      message: "Transaksjon utløpt."
+      friendly_message: "Transaksjon utløpt. Prøv igjen."
     "F.0110":
-      message: "Bestillings-ID ikke funnet. Kunne ikke fullføre transaksjonen. Sjekk forespørselsparametrene."
-      friendly_message: "Bestillings-ID ikke funnet. Kunne ikke fullføre transaksjonen. Sjekk transaksjonsparametrene eller kontakt selgeren for detaljer."
+      message: "Transaksjons-ID ikke funnet. Kontroller forespørselsparameterne."
+      friendly_message: "Transaksjon ikke funnet. Kontakt den handlende for detaljer."
     "F.0111":
-      message: "Kort utløpt. Be kunden bruke et gyldig kort."
-      friendly_message: "Kort utløpt. Kunne ikke fullføre transaksjonen. Bruk et gyldig kort."
+      message: "Kort utløpt. Be betaleren om å bruke et gyldig kort."
+      friendly_message: "Kort utløpt. Bruk et gyldig kort."
     "F.0112":
-      message: "CVV-verifisering mislyktes. Be kunden oppgi gyldig CVV-kode."
-      friendly_message: "CVV-verifisering mislyktes. Kunne ikke fullføre transaksjonen. Skriv inn en gyldig CVV-kode som angitt på kortet ditt."
+      message: "CVC-verifisering mislyktes. Be betaleren om å oppgi riktig CVC."
+      friendly_message: "Feil CVC. Oppgi riktig CVC fra kortet ditt."
     "F.0113":
-      message: "Valuta ikke støttet. Sjekk valutaen i forespørselen eller kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Valuta ikke støttet. Kunne ikke fullføre transaksjonen. Velg en annen valuta eller kontakt selgeren for detaljer."
+      message: "Valuta ikke støttet. Kontroller valutaen i forespørselen."
+      friendly_message: "Valuta ikke støttet. Kontakt den handlende for detaljer."
     "F.0114":
-      message: "Ikke nok penger. Sjekk kontosaldoen eller kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Ikke nok penger. Kunne ikke fullføre transaksjonen. Sjekk kontosaldoen."
+      message: "Utilstrekkelige midler."
+      friendly_message: "Utilstrekkelige midler."
     "F.0115":
-      message: "Innløserfeil. Potensielt svindel. Betalingsmiddelet kan være stjålet eller tapt. Sjekk kundedetaljene dine."
-      friendly_message: "Betalingsdetaljer feil. Kunne ikke fullføre transaksjonen. Kontakt selgeren for detaljer."
+      message: "Mistanke om svindel. Betalingsmiddelet kan være stjålet eller tapt."
+      friendly_message: "Transaksjon avvist. Bruk en annen betalingsmetode."
     "F.0116":
-      message: "Utsenderfeil. Potensielt svindel. Betalingsmiddelet kan være stjålet eller tapt. Sjekk kundedetaljene dine."
-      friendly_message: "Betalingsdetaljer feil. Kunne ikke fullføre transaksjonen. Kontakt selgeren eller kortutstedende bank for detaljer. Bankens telefonnummer er angitt på baksiden av kortet ditt."
+      message: "Transaksjon avvist av betalingssystemet. Mulig svindel."
+      friendly_message: "Transaksjon avvist. Bruk en annen betalingsmetode."
     "F.0117":
-      message: "Midlertidig systemfeil hos leverandøren. Kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Leverandørens systemfeil. Kunne ikke fullføre transaksjonen. Prøv igjen senere eller kontakt selgeren for detaljer."
+      message: "Midlertidig systemfeil. Prøv igjen senere."
+      friendly_message: "Systemfeil. Prøv igjen senere."
     "F.0118":
-      message: "Leverandørens systemfeil. Kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Leverandørens systemfeil. Kunne ikke fullføre transaksjonen. Bruk en annen betalingsmetode eller kontakt selgeren for detaljer."
+      message: "Systemfeil. Kontakt teknisk støtte."
+      friendly_message: "Systemfeil. Bruk en annen betalingsmetode."
     "F.0119":
-      message: "Midlertidig systemfeil hos leverandøren. Kontakt kortutstedende bank for detaljer."
-      friendly_message: "Leverandørens systemfeil. Kunne ikke fullføre transaksjonen. Prøv igjen senere eller kontakt banken som utstedte kortet ditt for detaljer. Bankens telefonnummer er angitt på baksiden av kortet ditt."
+      message: "Transaksjon avvist av kortutstedende bank."
+      friendly_message: "Transaksjon avvist. Prøv igjen senere."
     "F.0120":
-      message: "Leverandørens systemfeil. Kontakt kortutstedende bank for detaljer."
-      friendly_message: "Leverandørens systemfeil. Kunne ikke fullføre transaksjonen. Bruk en annen betalingsmetode eller kontakt banken som utstedte kortet ditt for detaljer. Bankens telefonnummer er angitt på baksiden av kortet ditt."
+      message: "Transaksjon avvist av kortutstedende bank."
+      friendly_message: "Transaksjon avvist. Prøv igjen senere."
     "F.0121":
-      message: "Midlertidig systemfeil hos leverandøren. Kontakt kundens betalingstjenesteleverandør for detaljer."
-      friendly_message: "Leverandørens systemfeil. Kunne ikke fullføre transaksjonen. Prøv igjen senere eller kontakt betalingstjenesteleverandøren din for detaljer."
+      message: "Midlertidig feil i eksternt betalingssystem."
+      friendly_message: "Systemfeil. Prøv igjen senere."
     "F.0122":
-      message: "Leverandørens systemfeil. Kontakt kundens betalingstjenesteleverandør for detaljer."
-      friendly_message: "Leverandørens systemfeil. Kunne ikke fullføre transaksjonen. Bruk en annen betalingsmetode eller kontakt betalingstjenesteleverandøren din for detaljer."
+      message: "Feil i eksternt betalingssystem."
+      friendly_message: "Systemfeil. Bruk en annen betalingsmetode."
     "F.0123":
-      message: "Transaksjonsbeløpet eller antall transaksjoner overskrider betalingstjenesteleverandørens grenser. Sjekk transaksjonsbeløpet og antall transaksjoner eller kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Transaksjonsbeløpet eller antall transaksjoner overskrider grensene. Kunne ikke fullføre transaksjonen. Sjekk transaksjonsbeløpet eller kontakt selgeren for detaljer."
+      message: "Transaksjonen overskrider grenser. Kontakt teknisk støtte."
+      friendly_message: "Transaksjonen overskrider grenser. Kontakt den handlende for detaljer."
     "F.0124":
-      message: "Transaksjonsbeløpet eller antall transaksjoner overskrider utsenderens grenser. Sjekk transaksjonsbeløpet eller antall transaksjoner. Be kunden kontakte kortutstedende bank."
-      friendly_message: "Transaksjonsbeløpet eller antall transaksjoner overskrider grensene. Kunne ikke fullføre transaksjonen. Kontakt selgeren eller banken som utstedte kortet ditt for detaljer. Bankens telefonnummer er angitt på baksiden av kortet ditt."
+      message: "Transaksjonen overskrider utsteders grenser."
+      friendly_message: "Transaksjonen overskrider grenser. Kontakt banken din."
     "F.0125":
-      message: "Transaksjonsbeløpet eller antall transaksjoner overskrider betalingstjenesteleverandørens grenser. Sjekk transaksjonsbeløpet og antall transaksjoner. Kontakt kundens betalingstjenesteleverandør for detaljer."
-      friendly_message: "Transaksjonsbeløpet eller antall transaksjoner overskrider grensene. Kunne ikke fullføre transaksjonen. Kontakt selgeren eller betalingstjenesteleverandøren din for detaljer."
+      message: "Transaksjonen overskrider det eksterne betalingssystemets grenser."
+      friendly_message: "Transaksjonen overskrider grenser. Kontakt din betalingstjenesteleverandør."
     "F.0126":
-      message: "Lommeboksdatafeil. Be kunden sjekke lommeboksdata. Kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Lommeboksdatafeil. Sjekk lommeboksdata eller bruk et annet kort."
+      message: "Ugyldige lommebokdata. Be betaleren om å kontrollere lommebokopplysningene sine."
+      friendly_message: "Ugyldige lommebokdata. Kontroller lommebokopplysningene dine eller bruk en annen betalingsmetode."
     "F.0127":
-      message: "Ugyldige kortdata. Be kunden sjekke kortdata. Kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Ugyldige kortdata. Kunne ikke fullføre transaksjonen. Sjekk kortopplysningene dine eller bruk et annet kort."
+      message: "Ugyldige kortdata. Be betaleren om å kontrollere kortopplysningene sine."
+      friendly_message: "Ugyldige kortdata. Kontroller kortopplysningene dine eller bruk et annet kort."
     "F.0128":
-      message: "Ugyldige forespørselsparametere. Kunne ikke fullføre transaksjonen. Sjekk de nødvendige forespørselsparametrene."
-      friendly_message: "Ugyldige forespørselsparametere. Sjekk transaksjonsdataene eller kontakt selgeren for detaljer."
+      message: "Ugyldige forespørselsparametere. Kontroller de nødvendige forespørselsparameterne."
+      friendly_message: "Transaksjon avvist. Kontakt den handlende for detaljer."
     "F.0129":
-      message: "3-D Secure-verifiseringsfeil. Kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "3-D Secure-verifiseringsfeil. Sjekk din 3-D Secure-kode eller kontakt betalingstjenesteleverandøren for detaljer."
+      message: "3-D Secure-verifiseringsfeil. Kontakt teknisk støtte."
+      friendly_message: "3-D Secure-verifiseringsfeil. Prøv igjen eller bruk en annen betalingsmetode."
     "F.0130":
-      message: "3-D Secure-verifiseringsfeil. Kontakt utstederbanken for detaljer."
-      friendly_message: "3-D Secure-verifiseringsfeil. Sjekk din 3-D Secure-kode eller kontakt banken som utstedte kortet ditt for detaljer. Bankens telefonnummer er angitt på baksiden av kortet ditt."
+      message: "3-D Secure-verifiseringsfeil på utstedersiden."
+      friendly_message: "3-D Secure-verifiseringsfeil. Prøv igjen eller bruk en annen betalingsmetode."
     "F.0131":
-      message: "Transaksjonsbekreftelsesfeil. Kunne ikke fullføre transaksjonen. Be kunden bekrefte betalingen."
-      friendly_message: "Transaksjonsbekreftelsesfeil. Kunne ikke fullføre transaksjonen. Sjekk betalingsbekreftelsen."
+      message: "Transaksjonsbekreftelse mislyktes. Betaleren oppga feil SMS-kode eller OTP."
+      friendly_message: "Transaksjon avvist. Prøv igjen eller bruk en annen betalingsmetode."
     "F.0132":
-      message: "Transaksjonen ble avvist av kunden. Transaksjonen kunne ikke fullføres. Be kunden om å gjenta betalingen."
-      friendly_message: "Transaksjonen ble avvist. Transaksjonen kunne ikke fullføres. Vennligst velg en annen betalingsmetode eller prøv på nytt."
+      message: "Transaksjon kansellert av betaleren."
+      friendly_message: "Transaksjon kansellert. Prøv igjen eller bruk en annen betalingsmetode."
     "F.0133":
-      message: "Feil telefonnummer. Kunne ikke fullføre transaksjonen. Be kunden om å oppgi telefonnummeret knyttet til kortet deres."
-      friendly_message: "Det innsendte telefonnummeret samsvarer ikke med det som er knyttet til kortet ditt. Kunne ikke fullføre transaksjonen. Vennligst oppgi riktig telefonnummer."
+      message: "Feil telefonnummer. Be betaleren om å oppgi telefonnummeret som er knyttet til kortet."
+      friendly_message: "Feil telefonnummer. Oppgi telefonnummeret som er knyttet til kortet ditt."
     "F.0134":
-      message: "Feil ved transaksjonsbekreftelse. Feil SMS-nøkkel. Be kunden om å sende inn riktig verdi."
-      friendly_message: "Transaksjonen ble ikke bekreftet av banken. Feil SMS-nøkkel. Vennligst sjekk de innsendte dataene."
+      message: "Feil SMS-kode. Be betaleren om å oppgi riktig kode."
+      friendly_message: "Transaksjon avvist. Feil SMS-kode. Prøv igjen."
     "F.0135":
-      message: "Kan ikke starte en ny transaksjon før den forrige er behandlet. Vennligst be kunden fullføre den forrige transaksjonen eller vente til den er fullført."
-      friendly_message: "Transaksjonen mislyktes. Fullfør den forrige transaksjonen eller vent til den forrige er fullført, og prøv igjen."
+      message: "Forrige transaksjon ikke fullført. Vent til den er fullført før du prøver igjen."
+      friendly_message: "Forrige transaksjon ikke fullført. Prøv igjen senere."
+    "F.0995":
+      message: "Transaksjon ikke verifisert. Den handlendes verifiseringstjeneste avviste transaksjonen."
+      friendly_message: "Transaksjon avvist. Prøv igjen eller bruk en annen betalingsmetode."
+    "F.0996":
+      message: "Transaksjon ikke verifisert. Verifisering av personopplysninger (VPD) mislyktes."
+      friendly_message: "Transaksjon avvist. Bruk en betalingsmetode med personopplysninger som samsvarer med kontoen din."
     "F.0997":
       message: ""
-      friendly_message: "Transaksjonen kunne ikke fullføres på grunn av en ukjent årsak. Sjekk detaljene med forhandleren."
+      friendly_message: "Transaksjon avvist. Prøv igjen eller kontakt den handlende for detaljer."
     "F.0998":
-      message: "Transaksjonen mislyktes. Kunden fullførte ikke betalingen - systemet markerte automatisk transaksjonen som mislykket."
-      friendly_message: "Transaksjonen mislyktes. Kunden fullførte ikke betalingen - systemet markerte automatisk transaksjonen som mislykket."
+      message: "Transaksjon avvist."
+      friendly_message: "Transaksjon avvist. Prøv igjen."
     "F.0999":
       message: ""
-      friendly_message: "Transaksjonen kunne ikke fullføres på grunn av en ukjent årsak. Sjekk detaljene med forhandleren."
+      friendly_message: "Transaksjon avvist. Prøv igjen eller kontakt den handlende for detaljer."
     "S.0000":
-      message: "Transaksjonen var vellykket."
-      friendly_message: "Transaksjonen ble behandlet vellykket."
+      message: "Transaksjon vellykket."
+      friendly_message: "Transaksjon vellykket."
     "P.0001":
-      message: "Transaksjonen pågår."
+      message: "Transaksjon pågår."
       friendly_message: "Transaksjonen behandles. Vennligst vent."
     "P.0002":
       message: "Velkommen!"
       friendly_message: "Velkommen!"
+    "P.0003":
+      message: "Venter på lånebekreftelse."
+      friendly_message: "Venter på lånebekreftelse. Vennligst kontakt den handlende for å fullføre låneprosessen og avslutte kjøpet."
+    "P.0004":
+      message: "Lånet bekreftes."
+      friendly_message: "Lånet bekreftes. Vennligst vent."
     "P.9999":
-      message: "Ukjent transaksjonsstatus. Kontakt betalingstjenesteleverandøren for detaljer."
-      friendly_message: "Ukjent transaksjonsstatus. Kontakt forhandleren for detaljer."
+      message: "Ukjent transaksjonsstatus. Kontakt teknisk støtte."
+      friendly_message: "Ukjent transaksjonsstatus. Kontakt den handlende for detaljer."

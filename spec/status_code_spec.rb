@@ -16,7 +16,7 @@ describe StatusCode do
 
           context 'with approval code' do
             let(:code) { 'S.0000' }
-            let(:message) { 'Transaction is successful.' }
+            let(:message) { 'Transaction successful.' }
 
             it 'returns approve message' do
               expect(subject).to eql(message)
@@ -25,7 +25,7 @@ describe StatusCode do
 
           context 'with decline code' do
             let(:code) { 'F.0100' }
-            let(:message) { 'Account ID blocked. Failed to complete the transaction. Check the request parameters or contact the payment service provider for details.' }
+            let(:message) { 'Payment account blocked. Ask the customer to check their account details.' }
 
             it 'returns decline message' do
               expect(subject).to eql(message)
@@ -45,7 +45,7 @@ describe StatusCode do
 
           context 'with approval code' do
             let(:code) { 'S.0000' }
-            let(:friendly_message) { 'The transaction is successfully processed.' }
+            let(:friendly_message) { 'Transaction successful.' }
 
             it 'returns approve friendly_message' do
               expect(subject).to eql(friendly_message)
@@ -55,9 +55,7 @@ describe StatusCode do
           context 'with decline code' do
             let(:code) { 'F.0100' }
             let(:friendly_message) do
-              'Account ID blocked.' \
-                ' Failed to complete the transaction.' \
-                ' Contact your payment service provider for details.'
+              'Your account is blocked. Check your account details.'
             end
 
             it 'returns decline friendly_message' do
@@ -93,10 +91,7 @@ describe StatusCode do
           context 'with decline code' do
             let(:code) { 'F.0100' }
             let(:message) do
-              'Аккаунт клиента заблокирован.' \
-                ' Не удалось завершить транзакцию.' \
-                ' Проверьте параметры запроса или обратитесь' \
-                ' к провайдеру платежных услуг для уточнения причины.'
+              'Платёжный счёт заблокирован. Попросите плательщика проверить данные счёта.'
             end
 
             it 'returns decline message' do
@@ -117,7 +112,7 @@ describe StatusCode do
 
           context 'with approval code' do
             let(:code) { 'S.0000' }
-            let(:friendly_message) { 'Транзакция проведена успешно.' }
+            let(:friendly_message) { 'Транзакция успешна.' }
 
             it 'returns approve friendly_message' do
               expect(subject).to eql(friendly_message)
@@ -127,10 +122,7 @@ describe StatusCode do
           context 'with decline code' do
             let(:code) { 'F.0100' }
             let(:friendly_message) do
-              'Ваш аккаунт заблокирован.' \
-                ' Не удалось завершить транзакцию.' \
-                ' Обратитесь к своему провайдеру' \
-                ' платежных услуг для уточнения причины.'
+              'Ваш счёт заблокирован. Проверьте данные счёта.'
             end
 
             it 'returns decline friendly_message' do
@@ -156,7 +148,7 @@ describe StatusCode do
 
           context 'with approval code' do
             let(:code) { 'S.0000' }
-            let(:message) { 'Əməliyyat uğurla tamamlandı.' }
+            let(:message) { 'Əməliyyat uğurlu oldu.' }
 
             it 'returns approve message' do
               expect(subject).to eql(message)
@@ -166,11 +158,7 @@ describe StatusCode do
           context 'with decline code' do
             let(:code) { 'F.0100' }
             let(:message) do
-              'Hesab ID-si bloklanıb.' \
-                ' Əməliyyatı tamamlamaq mümkün olmadı.' \
-                ' Sorğu parametrlərini yoxlayın və ya' \
-                ' ətraflı məlumat üçün ödəniş xidməti' \
-                ' təchizatçısı ilə əlaqə saxlayın.'
+              'Ödəniş hesabı bloklanıb. Ödəyicidən hesab məlumatlarını yoxlamasını xahiş edin.'
             end
 
             it 'returns decline message' do
@@ -191,7 +179,7 @@ describe StatusCode do
 
           context 'with approval code' do
             let(:code) { 'S.0000' }
-            let(:friendly_message) { 'Əməliyyat uğurla yerinə yetirildi.' }
+            let(:friendly_message) { 'Əməliyyat uğurlu oldu.' }
 
             it 'returns approve friendly_message' do
               expect(subject).to eql(friendly_message)
@@ -201,10 +189,7 @@ describe StatusCode do
           context 'with decline code' do
             let(:code) { 'F.0100' }
             let(:friendly_message) do
-              'Hesab ID-si bloklanıb.' \
-                ' Əməliyyatı tamamlamaq mümkün olmadı.' \
-                ' Ətraflı məlumat üçün ödəniş xidməti' \
-                ' təchizatçınızla əlaqə saxlayın.'
+              'Hesabınız bloklanıb. Hesab məlumatlarınızı yoxlayın.'
             end
 
             it 'returns decline friendly_message' do
@@ -233,7 +218,7 @@ describe StatusCode do
 
         context 'with Approved code' do
           let(:code) { 'S.0000' }
-          let(:friendly_message) { 'Транзакцыя паспяхова апрацавана.' }
+          let(:friendly_message) { 'Транзакцыя паспяховая.' }
 
           it 'returns approve friendly_message' do
             expect(subject).to eql(friendly_message)
@@ -266,7 +251,7 @@ describe StatusCode do
       context 'without locale' do
         let(:code) { 'S.0000' }
         let(:receiver) { :customer }
-        let(:friendly_message) { 'The transaction is successfully processed.' }
+        let(:friendly_message) { 'Transaction successful.' }
 
         it 'returns approve friendly_message' do
           expect(subject).to eql(friendly_message)
@@ -282,7 +267,7 @@ describe StatusCode do
       let(:receiver) { :merchant }
       let(:locale) { nil }
       let(:code) { 'S.0000' }
-      let(:message) { 'Transaction is successful.' }
+      let(:message) { 'Transaction successful.' }
 
       it 'returns approve message' do
         expect(subject).to eql(message)
@@ -315,14 +300,12 @@ describe StatusCode do
 
     context 'with code only' do
       let(:code) { 'F.0100' }
-      let(:message) do
-        'Account ID blocked.' \
-          ' Failed to complete the transaction.' \
-          ' Contact your payment service provider for details.'
+      let(:friendly_message) do
+        'Your account is blocked. Check your account details.'
       end
 
-      it 'returns message' do
-        expect(StatusCode.decode(code)).to eql(message)
+      it 'returns friendly message' do
+        expect(StatusCode.decode(code)).to eql(friendly_message)
       end
     end
 
@@ -334,7 +317,7 @@ describe StatusCode do
         let(:status) { true }
 
         it 'returns Approved friendly_message' do
-          expect(subject).to eql 'The transaction is successfully processed.'
+          expect(subject).to eql 'Transaction successful.'
         end
       end
 
@@ -343,7 +326,7 @@ describe StatusCode do
         let(:status) { true }
 
         it 'returns Approved friendly_message' do
-          expect(subject).to eql 'The transaction is successfully processed.'
+          expect(subject).to eql 'Transaction successful.'
         end
       end
 
@@ -352,7 +335,7 @@ describe StatusCode do
         let(:status) { false }
 
         it 'returns Decline message' do
-          expect(subject).to eql 'The transaction could not be completed due to an unknown reason. Please check the details with the merchant.'
+          expect(subject).to eql 'Transaction declined. Try again or contact the merchant for details.'
         end
       end
 
@@ -361,7 +344,7 @@ describe StatusCode do
         let(:status) { false }
 
         it 'returns Decline message' do
-          expect(subject).to eql 'The transaction could not be completed due to an unknown reason. Please check the details with the merchant.'
+          expect(subject).to eql 'Transaction declined. Try again or contact the merchant for details.'
         end
       end
     end

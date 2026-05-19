@@ -1,0 +1,143 @@
+uz:
+  bank_codes:
+    "F.0100":
+      message: "To'lov hisobi bloklangan. To'lovchidan hisob ma'lumotlarini tekshirishni so'rang."
+      friendly_message: "Hisobingiz bloklangan. Hisob ma'lumotlarini tekshiring."
+    "F.0101":
+      message: "To'lov hisobi topilmadi. To'lovchidan hisob ma'lumotlarini tekshirishni so'rang."
+      friendly_message: "Hisobingiz topilmadi. Hisob ma'lumotlarini tekshiring."
+    "F.0102":
+      message: "Avtorizatsiya xatosi. Avtorizatsiya so'rovi parametrlarini tekshiring."
+      friendly_message: "Tranzaksiyani qayta ishlash imkoni yo'q. Keyinroq qayta urinib ko'ring."
+    "F.0103":
+      message: "So'rov imzosi noto'g'ri. So'rov imzosi yoki sertifikatni tekshiring."
+      friendly_message: "Tranzaksiyani qayta ishlash imkoni yo'q. Keyinroq qayta urinib ko'ring."
+    "F.0104":
+      message: "Tranzaksiya turi yoki to'lov usuli ruxsat etilmagan. Boshqa tranzaksiya turi yoki to'lov usulidan foydalaning."
+      friendly_message: "Tranzaksiya turi yoki to'lov usuli ruxsat etilmagan."
+    "F.0105":
+      message: "Tranzaksiya rad etildi."
+      friendly_message: "Tranzaksiya rad etildi. Boshqa to'lov usulidan foydalaning."
+    "F.0106":
+      message: "Terminal xatosi. Texnik qo'llab-quvvatlash bilan bog'laning."
+      friendly_message: "Tranzaksiya rad etildi. Boshqa to'lov usulidan foydalaning."
+    "F.0107":
+      message: "Savdogarning hisobi noto'g'ri. Texnik qo'llab-quvvatlash bilan bog'laning."
+      friendly_message: "Tranzaksiya rad etildi. Boshqa to'lov usulidan foydalaning."
+    "F.0108":
+      message: "Takroriy tranzaksiya. Asl tranzaksiya holatini tekshiring."
+      friendly_message: "Takroriy tranzaksiya. Tafsilotlar uchun savdogar bilan bog'laning."
+    "F.0109":
+      message: "Tranzaksiya muddati tugagan."
+      friendly_message: "Tranzaksiya muddati tugagan. Qayta urinib ko'ring."
+    "F.0110":
+      message: "Tranzaksiya identifikatori topilmadi. So'rov parametrlarini tekshiring."
+      friendly_message: "Tranzaksiya topilmadi. Tafsilotlar uchun savdogar bilan bog'laning."
+    "F.0111":
+      message: "Karta muddati tugagan. To'lovchidan amaldagi kartadan foydalanishni so'rang."
+      friendly_message: "Karta muddati tugagan. Amaldagi kartadan foydalaning."
+    "F.0112":
+      message: "CVC tekshiruvi muvaffaqiyatsiz bo'ldi. To'lovchidan to'g'ri CVC kiritishni so'rang."
+      friendly_message: "CVC noto'g'ri. Kartangizdagi to'g'ri CVC ni kiriting."
+    "F.0113":
+      message: "Valyuta qo'llab-quvvatlanmaydi. So'rovdagi valyutani tekshiring."
+      friendly_message: "Valyuta qo'llab-quvvatlanmaydi. Tafsilotlar uchun savdogar bilan bog'laning."
+    "F.0114":
+      message: "Mablag' yetarli emas."
+      friendly_message: "Mablag' yetarli emas."
+    "F.0115":
+      message: "Firibgarlik gumon qilinmoqda. To'lov vositasi o'g'irlangan yoki yo'qolgan bo'lishi mumkin."
+      friendly_message: "Tranzaksiya rad etildi. Boshqa to'lov usulidan foydalaning."
+    "F.0116":
+      message: "Tranzaksiya to'lov tizimi tomonidan rad etildi. Mumkin bo'lgan firibgarlik."
+      friendly_message: "Tranzaksiya rad etildi. Boshqa to'lov usulidan foydalaning."
+    "F.0117":
+      message: "Vaqtinchalik tizim xatosi. Keyinroq qayta urinib ko'ring."
+      friendly_message: "Tizim xatosi. Keyinroq qayta urinib ko'ring."
+    "F.0118":
+      message: "Tizim xatosi. Texnik qo'llab-quvvatlash bilan bog'laning."
+      friendly_message: "Tizim xatosi. Boshqa to'lov usulidan foydalaning."
+    "F.0119":
+      message: "Tranzaksiya karta emitenti bank tomonidan rad etildi."
+      friendly_message: "Tranzaksiya rad etildi. Keyinroq qayta urinib ko'ring."
+    "F.0120":
+      message: "Tranzaksiya karta emitenti bank tomonidan rad etildi."
+      friendly_message: "Tranzaksiya rad etildi. Keyinroq qayta urinib ko'ring."
+    "F.0121":
+      message: "Tashqi to'lov tizimining vaqtinchalik xatosi."
+      friendly_message: "Tizim xatosi. Keyinroq qayta urinib ko'ring."
+    "F.0122":
+      message: "Tashqi to'lov tizimi xatosi."
+      friendly_message: "Tizim xatosi. Boshqa to'lov usulidan foydalaning."
+    "F.0123":
+      message: "Tranzaksiya limitlardan oshib ketdi. Texnik qo'llab-quvvatlash bilan bog'laning."
+      friendly_message: "Tranzaksiya limitlardan oshib ketdi. Tafsilotlar uchun savdogar bilan bog'laning."
+    "F.0124":
+      message: "Tranzaksiya emitent limitlaridan oshib ketdi."
+      friendly_message: "Tranzaksiya limitlardan oshib ketdi. Bankingiz bilan bog'laning."
+    "F.0125":
+      message: "Tranzaksiya tashqi to'lov tizimi limitlaridan oshib ketdi."
+      friendly_message: "Tranzaksiya limitlardan oshib ketdi. To'lov xizmatlari provayderingiz bilan bog'laning."
+    "F.0126":
+      message: "Hamyon ma'lumotlari noto'g'ri. To'lovchidan hamyon ma'lumotlarini tekshirishni so'rang."
+      friendly_message: "Hamyon ma'lumotlari noto'g'ri. Hamyon ma'lumotlarini tekshiring yoki boshqa to'lov usulidan foydalaning."
+    "F.0127":
+      message: "Karta ma'lumotlari noto'g'ri. To'lovchidan karta ma'lumotlarini tekshirishni so'rang."
+      friendly_message: "Karta ma'lumotlari noto'g'ri. Karta ma'lumotlarini tekshiring yoki boshqa kartadan foydalaning."
+    "F.0128":
+      message: "So'rov parametrlari noto'g'ri. Majburiy so'rov parametrlarini tekshiring."
+      friendly_message: "Tranzaksiya rad etildi. Tafsilotlar uchun savdogar bilan bog'laning."
+    "F.0129":
+      message: "3-D Secure tekshiruv xatosi. Texnik qo'llab-quvvatlash bilan bog'laning."
+      friendly_message: "3-D Secure tekshiruv xatosi. Qayta urinib ko'ring yoki boshqa to'lov usulidan foydalaning."
+    "F.0130":
+      message: "Emitent tomonidan 3-D Secure tekshiruv xatosi."
+      friendly_message: "3-D Secure tekshiruv xatosi. Qayta urinib ko'ring yoki boshqa to'lov usulidan foydalaning."
+    "F.0131":
+      message: "Tranzaksiyani tasdiqlash muvaffaqiyatsiz bo'ldi. To'lovchi noto'g'ri SMS-kod yoki OTP kiritdi."
+      friendly_message: "Tranzaksiya rad etildi. Qayta urinib ko'ring yoki boshqa to'lov usulidan foydalaning."
+    "F.0132":
+      message: "Tranzaksiya to'lovchi tomonidan bekor qilindi."
+      friendly_message: "Tranzaksiya bekor qilindi. Qayta urinib ko'ring yoki boshqa to'lov usulidan foydalaning."
+    "F.0133":
+      message: "Telefon raqami noto'g'ri. To'lovchidan karta bilan bog'liq telefon raqamini kiritishni so'rang."
+      friendly_message: "Telefon raqami noto'g'ri. Kartangiz bilan bog'liq telefon raqamini kiriting."
+    "F.0134":
+      message: "SMS-kod noto'g'ri. To'lovchidan to'g'ri kodni kiritishni so'rang."
+      friendly_message: "Tranzaksiya rad etildi. SMS-kod noto'g'ri. Qayta urinib ko'ring."
+    "F.0135":
+      message: "Oldingi tranzaksiya yakunlanmagan. Qayta urinishdan oldin uning yakunlanishini kuting."
+      friendly_message: "Oldingi tranzaksiya yakunlanmagan. Keyinroq qayta urinib ko'ring."
+    "F.0995":
+      message: "Tranzaksiya tasdiqlanmadi. Savdogarning tekshiruv xizmati tranzaksiyani rad etdi."
+      friendly_message: "Tranzaksiya rad etildi. Qayta urinib ko'ring yoki boshqa to'lov usulidan foydalaning."
+    "F.0996":
+      message: "Tranzaksiya tasdiqlanmadi. Shaxsiy ma'lumotlarni tekshirish (VPD) muvaffaqiyatsiz bo'ldi."
+      friendly_message: "Tranzaksiya rad etildi. Hisobingiz ma'lumotlariga mos keladigan shaxsiy ma'lumotlarga ega to'lov usulidan foydalaning."
+    "F.0997":
+      message: ""
+      friendly_message: "Tranzaksiya rad etildi. Qayta urinib ko'ring yoki tafsilotlar uchun savdogar bilan bog'laning."
+    "F.0998":
+      message: "Tranzaksiya rad etildi."
+      friendly_message: "Tranzaksiya rad etildi. Qayta urinib ko'ring."
+    "F.0999":
+      message: ""
+      friendly_message: "Tranzaksiya rad etildi. Qayta urinib ko'ring yoki tafsilotlar uchun savdogar bilan bog'laning."
+    "S.0000":
+      message: "Tranzaksiya muvaffaqiyatli."
+      friendly_message: "Tranzaksiya muvaffaqiyatli."
+    "P.0001":
+      message: "Tranzaksiya jarayonda."
+      friendly_message: "Tranzaksiya qayta ishlanmoqda. Iltimos, kuting."
+    "P.0002":
+      message: "Xush kelibsiz!"
+      friendly_message: "Xush kelibsiz!"
+    "P.0003":
+      message: "Kredit tasdiqlanishi kutilmoqda."
+      friendly_message: "Kredit tasdiqlanishi kutilmoqda. Kredit jarayonini yakunlash va xaridni tasdiqlash uchun savdogar bilan bog'laning."
+    "P.0004":
+      message: "Kredit tasdiqlanmoqda."
+      friendly_message: "Kredit tasdiqlanmoqda. Iltimos, kuting."
+    "P.9999":
+      message: "Tranzaksiya holati noma'lum. Texnik qo'llab-quvvatlash bilan bog'laning."
+      friendly_message: "Tranzaksiya holati noma'lum. Tafsilotlar uchun savdogar bilan bog'laning."

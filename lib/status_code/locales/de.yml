@@ -1,131 +1,143 @@
 de:
   bank_codes:
     "F.0100":
-      message: "Kontokennung gesperrt. Transaktion konnte nicht abgeschlossen werden. Überprüfen Sie die Anforderungsparameter oder wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Kontokennung gesperrt. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an Ihren Zahlungsdienstleister."
+      message: "Zahlungskonto gesperrt. Bitten Sie den Zahler, seine Kontodaten zu überprüfen."
+      friendly_message: "Ihr Konto ist gesperrt. Überprüfen Sie Ihre Kontodaten."
     "F.0101":
-      message: "Kontokennung nicht gefunden. Transaktion konnte nicht abgeschlossen werden. Überprüfen Sie die Anforderungsparameter."
-      friendly_message: "Kontokennung nicht gefunden. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an Ihren Zahlungsdienstleister."
+      message: "Zahlungskonto nicht gefunden. Bitten Sie den Zahler, seine Kontodaten zu überprüfen."
+      friendly_message: "Ihr Konto wurde nicht gefunden. Überprüfen Sie Ihre Kontodaten."
     "F.0102":
-      message: "Autorisierungsfehler. Transaktion konnte nicht abgeschlossen werden. Überprüfen Sie die Autorisierungsanforderungsparameter."
-      friendly_message: "Autorisierungsfehler. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an den Händler."
+      message: "Autorisierungsfehler. Überprüfen Sie die Parameter der Autorisierungsanfrage."
+      friendly_message: "Transaktion konnte nicht verarbeitet werden. Versuchen Sie es später erneut."
     "F.0103":
-      message: "Ungültige Anforderungssignatur. Transaktion konnte nicht abgeschlossen werden. Überprüfen Sie die Anforderungssignatur oder das Zertifikat."
-      friendly_message: "Ungültige Anforderungssignatur. Wenden Sie sich für weitere Details an den Händler."
+      message: "Ungültige Anfragesignatur. Überprüfen Sie die Anfragesignatur oder das Zertifikat."
+      friendly_message: "Transaktion konnte nicht verarbeitet werden. Versuchen Sie es später erneut."
     "F.0104":
-      message: "Nicht erlaubt. Verwenden Sie einen anderen Transaktionstyp oder wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Nicht erlaubt. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an den Händler oder verwenden Sie eine andere Zahlungsmethode."
+      message: "Transaktionstyp oder Zahlungsmethode nicht zulässig. Verwenden Sie einen anderen Transaktionstyp oder eine andere Zahlungsmethode."
+      friendly_message: "Transaktionstyp oder Zahlungsmethode nicht zulässig."
     "F.0105":
-      message: "Nicht honorieren. Wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Nicht honorieren. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an den Händler."
+      message: "Transaktion abgelehnt."
+      friendly_message: "Transaktion abgelehnt. Verwenden Sie eine andere Zahlungsmethode."
     "F.0106":
-      message: "Terminalfehler. Wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Terminalfehler. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an den Händler oder verwenden Sie eine andere Zahlungsmethode."
+      message: "Terminalfehler. Wenden Sie sich an den technischen Support."
+      friendly_message: "Transaktion abgelehnt. Verwenden Sie eine andere Zahlungsmethode."
     "F.0107":
-      message: "Ungültiges Händlerkonto. Wenden Sie sich für weitere Details an den Zahlungsdienstleister oder Acquirer."
-      friendly_message: "Ungültiges Händlerkonto. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an den Händler."
+      message: "Ungültiges Händlerkonto. Wenden Sie sich an den technischen Support."
+      friendly_message: "Transaktion abgelehnt. Verwenden Sie eine andere Zahlungsmethode."
     "F.0108":
-      message: "Doppelte Transaktion oder Bestellung. Überprüfen Sie den Status der ursprünglichen Transaktion oder Bestellung. Wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Doppelte Bestellung. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für den Status der ursprünglichen Bestellung an den Händler."
+      message: "Doppelte Transaktion. Überprüfen Sie den Status der ursprünglichen Transaktion."
+      friendly_message: "Doppelte Transaktion. Wenden Sie sich an den Händler für Details."
     "F.0109":
-      message: "Bestellung abgelaufen. Transaktion konnte nicht abgeschlossen werden."
-      friendly_message: "Bestellung abgelaufen. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an den Händler."
+      message: "Transaktion abgelaufen."
+      friendly_message: "Transaktion abgelaufen. Versuchen Sie es erneut."
     "F.0110":
-      message: "Bestell-ID nicht gefunden. Transaktion konnte nicht abgeschlossen werden. Überprüfen Sie die Anforderungsparameter."
-      friendly_message: "Bestell-ID nicht gefunden. Transaktion konnte nicht abgeschlossen werden. Überprüfen Sie die Transaktionsparameter oder wenden Sie sich für weitere Details an den Händler."
+      message: "Transaktions-ID nicht gefunden. Überprüfen Sie die Anfrageparameter."
+      friendly_message: "Transaktion nicht gefunden. Wenden Sie sich an den Händler für Details."
     "F.0111":
-      message: "Karte abgelaufen. Bitten Sie den Kunden, eine gültige Karte zu verwenden."
-      friendly_message: "Karte abgelaufen. Transaktion konnte nicht abgeschlossen werden. Verwenden Sie eine gültige Karte."
+      message: "Karte abgelaufen. Bitten Sie den Zahler, eine gültige Karte zu verwenden."
+      friendly_message: "Karte abgelaufen. Verwenden Sie eine gültige Karte."
     "F.0112":
-      message: "CVV-Verifizierung fehlgeschlagen. Bitten Sie den Kunden, den gültigen Karten-CVV einzugeben."
-      friendly_message: "CVV-Verifizierung fehlgeschlagen. Transaktion konnte nicht abgeschlossen werden. Geben Sie den gültigen CVV ein, der auf Ihrer Karte angegeben ist."
+      message: "CVC-Prüfung fehlgeschlagen. Bitten Sie den Zahler, den korrekten CVC einzugeben."
+      friendly_message: "Falscher CVC. Geben Sie den korrekten CVC Ihrer Karte ein."
     "F.0113":
-      message: "Währung nicht unterstützt. Überprüfen Sie die Währung in der Anfrage oder wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Währung nicht unterstützt. Transaktion konnte nicht abgeschlossen werden. Wählen Sie eine andere Währung oder wenden Sie sich für weitere Details an den Händler."
+      message: "Währung nicht unterstützt. Überprüfen Sie die Währung in der Anfrage."
+      friendly_message: "Währung nicht unterstützt. Wenden Sie sich an den Händler für Details."
     "F.0114":
-      message: "Unzureichende Mittel. Überprüfen Sie den Kontostand oder wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Unzureichende Mittel. Transaktion konnte nicht abgeschlossen werden. Überprüfen Sie den Kontostand."
+      message: "Unzureichendes Guthaben."
+      friendly_message: "Unzureichendes Guthaben."
     "F.0115":
-      message: "Acquirer-Fehler. Möglicher Betrug. Das Zahlungsmittel könnte gestohlen oder verloren sein. Überprüfen Sie Ihre Kundendaten."
-      friendly_message: "Zahlungsdetails Fehler. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an den Händler."
+      message: "Betrugsverdacht. Das Zahlungsmittel könnte gestohlen oder verloren sein."
+      friendly_message: "Transaktion abgelehnt. Verwenden Sie eine andere Zahlungsmethode."
     "F.0116":
-      message: "Issuer-Fehler. Möglicher Betrug. Das Zahlungsmittel könnte gestohlen oder verloren sein. Überprüfen Sie Ihre Kundendaten."
-      friendly_message: "Zahlungsdetails Fehler. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an den Händler oder die kartenausgebende Bank. Die Telefonnummer der Bank steht auf der Rückseite Ihrer Karte."
+      message: "Transaktion vom Zahlungssystem abgelehnt. Möglicher Betrug."
+      friendly_message: "Transaktion abgelehnt. Verwenden Sie eine andere Zahlungsmethode."
     "F.0117":
-      message: "Vorübergehender Systemfehler des Anbieters. Wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Systemfehler des Anbieters. Transaktion konnte nicht abgeschlossen werden. Versuchen Sie es später erneut oder wenden Sie sich für weitere Details an den Händler."
+      message: "Vorübergehender Systemfehler. Versuchen Sie es später erneut."
+      friendly_message: "Systemfehler. Versuchen Sie es später erneut."
     "F.0118":
-      message: "Systemfehler des Anbieters. Wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Systemfehler des Anbieters. Transaktion konnte nicht abgeschlossen werden. Verwenden Sie eine andere Zahlungsmethode oder wenden Sie sich für weitere Details an den Händler."
+      message: "Systemfehler. Wenden Sie sich an den technischen Support."
+      friendly_message: "Systemfehler. Verwenden Sie eine andere Zahlungsmethode."
     "F.0119":
-      message: "Vorübergehender Systemfehler des Anbieters. Wenden Sie sich für weitere Details an die kartenausgebende Bank."
-      friendly_message: "Systemfehler des Anbieters. Transaktion konnte nicht abgeschlossen werden. Versuchen Sie es später erneut oder wenden Sie sich für weitere Details an die Bank, die Ihre Karte ausgestellt hat. Die Telefonnummer der Bank steht auf der Rückseite Ihrer Karte."
+      message: "Transaktion von der kartenausgebenden Bank abgelehnt."
+      friendly_message: "Transaktion abgelehnt. Versuchen Sie es später erneut."
     "F.0120":
-      message: "Systemfehler des Anbieters. Wenden Sie sich für weitere Details an die kartenausgebende Bank."
-      friendly_message: "Systemfehler des Anbieters. Transaktion konnte nicht abgeschlossen werden. Verwenden Sie eine andere Zahlungsmethode oder wenden Sie sich für weitere Details an die Bank, die Ihre Karte ausgestellt hat. Die Telefonnummer der Bank steht auf der Rückseite Ihrer Karte."
+      message: "Transaktion von der kartenausgebenden Bank abgelehnt."
+      friendly_message: "Transaktion abgelehnt. Versuchen Sie es später erneut."
     "F.0121":
-      message: "Vorübergehender Systemfehler des Anbieters. Wenden Sie sich für weitere Details an den Zahlungsdienstleister des Kunden."
-      friendly_message: "Systemfehler des Anbieters. Transaktion konnte nicht abgeschlossen werden. Versuchen Sie es später erneut oder wenden Sie sich für weitere Details an Ihren Zahlungsdienstleister."
+      message: "Vorübergehender Fehler des externen Zahlungssystems."
+      friendly_message: "Systemfehler. Versuchen Sie es später erneut."
     "F.0122":
-      message: "Systemfehler des Anbieters. Wenden Sie sich für weitere Details an den Zahlungsdienstleister des Kunden."
-      friendly_message: "Systemfehler des Anbieters. Transaktion konnte nicht abgeschlossen werden. Verwenden Sie eine andere Zahlungsmethode oder wenden Sie sich für weitere Details an Ihren Zahlungsdienstleister."
+      message: "Fehler des externen Zahlungssystems."
+      friendly_message: "Systemfehler. Verwenden Sie eine andere Zahlungsmethode."
     "F.0123":
-      message: "Transaktionsbetrag oder die Anzahl der Transaktionen überschreitet die Limits des Zahlungsdienstleisters. Überprüfen Sie den Transaktionsbetrag und die Anzahl der Transaktionen oder wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Transaktionsbetrag oder die Anzahl der Transaktionen überschreitet die Limits. Transaktion konnte nicht abgeschlossen werden. Überprüfen Sie den Transaktionsbetrag oder wenden Sie sich für weitere Details an den Händler."
+      message: "Transaktion überschreitet die Limits. Wenden Sie sich an den technischen Support."
+      friendly_message: "Transaktion überschreitet die Limits. Wenden Sie sich an den Händler für Details."
     "F.0124":
-      message: "Transaktionsbetrag oder die Anzahl der Transaktionen überschreitet die Limits des Emittenten. Überprüfen Sie den Transaktionsbetrag oder die Anzahl der Transaktionen. Bitten Sie den Kunden, sich an die kartenausgebende Bank zu wenden."
-      friendly_message: "Transaktionsbetrag oder die Anzahl der Transaktionen überschreitet die Limits. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an den Händler oder die Bank, die Ihre Karte ausgestellt hat. Die Telefonnummer der Bank steht auf der Rückseite Ihrer Karte."
+      message: "Transaktion überschreitet die Limits des Emittenten."
+      friendly_message: "Transaktion überschreitet die Limits. Wenden Sie sich an Ihre Bank."
     "F.0125":
-      message: "Transaktionsbetrag oder die Anzahl der Transaktionen überschreitet die Limits des Zahlungsdienstleisters. Überprüfen Sie den Transaktionsbetrag und die Anzahl der Transaktionen. Wenden Sie sich für weitere Details an den Zahlungsdienstleister des Kunden."
-      friendly_message: "Transaktionsbetrag oder die Anzahl der Transaktionen überschreitet die Limits. Transaktion konnte nicht abgeschlossen werden. Wenden Sie sich für weitere Details an den Händler oder Ihren Zahlungsdienstleister."
+      message: "Transaktion überschreitet die Limits des externen Zahlungssystems."
+      friendly_message: "Transaktion überschreitet die Limits. Wenden Sie sich an Ihren Zahlungsdienstleister."
     "F.0126":
-      message: "Fehler bei Wallet-Daten. Bitten Sie den Kunden, die Wallet-Daten zu überprüfen. Wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Fehler bei Wallet-Daten. Überprüfen Sie die Wallet-Daten oder verwenden Sie eine andere Karte."
+      message: "Ungültige Wallet-Daten. Bitten Sie den Zahler, seine Wallet-Daten zu überprüfen."
+      friendly_message: "Ungültige Wallet-Daten. Überprüfen Sie Ihre Wallet-Daten oder verwenden Sie eine andere Zahlungsmethode."
     "F.0127":
-      message: "Ungültige Kartendaten. Bitten Sie den Kunden, die Kartendaten zu überprüfen. Wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "Ungültige Kartendaten. Transaktion konnte nicht abgeschlossen werden. Überprüfen Sie Ihre Kartendaten oder verwenden Sie eine andere Karte."
+      message: "Ungültige Kartendaten. Bitten Sie den Zahler, seine Kartendaten zu überprüfen."
+      friendly_message: "Ungültige Kartendaten. Überprüfen Sie Ihre Kartendaten oder verwenden Sie eine andere Karte."
     "F.0128":
-      message: "Ungültige Anforderungsparameter. Transaktion konnte nicht abgeschlossen werden. Überprüfen Sie die erforderlichen Anforderungsparameter."
-      friendly_message: "Ungültige Anforderungsparameter. Überprüfen Sie die Transaktionsdaten oder wenden Sie sich für weitere Details an den Händler."
+      message: "Ungültige Anfrageparameter. Überprüfen Sie die erforderlichen Anfrageparameter."
+      friendly_message: "Transaktion abgelehnt. Wenden Sie sich an den Händler für Details."
     "F.0129":
-      message: "3-D Secure-Überprüfungsfehler. Wenden Sie sich für weitere Details an den Zahlungsdienstleister."
-      friendly_message: "3-D Secure-Überprüfungsfehler. Überprüfen Sie Ihren 3-D Secure-Code oder wenden Sie sich für weitere Details an den Zahlungsdienstleister."
+      message: "3-D Secure Verifizierungsfehler. Wenden Sie sich an den technischen Support."
+      friendly_message: "3-D Secure Verifizierungsfehler. Versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode."
     "F.0130":
-      message: "3-D Secure-Überprüfungsfehler. Wenden Sie sich für weitere Details an die kartenausgebende Bank."
-      friendly_message: "3-D Secure-Überprüfungsfehler. Überprüfen Sie Ihren 3-D Secure-Code oder wenden Sie sich für weitere Details an die kartenausgebende Bank. Die Telefonnummer der Bank steht auf der Rückseite Ihrer Karte."
+      message: "3-D Secure Verifizierungsfehler auf Emittentenseite."
+      friendly_message: "3-D Secure Verifizierungsfehler. Versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode."
     "F.0131":
-      message: "Bestätigungsfehler der Transaktion. Transaktion konnte nicht abgeschlossen werden. Bitten Sie den Kunden, die Zahlung zu bestätigen."
-      friendly_message: "Bestätigungsfehler der Transaktion. Transaktion konnte nicht abgeschlossen werden. Überprüfen Sie die Zahlungsbestätigung."
+      message: "Transaktionsbestätigung fehlgeschlagen. Der Zahler hat einen falschen SMS-Code oder OTP eingegeben."
+      friendly_message: "Transaktion abgelehnt. Versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode."
     "F.0132":
-      message: "Die Transaktion wurde vom Kunden abgelehnt. Die Transaktion konnte nicht abgeschlossen werden. Bitten Sie den Kunden, die Zahlung zu wiederholen."
-      friendly_message: "Die Transaktion wurde abgelehnt. Die Transaktion konnte nicht abgeschlossen werden. Bitte wählen Sie eine andere Zahlungsmethode oder versuchen Sie es erneut."
+      message: "Transaktion vom Zahler storniert."
+      friendly_message: "Transaktion storniert. Versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode."
     "F.0133":
-      message: "Falsche Telefonnummer. Die Transaktion konnte nicht abgeschlossen werden. Bitten Sie den Kunden, die mit seiner Karte verbundene Telefonnummer einzugeben."
-      friendly_message: "Die eingegebene Telefonnummer stimmt nicht mit der auf Ihrer Karte verbundenen überein. Die Transaktion konnte nicht abgeschlossen werden. Bitte geben Sie die richtige Telefonnummer ein."
+      message: "Falsche Telefonnummer. Bitten Sie den Zahler, die mit seiner Karte verknüpfte Telefonnummer einzugeben."
+      friendly_message: "Falsche Telefonnummer. Geben Sie die mit Ihrer Karte verknüpfte Telefonnummer ein."
     "F.0134":
-      message: "Transaktionsbestätigungsfehler. Falscher SMS-Schlüssel. Bitten Sie den Kunden, den korrekten Wert einzureichen."
-      friendly_message: "Die Transaktion wurde von der Bank nicht bestätigt. Falscher SMS-Schlüssel. Bitte überprüfen Sie die eingegebenen Daten."
+      message: "Falscher SMS-Code. Bitten Sie den Zahler, den korrekten Code einzugeben."
+      friendly_message: "Transaktion abgelehnt. Falscher SMS-Code. Versuchen Sie es erneut."
     "F.0135":
-      message: "Eine neue Transaktion kann erst gestartet werden, wenn die vorherige verarbeitet wurde. Bitte bitten Sie den Kunden, die vorherige Transaktion abzuschließen oder zu warten, bis sie abgeschlossen ist."
-      friendly_message: "Transaktion fehlgeschlagen. Schließen Sie die vorherige Transaktion ab oder warten Sie, bis die vorherige Transaktion abgeschlossen ist, und versuchen Sie es erneut."
+      message: "Vorherige Transaktion nicht abgeschlossen. Warten Sie auf deren Abschluss, bevor Sie es erneut versuchen."
+      friendly_message: "Vorherige Transaktion nicht abgeschlossen. Versuchen Sie es später erneut."
+    "F.0995":
+      message: "Transaktion nicht verifiziert. Der Verifizierungsservice des Händlers hat die Transaktion abgelehnt."
+      friendly_message: "Transaktion abgelehnt. Versuchen Sie es erneut oder verwenden Sie eine andere Zahlungsmethode."
+    "F.0996":
+      message: "Transaktion nicht verifiziert. Persönliche Datenverifizierung (VPD) fehlgeschlagen."
+      friendly_message: "Transaktion abgelehnt. Verwenden Sie eine Zahlungsmethode, deren persönliche Daten mit Ihrem Konto übereinstimmen."
     "F.0997":
       message: ""
-      friendly_message: "Die Transaktion konnte aus unbekannten Gründen nicht abgeschlossen werden. Bitte prüfen Sie die Details beim Händler."
+      friendly_message: "Transaktion abgelehnt. Versuchen Sie es erneut oder wenden Sie sich an den Händler für Details."
     "F.0998":
-      message: "Transaktion fehlgeschlagen. Der Kunde hat die Zahlung nicht abgeschlossen – das System hat die Transaktion automatisch als fehlgeschlagen markiert."
-      friendly_message: "Transaktion fehlgeschlagen. Der Kunde hat die Zahlung nicht abgeschlossen – das System hat die Transaktion automatisch als fehlgeschlagen markiert."
+      message: "Transaktion abgelehnt."
+      friendly_message: "Transaktion abgelehnt. Versuchen Sie es erneut."
     "F.0999":
       message: ""
-      friendly_message: "Die Transaktion konnte aus unbekannten Gründen nicht abgeschlossen werden. Bitte prüfen Sie die Details beim Händler."
+      friendly_message: "Transaktion abgelehnt. Versuchen Sie es erneut oder wenden Sie sich an den Händler für Details."
     "S.0000":
       message: "Transaktion erfolgreich."
-      friendly_message: "Die Transaktion wurde erfolgreich verarbeitet."
+      friendly_message: "Transaktion erfolgreich."
     "P.0001":
-      message: "Transaktion in Bearbeitung."
-      friendly_message: "Die Transaktion wird bearbeitet. Bitte warten."
+      message: "Transaktion wird verarbeitet."
+      friendly_message: "Transaktion wird verarbeitet. Bitte warten."
     "P.0002":
       message: "Willkommen!"
       friendly_message: "Willkommen!"
+    "P.0003":
+      message: "Warten auf Kreditbestätigung."
+      friendly_message: "Warten auf Kreditbestätigung. Bitte wenden Sie sich an den Händler, um den Kreditprozess abzuschließen und Ihren Kauf zu finalisieren."
+    "P.0004":
+      message: "Kredit wird bestätigt."
+      friendly_message: "Kredit wird bestätigt. Bitte warten."
     "P.9999":
-      message: "Unbekannter Transaktionsstatus. Kontaktieren Sie den Zahlungsdienstleister für weitere Details."
-      friendly_message: "Unbekannter Transaktionsstatus. Kontaktieren Sie den Händler für weitere Details."
+      message: "Unbekannter Transaktionsstatus. Wenden Sie sich an den technischen Support."
+      friendly_message: "Unbekannter Transaktionsstatus. Wenden Sie sich an den Händler für Details."

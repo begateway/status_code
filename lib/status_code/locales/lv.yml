@@ -1,131 +1,143 @@
 lv:
   bank_codes:
     "F.0100":
-      message: "Klienta konts ir bloķēts. Transakciju nevarēja pabeigt. Pārbaudiet pieprasījuma parametrus vai sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Jūsu konts ir bloķēts. Transakciju nevarēja pabeigt. Sazinieties ar savu maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
+      message: "Maksājumu konts ir bloķēts. Lūdziet maksātāju pārbaudīt sava konta datus."
+      friendly_message: "Jūsu konts ir bloķēts. Pārbaudiet sava konta datus."
     "F.0101":
-      message: "Klienta konts nav atrasts. Transakciju nevarēja pabeigt. Pārbaudiet pieprasījuma parametrus."
-      friendly_message: "Konts nav atrasts. Transakciju nevarēja pabeigt. Sazinieties ar savu maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
+      message: "Maksājumu konts nav atrasts. Lūdziet maksātāju pārbaudīt sava konta datus."
+      friendly_message: "Jūsu konts nav atrasts. Pārbaudiet sava konta datus."
     "F.0102":
-      message: "Autorizācijas kļūda. Transakciju nevarēja pabeigt. Pārbaudiet pieprasījuma autorizācijas parametrus."
-      friendly_message: "Autorizācijas kļūda. Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Autorizācijas kļūda. Pārbaudiet autorizācijas pieprasījuma parametrus."
+      friendly_message: "Darījumu nevarēja apstrādāt. Mēģiniet vēlāk vēlreiz."
     "F.0103":
-      message: "Pieprasījuma paraksts ir nederīgs. Transakciju nevarēja pabeigt. Pārbaudiet pieprasījuma parakstu vai sertifikātu."
-      friendly_message: "Pieprasījuma paraksts ir nederīgs. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Nederīgs pieprasījuma paraksts. Pārbaudiet pieprasījuma parakstu vai sertifikātu."
+      friendly_message: "Darījumu nevarēja apstrādāt. Mēģiniet vēlāk vēlreiz."
     "F.0104":
-      message: "Atļauja liegta. Izmantojiet citu transakcijas veidu vai sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Atļauja liegta. Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju vai izmantojiet citu maksājumu metodi."
+      message: "Darījuma veids vai maksājuma metode nav atļauta. Izmantojiet citu darījuma veidu vai maksājuma metodi."
+      friendly_message: "Darījuma veids vai maksājuma metode nav atļauta."
     "F.0105":
-      message: "Godprātība. Sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Godprātība. Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Darījums noraidīts."
+      friendly_message: "Darījums noraidīts. Izmantojiet citu maksājuma metodi."
     "F.0106":
-      message: "Termināla kļūda. Sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Termināla kļūda. Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju vai izmantojiet citu maksājumu metodi."
+      message: "Termināļa kļūda. Sazinieties ar tehnisko atbalstu."
+      friendly_message: "Darījums noraidīts. Izmantojiet citu maksājuma metodi."
     "F.0107":
-      message: "Tirgotāja konts ir nederīgs. Sazinieties ar maksājumu pakalpojumu sniedzēju vai izsniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Tirgotāja konts ir nederīgs. Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Nederīgs tirgotāja konts. Sazinieties ar tehnisko atbalstu."
+      friendly_message: "Darījums noraidīts. Izmantojiet citu maksājuma metodi."
     "F.0108":
-      message: "Dublikāta transakcija vai pasūtījums. Pārbaudiet sākotnējās transakcijas vai pasūtījuma statusu. Sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Dublikāta pasūtījums. Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju, lai iegūtu sākotnējā pasūtījuma statusu."
+      message: "Dublēts darījums. Pārbaudiet sākotnējā darījuma statusu."
+      friendly_message: "Dublēts darījums. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
     "F.0109":
-      message: "Pasūtījums ir beidzies. Transakciju nevarēja pabeigt."
-      friendly_message: "Pasūtījums ir beidzies. Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Darījuma termiņš beidzies."
+      friendly_message: "Darījuma termiņš beidzies. Mēģiniet vēlreiz."
     "F.0110":
-      message: "Pasūtījuma ID nav atrasts. Transakciju nevarēja pabeigt. Pārbaudiet pieprasījuma parametrus."
-      friendly_message: "Pasūtījuma ID nav atrasts. Transakciju nevarēja pabeigt. Pārbaudiet transakcijas parametrus vai sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Darījuma ID nav atrasts. Pārbaudiet pieprasījuma parametrus."
+      friendly_message: "Darījums nav atrasts. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
     "F.0111":
-      message: "Karte ir beigusies. Lūdziet klientam izmantot derīgu karti."
-      friendly_message: "Karte ir beigusies. Transakciju nevarēja pabeigt. Izmantojiet derīgu karti."
+      message: "Kartes derīguma termiņš beidzies. Lūdziet maksātāju izmantot derīgu karti."
+      friendly_message: "Kartes derīguma termiņš beidzies. Izmantojiet derīgu karti."
     "F.0112":
-      message: "CVV pārbaude neizdevās. Lūdziet klientam ievadīt derīgu kartes CVV."
-      friendly_message: "CVV pārbaude neizdevās. Transakciju nevarēja pabeigt. Ievadiet derīgu CVV, kas norādīts uz jūsu kartes."
+      message: "CVC pārbaude neizdevās. Lūdziet maksātāju ievadīt pareizo CVC."
+      friendly_message: "Nepareizs CVC. Ievadiet pareizo CVC no savas kartes."
     "F.0113":
-      message: "Valūta netiek atbalstīta. Pārbaudiet pieprasījuma valūtu vai sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Valūta netiek atbalstīta. Transakciju nevarēja pabeigt. Izvēlieties citu valūtu vai sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Valūta netiek atbalstīta. Pārbaudiet valūtu pieprasījumā."
+      friendly_message: "Valūta netiek atbalstīta. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
     "F.0114":
-      message: "Nepietiek līdzekļu. Pārbaudiet konta bilanci vai sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Nepietiek līdzekļu. Transakciju nevarēja pabeigt. Pārbaudiet konta bilanci."
+      message: "Nepietiekami līdzekļi."
+      friendly_message: "Nepietiekami līdzekļi."
     "F.0115":
-      message: "Iegādātāja kļūda. Potenciāla krāpšana. Maksājumu līdzekļi var būt nozagti vai nozaudēti. Pārbaudiet klienta informāciju."
-      friendly_message: "Maksājumu informācijas kļūda. Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Krāpšanas aizdomas. Maksājuma līdzeklis var būt nozagts vai pazudis."
+      friendly_message: "Darījums noraidīts. Izmantojiet citu maksājuma metodi."
     "F.0116":
-      message: "Izsniedzēja kļūda. Potenciāla krāpšana. Maksājumu līdzekļi var būt nozagti vai nozaudēti. Pārbaudiet klienta informāciju."
-      friendly_message: "Maksājumu informācijas kļūda. Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju vai kartes izsniedzēju, lai iegūtu sīkāku informāciju. Bankas tālruņa numurs ir norādīts uz jūsu kartes aizmugurē."
+      message: "Maksājumu sistēma noraidīja darījumu. Iespējama krāpšana."
+      friendly_message: "Darījums noraidīts. Izmantojiet citu maksājuma metodi."
     "F.0117":
-      message: "Pagaidu pakalpojumu sniedzēja sistēmas kļūda. Sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Pakalpojumu sniedzēja sistēmas kļūda. Transakciju nevarēja pabeigt. Mēģiniet vēlreiz vēlāk vai sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Pagaidu sistēmas kļūda. Mēģiniet vēlāk vēlreiz."
+      friendly_message: "Sistēmas kļūda. Mēģiniet vēlāk vēlreiz."
     "F.0118":
-      message: "Pakalpojumu sniedzēja sistēmas kļūda. Sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Pakalpojumu sniedzēja sistēmas kļūda. Transakciju nevarēja pabeigt. Izmantojiet citu maksājumu metodi vai sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Sistēmas kļūda. Sazinieties ar tehnisko atbalstu."
+      friendly_message: "Sistēmas kļūda. Izmantojiet citu maksājuma metodi."
     "F.0119":
-      message: "Pagaidu pakalpojumu sniedzēja sistēmas kļūda. Sazinieties ar kartes izsniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Pakalpojumu sniedzēja sistēmas kļūda. Transakciju nevarēja pabeigt. Mēģiniet vēlreiz vēlāk vai sazinieties ar kartes izsniedzēju, lai iegūtu sīkāku informāciju. Bankas tālruņa numurs ir norādīts uz jūsu kartes aizmugurē."
+      message: "Kartes izdevēja banka noraidīja darījumu."
+      friendly_message: "Darījums noraidīts. Mēģiniet vēlāk vēlreiz."
     "F.0120":
-      message: "Pakalpojumu sniedzēja sistēmas kļūda. Sazinieties ar kartes izsniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Pakalpojumu sniedzēja sistēmas kļūda. Transakciju nevarēja pabeigt. Izmantojiet citu maksājumu metodi vai sazinieties ar kartes izsniedzēju, lai iegūtu sīkāku informāciju. Bankas tālruņa numurs ir norādīts uz jūsu kartes aizmugurē."
+      message: "Kartes izdevēja banka noraidīja darījumu."
+      friendly_message: "Darījums noraidīts. Mēģiniet vēlāk vēlreiz."
     "F.0121":
-      message: "Pakalpojumu sniedzēja sistēmas kļūda. Sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Pakalpojumu sniedzēja sistēmas kļūda. Transakciju nevarēja pabeigt. Mēģiniet vēlreiz vēlāk vai sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
+      message: "Ārējās maksājumu sistēmas pagaidu kļūda."
+      friendly_message: "Sistēmas kļūda. Mēģiniet vēlāk vēlreiz."
     "F.0122":
-      message: "Pakalpojumu sniedzēja sistēmas kļūda. Sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Pakalpojumu sniedzēja sistēmas kļūda. Transakciju nevarēja pabeigt. Izmantojiet citu maksājumu metodi vai sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
+      message: "Ārējās maksājumu sistēmas kļūda."
+      friendly_message: "Sistēmas kļūda. Izmantojiet citu maksājuma metodi."
     "F.0123":
-      message: "Transakcijas summa vai transakciju skaits pārsniedz maksājumu pakalpojumu sniedzēja limitus. Pārbaudiet transakcijas summu un transakciju skaitu vai sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Transakcijas summa vai transakciju skaits pārsniedz limitus. Transakciju nevarēja pabeigt. Pārbaudiet transakcijas summu vai sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Darījums pārsniedz limitus. Sazinieties ar tehnisko atbalstu."
+      friendly_message: "Darījums pārsniedz limitus. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
     "F.0124":
-      message: "Transakcijas summa vai transakciju skaits pārsniedz izsniedzēja limitus. Pārbaudiet transakcijas summu un transakciju skaitu. Lūdziet klientam sazināties ar kartes izsniedzēju banku."
-      friendly_message: "Transakcijas summa vai transakciju skaits pārsniedz limitus. Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju vai kartes izsniedzēju, lai iegūtu sīkāku informāciju. Bankas tālruņa numurs ir norādīts uz jūsu kartes aizmugurē."
+      message: "Darījums pārsniedz izdevēja limitus."
+      friendly_message: "Darījums pārsniedz limitus. Sazinieties ar savu banku."
     "F.0125":
-      message: "Transakcijas summa vai transakciju skaits pārsniedz maksājumu pakalpojumu sniedzēja limitus. Pārbaudiet transakcijas summu un transakciju skaitu. Sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Transakcijas summa vai transakciju skaits pārsniedz limitus. Transakciju nevarēja pabeigt. Sazinieties ar tirgotāju vai maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
+      message: "Darījums pārsniedz ārējās maksājumu sistēmas limitus."
+      friendly_message: "Darījums pārsniedz limitus. Sazinieties ar savu maksājumu pakalpojumu sniedzēju."
     "F.0126":
-      message: "Maciņa informācijas kļūda. Lūdziet klientam pārbaudīt maciņa informāciju. Sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Maciņa informācijas kļūda. Pārbaudiet maciņa informāciju vai izmantojiet citu karti."
+      message: "Nepareizi maka dati. Lūdziet maksātāju pārbaudīt sava maka datus."
+      friendly_message: "Nepareizi maka dati. Pārbaudiet sava maka datus vai izmantojiet citu maksājuma metodi."
     "F.0127":
-      message: "Kartes informācija nav derīga. Lūdziet klientam pārbaudīt kartes informāciju. Sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "Kartes informācija nav derīga. Transakciju nevarēja pabeigt. Pārbaudiet kartes informāciju vai izmantojiet citu karti."
+      message: "Nepareizi kartes dati. Lūdziet maksātāju pārbaudīt savas kartes datus."
+      friendly_message: "Nepareizi kartes dati. Pārbaudiet savas kartes datus vai izmantojiet citu karti."
     "F.0128":
-      message: "Pieprasījuma parametri nav derīgi. Transakciju nevarēja pabeigt. Pārbaudiet pieprasījuma parametrus."
-      friendly_message: "Pieprasījuma parametri nav derīgi. Pārbaudiet transakcijas informāciju vai sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
+      message: "Nepareizi pieprasījuma parametri. Pārbaudiet obligātos pieprasījuma parametrus."
+      friendly_message: "Darījums noraidīts. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
     "F.0129":
-      message: "3-D Secure pārbaudes kļūda. Sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
-      friendly_message: "3-D Secure pārbaudes kļūda. Pārbaudiet 3-D Secure kodu vai sazinieties ar maksājumu pakalpojumu sniedzēju, lai iegūtu sīkāku informāciju."
+      message: "3-D Secure verifikācijas kļūda. Sazinieties ar tehnisko atbalstu."
+      friendly_message: "3-D Secure verifikācijas kļūda. Mēģiniet vēlreiz vai izmantojiet citu maksājuma metodi."
     "F.0130":
-      message: "3-D Secure pārbaudes kļūda. Sazinieties ar izsniedzēju banku, lai iegūtu sīkāku informāciju."
-      friendly_message: "3-D Secure pārbaudes kļūda. Pārbaudiet 3-D Secure kodu vai sazinieties ar kartes izsniedzēju, lai iegūtu sīkāku informāciju. Bankas tālruņa numurs ir norādīts uz jūsu kartes aizmugurē."
+      message: "3-D Secure verifikācijas kļūda izdevēja pusē."
+      friendly_message: "3-D Secure verifikācijas kļūda. Mēģiniet vēlreiz vai izmantojiet citu maksājuma metodi."
     "F.0131":
-      message: "Transakcijas apstiprināšanas kļūda. Transakciju nevarēja pabeigt. Lūdziet klientam apstiprināt maksājumu."
-      friendly_message: "Transakcijas apstiprināšanas kļūda. Transakciju nevarēja pabeigt. Pārbaudiet maksājuma apstiprinājumu."
+      message: "Darījuma apstiprinājums neizdevās. Maksātājs ievadīja nepareizu SMS kodu vai OTP."
+      friendly_message: "Darījums noraidīts. Mēģiniet vēlreiz vai izmantojiet citu maksājuma metodi."
     "F.0132":
-      message: "Darījumu klients noraidīja. Darījumu nevarēja pabeigt. Lūdziet klientu atkārtot maksājumu."
-      friendly_message: "Darījums tika noraidīts. Darījumu nevarēja pabeigt. Lūdzu, izvēlieties citu maksājuma veidu vai mēģiniet vēlreiz."
+      message: "Maksātājs atcēla darījumu."
+      friendly_message: "Darījums atcelts. Mēģiniet vēlreiz vai izmantojiet citu maksājuma metodi."
     "F.0133":
-      message: "Nepareizs tālruņa numurs. Neizdevās pabeigt darījumu. Lūdziet klientam ievadīt numuru, kas saistīts ar viņa karti."
-      friendly_message: "Iesniegtais tālruņa numurs nesakrīt ar numuru, kas saistīts ar jūsu karti. Neizdevās pabeigt darījumu. Lūdzu, ievadiet pareizu tālruņa numuru."
+      message: "Nepareizs tālruņa numurs. Lūdziet maksātāju ievadīt ar karti saistīto tālruņa numuru."
+      friendly_message: "Nepareizs tālruņa numurs. Ievadiet ar jūsu karti saistīto tālruņa numuru."
     "F.0134":
-      message: "Darījuma apstiprināšanas kļūda. Nepareiza SMS atslēga. Lūdziet klientam iesniegt pareizu vērtību."
-      friendly_message: "Darījums nav apstiprināts no bankas. Nepareiza SMS atslēga. Lūdzu, pārbaudiet iesniegtos datus."
+      message: "Nepareizs SMS kods. Lūdziet maksātāju ievadīt pareizo kodu."
+      friendly_message: "Darījums noraidīts. Nepareizs SMS kods. Mēģiniet vēlreiz."
     "F.0135":
-      message: "Nav iespējams sākt jaunu darījumu, kamēr iepriekšējais nav apstrādāts. Lūdziet klientam pabeigt iepriekšējo darījumu vai gaidīt, līdz tas tiks pabeigts."
-      friendly_message: "Darījums neizdevās. Pabeidziet iepriekšējo darījumu vai gaidiet, līdz iepriekšējais tiks pabeigts, un mēģiniet vēlreiz."
+      message: "Iepriekšējais darījums nav pabeigts. Uzgaidiet tā pabeigšanu pirms atkārtotas mēģināšanas."
+      friendly_message: "Iepriekšējais darījums nav pabeigts. Mēģiniet vēlāk vēlreiz."
+    "F.0995":
+      message: "Darījums nav pārbaudīts. Tirgotāja verifikācijas pakalpojums noraidīja darījumu."
+      friendly_message: "Darījums noraidīts. Mēģiniet vēlreiz vai izmantojiet citu maksājuma metodi."
+    "F.0996":
+      message: "Darījums nav pārbaudīts. Personas datu verifikācija (VPD) neizdevās."
+      friendly_message: "Darījums noraidīts. Izmantojiet maksājuma metodi, kuras personas dati atbilst jūsu konta datiem."
     "F.0997":
       message: ""
-      friendly_message: "Darījumu neizdevās pabeigt nezināma iemesla dēļ. Lūdzu, pārbaudiet informāciju pie tirgotāja."
+      friendly_message: "Darījums noraidīts. Mēģiniet vēlreiz vai sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
     "F.0998":
-      message: "Transakcija neizdevās. Klients nepabeidza maksājumu - sistēma automātiski atzīmēja transakciju kā neveiksmīgu."
-      friendly_message: "Transakcija neizdevās. Klients nepabeidza maksājumu - sistēma automātiski atzīmēja transakciju kā neveiksmīgu."
+      message: "Darījums noraidīts."
+      friendly_message: "Darījums noraidīts. Mēģiniet vēlreiz."
     "F.0999":
       message: ""
-      friendly_message: "Darījumu neizdevās pabeigt nezināma iemesla dēļ. Lūdzu, pārbaudiet informāciju pie tirgotāja."
+      friendly_message: "Darījums noraidīts. Mēģiniet vēlreiz vai sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."
     "S.0000":
-      message: "Transakcija veiksmīgi pabeigta."
-      friendly_message: "Transakcija veiksmīgi izpildīta."
+      message: "Darījums veiksmīgs."
+      friendly_message: "Darījums veiksmīgs."
     "P.0001":
-      message: "Transakcija turpinās."
-      friendly_message: "Transakcija tiek apstrādāta. Lūdzu, uzgaidiet."
+      message: "Darījums tiek apstrādāts."
+      friendly_message: "Darījums tiek apstrādāts. Lūdzu, uzgaidiet."
     "P.0002":
       message: "Laipni lūdzam!"
       friendly_message: "Laipni lūdzam!"
+    "P.0003":
+      message: "Gaida aizdevuma apstiprinājumu."
+      friendly_message: "Gaida aizdevuma apstiprinājumu. Lūdziet sazinieties ar tirgotāju, lai pabeigtu aizdevuma procesu un apstiprinātu pirkumu."
+    "P.0004":
+      message: "Aizdevums tiek apstiprināts."
+      friendly_message: "Aizdevums tiek apstiprināts. Lūdzu, uzgaidiet."
     "P.9999":
-      message: "Nezināms darījuma statuss. Lai iegūtu sīkāku informāciju, sazinieties ar maksājumu pakalpojumu sniedzēju."
-      friendly_message: "Nezināms darījuma statuss. Lai iegūtu sīkāku informāciju, sazinieties ar tirgotāju."
+      message: "Nezināms darījuma statuss. Sazinieties ar tehnisko atbalstu."
+      friendly_message: "Nezināms darījuma statuss. Sazinieties ar tirgotāju, lai iegūtu sīkāku informāciju."

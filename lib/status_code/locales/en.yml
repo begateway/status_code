@@ -1,134 +1,143 @@
 en:
   bank_codes:
     "F.0100":
-      message: "Account ID blocked. Failed to complete the transaction. Check the request parameters or contact the payment service provider for details."
-      friendly_message: "Account ID blocked. Failed to complete the transaction. Contact your payment service provider for details."
+      message: "Payment account blocked. Ask the customer to check their account details."
+      friendly_message: "Your account is blocked. Check your account details."
     "F.0101":
-      message: "Account ID not found. Failed to complete the transaction. Check the request parameters."
-      friendly_message: "Account ID not found. Failed to complete the transaction. Contact your payment service provider for details."
+      message: "Payment account not found. Ask the customer to check their account details."
+      friendly_message: "Your account is not found. Check your account details."
     "F.0102":
-      message: "Authorization error. Failed to complete the transaction. Check the authorization request parameters."
-      friendly_message: "Authorization error. Failed to complete the transaction. Contact the merchant for details."
+      message: "Authorization error. Check the authorization request parameters."
+      friendly_message: "Transaction could not be processed. Try again later."
     "F.0103":
-      message: "Invalid request signature. Failed to complete the transaction. Check the request signature or certificate."
-      friendly_message: "Invalid request signature. Contact the merchant for details."
+      message: "Invalid request signature. Check the request signature or certificate."
+      friendly_message: "Transaction could not be processed. Try again later."
     "F.0104":
-      message: "Not allowed. Use another transaction type or contact the payment service provider for details."
-      friendly_message: "Not allowed. Failed to complete the transaction. Contact the merchant for details or use another payment method."
+      message: "Transaction type or payment method not permitted. Use another transaction type or payment method."
+      friendly_message: "Transaction type or payment method not permitted."
     "F.0105":
-      message: "Do not honor. Contact the payment service provider for details."
-      friendly_message: "Do not honor. Failed to complete the transaction. Contact the merchant for details."
+      message: "Transaction declined."
+      friendly_message: "Transaction declined. Use another payment method."
     "F.0106":
-      message: "Terminal error. Contact the payment service provider for details."
-      friendly_message: "Terminal error. Failed to complete the transaction. Contact the merchant for details or use another payment method."
+      message: "Terminal error. Contact technical support."
+      friendly_message: "Transaction declined. Use another payment method."
     "F.0107":
-      message: "Invalid merchant account. Contact the payment service provider or acquirer for details."
-      friendly_message: "Invalid merchant account. Failed to complete the transaction. Contact the merchant for details."
+      message: "Invalid merchant account. Contact technical support."
+      friendly_message: "Transaction declined. Use another payment method."
     "F.0108":
-      message: "Duplicate transaction or order. Check the status of the original transaction or order. Contact the payment service provider for details."
-      friendly_message: "Duplicate order. Failed to complete the transaction. Contact the merchant for the status of the original order."
+      message: "Duplicate transaction. Check the status of the original transaction."
+      friendly_message: "Duplicate transaction. Contact the merchant for details."
     "F.0109":
-      message: "Order expired. Failed to complete the transaction."
-      friendly_message: "Order expired. Failed to complete the transaction. Contact the merchant for details."
+      message: "Transaction expired."
+      friendly_message: "Transaction expired. Try again."
     "F.0110":
-      message: "Order ID not found. Failed to complete the transaction. Check the request parameters."
-      friendly_message: "Order ID not found. Failed to complete the transaction. Check the transaction parameters or contact the merchant for details."
+      message: "Transaction ID not found. Check the request parameters."
+      friendly_message: "Transaction not found. Contact the merchant for details."
     "F.0111":
       message: "Card expired. Ask the customer to use a valid card."
-      friendly_message: "Card expired. Failed to complete the transaction. Use a valid card."
+      friendly_message: "Card expired. Use a valid card."
     "F.0112":
-      message: "CVV verification failed. Ask the customer to enter the valid card CVV."
-      friendly_message: "CVV verification failed. Failed to complete the transaction. Enter a valid CVV indicated on your card."
+      message: "CVC verification failed. Ask the customer to enter the correct CVC."
+      friendly_message: "Incorrect CVC. Enter the correct CVC from your card."
     "F.0113":
-      message: "Currency not supported. Check the currency in the request or contact the payment service provider for details."
-      friendly_message: "Currency not supported. Failed to complete the transaction. Choose another currency or contact the merchant for details."
+      message: "Currency not supported. Check the currency in the request."
+      friendly_message: "Currency not supported. Contact the merchant for details."
     "F.0114":
-      message: "Insufficient funds. Check the account balance or contact the payment service provider for details."
-      friendly_message: "Insufficient funds. Failed to complete the transaction. Check the account balance."
+      message: "Insufficient funds."
+      friendly_message: "Insufficient funds."
     "F.0115":
-      message: "Acquirer error. Potential fraud. The means of payment might be stolen or lost. Check your customer details."
-      friendly_message: "Payment details error. Failed to complete the transaction. Contact the merchant for details."
+      message: "Fraud suspected. The means of payment might be stolen or lost."
+      friendly_message: "Transaction declined. Use another payment method."
     "F.0116":
-      message: "Issuer error. Potential fraud. The means of payment might be stolen or lost. Check your customer details."
-      friendly_message: "Payment details error. Failed to complete the transaction. Contact the merchant or the card-issuing bank for details. The bank's phone number is indicated on the back of your card."
+      message: "Transaction declined by payment system. Potential fraud."
+      friendly_message: "Transaction declined. Use another payment method."
     "F.0117":
-      message: "Temporary provider system error. Contact the payment service provider for details."
-      friendly_message: "Provider system error. Failed to complete the transaction. Try again later or contact the merchant for details."
+      message: "Temporary system error. Try again later."
+      friendly_message: "System error. Try again later."
     "F.0118":
-      message: "Provider system error. Contact the payment service provider for details."
-      friendly_message: "Provider system error. Failed to complete the transaction. Use another payment method or contact the merchant for details."
+      message: "System error. Contact technical support."
+      friendly_message: "System error. Use another payment method."
     "F.0119":
-      message: "Temporary provider system error. Contact the card-issuing bank for details."
-      friendly_message: "Provider system error. Failed to complete the transaction. Try again later or contact the bank that issued your card for details. The bank's phone number is indicated on the back of your card."
+      message: "Transaction declined by the card-issuing bank."
+      friendly_message: "Transaction declined. Try again later."
     "F.0120":
-      message: "Provider system error. Contact the card-issuing bank for details."
-      friendly_message: "Provider system error. Failed to complete the transaction. Use another payment method or contact the bank that issued your card for details. The bank's phone number is indicated on the back of your card."
+      message: "Transaction declined by the card-issuing bank."
+      friendly_message: "Transaction declined. Try again later."
     "F.0121":
-      message: "Temporary provider system error. Contact the customer’s payment service provider for details."
-      friendly_message: "Provider system error. Failed to complete the transaction. Try again later or contact your payment service provider for details."
+      message: "Temporary external payment system error."
+      friendly_message: "System error. Try again later."
     "F.0122":
-      message: "Provider system error. Contact the customer’s payment service provider for details."
-      friendly_message: "Provider system error. Failed to complete the transaction. Use another payment method or contact your payment service provider for details."
+      message: "External payment system error."
+      friendly_message: "System error. Use another payment method."
     "F.0123":
-      message: "Transaction amount or the number of transactions exceeds the payment service provider’s limits. Check the transaction amount and the number of transactions or contact the payment service provider for details."
-      friendly_message: "Transaction amount or the number of transactions exceeds the limits. Failed to complete the transaction. Check the transaction amount or contact the merchant for details."
+      message: "Transaction exceeds the limits. Contact technical support."
+      friendly_message: "Transaction exceeds the limits. Contact the merchant for details."
     "F.0124":
-      message: "Transaction amount or the number of transactions exceeds the issuer's limits. Check the transaction amount or the number of transactions. Ask the customer to contact the card-issuing bank."
-      friendly_message: "Transaction amount or the number of transactions exceeds the limits. Failed to complete the transaction. Contact the merchant or the bank that issued your card for details. The bank's phone number is indicated on the back of your card."
+      message: "Transaction exceeds the issuer's limits."
+      friendly_message: "Transaction exceeds the limits. Contact your bank."
     "F.0125":
-      message: "Transaction amount or the number of transactions exceeds the payment service provider’s limits. Check the transaction amount and the number of transactions. Contact the customer’s payment service provider for details."
-      friendly_message: "Transaction amount or the number of transactions exceeds the limits. Failed to complete the transaction. Contact the merchant or your payment service provider for details."
+      message: "Transaction exceeds the external payment system limits."
+      friendly_message: "Transaction exceeds the limits. Contact your payment service."
     "F.0126":
-      message: "Wallet data error. Ask the client to check the wallet data. Contact the payment service provider for details."
-      friendly_message: "Wallet data error. Check the wallet data or use another card."
+      message: "Invalid wallet data. Ask the customer to check the wallet details."
+      friendly_message: "Invalid wallet data. Check your wallet details or use another payment method."
     "F.0127":
-      message: "Invalid card data. Ask the customer to check the card data. Contact the payment service provider for details."
-      friendly_message: "Invalid card data. Failed to complete the transaction. Check your card details or use another card."
+      message: "Invalid card data. Ask the customer to check the card data."
+      friendly_message: "Invalid card data. Check your card details or use another card."
     "F.0128":
-      message: "Invalid request parameters. Failed to complete the transaction. Check the required request parameters."
-      friendly_message: "Invalid request parameters. Check the transaction data or contact the merchant for details."
+      message: "Invalid request parameters. Check the required request parameters."
+      friendly_message: "Transaction declined. Contact the merchant for details."
     "F.0129":
-      message: "3-D Secure verification error. Contact the payment service provider for details."
-      friendly_message: "3-D Secure verification error. Check your 3-D Secure code or contact the payment service provider for details."
+      message: "3-D Secure verification error. Contact technical support."
+      friendly_message: "3-D Secure verification error. Try again or use another payment method."
     "F.0130":
-      message: "3-D Secure verification error. Contact the issuing bank for details."
-      friendly_message: "3-D Secure verification error. Check your 3-D Secure code or contact your card-issuing bank for details. The bank's phone number is indicated on the back of your card."
+      message: "3-D Secure verification error on the issuer side."
+      friendly_message: "3-D Secure verification error. Try again or use another payment method."
     "F.0131":
-      message: "Transaction confirmation error. Failed to complete the transaction. Ask the customer to confirm the payment."
-      friendly_message: "Transaction confirmation error. Failed to complete the transaction. Check the payment confirmation."
+      message: "Transaction confirmation failed. The customer entered an incorrect SMS code or OTP."
+      friendly_message: "Transaction declined. Try again or use another payment method."
     "F.0132":
-      message: "The transaction was rejected by the client. The transaction could not be completed. Ask the customer to repeat the payment."
-      friendly_message: "The transaction was rejected. The transaction could not be completed. Please choose another payment method or retry the payment."
+      message: "Transaction cancelled by the customer."
+      friendly_message: "Transaction cancelled. Try again or use another payment method."
     "F.0133":
-      message: "Wrong phone number. Failed to complete the transaction. Ask the customer to enter the phone number associated with their card."
-      friendly_message: "The submitted phone number doesn’t match the one associated with your card. Failed to complete the transaction. Please enter the correct phone number."
+      message: "Wrong phone number. Ask the customer to enter the phone number associated with their card."
+      friendly_message: "Wrong phone number. Enter the phone number associated with your card."
     "F.0134":
-      message: "Transaction confirmation error. Wrong SMS key. Ask the customer to submit the correct value."
-      friendly_message: "Transaction not confirmed by the bank. Wrong SMS key. Please check the submitted data."
+      message: "Wrong SMS code. Ask the customer to enter the correct code."
+      friendly_message: "Transaction declined. Wrong SMS code. Try again."
     "F.0135":
-      message: "Cannot initialize a new transaction until the previous one is processed. Please ask the customer to complete the previous transaction or wait until it is completed."
-      friendly_message: "Transaction failed. Complete the previous transaction or wait until the previous transaction is finalized and try again."
+      message: "Previous transaction not completed. Wait for it to complete before retrying."
+      friendly_message: "Previous transaction not completed. Try again later."
+    "F.0995":
+      message: "Transaction not verified. The merchant's verification service rejected the transaction."
+      friendly_message: "Transaction declined. Try again or use another payment method."
     "F.0996":
-      message: "The transaction was not verified."
-      friendly_message: "The transaction was not verified by the verification service VPD."
+      message: "Transaction not verified. Personal data verification (VPD) failed."
+      friendly_message: "Transaction declined. Use a payment method with personal data matching your account."
     "F.0997":
       message: ""
-      friendly_message: "The transaction could not be completed due to an unknown reason. Please check the details with the merchant."
+      friendly_message: "Transaction declined. Try again or contact the merchant for details."
     "F.0998":
-      message: "Transaction failed. The customer did not complete the payment - the system automatically marked the transaction as failed."
-      friendly_message: "Transaction failed. The customer did not complete the payment - the system automatically marked the transaction as failed."
+      message: "Transaction declined."
+      friendly_message: "Transaction declined. Try again."
     "F.0999":
       message: ""
-      friendly_message: "The transaction could not be completed due to an unknown reason. Please check the details with the merchant."
+      friendly_message: "Transaction declined. Try again or contact the merchant for details."
     "S.0000":
-      message: "Transaction is successful."
-      friendly_message: "The transaction is successfully processed."
+      message: "Transaction successful."
+      friendly_message: "Transaction successful."
     "P.0001":
       message: "Transaction in progress."
       friendly_message: "Transaction is being processed. Please wait."
     "P.0002":
       message: "Welcome!"
       friendly_message: "Welcome!"
+    "P.0003":
+      message: "Waiting for loan confirmation."
+      friendly_message: "Waiting for loan confirmation. Please contact the merchant to complete the loan process and finalize your purchase."
+    "P.0004":
+      message: "The loan is being confirmed."
+      friendly_message: "The loan is being confirmed. Please, wait."
     "P.9999":
-      message: "Unknown transaction status. Contact the payment service provider for details."
+      message: "Unknown transaction status. Contact technical support."
       friendly_message: "Unknown transaction status. Contact the merchant for details."

@@ -1,131 +1,143 @@
 fi:
   bank_codes:
     "F.0100":
-      message: "Tili ID on estetty. Tapahtumaa ei voitu suorittaa. Tarkista pyynnön parametrit tai ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Tili ID on estetty. Tapahtumaa ei voitu suorittaa. Ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
+      message: "Maksutili on estetty. Pyydä maksajaa tarkistamaan tilitietonsa."
+      friendly_message: "Tilisi on estetty. Tarkista tilitietosi."
     "F.0101":
-      message: "Tili ID:tä ei löydy. Tapahtumaa ei voitu suorittaa. Tarkista pyynnön parametrit."
-      friendly_message: "Tili ID:tä ei löydy. Tapahtumaa ei voitu suorittaa. Ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
+      message: "Maksutiliä ei löydy. Pyydä maksajaa tarkistamaan tilitietonsa."
+      friendly_message: "Tiliäsi ei löydy. Tarkista tilitietosi."
     "F.0102":
-      message: "Valtuutusvirhe. Tapahtumaa ei voitu suorittaa. Tarkista valtuutuspyynnön parametrit."
-      friendly_message: "Valtuutusvirhe. Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Valtuutusvirhe. Tarkista valtuutuspyynnön parametrit."
+      friendly_message: "Tapahtumaa ei voitu käsitellä. Yritä uudelleen myöhemmin."
     "F.0103":
-      message: "Virheellinen pyynnön allekirjoitus. Tapahtumaa ei voitu suorittaa. Tarkista pyynnön allekirjoitus tai sertifikaatti."
-      friendly_message: "Virheellinen pyynnön allekirjoitus. Ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Virheellinen pyyntöallekirjoitus. Tarkista pyyntöallekirjoitus tai varmenne."
+      friendly_message: "Tapahtumaa ei voitu käsitellä. Yritä uudelleen myöhemmin."
     "F.0104":
-      message: "Ei sallittu. Käytä toista tapahtumatyyppiä tai ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Ei sallittu. Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään saadaksesi lisätietoja tai käytä toista maksutapaa."
+      message: "Tapahtumatyyppi tai maksutapa ei ole sallittu. Käytä toista tapahtumatyyppiä tai maksutapaa."
+      friendly_message: "Tapahtumatyyppi tai maksutapa ei ole sallittu."
     "F.0105":
-      message: "Älä hyväksy. Ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Älä hyväksy. Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Tapahtuma hylätty."
+      friendly_message: "Tapahtuma hylätty. Käytä toista maksutapaa."
     "F.0106":
-      message: "Päätevirhe. Ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Päätevirhe. Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään saadaksesi lisätietoja tai käytä toista maksutapaa."
+      message: "Päätelaitteen virhe. Ota yhteyttä tekniseen tukeen."
+      friendly_message: "Tapahtuma hylätty. Käytä toista maksutapaa."
     "F.0107":
-      message: "Virheellinen kauppiastili. Ota yhteyttä maksupalveluntarjoajaan tai maksunvälittäjään saadaksesi lisätietoja."
-      friendly_message: "Virheellinen kauppiastili. Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Virheellinen kauppiaan tili. Ota yhteyttä tekniseen tukeen."
+      friendly_message: "Tapahtuma hylätty. Käytä toista maksutapaa."
     "F.0108":
-      message: "Kaksoistapahtuma tai tilaus. Tarkista alkuperäisen tapahtuman tai tilauksen tila. Ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Kaksoistilaus. Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään alkuperäisen tilauksen tilasta."
+      message: "Kaksoiskappaletapahtuma. Tarkista alkuperäisen tapahtuman tila."
+      friendly_message: "Kaksoiskappaletapahtuma. Ota yhteyttä kauppiaaseen saadaksesi lisätietoja."
     "F.0109":
-      message: "Tilaus vanhentunut. Tapahtumaa ei voitu suorittaa."
-      friendly_message: "Tilaus vanhentunut. Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Tapahtuma vanhentunut."
+      friendly_message: "Tapahtuma vanhentunut. Yritä uudelleen."
     "F.0110":
-      message: "Tilaus ID:tä ei löydy. Tapahtumaa ei voitu suorittaa. Tarkista pyynnön parametrit."
-      friendly_message: "Tilaus ID:tä ei löydy. Tapahtumaa ei voitu suorittaa. Tarkista tapahtuman parametrit tai ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Tapahtuman tunnusta ei löydy. Tarkista pyyntöparametrit."
+      friendly_message: "Tapahtumaa ei löydy. Ota yhteyttä kauppiaaseen saadaksesi lisätietoja."
     "F.0111":
-      message: "Kortti vanhentunut. Pyydä asiakasta käyttämään voimassaolevaa korttia."
-      friendly_message: "Kortti vanhentunut. Tapahtumaa ei voitu suorittaa. Käytä voimassaolevaa korttia."
+      message: "Kortti vanhentunut. Pyydä maksajaa käyttämään voimassa olevaa korttia."
+      friendly_message: "Kortti vanhentunut. Käytä voimassa olevaa korttia."
     "F.0112":
-      message: "CVV-tarkistus epäonnistui. Pyydä asiakasta syöttämään voimassaoleva kortin CVV."
-      friendly_message: "CVV-tarkistus epäonnistui. Tapahtumaa ei voitu suorittaa. Syötä voimassaoleva CVV, joka on merkitty korttiisi."
+      message: "CVC-tarkistus epäonnistui. Pyydä maksajaa syöttämään oikea CVC."
+      friendly_message: "Virheellinen CVC. Syötä kortiltasi oikea CVC."
     "F.0113":
-      message: "Valuutta ei tuettu. Tarkista pyynnön valuutta tai ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Valuutta ei tuettu. Tapahtumaa ei voitu suorittaa. Valitse toinen valuutta tai ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Valuuttaa ei tueta. Tarkista valuutta pyynnöstä."
+      friendly_message: "Valuuttaa ei tueta. Ota yhteyttä kauppiaaseen saadaksesi lisätietoja."
     "F.0114":
-      message: "Riittämätön saldo. Tarkista tilin saldo tai ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Riittämätön saldo. Tapahtumaa ei voitu suorittaa. Tarkista tilin saldo."
+      message: "Riittämättömät varat."
+      friendly_message: "Riittämättömät varat."
     "F.0115":
-      message: "Maksunvälittäjän virhe. Mahdollinen petos. Maksuväline voi olla varastettu tai kadonnut. Tarkista asiakastiedot."
-      friendly_message: "Maksutietovirhe. Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Petosten epäily. Maksuväline saattaa olla varastettu tai kadonnut."
+      friendly_message: "Tapahtuma hylätty. Käytä toista maksutapaa."
     "F.0116":
-      message: "Liikkeeseenlaskijan virhe. Mahdollinen petos. Maksuväline voi olla varastettu tai kadonnut. Tarkista asiakastiedot."
-      friendly_message: "Maksutietovirhe. Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään tai kortin myöntäneeseen pankkiin saadaksesi lisätietoja. Pankin puhelinnumero on merkitty korttisi taakse."
+      message: "Maksujärjestelmä hylkäsi tapahtuman. Mahdollinen petos."
+      friendly_message: "Tapahtuma hylätty. Käytä toista maksutapaa."
     "F.0117":
-      message: "Väliaikainen palveluntarjoajan järjestelmävirhe. Ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Palveluntarjoajan järjestelmävirhe. Tapahtumaa ei voitu suorittaa. Yritä uudelleen myöhemmin tai ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Tilapäinen järjestelmävirhe. Yritä uudelleen myöhemmin."
+      friendly_message: "Järjestelmävirhe. Yritä uudelleen myöhemmin."
     "F.0118":
-      message: "Palveluntarjoajan järjestelmävirhe. Ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Palveluntarjoajan järjestelmävirhe. Tapahtumaa ei voitu suorittaa. Käytä toista maksutapaa tai ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Järjestelmävirhe. Ota yhteyttä tekniseen tukeen."
+      friendly_message: "Järjestelmävirhe. Käytä toista maksutapaa."
     "F.0119":
-      message: "Väliaikainen palveluntarjoajan järjestelmävirhe. Ota yhteyttä kortin myöntäneeseen pankkiin saadaksesi lisätietoja."
-      friendly_message: "Palveluntarjoajan järjestelmävirhe. Tapahtumaa ei voitu suorittaa. Yritä uudelleen myöhemmin tai ota yhteyttä kortin myöntäneeseen pankkiin saadaksesi lisätietoja. Pankin puhelinnumero on merkitty korttisi taakse."
+      message: "Kortin myöntänyt pankki hylkäsi tapahtuman."
+      friendly_message: "Tapahtuma hylätty. Yritä uudelleen myöhemmin."
     "F.0120":
-      message: "Palveluntarjoajan järjestelmävirhe. Ota yhteyttä kortin myöntäneeseen pankkiin saadaksesi lisätietoja."
-      friendly_message: "Palveluntarjoajan järjestelmävirhe. Tapahtumaa ei voitu suorittaa. Käytä toista maksutapaa tai ota yhteyttä kortin myöntäneeseen pankkiin saadaksesi lisätietoja. Pankin puhelinnumero on merkitty korttisi taakse."
+      message: "Kortin myöntänyt pankki hylkäsi tapahtuman."
+      friendly_message: "Tapahtuma hylätty. Yritä uudelleen myöhemmin."
     "F.0121":
-      message: "Väliaikainen palveluntarjoajan järjestelmävirhe. Ota yhteyttä asiakkaan maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Palveluntarjoajan järjestelmävirhe. Tapahtumaa ei voitu suorittaa. Yritä uudelleen myöhemmin tai ota yhteyttä maksupalveluntarjoajaasi saadaksesi lisätietoja."
+      message: "Ulkoisen maksujärjestelmän tilapäinen virhe."
+      friendly_message: "Järjestelmävirhe. Yritä uudelleen myöhemmin."
     "F.0122":
-      message: "Palveluntarjoajan järjestelmävirhe. Ota yhteyttä asiakkaan maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Palveluntarjoajan järjestelmävirhe. Tapahtumaa ei voitu suorittaa. Käytä toista maksutapaa tai ota yhteyttä maksupalveluntarjoajaasi saadaksesi lisätietoja."
+      message: "Ulkoisen maksujärjestelmän virhe."
+      friendly_message: "Järjestelmävirhe. Käytä toista maksutapaa."
     "F.0123":
-      message: "Tapahtuman summa tai tapahtumien määrä ylittää maksupalveluntarjoajan rajat. Tarkista tapahtuman summa ja tapahtumien määrä tai ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Tapahtuman summa tai tapahtumien määrä ylittää rajat. Tapahtumaa ei voitu suorittaa. Tarkista tapahtuman summa tai ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Tapahtuma ylittää rajat. Ota yhteyttä tekniseen tukeen."
+      friendly_message: "Tapahtuma ylittää rajat. Ota yhteyttä kauppiaaseen saadaksesi lisätietoja."
     "F.0124":
-      message: "Tapahtuman summa tai tapahtumien määrä ylittää liikkeeseenlaskijan rajat. Tarkista tapahtuman summa tai tapahtumien määrä. Pyydä asiakasta ottamaan yhteyttä kortin myöntäneeseen pankkiin."
-      friendly_message: "Tapahtuman summa tai tapahtumien määrä ylittää rajat. Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään tai kortin myöntäneeseen pankkiin saadaksesi lisätietoja. Pankin puhelinnumero on merkitty korttisi taakse."
+      message: "Tapahtuma ylittää kortinmyöntäjän rajat."
+      friendly_message: "Tapahtuma ylittää rajat. Ota yhteyttä pankkiisi."
     "F.0125":
-      message: "Tapahtuman summa tai tapahtumien määrä ylittää maksupalveluntarjoajan rajat. Tarkista tapahtuman summa ja tapahtumien määrä. Ota yhteyttä asiakkaan maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Tapahtuman summa tai tapahtumien määrä ylittää rajat. Tapahtumaa ei voitu suorittaa. Ota yhteyttä myyjään tai maksupalveluntarjoajaasi saadaksesi lisätietoja."
+      message: "Tapahtuma ylittää ulkoisen maksujärjestelmän rajat."
+      friendly_message: "Tapahtuma ylittää rajat. Ota yhteyttä maksupalveluntarjoajaasi."
     "F.0126":
-      message: "Lompakon tiedot virheelliset. Pyydä asiakasta tarkistamaan lompakon tiedot. Ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Lompakon tiedot virheelliset. Tarkista lompakon tiedot tai käytä toista korttia."
+      message: "Virheelliset lompakkotiedot. Pyydä maksajaa tarkistamaan lompakkotietonsa."
+      friendly_message: "Virheelliset lompakkotiedot. Tarkista lompakkotietosi tai käytä toista maksutapaa."
     "F.0127":
-      message: "Virheelliset korttitiedot. Pyydä asiakasta tarkistamaan korttitiedot. Ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Virheelliset korttitiedot. Tapahtumaa ei voitu suorittaa. Tarkista korttisi tiedot tai käytä toista korttia."
+      message: "Virheelliset korttitiedot. Pyydä maksajaa tarkistamaan korttitietonsa."
+      friendly_message: "Virheelliset korttitiedot. Tarkista korttitietosi tai käytä toista korttia."
     "F.0128":
-      message: "Virheelliset pyynnön parametrit. Tapahtumaa ei voitu suorittaa. Tarkista pyynnön tarvittavat parametrit."
-      friendly_message: "Virheelliset pyynnön parametrit. Tarkista tapahtuman tiedot tai ota yhteyttä myyjään saadaksesi lisätietoja."
+      message: "Virheelliset pyyntöparametrit. Tarkista pakolliset pyyntöparametrit."
+      friendly_message: "Tapahtuma hylätty. Ota yhteyttä kauppiaaseen saadaksesi lisätietoja."
     "F.0129":
-      message: "3-D Secure -tarkistusvirhe. Ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "3-D Secure -tarkistusvirhe. Tarkista 3-D Secure -koodisi tai ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
+      message: "3-D Secure -vahvistusvirhe. Ota yhteyttä tekniseen tukeen."
+      friendly_message: "3-D Secure -vahvistusvirhe. Yritä uudelleen tai käytä toista maksutapaa."
     "F.0130":
-      message: "3-D Secure -tarkistusvirhe. Ota yhteyttä kortin myöntäneeseen pankkiin saadaksesi lisätietoja."
-      friendly_message: "3-D Secure -tarkistusvirhe. Tarkista 3-D Secure -koodisi tai ota yhteyttä kortin myöntäneeseen pankkiin saadaksesi lisätietoja. Pankin puhelinnumero on merkitty korttisi taakse."
+      message: "3-D Secure -vahvistusvirhe kortinmyöntäjän puolella."
+      friendly_message: "3-D Secure -vahvistusvirhe. Yritä uudelleen tai käytä toista maksutapaa."
     "F.0131":
-      message: "Tapahtuman vahvistusvirhe. Tapahtumaa ei voitu suorittaa. Pyydä asiakasta vahvistamaan maksu."
-      friendly_message: "Tapahtuman vahvistusvirhe. Tapahtumaa ei voitu suorittaa. Tarkista maksun vahvistus."
+      message: "Tapahtuman vahvistus epäonnistui. Maksaja syötti virheellisen SMS-koodin tai OTP:n."
+      friendly_message: "Tapahtuma hylätty. Yritä uudelleen tai käytä toista maksutapaa."
     "F.0132":
-      message: "Asiakas hylkäsi maksutapahtuman. Maksutapahtumaa ei voitu suorittaa. Pyydä asiakasta toistamaan maksu."
-      friendly_message: "Maksutapahtuma hylättiin. Maksutapahtumaa ei voitu suorittaa. Valitse toinen maksutapa tai yritä uudelleen."
+      message: "Maksaja peruutti tapahtuman."
+      friendly_message: "Tapahtuma peruutettu. Yritä uudelleen tai käytä toista maksutapaa."
     "F.0133":
-      message: "Väärä puhelinnumero. Siirtoa ei voitu suorittaa. Pyydä asiakasta syöttämään korttiinsa liittyvä puhelinnumero."
-      friendly_message: "Lähetetty puhelinnumero ei vastaa korttisi liittyvää puhelinnumeroa. Siirtoa ei voitu suorittaa. Ole hyvä ja syötä oikea puhelinnumero."
+      message: "Virheellinen puhelinnumero. Pyydä maksajaa syöttämään korttiin liitetty puhelinnumero."
+      friendly_message: "Virheellinen puhelinnumero. Syötä korttiin liitetty puhelinnumero."
     "F.0134":
-      message: "Siirron vahvistusvirhe. Väärä SMS-avain. Pyydä asiakasta antamaan oikea arvo."
-      friendly_message: "Pankki ei vahvistanut siirtoa. Väärä SMS-avain. Tarkista lähettämäsi tiedot."
+      message: "Virheellinen SMS-koodi. Pyydä maksajaa syöttämään oikea koodi."
+      friendly_message: "Tapahtuma hylätty. Virheellinen SMS-koodi. Yritä uudelleen."
     "F.0135":
-      message: "Uutta tapahtumaa ei voida aloittaa ennen kuin edellinen on käsitelty. Pyydä asiakasta suorittamaan edellinen tapahtuma tai odottamaan sen valmistumista."
-      friendly_message: "Tapahtuma epäonnistui. Suorita edellinen tapahtuma loppuun tai odota sen valmistumista ja yritä uudelleen."
+      message: "Edellinen tapahtuma ei ole valmistunut. Odota sen valmistumista ennen uudelleenyritystä."
+      friendly_message: "Edellinen tapahtuma ei ole valmistunut. Yritä uudelleen myöhemmin."
+    "F.0995":
+      message: "Tapahtumaa ei ole vahvistettu. Kauppiaan vahvistuspalvelu hylkäsi tapahtuman."
+      friendly_message: "Tapahtuma hylätty. Yritä uudelleen tai käytä toista maksutapaa."
+    "F.0996":
+      message: "Tapahtumaa ei ole vahvistettu. Henkilötietojen vahvistus (VPD) epäonnistui."
+      friendly_message: "Tapahtuma hylätty. Käytä maksutapaa, jonka henkilötiedot vastaavat tilisi tietoja."
     "F.0997":
       message: ""
-      friendly_message: "Tapahtumaa ei voitu suorittaa tuntemattomasta syystä. Tarkista tiedot kauppiaalta."
+      friendly_message: "Tapahtuma hylätty. Yritä uudelleen tai ota yhteyttä kauppiaaseen saadaksesi lisätietoja."
     "F.0998":
-      message: "Tapahtuma epäonnistui. Asiakas ei suorittanut maksua loppuun - järjestelmä merkitsi tapahtuman automaattisesti epäonnistuneeksi."
-      friendly_message: "Tapahtuma epäonnistui. Asiakas ei suorittanut maksua loppuun - järjestelmä merkitsi tapahtuman automaattisesti epäonnistuneeksi."
+      message: "Tapahtuma hylätty."
+      friendly_message: "Tapahtuma hylätty. Yritä uudelleen."
     "F.0999":
       message: ""
-      friendly_message: "Tapahtumaa ei voitu suorittaa tuntemattomasta syystä. Tarkista tiedot kauppiaalta."
+      friendly_message: "Tapahtuma hylätty. Yritä uudelleen tai ota yhteyttä kauppiaaseen saadaksesi lisätietoja."
     "S.0000":
-      message: "Tapahtuma on onnistunut."
-      friendly_message: "Tapahtuma käsiteltiin onnistuneesti."
+      message: "Tapahtuma onnistui."
+      friendly_message: "Tapahtuma onnistui."
     "P.0001":
-      message: "Tapahtuma on käynnissä."
-      friendly_message: "Tapahtuma käsitellään parhaillaan. Odota hetki."
+      message: "Tapahtuma käynnissä."
+      friendly_message: "Tapahtumaa käsitellään. Odota."
     "P.0002":
       message: "Tervetuloa!"
       friendly_message: "Tervetuloa!"
+    "P.0003":
+      message: "Odotetaan lainan vahvistusta."
+      friendly_message: "Odotetaan lainan vahvistusta. Ota yhteyttä kauppiaaseen viimeistelläksesi lainaprosessin ja vahvistaaksesi ostoksesi."
+    "P.0004":
+      message: "Lainaa vahvistetaan."
+      friendly_message: "Lainaa vahvistetaan. Odota."
     "P.9999":
-      message: "Tuntematon tapahtumatila. Ota yhteyttä maksupalveluntarjoajaan saadaksesi lisätietoja."
-      friendly_message: "Tuntematon tapahtumatila. Ota yhteyttä kauppiaaseen saadaksesi lisätietoja."
+      message: "Tuntematon tapahtuman tila. Ota yhteyttä tekniseen tukeen."
+      friendly_message: "Tuntematon tapahtuman tila. Ota yhteyttä kauppiaaseen saadaksesi lisätietoja."

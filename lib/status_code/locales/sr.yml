@@ -1,131 +1,143 @@
 sr:
   bank_codes:
     "F.0100":
-      message: "ID računa je blokiran. Nije moguće izvršiti transakciju. Proverite parametre zahteva ili kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "ID računa je blokiran. Nije moguće izvršiti transakciju. Kontaktirajte svog provajdera platnih usluga za više informacija."
+      message: "Платни рачун је блокиран. Замолите платиоца да провери податке рачуна."
+      friendly_message: "Ваш рачун је блокиран. Проверите податке рачуна."
     "F.0101":
-      message: "ID računa nije pronađen. Nije moguće izvršiti transakciju. Proverite parametre zahteva."
-      friendly_message: "ID računa nije pronađen. Nije moguće izvršiti transakciju. Kontaktirajte svog provajdera platnih usluga za više informacija."
+      message: "Платни рачун није пронађен. Замолите платиоца да провери податке рачуна."
+      friendly_message: "Ваш рачун није пронађен. Проверите податке рачуна."
     "F.0102":
-      message: "Greška pri autorizaciji. Nije moguće izvršiti transakciju. Proverite parametre zahteva za autorizaciju."
-      friendly_message: "Greška pri autorizaciji. Nije moguće izvršiti transakciju. Kontaktirajte trgovca za više informacija."
+      message: "Грешка при ауторизацији. Проверите параметре захтева за ауторизацију."
+      friendly_message: "Трансакција није могла бити обрађена. Покушајте поново касније."
     "F.0103":
-      message: "Nevažeći potpis zahteva. Nije moguće izvršiti transakciju. Proverite potpis zahteva ili sertifikat."
-      friendly_message: "Nevažeći potpis zahteva. Kontaktirajte trgovca za više informacija."
+      message: "Неважећи потпис захтева. Проверите потпис захтева или сертификат."
+      friendly_message: "Трансакција није могла бити обрађена. Покушајте поново касније."
     "F.0104":
-      message: "Nije dozvoljeno. Koristite drugi tip transakcije ili kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Nije dozvoljeno. Nije moguće izvršiti transakciju. Kontaktirajte trgovca za više informacija ili koristite drugi metod plaćanja."
+      message: "Тип трансакције или начин плаћања није дозвољен. Употребите други тип трансакције или начин плаћања."
+      friendly_message: "Тип трансакције или начин плаћања није дозвољен."
     "F.0105":
-      message: "Ne prihvata se. Kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Ne prihvata se. Nije moguće izvršiti transakciju. Kontaktirajte trgovca za više informacija."
+      message: "Трансакција одбијена."
+      friendly_message: "Трансакција одбијена. Употребите други начин плаћања."
     "F.0106":
-      message: "Greška na terminalu. Kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Greška na terminalu. Nije moguće izvršiti transakciju. Kontaktirajte trgovca za više informacija ili koristite drugi metod plaćanja."
+      message: "Грешка терминала. Контактирајте техничку подршку."
+      friendly_message: "Трансакција одбијена. Употребите други начин плаћања."
     "F.0107":
-      message: "Nevažeći trgovinski račun. Kontaktirajte provajdera platnih usluga ili sticala za više informacija."
-      friendly_message: "Nevažeći trgovinski račun. Nije moguće izvršiti transakciju. Kontaktirajte trgovca za više informacija."
+      message: "Неважећи налог трговца. Контактирајте техничку подршку."
+      friendly_message: "Трансакција одбијена. Употребите други начин плаћања."
     "F.0108":
-      message: "Duplirana transakcija ili narudžbina. Proverite status originalne transakcije ili narudžbine. Kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Duplirana narudžbina. Nije moguće izvršiti transakciju. Kontaktirajte trgovca za status originalne narudžbine."
+      message: "Дупликат трансакције. Проверите статус оригиналне трансакције."
+      friendly_message: "Дупликат трансакције. Контактирајте трговца за детаље."
     "F.0109":
-      message: "Narudžbina je istekla. Nije moguće izvršiti transakciju."
-      friendly_message: "Narudžbina je istekla. Nije moguće izvršiti transakciju. Kontaktirajte trgovca za više informacija."
+      message: "Трансакција је истекла."
+      friendly_message: "Трансакција је истекла. Покушајте поново."
     "F.0110":
-      message: "ID narudžbine nije pronađen. Nije moguće izvršiti transakciju. Proverite parametre zahteva."
-      friendly_message: "ID narudžbine nije pronađen. Nije moguće izvršiti transakciju. Proverite parametre transakcije ili kontaktirajte trgovca za više informacija."
+      message: "Идентификатор трансакције није пронађен. Проверите параметре захтева."
+      friendly_message: "Трансакција није пронађена. Контактирајте трговца за детаље."
     "F.0111":
-      message: "Kartica je istekla. Zamolite klijenta da koristi važeću karticu."
-      friendly_message: "Kartica je istekla. Nije moguće izvršiti transakciju. Koristite važeću karticu."
+      message: "Картица је истекла. Замолите платиоца да употреби важећу картицу."
+      friendly_message: "Картица је истекла. Употребите важећу картицу."
     "F.0112":
-      message: "Verifikacija CVV-a nije uspela. Zamolite klijenta da unese važeći CVV kartice."
-      friendly_message: "Verifikacija CVV-a nije uspela. Nije moguće izvršiti transakciju. Unesite važeći CVV koji se nalazi na vašoj kartici."
+      message: "Верификација CVC није успела. Замолите платиоца да унесе исправан CVC."
+      friendly_message: "Неисправан CVC. Унесите исправан CVC са своје картице."
     "F.0113":
-      message: "Valuta nije podržana. Proverite valutu u zahtevu ili kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Valuta nije podržana. Nije moguće izvršiti transakciju. Izaberite drugu valutu ili kontaktirajte trgovca za više informacija."
+      message: "Валута није подржана. Проверите валуту у захтеву."
+      friendly_message: "Валута није подржана. Контактирајте трговца за детаље."
     "F.0114":
-      message: "Nedovoljno sredstava. Proverite stanje na računu ili kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Nedovoljno sredstava. Nije moguće izvršiti transakciju. Proverite stanje na računu."
+      message: "Недовољно средстава."
+      friendly_message: "Недовољно средстава."
     "F.0115":
-      message: "Greška sticala. Potencijalna prevara. Sredstva plaćanja mogu biti ukradena ili izgubljena. Proverite podatke o klijentu."
-      friendly_message: "Greška u podacima o plaćanju. Nije moguće izvršiti transakciju. Kontaktirajte trgovca za više informacija."
+      message: "Сумња на превару. Платежно средство је можда украдено или изгубљено."
+      friendly_message: "Трансакција одбијена. Употребите други начин плаћања."
     "F.0116":
-      message: "Greška izdavaoca. Potencijalna prevara. Sredstva plaćanja mogu biti ukradena ili izgubljena. Proverite podatke o klijentu."
-      friendly_message: "Greška u podacima o plaćanju. Nije moguće izvršiti transakciju. Kontaktirajte trgovca ili banku koja je izdala karticu za više informacija. Broj telefona banke je naznačen na poleđini vaše kartice."
+      message: "Трансакција одбијена од стране платног система. Могућа превара."
+      friendly_message: "Трансакција одбијена. Употребите други начин плаћања."
     "F.0117":
-      message: "Privremena greška sistema provajdera. Kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Greška sistema provajdera. Nije moguće izvršiti transakciju. Pokušajte ponovo kasnije ili kontaktirajte trgovca za više informacija."
+      message: "Привремена системска грешка. Покушајте поново касније."
+      friendly_message: "Системска грешка. Покушајте поново касније."
     "F.0118":
-      message: "Greška sistema provajdera. Kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Greška sistema provajdera. Nije moguće izvršiti transakciju. Koristite drugi metod plaćanja ili kontaktirajte trgovca za više informacija."
+      message: "Системска грешка. Контактирајте техничку подршку."
+      friendly_message: "Системска грешка. Употребите други начин плаћања."
     "F.0119":
-      message: "Privremena greška sistema provajdera. Kontaktirajte banku koja je izdala karticu za više informacija."
-      friendly_message: "Greška sistema provajdera. Nije moguće izvršiti transakciju. Pokušajte ponovo kasnije ili kontaktirajte banku koja je izdala karticu za više informacija. Broj telefona banke je naznačen na poleđini vaše kartice."
+      message: "Трансакција одбијена од стране банке издаваоца картице."
+      friendly_message: "Трансакција одбијена. Покушајте поново касније."
     "F.0120":
-      message: "Greška sistema provajdera. Kontaktirajte banku koja je izdala karticu za više informacija."
-      friendly_message: "Greška sistema provajdera. Nije moguće izvršiti transakciju. Koristite drugi metod plaćanja ili kontaktirajte banku koja je izdala karticu za više informacija. Broj telefona banke je naznačen na poleđini vaše kartice."
+      message: "Трансакција одбијена од стране банке издаваоца картице."
+      friendly_message: "Трансакција одбијена. Покушајте поново касније."
     "F.0121":
-      message: "Privremena greška sistema provajdera. Kontaktirajte provajdera platnih usluga klijenta za više informacija."
-      friendly_message: "Greška sistema provajdera. Nije moguće izvršiti transakciju. Pokušajte ponovo kasnije ili kontaktirajte svog provajdera platnih usluga za više informacija."
+      message: "Привремена грешка спољног платног система."
+      friendly_message: "Системска грешка. Покушајте поново касније."
     "F.0122":
-      message: "Greška sistema provajdera. Kontaktirajte provajdera platnih usluga klijenta za više informacija."
-      friendly_message: "Greška sistema provajdera. Nije moguće izvršiti transakciju. Koristite drugi metod plaćanja ili kontaktirajte svog provajdera platnih usluga za više informacija."
+      message: "Грешка спољног платног система."
+      friendly_message: "Системска грешка. Употребите други начин плаћања."
     "F.0123":
-      message: "Iznos transakcije ili broj transakcija premašuje limite provajdera platnih usluga. Proverite iznos transakcije i broj transakcija ili kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Iznos transakcije ili broj transakcija premašuje limite. Nije moguće izvršiti transakciju. Proverite iznos transakcije ili kontaktirajte trgovca za više informacija."
+      message: "Трансакција прелази лимите. Контактирајте техничку подршку."
+      friendly_message: "Трансакција прелази лимите. Контактирајте трговца за детаље."
     "F.0124":
-      message: "Iznos transakcije ili broj transakcija premašuje limite izdavaoca. Proverite iznos transakcije i broj transakcija. Zamolite klijenta da kontaktira banku koja je izdala karticu."
-      friendly_message: "Iznos transakcije ili broj transakcija premašuje limite. Nije moguće izvršiti transakciju. Kontaktirajte trgovca ili banku koja je izdala karticu za više informacija. Broj telefona banke je naznačen na poleđini vaše kartice."
+      message: "Трансакција прелази лимите издаваоца."
+      friendly_message: "Трансакција прелази лимите. Контактирајте своју банку."
     "F.0125":
-      message: "Iznos transakcije ili broj transakcija premašuje limite provajdera platnih usluga. Proverite iznos transakcije i broj transakcija. Kontaktirajte provajdera platnih usluga klijenta za više informacija."
-      friendly_message: "Iznos transakcije ili broj transakcija premašuje limite. Nije moguće izvršiti transakciju. Kontaktirajte trgovca ili svog provajdera platnih usluga za više informacija."
+      message: "Трансакција прелази лимите спољног платног система."
+      friendly_message: "Трансакција прелази лимите. Контактирајте свог пружаоца платних услуга."
     "F.0126":
-      message: "Greška u podacima o novčaniku. Zamolite klijenta da proveri podatke o novčaniku. Kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Greška u podacima o novčaniku. Proverite podatke o novčaniku ili koristite drugu karticu."
+      message: "Неважећи подаци новчаника. Замолите платиоца да провери податке новчаника."
+      friendly_message: "Неважећи подаци новчаника. Проверите податке новчаника или употребите други начин плаћања."
     "F.0127":
-      message: "Nevažeći podaci o kartici. Zamolite klijenta da proveri podatke o kartici. Kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Nevažeći podaci o kartici. Nije moguće izvršiti transakciju. Proverite podatke o kartici ili koristite drugu karticu."
+      message: "Неважећи подаци картице. Замолите платиоца да провери податке картице."
+      friendly_message: "Неважећи подаци картице. Проверите податке картице или употребите другу картицу."
     "F.0128":
-      message: "Nevažeći parametri zahteva. Nije moguće izvršiti transakciju. Proverite potrebne parametre zahteva."
-      friendly_message: "Nevažeći parametri zahteva. Proverite podatke o transakciji ili kontaktirajte trgovca za više informacija."
+      message: "Неважећи параметри захтева. Проверите обавезне параметре захтева."
+      friendly_message: "Трансакција одбијена. Контактирајте трговца за детаље."
     "F.0129":
-      message: "Greška pri verifikaciji 3-D Secure. Kontaktirajte provajdera platnih usluga za više informacija."
-      friendly_message: "Greška pri verifikaciji 3-D Secure. Proverite svoj 3-D Secure kod ili kontaktirajte provajdera platnih usluga za više informacija."
+      message: "Грешка верификације 3-D Secure. Контактирајте техничку подршку."
+      friendly_message: "Грешка верификације 3-D Secure. Покушајте поново или употребите други начин плаћања."
     "F.0130":
-      message: "Greška pri verifikaciji 3-D Secure. Kontaktirajte banku izdavaoca za više informacija."
-      friendly_message: "Greška pri verifikaciji 3-D Secure. Proverite svoj 3-D Secure kod ili kontaktirajte banku izdavaoca kartice za više informacija. Broj telefona banke je naznačen na poleđini vaše kartice."
+      message: "Грешка верификације 3-D Secure на страни издаваоца."
+      friendly_message: "Грешка верификације 3-D Secure. Покушајте поново или употребите други начин плаћања."
     "F.0131":
-      message: "Greška pri potvrdi transakcije. Nije moguće izvršiti transakciju. Zamolite klijenta da potvrdi plaćanje."
-      friendly_message: "Greška pri potvrdi transakcije. Nije moguće izvršiti transakciju. Proverite potvrdu plaćanja."
+      message: "Потврда трансакције није успела. Платилац је унео неисправан SMS код или OTP."
+      friendly_message: "Трансакција одбијена. Покушајте поново или употребите други начин плаћања."
     "F.0132":
-      message: "Трансакција је одбијена од стране клијента. Трансакција није могла бити завршена. Замолите клијента да понови плаћање."
-      friendly_message: "Трансакција је одбијена. Трансакција није могла бити завршена. Молимо вас да изаберете други начин плаћања или покушате поново."
+      message: "Трансакцију је отказао платилац."
+      friendly_message: "Трансакција отказана. Покушајте поново или употребите други начин плаћања."
     "F.0133":
-      message: "Pogrešan broj telefona. Transakcija nije mogla biti završena. Zamolite kupca da unese broj telefona povezan sa njegovom karticom."
-      friendly_message: "Poslati broj telefona se ne poklapa sa onim koji je povezan sa vašom karticom. Transakcija nije mogla biti završena. Molimo vas da unesete tačan broj telefona."
+      message: "Погрешан број телефона. Замолите платиоца да унесе број телефона повезан са картицом."
+      friendly_message: "Погрешан број телефона. Унесите број телефона повезан са вашом картицом."
     "F.0134":
-      message: "Greška u potvrdi transakcije. Pogrešan SMS ključ. Zamolite kupca da pošalje ispravnu vrednost."
-      friendly_message: "Transakcija nije potvrđena od strane banke. Pogrešan SMS ključ. Molimo vas da proverite unete podatke."
+      message: "Погрешан SMS код. Замолите платиоца да унесе исправан код."
+      friendly_message: "Трансакција одбијена. Погрешан SMS код. Покушајте поново."
     "F.0135":
-      message: "Није могуће започети нову трансакцију док се претходна не обради. Молимо замолите клијента да заврши претходну трансакцију или да сачека док се не заврши."
-      friendly_message: "Трансакција није успела. Завршите претходну трансакцију или сачекајте да се претходна трансакција заврши и покушајте поново."
+      message: "Претходна трансакција није завршена. Сачекајте да се заврши пре поновног покушаја."
+      friendly_message: "Претходна трансакција није завршена. Покушајте поново касније."
+    "F.0995":
+      message: "Трансакција није верификована. Сервис верификације трговца је одбио трансакцију."
+      friendly_message: "Трансакција одбијена. Покушајте поново или употребите други начин плаћања."
+    "F.0996":
+      message: "Трансакција није верификована. Верификација личних података (VPD) није успела."
+      friendly_message: "Трансакција одбијена. Употребите начин плаћања чији лични подаци одговарају подацима вашег налога."
     "F.0997":
       message: ""
-      friendly_message: "Transakcija nije mogla biti završena iz nepoznatog razloga. Proverite detalje kod trgovca."
+      friendly_message: "Трансакција одбијена. Покушајте поново или контактирајте трговца за детаље."
     "F.0998":
-      message: "Transakcija nije uspela. Klijent nije završio plaćanje - sistem je automatski označio transakciju kao neuspešnu."
-      friendly_message: "Transakcija nije uspela. Klijent nije završio plaćanje - sistem je automatski označio transakciju kao neuspešnu."
+      message: "Трансакција одбијена."
+      friendly_message: "Трансакција одбијена. Покушајте поново."
     "F.0999":
       message: ""
-      friendly_message: "Transakcija nije mogla biti završena iz nepoznatog razloga. Proverite detalje kod trgovca."
+      friendly_message: "Трансакција одбијена. Покушајте поново или контактирајте трговца за детаље."
     "S.0000":
-      message: "Transakcija je uspešno završena."
-      friendly_message: "Transakcija je uspešno obrađena."
+      message: "Трансакција успешна."
+      friendly_message: "Трансакција успешна."
     "P.0001":
-      message: "Transakcija je u toku."
-      friendly_message: "Transakcija se obrađuje. Molimo sačekajte."
+      message: "Трансакција у току."
+      friendly_message: "Трансакција се обрађује. Молимо сачекајте."
     "P.0002":
-      message: "Dobrodošli!"
-      friendly_message: "Dobrodošli!"
+      message: "Добродошли!"
+      friendly_message: "Добродошли!"
+    "P.0003":
+      message: "Чекање на потврду зајма."
+      friendly_message: "Чекање на потврду зајма. Молимо контактирајте трговца да бисте завршили процес зајма и финализовали куповину."
+    "P.0004":
+      message: "Зајам се потврђује."
+      friendly_message: "Зајам се потврђује. Молимо сачекајте."
     "P.9999":
-      message: "Статус трансакције је непознат. Контактирајте добављача платних услуга за више детаља."
-      friendly_message: "Статус трансакције је непознат. Контактирајте трговца за више детаља."
+      message: "Непознат статус трансакције. Контактирајте техничку подршку."
+      friendly_message: "Непознат статус трансакције. Контактирајте трговца за детаље."

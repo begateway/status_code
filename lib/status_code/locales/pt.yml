@@ -1,131 +1,143 @@
 pt:
   bank_codes:
     "F.0100":
-      message: "Conta do cliente bloqueada. Não foi possível concluir a transação. Verifique os parâmetros da solicitação ou entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Sua conta está bloqueada. Não foi possível concluir a transação. Entre em contato com seu provedor de serviços de pagamento para mais detalhes."
+      message: "Conta de pagamento bloqueada. Peça ao pagador que verifique os dados da conta."
+      friendly_message: "A sua conta está bloqueada. Verifique os dados da conta."
     "F.0101":
-      message: "Conta do cliente não encontrada. Não foi possível concluir a transação. Verifique os parâmetros da solicitação."
-      friendly_message: "Conta não encontrada. Não foi possível concluir a transação. Entre em contato com seu provedor de serviços de pagamento para mais detalhes."
+      message: "Conta de pagamento não encontrada. Peça ao pagador que verifique os dados da conta."
+      friendly_message: "A sua conta não foi encontrada. Verifique os dados da conta."
     "F.0102":
-      message: "Erro de autorização. Não foi possível concluir a transação. Verifique os parâmetros de autorização da solicitação."
-      friendly_message: "Erro de autorização. Não foi possível concluir a transação. Entre em contato com o comerciante para mais detalhes."
+      message: "Erro de autorização. Verifique os parâmetros do pedido de autorização."
+      friendly_message: "A transação não pôde ser processada. Tente novamente mais tarde."
     "F.0103":
-      message: "Assinatura da solicitação inválida. Não foi possível concluir a transação. Verifique a assinatura da solicitação ou o certificado."
-      friendly_message: "Assinatura da solicitação inválida. Entre em contato com o comerciante para mais detalhes."
+      message: "Assinatura de pedido inválida. Verifique a assinatura do pedido ou o certificado."
+      friendly_message: "A transação não pôde ser processada. Tente novamente mais tarde."
     "F.0104":
-      message: "Não permitido. Use outro tipo de transação ou entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Não permitido. Não foi possível concluir a transação. Entre em contato com o comerciante para mais detalhes ou use outro método de pagamento."
+      message: "Tipo de transação ou método de pagamento não permitido. Utilize outro tipo de transação ou método de pagamento."
+      friendly_message: "Tipo de transação ou método de pagamento não permitido."
     "F.0105":
-      message: "Não honrar. Entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Não honrar. Não foi possível concluir a transação. Entre em contato com o comerciante para mais detalhes."
+      message: "Transação recusada."
+      friendly_message: "Transação recusada. Utilize outro método de pagamento."
     "F.0106":
-      message: "Erro no terminal. Entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Erro no terminal. Não foi possível concluir a transação. Entre em contato com o comerciante para mais detalhes ou use outro método de pagamento."
+      message: "Erro de terminal. Contacte o suporte técnico."
+      friendly_message: "Transação recusada. Utilize outro método de pagamento."
     "F.0107":
-      message: "Conta do comerciante inválida. Entre em contato com o provedor de serviços de pagamento ou adquirente para mais detalhes."
-      friendly_message: "Conta do comerciante inválida. Não foi possível concluir a transação. Entre em contato com o comerciante para mais detalhes."
+      message: "Conta de comerciante inválida. Contacte o suporte técnico."
+      friendly_message: "Transação recusada. Utilize outro método de pagamento."
     "F.0108":
-      message: "Transação ou pedido duplicado. Verifique o status da transação ou pedido original. Entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Pedido duplicado. Não foi possível concluir a transação. Entre em contato com o comerciante para verificar o status do pedido original."
+      message: "Transação duplicada. Verifique o estado da transação original."
+      friendly_message: "Transação duplicada. Contacte o comerciante para mais detalhes."
     "F.0109":
-      message: "Pedido expirado. Não foi possível concluir a transação."
-      friendly_message: "Pedido expirado. Não foi possível concluir a transação. Entre em contato com o comerciante para mais detalhes."
+      message: "Transação expirada."
+      friendly_message: "Transação expirada. Tente novamente."
     "F.0110":
-      message: "ID do pedido não encontrado. Não foi possível concluir a transação. Verifique os parâmetros da solicitação."
-      friendly_message: "ID do pedido não encontrado. Não foi possível concluir a transação. Verifique os parâmetros da transação ou entre em contato com o comerciante para mais detalhes."
+      message: "ID de transação não encontrado. Verifique os parâmetros do pedido."
+      friendly_message: "Transação não encontrada. Contacte o comerciante para mais detalhes."
     "F.0111":
-      message: "Cartão expirado. Peça ao cliente para usar um cartão válido."
-      friendly_message: "Cartão expirado. Não foi possível concluir a transação. Use um cartão válido."
+      message: "Cartão expirado. Peça ao pagador que utilize um cartão válido."
+      friendly_message: "Cartão expirado. Utilize um cartão válido."
     "F.0112":
-      message: "Falha na verificação do CVV. Peça ao cliente para inserir o CVV válido do cartão."
-      friendly_message: "Falha na verificação do CVV. Não foi possível concluir a transação. Insira um CVV válido indicado no seu cartão."
+      message: "Verificação do CVC falhou. Peça ao pagador que insira o CVC correto."
+      friendly_message: "CVC incorreto. Insira o CVC correto do seu cartão."
     "F.0113":
-      message: "Moeda não suportada. Verifique a moeda na solicitação ou entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Moeda não suportada. Não foi possível concluir a transação. Escolha outra moeda ou entre em contato com o comerciante para mais detalhes."
+      message: "Moeda não suportada. Verifique a moeda no pedido."
+      friendly_message: "Moeda não suportada. Contacte o comerciante para mais detalhes."
     "F.0114":
-      message: "Fundos insuficientes. Verifique o saldo da conta ou entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Fundos insuficientes. Não foi possível concluir a transação. Verifique o saldo da conta."
+      message: "Fundos insuficientes."
+      friendly_message: "Fundos insuficientes."
     "F.0115":
-      message: "Erro do adquirente. Possível fraude. Os meios de pagamento podem ter sido roubados ou perdidos. Verifique os detalhes do cliente."
-      friendly_message: "Erro nos dados de pagamento. Não foi possível concluir a transação. Entre em contato com o comerciante para mais detalhes."
+      message: "Suspeita de fraude. O meio de pagamento pode ter sido roubado ou perdido."
+      friendly_message: "Transação recusada. Utilize outro método de pagamento."
     "F.0116":
-      message: "Erro do emissor. Possível fraude. Os meios de pagamento podem ter sido roubados ou perdidos. Verifique os detalhes do cliente."
-      friendly_message: "Erro nos dados de pagamento. Não foi possível concluir a transação. Entre em contato com o comerciante ou com o banco emissor do cartão para mais detalhes. O número de telefone do banco está indicado no verso do seu cartão."
+      message: "Transação recusada pelo sistema de pagamento. Possível fraude."
+      friendly_message: "Transação recusada. Utilize outro método de pagamento."
     "F.0117":
-      message: "Erro temporário do sistema do provedor. Entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Erro no sistema do provedor. Não foi possível concluir a transação. Tente novamente mais tarde ou entre em contato com o comerciante para mais detalhes."
+      message: "Erro temporário do sistema. Tente novamente mais tarde."
+      friendly_message: "Erro do sistema. Tente novamente mais tarde."
     "F.0118":
-      message: "Erro do sistema do provedor. Entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Erro no sistema do provedor. Não foi possível concluir a transação. Use outro método de pagamento ou entre em contato com o comerciante para mais detalhes."
+      message: "Erro do sistema. Contacte o suporte técnico."
+      friendly_message: "Erro do sistema. Utilize outro método de pagamento."
     "F.0119":
-      message: "Erro temporário do sistema do provedor. Entre em contato com o banco emissor do cartão para mais detalhes."
-      friendly_message: "Erro no sistema do provedor. Não foi possível concluir a transação. Tente novamente mais tarde ou entre em contato com o banco emissor do cartão para mais detalhes. O número de telefone do banco está indicado no verso do seu cartão."
+      message: "Transação recusada pelo banco emissor do cartão."
+      friendly_message: "Transação recusada. Tente novamente mais tarde."
     "F.0120":
-      message: "Erro do sistema do provedor. Entre em contato com o banco emissor do cartão para mais detalhes."
-      friendly_message: "Erro no sistema do provedor. Não foi possível concluir a transação. Use outro método de pagamento ou entre em contato com o banco emissor do cartão para mais detalhes. O número de telefone do banco está indicado no verso do seu cartão."
+      message: "Transação recusada pelo banco emissor do cartão."
+      friendly_message: "Transação recusada. Tente novamente mais tarde."
     "F.0121":
-      message: "Erro temporário do sistema do provedor. Entre em contato com o provedor de serviços de pagamento do cliente para mais detalhes."
-      friendly_message: "Erro no sistema do provedor. Não foi possível concluir a transação. Tente novamente mais tarde ou entre em contato com seu provedor de serviços de pagamento para mais detalhes."
+      message: "Erro temporário do sistema de pagamento externo."
+      friendly_message: "Erro do sistema. Tente novamente mais tarde."
     "F.0122":
-      message: "Erro do sistema do provedor. Entre em contato com o provedor de serviços de pagamento do cliente para mais detalhes."
-      friendly_message: "Erro no sistema do provedor. Não foi possível concluir a transação. Use outro método de pagamento ou entre em contato com seu provedor de serviços de pagamento para mais detalhes."
+      message: "Erro do sistema de pagamento externo."
+      friendly_message: "Erro do sistema. Utilize outro método de pagamento."
     "F.0123":
-      message: "O valor da transação ou o número de transações excede os limites do provedor de serviços de pagamento. Verifique o valor da transação e o número de transações ou entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "O valor da transação ou o número de transações excede os limites. Não foi possível concluir a transação. Verifique o valor da transação ou entre em contato com o comerciante para mais detalhes."
+      message: "A transação excede os limites. Contacte o suporte técnico."
+      friendly_message: "A transação excede os limites. Contacte o comerciante para mais detalhes."
     "F.0124":
-      message: "O valor da transação ou o número de transações excede os limites do emissor. Verifique o valor da transação e o número de transações. Peça ao cliente para entrar em contato com o banco emissor do cartão."
-      friendly_message: "O valor da transação ou o número de transações excede os limites. Não foi possível concluir a transação. Entre em contato com o comerciante ou com o banco emissor do cartão para mais detalhes. O número de telefone do banco está indicado no verso do seu cartão."
+      message: "A transação excede os limites do emissor."
+      friendly_message: "A transação excede os limites. Contacte o seu banco."
     "F.0125":
-      message: "O valor da transação ou o número de transações excede os limites do provedor de serviços de pagamento. Verifique o valor da transação e o número de transações. Entre em contato com o provedor de serviços de pagamento do cliente para mais detalhes."
-      friendly_message: "O valor da transação ou o número de transações excede os limites. Não foi possível concluir a transação. Entre em contato com o comerciante ou com seu provedor de serviços de pagamento para mais detalhes."
+      message: "A transação excede os limites do sistema de pagamento externo."
+      friendly_message: "A transação excede os limites. Contacte o seu prestador de serviços de pagamento."
     "F.0126":
-      message: "Erro nos dados da carteira. Peça ao cliente para verificar os dados da carteira. Entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Erro nos dados da carteira. Verifique os dados da carteira ou use outro cartão."
+      message: "Dados de carteira inválidos. Peça ao pagador que verifique os dados da carteira."
+      friendly_message: "Dados de carteira inválidos. Verifique os dados da carteira ou utilize outro método de pagamento."
     "F.0127":
-      message: "Dados do cartão inválidos. Peça ao cliente para verificar os dados do cartão. Entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Dados do cartão inválidos. Não foi possível concluir a transação. Verifique os dados do cartão ou use outro cartão."
+      message: "Dados de cartão inválidos. Peça ao pagador que verifique os dados do cartão."
+      friendly_message: "Dados de cartão inválidos. Verifique os dados do cartão ou utilize outro cartão."
     "F.0128":
-      message: "Parâmetros da solicitação inválidos. Não foi possível concluir a transação. Verifique os parâmetros da solicitação."
-      friendly_message: "Parâmetros da solicitação inválidos. Verifique os dados da transação ou entre em contato com o comerciante para mais detalhes."
+      message: "Parâmetros de pedido inválidos. Verifique os parâmetros obrigatórios do pedido."
+      friendly_message: "Transação recusada. Contacte o comerciante para mais detalhes."
     "F.0129":
-      message: "Erro na verificação 3-D Secure. Entre em contato com o provedor de serviços de pagamento para mais detalhes."
-      friendly_message: "Erro na verificação 3-D Secure. Verifique seu código 3-D Secure ou entre em contato com o provedor de serviços de pagamento para mais detalhes."
+      message: "Erro de verificação 3-D Secure. Contacte o suporte técnico."
+      friendly_message: "Erro de verificação 3-D Secure. Tente novamente ou utilize outro método de pagamento."
     "F.0130":
-      message: "Erro na verificação 3-D Secure. Entre em contato com o banco emissor para mais detalhes."
-      friendly_message: "Erro na verificação 3-D Secure. Verifique seu código 3-D Secure ou entre em contato com o banco emissor do cartão para mais detalhes. O número de telefone do banco está indicado no verso do seu cartão."
+      message: "Erro de verificação 3-D Secure do lado do emissor."
+      friendly_message: "Erro de verificação 3-D Secure. Tente novamente ou utilize outro método de pagamento."
     "F.0131":
-      message: "Erro na confirmação da transação. Não foi possível concluir a transação. Peça ao cliente para confirmar o pagamento."
-      friendly_message: "Erro na confirmação da transação. Não foi possível concluir a transação. Verifique a confirmação do pagamento."
+      message: "Confirmação de transação falhou. O pagador inseriu um código SMS ou OTP incorreto."
+      friendly_message: "Transação recusada. Tente novamente ou utilize outro método de pagamento."
     "F.0132":
-      message: "A transação foi rejeitada pelo cliente. A transação não pôde ser concluída. Peça ao cliente para repetir o pagamento."
-      friendly_message: "A transação foi rejeitada. A transação não pôde ser concluída. Por favor, escolha outro método de pagamento ou tente novamente."
+      message: "Transação cancelada pelo pagador."
+      friendly_message: "Transação cancelada. Tente novamente ou utilize outro método de pagamento."
     "F.0133":
-      message: "Número de telefone errado. Não foi possível concluir a transação. Peça ao cliente para inserir o número de telefone associado ao seu cartão."
-      friendly_message: "O número de telefone enviado não corresponde ao que está associado ao seu cartão. Não foi possível concluir a transação. Por favor, insira o número de telefone correto."
+      message: "Número de telefone incorreto. Peça ao pagador que insira o número de telefone associado ao cartão."
+      friendly_message: "Número de telefone incorreto. Insira o número de telefone associado ao seu cartão."
     "F.0134":
-      message: "Erro de confirmação de transação. Chave SMS errada. Peça ao cliente para enviar o valor correto."
-      friendly_message: "Transação não confirmada pelo banco. Chave SMS errada. Por favor, verifique os dados enviados."
+      message: "Código SMS incorreto. Peça ao pagador que insira o código correto."
+      friendly_message: "Transação recusada. Código SMS incorreto. Tente novamente."
     "F.0135":
-      message: "Não é possível iniciar uma nova transação até que a anterior seja processada. Por favor, peça ao cliente para completar a transação anterior ou aguarde até que seja concluída."
-      friendly_message: "Transação falhou. Conclua a transação anterior ou aguarde até que a transação anterior seja finalizada e tente novamente."
+      message: "Transação anterior não concluída. Aguarde a sua conclusão antes de tentar novamente."
+      friendly_message: "Transação anterior não concluída. Tente novamente mais tarde."
+    "F.0995":
+      message: "Transação não verificada. O serviço de verificação do comerciante recusou a transação."
+      friendly_message: "Transação recusada. Tente novamente ou utilize outro método de pagamento."
+    "F.0996":
+      message: "Transação não verificada. A verificação de dados pessoais (VPD) falhou."
+      friendly_message: "Transação recusada. Utilize um método de pagamento cujos dados pessoais correspondam à sua conta."
     "F.0997":
       message: ""
-      friendly_message: "A transação não pôde ser concluída por um motivo desconhecido. Verifique os detalhes com o comerciante."
+      friendly_message: "Transação recusada. Tente novamente ou contacte o comerciante para mais detalhes."
     "F.0998":
-      message: "Transação falhou. O cliente não concluiu o pagamento - o sistema marcou automaticamente a transação como falhada."
-      friendly_message: "Transação falhou. O cliente não concluiu o pagamento - o sistema marcou automaticamente a transação como falhada."
+      message: "Transação recusada."
+      friendly_message: "Transação recusada. Tente novamente."
     "F.0999":
       message: ""
-      friendly_message: "A transação não pôde ser concluída por um motivo desconhecido. Verifique os detalhes com o comerciante."
+      friendly_message: "Transação recusada. Tente novamente ou contacte o comerciante para mais detalhes."
     "S.0000":
-      message: "Transação concluída com sucesso."
-      friendly_message: "Transação processada com sucesso."
+      message: "Transação bem-sucedida."
+      friendly_message: "Transação bem-sucedida."
     "P.0001":
-      message: "Transação em andamento."
-      friendly_message: "A transação está sendo processada. Por favor, aguarde."
+      message: "Transação em curso."
+      friendly_message: "A transação está a ser processada. Por favor, aguarde."
     "P.0002":
       message: "Bem-vindo!"
       friendly_message: "Bem-vindo!"
+    "P.0003":
+      message: "A aguardar confirmação do empréstimo."
+      friendly_message: "A aguardar confirmação do empréstimo. Por favor, contacte o comerciante para concluir o processo do empréstimo e finalizar a sua compra."
+    "P.0004":
+      message: "O empréstimo está a ser confirmado."
+      friendly_message: "O empréstimo está a ser confirmado. Por favor, aguarde."
     "P.9999":
-      message: "Status da transação desconhecido. Entre em contato com o provedor de serviços de pagamento para obter detalhes."
-      friendly_message: "Status da transação desconhecido. Entre em contato com o comerciante para obter detalhes."
+      message: "Estado de transação desconhecido. Contacte o suporte técnico."
+      friendly_message: "Estado de transação desconhecido. Contacte o comerciante para mais detalhes."

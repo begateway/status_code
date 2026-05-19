@@ -1,131 +1,143 @@
 az:
   bank_codes:
     "F.0100":
-      message: "Hesab ID-si bloklanıb. Əməliyyatı tamamlamaq mümkün olmadı. Sorğu parametrlərini yoxlayın və ya ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Hesab ID-si bloklanıb. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün ödəniş xidməti təchizatçınızla əlaqə saxlayın."
+      message: "Ödəniş hesabı bloklanıb. Ödəyicidən hesab məlumatlarını yoxlamasını xahiş edin."
+      friendly_message: "Hesabınız bloklanıb. Hesab məlumatlarınızı yoxlayın."
     "F.0101":
-      message: "Hesab ID-si tapılmadı. Əməliyyatı tamamlamaq mümkün olmadı. Sorğu parametrlərini yoxlayın."
-      friendly_message: "Hesab ID-si tapılmadı. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün ödəniş xidməti təchizatçınızla əlaqə saxlayın."
+      message: "Ödəniş hesabı tapılmadı. Ödəyicidən hesab məlumatlarını yoxlamasını xahiş edin."
+      friendly_message: "Hesabınız tapılmadı. Hesab məlumatlarınızı yoxlayın."
     "F.0102":
-      message: "Avtorizasiya xətası. Əməliyyatı tamamlamaq mümkün olmadı. Avtorizasiya sorğusu parametrlərini yoxlayın."
-      friendly_message: "Avtorizasiya xətası. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Avtorizasiya xətası. Avtorizasiya sorğusunun parametrlərini yoxlayın."
+      friendly_message: "Əməliyyat emal edilə bilmədi. Sonra yenidən cəhd edin."
     "F.0103":
-      message: "Sorğu imzası etibarsızdır. Əməliyyatı tamamlamaq mümkün olmadı. Sorğu imzasını və ya sertifikatı yoxlayın."
-      friendly_message: "Sorğu imzası etibarsızdır. Ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Sorğunun imzası yanlışdır. Sorğunun imzasını və ya sertifikatı yoxlayın."
+      friendly_message: "Əməliyyat emal edilə bilmədi. Sonra yenidən cəhd edin."
     "F.0104":
-      message: "İcazə verilmir. Başqa bir əməliyyat növü istifadə edin və ya ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "İcazə verilmir. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün tacirlə əlaqə saxlayın və ya başqa bir ödəniş üsulu istifadə edin."
+      message: "Əməliyyat növü və ya ödəniş üsulu icazəsizdir. Başqa əməliyyat növü və ya ödəniş üsulu istifadə edin."
+      friendly_message: "Əməliyyat növü və ya ödəniş üsulu icazəsizdir."
     "F.0105":
-      message: "Şərəf etməyin. Ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Şərəf etməyin. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Əməliyyat rədd edildi."
+      friendly_message: "Əməliyyat rədd edildi. Başqa ödəniş üsulu istifadə edin."
     "F.0106":
-      message: "Terminal xətası. Ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Terminal xətası. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün tacirlə əlaqə saxlayın və ya başqa bir ödəniş üsulu istifadə edin."
+      message: "Terminal xətası. Texniki dəstəklə əlaqə saxlayın."
+      friendly_message: "Əməliyyat rədd edildi. Başqa ödəniş üsulu istifadə edin."
     "F.0107":
-      message: "Tacir hesabı etibarsızdır. Ətraflı məlumat üçün ödəniş xidməti təchizatçısı və ya alıcı ilə əlaqə saxlayın."
-      friendly_message: "Tacir hesabı etibarsızdır. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Tacirin hesabı yanlışdır. Texniki dəstəklə əlaqə saxlayın."
+      friendly_message: "Əməliyyat rədd edildi. Başqa ödəniş üsulu istifadə edin."
     "F.0108":
-      message: "Dublikat əməliyyat və ya sifariş. Orijinal əməliyyat və ya sifarişin statusunu yoxlayın. Ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Dublikat sifariş. Əməliyyatı tamamlamaq mümkün olmadı. Orijinal sifarişin statusu üçün tacirlə əlaqə saxlayın."
+      message: "Dublikat əməliyyat. Orijinal əməliyyatın statusunu yoxlayın."
+      friendly_message: "Dublikat əməliyyat. Təfərrüatlar üçün tacirə müraciət edin."
     "F.0109":
-      message: "Sifarişin müddəti bitib. Əməliyyatı tamamlamaq mümkün olmadı."
-      friendly_message: "Sifarişin müddəti bitib. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Əməliyyatın müddəti bitib."
+      friendly_message: "Əməliyyatın müddəti bitib. Yenidən cəhd edin."
     "F.0110":
-      message: "Sifariş ID-si tapılmadı. Əməliyyatı tamamlamaq mümkün olmadı. Sorğu parametrlərini yoxlayın."
-      friendly_message: "Sifariş ID-si tapılmadı. Əməliyyatı tamamlamaq mümkün olmadı. Əməliyyat parametrlərini yoxlayın və ya ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Əməliyyat identifikatoru tapılmadı. Sorğu parametrlərini yoxlayın."
+      friendly_message: "Əməliyyat tapılmadı. Təfərrüatlar üçün tacirə müraciət edin."
     "F.0111":
-      message: "Kartın müddəti bitib. Müştəridən etibarlı kart istifadə etməsini xahiş edin."
-      friendly_message: "Kartın müddəti bitib. Əməliyyatı tamamlamaq mümkün olmadı. Etibarlı kart istifadə edin."
+      message: "Kartın müddəti bitib. Ödəyicidən etibarlı kart istifadə etməsini xahiş edin."
+      friendly_message: "Kartın müddəti bitib. Etibarlı kart istifadə edin."
     "F.0112":
-      message: "CVV yoxlaması uğursuz oldu. Müştəridən etibarlı kart CVV-ni daxil etməsini xahiş edin."
-      friendly_message: "CVV yoxlaması uğursuz oldu. Əməliyyatı tamamlamaq mümkün olmadı. Kartınızın üzərində göstərilən etibarlı CVV-ni daxil edin."
+      message: "CVC yoxlanışı uğursuz oldu. Ödəyicidən düzgün CVC daxil etməsini xahiş edin."
+      friendly_message: "Yanlış CVC. Kartınızdan düzgün CVC daxil edin."
     "F.0113":
-      message: "Valyuta dəstəklənmir. Sorğudakı valyutanı yoxlayın və ya ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Valyuta dəstəklənmir. Əməliyyatı tamamlamaq mümkün olmadı. Başqa bir valyuta seçin və ya ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Valyuta dəstəklənmir. Sorğudakı valyutanı yoxlayın."
+      friendly_message: "Valyuta dəstəklənmir. Təfərrüatlar üçün tacirə müraciət edin."
     "F.0114":
-      message: "Kifayət qədər vəsait yoxdur. Hesab balansını yoxlayın və ya ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Kifayət qədər vəsait yoxdur. Əməliyyatı tamamlamaq mümkün olmadı. Hesab balansını yoxlayın."
+      message: "Kifayət qədər vəsait yoxdur."
+      friendly_message: "Kifayət qədər vəsait yoxdur."
     "F.0115":
-      message: "Alıcı xətası. Potensial fırıldaqçılıq. Ödəniş vasitələri oğurlanmış və ya itirilmiş ola bilər. Müştəri məlumatlarını yoxlayın."
-      friendly_message: "Ödəniş məlumatları xətası. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Fırıldaq şübhəsi. Ödəniş vasitəsi oğurlanmış və ya itmiş ola bilər."
+      friendly_message: "Əməliyyat rədd edildi. Başqa ödəniş üsulu istifadə edin."
     "F.0116":
-      message: "Emitent xətası. Potensial fırıldaqçılıq. Ödəniş vasitələri oğurlanmış və ya itirilmiş ola bilər. Müştəri məlumatlarını yoxlayın."
-      friendly_message: "Ödəniş məlumatları xətası. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün tacirlə və ya kartı verən bankla əlaqə saxlayın. Bankın telefon nömrəsi kartınızın arxasında göstərilib."
+      message: "Əməliyyat ödəniş sistemi tərəfindən rədd edildi. Mümkün fırıldaq."
+      friendly_message: "Əməliyyat rədd edildi. Başqa ödəniş üsulu istifadə edin."
     "F.0117":
-      message: "Müvəqqəti təchizatçı sistem xətası. Ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Təchizatçı sistem xətası. Əməliyyatı tamamlamaq mümkün olmadı. Daha sonra yenidən cəhd edin və ya ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Müvəqqəti sistem xətası. Sonra yenidən cəhd edin."
+      friendly_message: "Sistem xətası. Sonra yenidən cəhd edin."
     "F.0118":
-      message: "Təchizatçı sistem xətası. Ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Təchizatçı sistem xətası. Əməliyyatı tamamlamaq mümkün olmadı. Başqa bir ödəniş üsulu istifadə edin və ya ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Sistem xətası. Texniki dəstəklə əlaqə saxlayın."
+      friendly_message: "Sistem xətası. Başqa ödəniş üsulu istifadə edin."
     "F.0119":
-      message: "Müvəqqəti təchizatçı sistem xətası. Ətraflı məlumat üçün kartı verən bankla əlaqə saxlayın."
-      friendly_message: "Təchizatçı sistem xətası. Əməliyyatı tamamlamaq mümkün olmadı. Daha sonra yenidən cəhd edin və ya ətraflı məlumat üçün kartı verən bankla əlaqə saxlayın. Bankın telefon nömrəsi kartınızın arxasında göstərilib."
+      message: "Əməliyyat kart emitenti bank tərəfindən rədd edildi."
+      friendly_message: "Əməliyyat rədd edildi. Sonra yenidən cəhd edin."
     "F.0120":
-      message: "Təchizatçı sistem xətası. Ətraflı məlumat üçün kartı verən bankla əlaqə saxlayın."
-      friendly_message: "Təchizatçı sistem xətası. Əməliyyatı tamamlamaq mümkün olmadı. Başqa bir ödəniş üsulu istifadə edin və ya ətraflı məlumat üçün kartı verən bankla əlaqə saxlayın. Bankın telefon nömrəsi kartınızın arxasında göstərilib."
+      message: "Əməliyyat kart emitenti bank tərəfindən rədd edildi."
+      friendly_message: "Əməliyyat rədd edildi. Sonra yenidən cəhd edin."
     "F.0121":
-      message: "Müvəqqəti təchizatçı sistem xətası. Ətraflı məlumat üçün müştərinin ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Təchizatçı sistem xətası. Əməliyyatı tamamlamaq mümkün olmadı. Daha sonra yenidən cəhd edin və ya ətraflı məlumat üçün ödəniş xidməti təchizatçınızla əlaqə saxlayın."
+      message: "Xarici ödəniş sisteminin müvəqqəti xətası."
+      friendly_message: "Sistem xətası. Sonra yenidən cəhd edin."
     "F.0122":
-      message: "Təchizatçı sistem xətası. Ətraflı məlumat üçün müştərinin ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Təchizatçı sistem xətası. Əməliyyatı tamamlamaq mümkün olmadı. Başqa bir ödəniş üsulu istifadə edin və ya ətraflı məlumat üçün ödəniş xidməti təchizatçınızla əlaqə saxlayın."
+      message: "Xarici ödəniş sisteminin xətası."
+      friendly_message: "Sistem xətası. Başqa ödəniş üsulu istifadə edin."
     "F.0123":
-      message: "Əməliyyat məbləği və ya əməliyyatların sayı ödəniş xidməti təchizatçısının limitlərini aşır. Əməliyyat məbləğini və əməliyyatların sayını yoxlayın və ya ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Əməliyyat məbləği və ya əməliyyatların sayı limitləri aşır. Əməliyyatı tamamlamaq mümkün olmadı. Əməliyyat məbləğini yoxlayın və ya ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Əməliyyat limitləri aşır. Texniki dəstəklə əlaqə saxlayın."
+      friendly_message: "Əməliyyat limitləri aşır. Təfərrüatlar üçün tacirə müraciət edin."
     "F.0124":
-      message: "Əməliyyat məbləği və ya əməliyyatların sayı emitentin limitlərini aşır. Əməliyyat məbləğini və ya əməliyyatların sayını yoxlayın. Müştəridən kartı verən bankla əlaqə saxlamasını xahiş edin."
-      friendly_message: "Əməliyyat məbləği və ya əməliyyatların sayı limitləri aşır. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün tacirlə və ya kartı verən bankla əlaqə saxlayın. Bankın telefon nömrəsi kartınızın arxasında göstərilib."
+      message: "Əməliyyat emitentin limitlərini aşır."
+      friendly_message: "Əməliyyat limitləri aşır. Bankınızla əlaqə saxlayın."
     "F.0125":
-      message: "Əməliyyat məbləği və ya əməliyyatların sayı ödəniş xidməti təchizatçısının limitlərini aşır. Əməliyyat məbləğini və əməliyyatların sayını yoxlayın. Ətraflı məlumat üçün müştərinin ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Əməliyyat məbləği və ya əməliyyatların sayı limitləri aşır. Əməliyyatı tamamlamaq mümkün olmadı. Ətraflı məlumat üçün tacirlə və ya ödəniş xidməti təchizatçınızla əlaqə saxlayın."
+      message: "Əməliyyat xarici ödəniş sisteminin limitlərini aşır."
+      friendly_message: "Əməliyyat limitləri aşır. Ödəniş xidməti provayderinizlə əlaqə saxlayın."
     "F.0126":
-      message: "Cüzdan məlumatı xətası. Müştəridən cüzdan məlumatını yoxlamasını xahiş edin. Ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Cüzdan məlumatı xətası. Cüzdan məlumatını yoxlayın və ya başqa bir kart istifadə edin."
+      message: "Yanlış cüzdan məlumatları. Ödəyicidən cüzdan məlumatlarını yoxlamasını xahiş edin."
+      friendly_message: "Yanlış cüzdan məlumatları. Cüzdan məlumatlarınızı yoxlayın və ya başqa ödəniş üsulu istifadə edin."
     "F.0127":
-      message: "Kart məlumatı etibarsızdır. Müştəridən kart məlumatını yoxlamasını xahiş edin. Ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "Kart məlumatı etibarsızdır. Əməliyyatı tamamlamaq mümkün olmadı. Kart məlumatlarını yoxlayın və ya başqa bir kart istifadə edin."
+      message: "Yanlış kart məlumatları. Ödəyicidən kart məlumatlarını yoxlamasını xahiş edin."
+      friendly_message: "Yanlış kart məlumatları. Kart məlumatlarınızı yoxlayın və ya başqa kart istifadə edin."
     "F.0128":
-      message: "Sorğu parametrləri etibarsızdır. Əməliyyatı tamamlamaq mümkün olmadı. Tələb olunan sorğu parametrlərini yoxlayın."
-      friendly_message: "Sorğu parametrləri etibarsızdır. Əməliyyat məlumatlarını yoxlayın və ya ətraflı məlumat üçün tacirlə əlaqə saxlayın."
+      message: "Yanlış sorğu parametrləri. Tələb olunan sorğu parametrlərini yoxlayın."
+      friendly_message: "Əməliyyat rədd edildi. Təfərrüatlar üçün tacirə müraciət edin."
     "F.0129":
-      message: "3-D Secure yoxlama xətası. Ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
-      friendly_message: "3-D Secure yoxlama xətası. 3-D Secure kodunuzu yoxlayın və ya ətraflı məlumat üçün ödəniş xidməti təchizatçısı ilə əlaqə saxlayın."
+      message: "3-D Secure yoxlama xətası. Texniki dəstəklə əlaqə saxlayın."
+      friendly_message: "3-D Secure yoxlama xətası. Yenidən cəhd edin və ya başqa ödəniş üsulu istifadə edin."
     "F.0130":
-      message: "3-D Secure yoxlama xətası. Ətraflı məlumat üçün emitent bankla əlaqə saxlayın."
-      friendly_message: "3-D Secure yoxlama xətası. 3-D Secure kodunuzu yoxlayın və ya ətraflı məlumat üçün kartı verən bankla əlaqə saxlayın. Bankın telefon nömrəsi kartınızın arxasında göstərilib."
+      message: "Emitent tərəfindən 3-D Secure yoxlama xətası."
+      friendly_message: "3-D Secure yoxlama xətası. Yenidən cəhd edin və ya başqa ödəniş üsulu istifadə edin."
     "F.0131":
-      message: "Əməliyyat təsdiqi xətası. Əməliyyatı tamamlamaq mümkün olmadı. Müştəridən ödənişi təsdiqləməsini xahiş edin."
-      friendly_message: "Əməliyyat təsdiqi xətası. Əməliyyatı tamamlamaq mümkün olmadı. Ödəniş təsdiqini yoxlayın."
+      message: "Əməliyyatın təsdiqi uğursuz oldu. Ödəyici yanlış SMS kodu və ya OTP daxil etdi."
+      friendly_message: "Əməliyyat rədd edildi. Yenidən cəhd edin və ya başqa ödəniş üsulu istifadə edin."
     "F.0132":
-      message: "Əməliyyat müştəri tərəfindən rədd edildi. Əməliyyatı tamamlamaq mümkün olmadı. Müştəridən ödənişi təkrar etməsini xahiş edin."
-      friendly_message: "Əməliyyat rədd edildi. Əməliyyatı tamamlamaq mümkün olmadı. Zəhmət olmasa, başqa bir ödəmə üsulu seçin və ya ödənişi təkrar edin."
+      message: "Əməliyyat ödəyici tərəfindən ləğv edildi."
+      friendly_message: "Əməliyyat ləğv edildi. Yenidən cəhd edin və ya başqa ödəniş üsulu istifadə edin."
     "F.0133":
-      message: "Yanlış telefon nömrəsi. Tranzaksiya tamamlana bilmir. Müştəridən kartı ilə bağlı telefon nömrəsini daxil etməsini xahiş edin."
-      friendly_message: "Göndərilən telefon nömrəsi kartınızla bağlı olan nömrə ilə uyğun gəlmir. Tranzaksiya tamamlana bilmir. Zəhmət olmasa, düzgün telefon nömrəsini daxil edin."
+      message: "Yanlış telefon nömrəsi. Ödəyicidən kartı ilə əlaqəli telefon nömrəsini daxil etməsini xahiş edin."
+      friendly_message: "Yanlış telefon nömrəsi. Kartınızla əlaqəli telefon nömrəsini daxil edin."
     "F.0134":
-      message: "Tranzaksiya təsdiqi xətası. Yanlış SMS açarı. Müştəridən düzgün dəyəri təqdim etməsini xahiş edin."
-      friendly_message: "Bank tərəfindən tranzaksiya təsdiqlənmədi. Yanlış SMS açarı. Zəhmət olmasa, təqdim olunan məlumatları yoxlayın."
+      message: "Yanlış SMS kodu. Ödəyicidən düzgün kodu daxil etməsini xahiş edin."
+      friendly_message: "Əməliyyat rədd edildi. Yanlış SMS kodu. Yenidən cəhd edin."
     "F.0135":
-      message: "Əvvəlki əməliyyat işlənməyincə yeni əməliyyat başladmaq mümkün deyil. Zəhmət olmasa, müştəridən əvvəlki əməliyyatı tamamlamasını və ya onun tamamlanmasını gözləməsini xahiş edin."
-      friendly_message: "Əməliyyat uğursuz oldu. Əvvəlki əməliyyatı tamamlayın və ya əvvəlki əməliyyatın tamamlanmasını gözləyin və yenidən cəhd edin."
+      message: "Əvvəlki əməliyyat tamamlanmayıb. Yenidən cəhd etməzdən əvvəl onun tamamlanmasını gözləyin."
+      friendly_message: "Əvvəlki əməliyyat tamamlanmayıb. Sonra yenidən cəhd edin."
+    "F.0995":
+      message: "Əməliyyat yoxlanılmadı. Tacirin yoxlama xidməti əməliyyatı rədd etdi."
+      friendly_message: "Əməliyyat rədd edildi. Yenidən cəhd edin və ya başqa ödəniş üsulu istifadə edin."
+    "F.0996":
+      message: "Əməliyyat yoxlanılmadı. Şəxsi məlumatların yoxlanılması (VPD) uğursuz oldu."
+      friendly_message: "Əməliyyat rədd edildi. Hesabınızın məlumatlarına uyğun şəxsi məlumatları olan ödəniş üsulu istifadə edin."
     "F.0997":
       message: ""
-      friendly_message: "Naməlum səbəbə görə əməliyyatı başa çatdırmaq mümkün olmadı. Satıcı ilə əlaqə saxlayın."
+      friendly_message: "Əməliyyat rədd edildi. Yenidən cəhd edin və ya təfərrüatlar üçün tacirə müraciət edin."
     "F.0998":
-      message: "Əməliyyat baş tutmadı. Müştəri ödənişi tamamlamadı - sistem əməliyyatı avtomatik olaraq uğursuz kimi işarələdi."
-      friendly_message: "Əməliyyat baş tutmadı. Müştəri ödənişi tamamlamadı - sistem əməliyyatı avtomatik olaraq uğursuz kimi işarələdi."
+      message: "Əməliyyat rədd edildi."
+      friendly_message: "Əməliyyat rədd edildi. Yenidən cəhd edin."
     "F.0999":
       message: ""
-      friendly_message: "Naməlum səbəbə görə əməliyyatı başa çatdırmaq mümkün olmadı. Satıcı ilə əlaqə saxlayın."
+      friendly_message: "Əməliyyat rədd edildi. Yenidən cəhd edin və ya təfərrüatlar üçün tacirə müraciət edin."
     "S.0000":
-      message: "Əməliyyat uğurla tamamlandı."
-      friendly_message: "Əməliyyat uğurla yerinə yetirildi."
+      message: "Əməliyyat uğurlu oldu."
+      friendly_message: "Əməliyyat uğurlu oldu."
     "P.0001":
       message: "Əməliyyat davam edir."
-      friendly_message: "Əməliyyat emal olunur. Zəhmət olmasa gözləyin."
+      friendly_message: "Əməliyyat emal edilir. Zəhmət olmasa gözləyin."
     "P.0002":
       message: "Xoş gəlmisiniz!"
       friendly_message: "Xoş gəlmisiniz!"
+    "P.0003":
+      message: "Kreditin təsdiqi gözlənilir."
+      friendly_message: "Kreditin təsdiqi gözlənilir. Zəhmət olmasa, kredit prosesini tamamlamaq və alışı sonlandırmaq üçün tacirə müraciət edin."
+    "P.0004":
+      message: "Kredit təsdiqlənir."
+      friendly_message: "Kredit təsdiqlənir. Zəhmət olmasa gözləyin."
     "P.9999":
-      message: "Naməlum əməliyyat statusu. Ətraflı məlumat üçün ödəniş xidməti təminatçısı ilə əlaqə saxlayın."
-      friendly_message: "Naməlum əməliyyat statusu. Ətraflı məlumat üçün satıcı ilə əlaqə saxlayın."
+      message: "Əməliyyatın statusu naməlumdur. Texniki dəstəklə əlaqə saxlayın."
+      friendly_message: "Əməliyyatın statusu naməlumdur. Təfərrüatlar üçün tacirə müraciət edin."

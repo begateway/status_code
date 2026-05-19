@@ -1,131 +1,143 @@
 tr:
   bank_codes:
     "F.0100":
-      message: "Hesap ID'si engellendi. İşlem tamamlanamadı. İstek parametrelerini kontrol edin veya detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "Hesap ID'si engellendi. İşlem tamamlanamadı. Detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
+      message: "Ödeme hesabı engellendi. Ödeyenden hesap bilgilerini kontrol etmesini isteyin."
+      friendly_message: "Hesabınız engellendi. Hesap bilgilerinizi kontrol edin."
     "F.0101":
-      message: "Hesap ID'si bulunamadı. İşlem tamamlanamadı. İstek parametrelerini kontrol edin."
-      friendly_message: "Hesap ID'si bulunamadı. İşlem tamamlanamadı. Detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
+      message: "Ödeme hesabı bulunamadı. Ödeyenden hesap bilgilerini kontrol etmesini isteyin."
+      friendly_message: "Hesabınız bulunamadı. Hesap bilgilerinizi kontrol edin."
     "F.0102":
-      message: "Yetkilendirme hatası. İşlem tamamlanamadı. Yetkilendirme istek parametrelerini kontrol edin."
-      friendly_message: "Yetkilendirme hatası. İşlem tamamlanamadı. Detaylar için satıcıyla iletişime geçin."
+      message: "Yetkilendirme hatası. Yetkilendirme isteği parametrelerini kontrol edin."
+      friendly_message: "İşlem gerçekleştirilemedi. Daha sonra tekrar deneyin."
     "F.0103":
-      message: "Geçersiz istek imzası. İşlem tamamlanamadı. İstek imzasını veya sertifikayı kontrol edin."
-      friendly_message: "Geçersiz istek imzası. Detaylar için satıcıyla iletişime geçin."
+      message: "Geçersiz istek imzası. İstek imzasını veya sertifikayı kontrol edin."
+      friendly_message: "İşlem gerçekleştirilemedi. Daha sonra tekrar deneyin."
     "F.0104":
-      message: "İzin verilmiyor. Başka bir işlem türü kullanın veya detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "İzin verilmiyor. İşlem tamamlanamadı. Detaylar için satıcıyla iletişime geçin veya başka bir ödeme yöntemi kullanın."
+      message: "İşlem türü veya ödeme yöntemi izin verilmiyor. Başka bir işlem türü veya ödeme yöntemi kullanın."
+      friendly_message: "İşlem türü veya ödeme yöntemi izin verilmiyor."
     "F.0105":
-      message: "Onur vermeyin. Detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "Onur vermeyin. İşlem tamamlanamadı. Detaylar için satıcıyla iletişime geçin."
+      message: "İşlem reddedildi."
+      friendly_message: "İşlem reddedildi. Başka bir ödeme yöntemi kullanın."
     "F.0106":
-      message: "Terminal hatası. Detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "Terminal hatası. İşlem tamamlanamadı. Detaylar için satıcıyla iletişime geçin veya başka bir ödeme yöntemi kullanın."
+      message: "Terminal hatası. Teknik destek ile iletişime geçin."
+      friendly_message: "İşlem reddedildi. Başka bir ödeme yöntemi kullanın."
     "F.0107":
-      message: "Geçersiz satıcı hesabı. Detaylar için ödeme hizmeti sağlayıcınız veya tahsilatçıyla iletişime geçin."
-      friendly_message: "Geçersiz satıcı hesabı. İşlem tamamlanamadı. Detaylar için satıcıyla iletişime geçin."
+      message: "Geçersiz satıcı hesabı. Teknik destek ile iletişime geçin."
+      friendly_message: "İşlem reddedildi. Başka bir ödeme yöntemi kullanın."
     "F.0108":
-      message: "Yinelenen işlem veya sipariş. Orijinal işlem veya siparişin durumunu kontrol edin. Detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "Yinelenen sipariş. İşlem tamamlanamadı. Orijinal siparişin durumu için satıcıyla iletişime geçin."
+      message: "Yinelenen işlem. Orijinal işlemin durumunu kontrol edin."
+      friendly_message: "Yinelenen işlem. Ayrıntılar için satıcı ile iletişime geçin."
     "F.0109":
-      message: "Sipariş süresi doldu. İşlem tamamlanamadı."
-      friendly_message: "Sipariş süresi doldu. İşlem tamamlanamadı. Detaylar için satıcıyla iletişime geçin."
+      message: "İşlem süresi doldu."
+      friendly_message: "İşlem süresi doldu. Tekrar deneyin."
     "F.0110":
-      message: "Sipariş ID'si bulunamadı. İşlem tamamlanamadı. İstek parametrelerini kontrol edin."
-      friendly_message: "Sipariş ID'si bulunamadı. İşlem tamamlanamadı. İşlem parametrelerini kontrol edin veya detaylar için satıcıyla iletişime geçin."
+      message: "İşlem kimliği bulunamadı. İstek parametrelerini kontrol edin."
+      friendly_message: "İşlem bulunamadı. Ayrıntılar için satıcı ile iletişime geçin."
     "F.0111":
-      message: "Kart süresi doldu. Müşteriden geçerli bir kart kullanmasını isteyin."
-      friendly_message: "Kart süresi doldu. İşlem tamamlanamadı. Geçerli bir kart kullanın."
+      message: "Kartın süresi doldu. Ödeyenden geçerli bir kart kullanmasını isteyin."
+      friendly_message: "Kartın süresi doldu. Geçerli bir kart kullanın."
     "F.0112":
-      message: "CVV doğrulaması başarısız oldu. Müşteriden geçerli kart CVV'sini girmesini isteyin."
-      friendly_message: "CVV doğrulaması başarısız oldu. İşlem tamamlanamadı. Kartınızda belirtilen geçerli bir CVV girin."
+      message: "CVC doğrulaması başarısız oldu. Ödeyenden doğru CVC girmesini isteyin."
+      friendly_message: "Yanlış CVC. Kartınızdaki doğru CVC'yi girin."
     "F.0113":
-      message: "Para birimi desteklenmiyor. İstek parametrelerindeki para birimini kontrol edin veya detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "Para birimi desteklenmiyor. İşlem tamamlanamadı. Başka bir para birimi seçin veya detaylar için satıcıyla iletişime geçin."
+      message: "Para birimi desteklenmiyor. İstekteki para birimini kontrol edin."
+      friendly_message: "Para birimi desteklenmiyor. Ayrıntılar için satıcı ile iletişime geçin."
     "F.0114":
-      message: "Yetersiz bakiye. Hesap bakiyesini kontrol edin veya detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "Yetersiz bakiye. İşlem tamamlanamadı. Hesap bakiyesini kontrol edin."
+      message: "Yetersiz bakiye."
+      friendly_message: "Yetersiz bakiye."
     "F.0115":
-      message: "Tahsilatçı hatası. Potansiyel dolandırıcılık. Ödeme aracı çalınmış veya kaybolmuş olabilir. Müşteri bilgilerinizi kontrol edin."
-      friendly_message: "Ödeme detayları hatası. İşlem tamamlanamadı. Detaylar için satıcıyla iletişime geçin."
+      message: "Dolandırıcılık şüphesi. Ödeme aracı çalınmış veya kaybolmuş olabilir."
+      friendly_message: "İşlem reddedildi. Başka bir ödeme yöntemi kullanın."
     "F.0116":
-      message: "Kart veren hata. Potansiyel dolandırıcılık. Ödeme aracı çalınmış veya kaybolmuş olabilir. Müşteri bilgilerinizi kontrol edin."
-      friendly_message: "Ödeme detayları hatası. İşlem tamamlanamadı. Detaylar için satıcıyla veya kartı veren banka ile iletişime geçin. Bankanın telefon numarası kartınızın arkasında belirtilmiştir."
+      message: "İşlem ödeme sistemi tarafından reddedildi. Olası dolandırıcılık."
+      friendly_message: "İşlem reddedildi. Başka bir ödeme yöntemi kullanın."
     "F.0117":
-      message: "Geçici sağlayıcı sistem hatası. Detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "Sağlayıcı sistem hatası. İşlem tamamlanamadı. Daha sonra tekrar deneyin veya detaylar için satıcıyla iletişime geçin."
+      message: "Geçici sistem hatası. Daha sonra tekrar deneyin."
+      friendly_message: "Sistem hatası. Daha sonra tekrar deneyin."
     "F.0118":
-      message: "Sağlayıcı sistem hatası. Detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "Sağlayıcı sistem hatası. İşlem tamamlanamadı. Başka bir ödeme yöntemi kullanın veya detaylar için satıcıyla iletişime geçin."
+      message: "Sistem hatası. Teknik destek ile iletişime geçin."
+      friendly_message: "Sistem hatası. Başka bir ödeme yöntemi kullanın."
     "F.0119":
-      message: "Geçici sağlayıcı sistem hatası. Detaylar için kartı veren banka ile iletişime geçin."
-      friendly_message: "Sağlayıcı sistem hatası. İşlem tamamlanamadı. Daha sonra tekrar deneyin veya detaylar için kartı veren banka ile iletişime geçin. Bankanın telefon numarası kartınızın arkasında belirtilmiştir."
+      message: "İşlem kart ihraç eden banka tarafından reddedildi."
+      friendly_message: "İşlem reddedildi. Daha sonra tekrar deneyin."
     "F.0120":
-      message: "Sağlayıcı sistem hatası. Detaylar için kartı veren banka ile iletişime geçin."
-      friendly_message: "Sağlayıcı sistem hatası. İşlem tamamlanamadı. Başka bir ödeme yöntemi kullanın veya detaylar için kartı veren banka ile iletişime geçin. Bankanın telefon numarası kartınızın arkasında belirtilmiştir."
+      message: "İşlem kart ihraç eden banka tarafından reddedildi."
+      friendly_message: "İşlem reddedildi. Daha sonra tekrar deneyin."
     "F.0121":
-      message: "Geçici sağlayıcı sistem hatası. Detaylar için müşterinin ödeme hizmeti sağlayıcısıyla iletişime geçin."
-      friendly_message: "Sağlayıcı sistem hatası. İşlem tamamlanamadı. Daha sonra tekrar deneyin veya detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
+      message: "Harici ödeme sisteminin geçici hatası."
+      friendly_message: "Sistem hatası. Daha sonra tekrar deneyin."
     "F.0122":
-      message: "Sağlayıcı sistem hatası. Detaylar için müşterinin ödeme hizmeti sağlayıcısıyla iletişime geçin."
-      friendly_message: "Sağlayıcı sistem hatası. İşlem tamamlanamadı. Başka bir ödeme yöntemi kullanın veya detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
+      message: "Harici ödeme sistemi hatası."
+      friendly_message: "Sistem hatası. Başka bir ödeme yöntemi kullanın."
     "F.0123":
-      message: "İşlem miktarı veya işlem sayısı ödeme hizmeti sağlayıcısının limitlerini aşıyor. İşlem miktarını ve işlem sayısını kontrol edin veya detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "İşlem miktarı veya işlem sayısı limitleri aşıyor. İşlem tamamlanamadı. İşlem miktarını kontrol edin veya detaylar için satıcıyla iletişime geçin."
+      message: "İşlem limitleri aşıyor. Teknik destek ile iletişime geçin."
+      friendly_message: "İşlem limitleri aşıyor. Ayrıntılar için satıcı ile iletişime geçin."
     "F.0124":
-      message: "İşlem miktarı veya işlem sayısı kart verenin limitlerini aşıyor. İşlem miktarını veya işlem sayısını kontrol edin. Müşteriden kartı veren banka ile iletişime geçmesini isteyin."
-      friendly_message: "İşlem miktarı veya işlem sayısı limitleri aşıyor. İşlem tamamlanamadı. Detaylar için satıcıyla veya kartı veren banka ile iletişime geçin. Bankanın telefon numarası kartınızın arkasında belirtilmiştir."
+      message: "İşlem ihraçcı limitlerini aşıyor."
+      friendly_message: "İşlem limitleri aşıyor. Bankanızla iletişime geçin."
     "F.0125":
-      message: "İşlem miktarı veya işlem sayısı ödeme hizmeti sağlayıcısının limitlerini aşıyor. İşlem miktarını ve işlem sayısını kontrol edin. Detaylar için müşterinin ödeme hizmeti sağlayıcısıyla iletişime geçin."
-      friendly_message: "İşlem miktarı veya işlem sayısı limitleri aşıyor. İşlem tamamlanamadı. Detaylar için satıcıyla veya ödeme hizmeti sağlayıcınızla iletişime geçin."
+      message: "İşlem harici ödeme sistemi limitlerini aşıyor."
+      friendly_message: "İşlem limitleri aşıyor. Ödeme hizmetleri sağlayıcınızla iletişime geçin."
     "F.0126":
-      message: "Cüzdan veri hatası. Müşteriden cüzdan verilerini kontrol etmesini isteyin. Detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "Cüzdan veri hatası. Cüzdan verilerini kontrol edin veya başka bir kart kullanın."
+      message: "Geçersiz cüzdan verileri. Ödeyenden cüzdan bilgilerini kontrol etmesini isteyin."
+      friendly_message: "Geçersiz cüzdan verileri. Cüzdan bilgilerinizi kontrol edin veya başka bir ödeme yöntemi kullanın."
     "F.0127":
-      message: "Geçersiz kart verileri. Müşteriden kart verilerini kontrol etmesini isteyin. Detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "Geçersiz kart verileri. İşlem tamamlanamadı. Kart detaylarını kontrol edin veya başka bir kart kullanın."
+      message: "Geçersiz kart verileri. Ödeyenden kart bilgilerini kontrol etmesini isteyin."
+      friendly_message: "Geçersiz kart verileri. Kart bilgilerinizi kontrol edin veya başka bir kart kullanın."
     "F.0128":
-      message: "Geçersiz istek parametreleri. İşlem tamamlanamadı. Gerekli istek parametrelerini kontrol edin."
-      friendly_message: "Geçersiz istek parametreleri. İşlem verilerini kontrol edin veya detaylar için satıcıyla iletişime geçin."
+      message: "Geçersiz istek parametreleri. Gerekli istek parametrelerini kontrol edin."
+      friendly_message: "İşlem reddedildi. Ayrıntılar için satıcı ile iletişime geçin."
     "F.0129":
-      message: "3-D Secure doğrulama hatası. Detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "3-D Secure doğrulama hatası. 3-D Secure kodunuzu kontrol edin veya detaylar için ödeme hizmeti sağlayıcınızla iletişime geçin."
+      message: "3-D Secure doğrulama hatası. Teknik destek ile iletişime geçin."
+      friendly_message: "3-D Secure doğrulama hatası. Tekrar deneyin veya başka bir ödeme yöntemi kullanın."
     "F.0130":
-      message: "3-D Secure doğrulama hatası. Detaylar için kartı veren banka ile iletişime geçin."
-      friendly_message: "3-D Secure doğrulama hatası. 3-D Secure kodunuzu kontrol edin veya detaylar için kartı veren banka ile iletişime geçin. Bankanın telefon numarası kartınızın arkasında belirtilmiştir."
+      message: "İhraçcı tarafında 3-D Secure doğrulama hatası."
+      friendly_message: "3-D Secure doğrulama hatası. Tekrar deneyin veya başka bir ödeme yöntemi kullanın."
     "F.0131":
-      message: "İşlem onaylama hatası. İşlem tamamlanamadı. Müşteriden ödemeyi onaylamasını isteyin."
-      friendly_message: "İşlem onaylama hatası. İşlem tamamlanamadı. Ödeme onayını kontrol edin."
+      message: "İşlem onayı başarısız oldu. Ödeyici yanlış SMS kodu veya OTP girdi."
+      friendly_message: "İşlem reddedildi. Tekrar deneyin veya başka bir ödeme yöntemi kullanın."
     "F.0132":
-      message: "İşlem müşteri tarafından reddedildi. İşlem tamamlanamadı. Müşteriden ödemeyi tekrar yapmasını isteyin."
-      friendly_message: "İşlem reddedildi. İşlem tamamlanamadı. Lütfen başka bir ödeme yöntemi seçin veya ödemeyi yeniden deneyin."
+      message: "İşlem ödeyici tarafından iptal edildi."
+      friendly_message: "İşlem iptal edildi. Tekrar deneyin veya başka bir ödeme yöntemi kullanın."
     "F.0133":
-      message: "Yanlış telefon numarası. İşlem tamamlanamadı. Müşteriden kartıyla ilişkili telefon numarasını girmesini isteyin."
-      friendly_message: "Gönderilen telefon numarası kartınızla ilişkili olanla eşleşmiyor. İşlem tamamlanamadı. Lütfen doğru telefon numarasını girin."
+      message: "Yanlış telefon numarası. Ödeyenden kartıyla ilişkili telefon numarasını girmesini isteyin."
+      friendly_message: "Yanlış telefon numarası. Kartınızla ilişkili telefon numarasını girin."
     "F.0134":
-      message: "İşlem onayı hatası. Yanlış SMS anahtarı. Müşteriden doğru değeri göndermesini isteyin."
-      friendly_message: "Bankası tarafından işlem onaylanmadı. Yanlış SMS anahtarı. Lütfen gönderilen verileri kontrol edin."
+      message: "Yanlış SMS kodu. Ödeyenden doğru kodu girmesini isteyin."
+      friendly_message: "İşlem reddedildi. Yanlış SMS kodu. Tekrar deneyin."
     "F.0135":
-      message: "Önceki işlem işlenene kadar yeni bir işlem başlatılamaz. Lütfen müşteriden önceki işlemi tamamlamasını isteyin veya tamamlanmasını bekleyin."
-      friendly_message: "İşlem başarısız. Önceki işlemi tamamlayın veya önceki işlemin tamamlanmasını bekleyip tekrar deneyin."
+      message: "Önceki işlem tamamlanmadı. Tekrar denemeden önce tamamlanmasını bekleyin."
+      friendly_message: "Önceki işlem tamamlanmadı. Daha sonra tekrar deneyin."
+    "F.0995":
+      message: "İşlem doğrulanmadı. Satıcının doğrulama hizmeti işlemi reddetti."
+      friendly_message: "İşlem reddedildi. Tekrar deneyin veya başka bir ödeme yöntemi kullanın."
+    "F.0996":
+      message: "İşlem doğrulanmadı. Kişisel veri doğrulaması (VPD) başarısız oldu."
+      friendly_message: "İşlem reddedildi. Hesabınızın verileriyle eşleşen kişisel verilere sahip bir ödeme yöntemi kullanın."
     "F.0997":
       message: ""
-      friendly_message: "İşlem bilinmeyen bir nedenle tamamlanamadı. Lütfen ayrıntılar için satıcıyla iletişime geçin."
+      friendly_message: "İşlem reddedildi. Tekrar deneyin veya ayrıntılar için satıcı ile iletişime geçin."
     "F.0998":
-      message: "İşlem başarısız oldu. Müşteri ödemeyi tamamlamadı - sistem işlemi otomatik olarak başarısız olarak işaretledi."
-      friendly_message: "İşlem başarısız oldu. Müşteri ödemeyi tamamlamadı - sistem işlemi otomatik olarak başarısız olarak işaretledi."
+      message: "İşlem reddedildi."
+      friendly_message: "İşlem reddedildi. Tekrar deneyin."
     "F.0999":
       message: ""
-      friendly_message: "İşlem bilinmeyen bir nedenle tamamlanamadı. Lütfen ayrıntılar için satıcıyla iletişime geçin."
+      friendly_message: "İşlem reddedildi. Tekrar deneyin veya ayrıntılar için satıcı ile iletişime geçin."
     "S.0000":
       message: "İşlem başarılı."
-      friendly_message: "İşlem başarıyla gerçekleştirildi."
+      friendly_message: "İşlem başarılı."
     "P.0001":
       message: "İşlem devam ediyor."
       friendly_message: "İşlem işleniyor. Lütfen bekleyin."
     "P.0002":
       message: "Hoş geldiniz!"
       friendly_message: "Hoş geldiniz!"
+    "P.0003":
+      message: "Kredi onayı bekleniyor."
+      friendly_message: "Kredi onayı bekleniyor. Kredi sürecini tamamlamak ve satın alma işlemini sonuçlandırmak için lütfen satıcı ile iletişime geçin."
+    "P.0004":
+      message: "Kredi onaylanıyor."
+      friendly_message: "Kredi onaylanıyor. Lütfen bekleyin."
     "P.9999":
-      message: "Bilinmeyen işlem durumu. Ayrıntılar için ödeme hizmeti sağlayıcınızla iletişime geçin."
-      friendly_message: "Bilinmeyen işlem durumu. Ayrıntılar için satıcıyla iletişime geçin."
+      message: "İşlem durumu bilinmiyor. Teknik destek ile iletişime geçin."
+      friendly_message: "İşlem durumu bilinmiyor. Ayrıntılar için satıcı ile iletişime geçin."
